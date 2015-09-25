@@ -1,46 +1,57 @@
 {include file="/common/header-1.tpl" nocache}
-{include file="common/topnav.tpl" nocache} 
-<div class="container-fluid" style="margin-top:30px">
 
-                <!-- Page Heading -->
-                
-                
-                <!-- /.row -->
-
-                <div class="row">
-                 
-                </div>    
-                <div class="row">
-                  <div class="col-lg-12 m-top-20">
-               <div class="table-responsive">
-                            <table class="table table-bordered table-hover">
-                                <thead>
-                                    <tr>
-                                        <th colspan="4">Blogs</th>
-                                       
-                                       
-                                      
-                                        
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                 {foreach $blog as $key => $val}   
-                                    <tr>
-                                        <td colspan="4"><a href="{$config.url}/blog/{$val.id}">{$val.title}</a><br />
-                                        {$val.description_short}..<br />
-                                        Posted By {$val.first_name} {$val.last_name} on {$val.date_add}</td>
-                                         
-                                       
-                                    </tr>
-                                 {/foreach}
-                                </tbody>
-                            </table>
-                            {$pagination_html}
-                        </div>
- </div>
-                </div>
-               
-                <!-- /.row -->
+<div class="row clearfix" style="min-height:350px">
+  <div class="clearfix col-md-9 blog_left" style="margin-bottom: 10px;padding-bottom: 10px;">
+    <div class="clearfix news_head">Blog</div>
+    {foreach $blog as $key => $val}
+    <div class="news_posth">
+      <h3><a href="{$config.url}/blog/{$val.id}">{$val.title}</a> </h3>
+      <div><img src="{$config.url}/images/note.png" alt=""><span class="post-date">{$val.date_add}</span> Posted by {$val.first_name} {$val.last_name}  </div>
+      <p> {$val.description_short}.. </p>
+   
+      <button class="btn nblue_btn" onclick="window.location='{$config.url}/blog/{$val.id}'">Read More</button>
+       </div>
+    {/foreach}
+  </div>
+  <div class="clearfix col-md-3">
+    <div class="sidebar srch_rht">
+      <div id="search-2" class="clearfix widget widget_search">
+        <form class="search" id="blogsearch" method="get" action="{$config.url}/blog/">
+          <fieldset>
+            <div class="input-group">
+              <input class="form-control" placeholder="Type &amp; Enter" type="text" name="search">
+              <span class="input-group-addon" onclick="$('#blogsearch').submit();"><i class="fa fa-search"></i></span> </div>
+          </fieldset>
+        </form>
+      </div>
+      <div id="recent-posts-2" class="widget widget_recent_entries">
+        <h4 class="widget-title">Recent Posts</h4>
+        <ul>
+          {foreach $rblog as $key => $val}
+          
+          <li> <a href="{$config.url}/blog/{$val.id}">{$val.title}</a> </li>
+   
+          {/foreach}
+         </ul>
+      </div>
+      <!--<div id="recent-comments-2" class="widget widget_recent_comments">
+        <h4 class="widget-title">Recent Comments</h4>
+        <ul id="recentcomments">
+        </ul>
+      </div>
+      <div id="archives-2" class="widget widget_archive"><h4 class="widget-title">Archives</h4>       <ul>
+    <li><a>November 2014</a></li>
+    <li><a>October 2014</a></li>
+    <li><a>September 2014</a></li>
+        </ul>
+</div>--> 
+      
+    </div>
+  </div>
 </div>
-           
-{include file="/common/footer-1.tpl" nocache}
+{include file="/common/footer-1.tpl" nocache} 
+<script type="text/javascript">
+$(function(){
+    $('.main_container').addClass('review');
+})
+</script>

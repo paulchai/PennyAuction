@@ -222,3 +222,43 @@ CREATE TABLE IF NOT EXISTS `membership_plan` (
 
 INSERT INTO `membership_plan` (`id`, `membership_id`, `length`, `format`, `amount`, `description`, `name`, `permission_id`) VALUES
 (1, 1, 20, 'M', 10.00, 'sadasd', 'Product Buyer', 0);
+
+ALTER TABLE `buynow` ADD `couponcode` VARCHAR(20) NOT NULL , ADD `discount` FLOAT NOT NULL , ADD `paid` FLOAT NOT NULL ;
+
+
+CREATE TABLE IF NOT EXISTS `coupons` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `type` varchar(20) NOT NULL,
+  `amount` float NOT NULL,
+  `code` varchar(20) NOT NULL,
+  `date_added` datetime NOT NULL,
+  `date_updated` datetime NOT NULL,
+  `status` varchar(20) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=19 ;
+
+
+
+CREATE TABLE IF NOT EXISTS `product_shipping` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `project_id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `address` varchar(200) NOT NULL,
+  `country` varchar(50) NOT NULL,
+  `state` varchar(50) NOT NULL,
+  `city` varchar(20) NOT NULL,
+  `zipcode` varchar(10) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `phone` varchar(20) NOT NULL,
+  `date_added` datetime NOT NULL,
+  `buyer_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+
+
+ALTER TABLE `buynow` ADD `bidcredits` FLOAT NOT NULL ;
+
+
+update `users` set `paymentid`= 0 ,`customerid` = 0,`acustomerid`=0,`apaymentid`=0
+
+ALTER TABLE `users` ADD `acustomerid` VARCHAR(100) NOT NULL AFTER `li_json`, ADD `apaymentid` VARCHAR(100) NOT NULL AFTER `acustomerid`;

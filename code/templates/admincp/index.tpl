@@ -1,306 +1,146 @@
-{include file="/admincp/header.tpl" nocache}
-<div class="container-fluid">
+{include file="/admincp/header.tpl"}
 
-                <!-- Page Heading -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        
-                        <ol class="breadcrumb">
-                            <li class="active">
-                                <i class="fa fa-laptop"></i> Projects
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-                <!-- /.row -->
 
+
+            <div class="main_container admin_wrapper">
+            
+            {include file="/admincp/left-nav.tpl" nocache}
                 
-
+                <div class="right_admin_panel clearfix">
+                <div class="admin_rwrap">
+                <div class="aw_thead">AUCTIONS</div>
                 <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-comments fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">{$project.open}</div>
-                                        <div>Open Projects</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="{$config.url}/admincp/projects/open">
-                                <div class="panel-footer">
-                                    <span class="pull-left" onclick="">View Details</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
+                    <a href="{$config.url}/admincp/projects/open"><div class="col-md-3 db_dbox">
+                        <div class="adb_lbl">
+                            <div>{$project.open}</div>
+                            <div>Live <br/> Auctions</div>
+                        </div>
+                        <div class="adb_lbl1">
+                        <img src="/images/admincp/dashboard_icon.png" alt="" />
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-green">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-tasks fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">{$project.closed}</div>
-                                        <div>Close Projects</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="{$config.url}/admincp/projects/closed"><div class="panel-footer">
-                                    <span class="pull-left">View Details</span>
-                                    <span class="pull-right" ><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
+                    </a>
+                    <a href="{$config.url}/admincp/projects/sold"><div class="col-md-3 db_dbox1">
+                        <div class="adb_lbl">
+                            <div>{$project.sold}</div>
+                            <div>Won <br/> Auctions</div>
+                        </div>
+                        <div class="adb_lbl1">
+                        <img src="/images/admincp/dashboard_icon1.png" alt="" />
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-yellow">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-shopping-cart fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">{$project.sold}</div>
-                                        <div>Won Projects</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="{$config.url}/admincp/projects/sold"><div class="panel-footer">
-                                    <span class="pull-left">View Details</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
+                    </a>
+                    <a href="{$config.url}/admincp/projects/future"><div class="col-md-3 db_dbox2">
+                        <div class="adb_lbl">
+                            <div>{$project.future}</div>
+                            <div>Future <br/> Auctions</div>
+                        </div>
+                        <div class="adb_lbl1">
+                        <img src="/images/admincp/dashboard_icon2.png" alt="" />
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-red">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-support fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">{$project.future}</div>
-                                        <div>Future Projects</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="{$config.url}/admincp/projects/future"><div class="panel-footer">
-                                    <span class="pull-left">View Details</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
+                    </a>
+                    <a href="{$config.url}/admincp/projects/closed"><div class="col-md-3 db_dbox3">
+                        <div class="adb_lbl">
+                            <div>{$project.closed}</div>
+                            <div>Closed <br/> Auctions</div>
+                        </div>
+                        <div class="adb_lbl1">
+                        <img src="/images/admincp/dashboard_icon3.png" alt="" />
                         </div>
                     </div>
+                    </a>
+                </div>
+                <div class="aw_thead">USERS</div>
+                <div class="row">
+                    <a href="{$config.url}/admincp/users/active"><div class="col-md-3 db_dbox4">
+                        <div class="adb_lbl">
+                            <div>{$users.active}</div>
+                            <div>Active<br/> Users</div>
+                        </div>
+                        <div class="adb_lbl1">
+                        <img src="/images/admincp/dashboard_icon4.png" alt="" />
+                        </div>
+                    </div>
+                    </a>
+                    <a href="{$config.url}/admincp/users/moderate"><div class="col-md-3 db_dbox5">
+                        <div class="adb_lbl">
+                            <div>{$users.moderate}</div>
+                            <div>Moderate <br/>Users</div>
+                        </div>
+                        <div class="adb_lbl1">
+                        <img src="/images/admincp/dashboard_icon5.png" alt="" />
+                        </div>
+                    </div>
+                    </a>
+                    <a href="{$config.url}/admincp/users/unverified"><div class="col-md-3 db_dbox6">
+                        <div class="adb_lbl">
+                            <div>{$users.unverified}</div>
+                            <div>Unverified <br/>Users</div>
+                        </div>
+                        <div class="adb_lbl1">
+                        <img src="/images/admincp/dashboard_icon6.png" alt="" />
+                        </div>
+                    </div>
+                    </a>
+                    <a href="{$config.url}/admincp/users/cancel"><div class="col-md-3 db_dbox7">
+                        <div class="adb_lbl">
+                            <div>{$users.cancel}</div>
+                            <div>Cancelled<br/>Users</div>
+                        </div>
+                        <div class="adb_lbl1">
+                        <img src="/images/admincp/dashboard_icon7.png" alt="" />
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="aw_thead">TRANSACTIONS</div>
+                <div class="row">
+                    <a href="{$config.url}/admincp/transaction/sold"><div class="col-md-3 db_dbox8">
+                        <div class="adb_lbl">
+                            <div>{$trans.sold}</div>
+                            <div>Sold <br/> Transactions</div>
+                        </div>
+                        <div class="adb_lbl1">
+                        <img src="/images/admincp/dashboard_icon8.png" alt="" />
+                        </div>
+                    </div>
+                    </a>
+                    <a href="{$config.url}/admincp/transaction/package"><div class="col-md-3 db_dbox9">
+                        <div class="adb_lbl">
+                            <div>{$trans.package}</div>
+                            <div>Package  <br/> Transactions</div>
+                        </div>
+                        <div class="adb_lbl1">
+                        <img src="/images/admincp/dashboard_icon9.png" alt="" />
+                        </div>
+                    </div>
+                    </a>
+                    <a href="{$config.url}/admincp/transaction/winner"><div class="col-md-3 db_dbox10">
+                        <div class="adb_lbl">
+                            <div>{$trans.winner}</div>
+                            <div>Total<br/> Winners</div>
+                        </div>
+                        <div class="adb_lbl1">
+                        <img src="/images/admincp/dashboard_icon10.png" alt="" />
+                        </div>
+                    </div>
+                    </a>
+                    <a href="{$config.url}/admincp/transaction/bid"><div class="col-md-3 db_dbox11">
+                        <div class="adb_lbl">
+                            <div>{$trans.bid}</div>
+                            <div>Bid  <br/> Transactions</div>
+                        </div>
+                        <div class="adb_lbl1">
+                        <img src="/images/admincp/dashboard_icon11.png" alt="" />
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                </div>
                 </div>
                 
-                 <div class="row">
-                    <div class="col-lg-12">
-                        
-                        <ol class="breadcrumb">
-                            <li class="active">
-                                <i class="fa fa-money"></i> Transactions
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-comments fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">{$trans.sold}</div>
-                                        <div >Sold Transactions</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="{$config.url}/admincp/transaction/sold"><div class="panel-footer">
-                                    <span class="pull-left">View Details</span>
-                                    <span class="pull-right" ><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-green">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-tasks fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">{$trans.package}</div>
-                                        <div>Package Transaction</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="{$config.url}/admincp/transaction/package"><div class="panel-footer">
-                                    <span class="pull-left">View Details</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-yellow">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-shopping-cart fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">{$trans.winner}</div>
-                                        <div>Total Winners</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="{$config.url}/admincp/transaction/winner"><div class="panel-footer">
-                                    <span class="pull-left">View Details</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-red">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-support fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">{$trans.bid}</div>
-                                        <div>Bid Transaction</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="{$config.url}/admincp/transaction/bid"><div class="panel-footer">
-                                    <span class="pull-left">View Details</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.row -->
-                 
-                 <div class="row">
-                    <div class="col-lg-12">
-                        
-                        <ol class="breadcrumb">
-                            <li class="active">
-                                <i class="fa fa-user"></i> Users
-                            </li>
-                        </ol>
-                    </div>
-                </div> 
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-comments fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">{$users.active}</div>
-                                        <div>Active Users</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="{$config.url}/admincp/users/active"><div class="panel-footer">
-                                    <span class="pull-left">View Details</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-green">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-tasks fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">{$users.moderate}</div>
-                                        <div>Moderate Users</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="{$config.url}/admincp/users/moderate"><div class="panel-footer">
-                                    <span class="pull-left">View Details</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-yellow">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-shopping-cart fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">{$users.unverified}</div>
-                                        <div>Unverified Users</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="{$config.url}/admincp/users/unverified"><div class="panel-footer">
-                                    <span class="pull-left">View Details</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-red">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-support fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">{$users.cancel}</div>
-                                        <div>Cancelled Users</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="{$config.url}/admincp/users/cancel"><div class="panel-footer">
-                                    <span class="pull-left">View Details</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.row -->
-
             </div>
+
            
-{include file="/admincp/footer.tpl" nocache}
+{include file="/admincp/footer.tpl"}

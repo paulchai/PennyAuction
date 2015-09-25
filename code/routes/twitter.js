@@ -12,14 +12,14 @@ var q = require('q');
 var user_json = [];
 
 //required js
-var configure = require('../configure');
+/*var configure = require('../configure');
 
 //default setters
 var config = configure.app();
 
 $arr = {
   config : config
-} 
+}*/
 
 app.use(passport.initialize());
 app.use(passport.session());

@@ -1,23 +1,54 @@
 {include file="common/header-1.tpl" nocache}
-<link href="{$config['url']}/css/ds-forms.css" rel="stylesheet">
-<link href="{$config['url']}/css/registration-form.css" rel="stylesheet">
 <div class="row">
+<style>
+.container {
+  width: auto;
+  max-width: 1170px;
+}
+.login_account {
+  width: auto;
+  float: left;
+  padding-bottom: 42px;
+  margin-top: 10px;
+}
+.login_account p {
+  width: auto;
+  float: left;
+  text-align: center;
+  font: normal 12px Arial, Helvetica, sans-serif;
+  color: #666666;
+  padding: 5px 0px 10px 28px;
+}
+.login_rgt {
+  width: auto !important;
+  float: left;
+  background: url('../images/log_divide.png') left top no-repeat;
+  padding-top: 27px;
+  min-height: 344px;
+}
+.padle{
+	padding-left:0;
+}
+</style>
  
   <!-- LOGIN STARTS!-->
-  
+  <div class="col-md-12">
   <div class="login_middle  m-top-50">
+  <div class="col-md-6">
     <div class="login_lft">
-      <form action="{$config['url']}/login/save" method="post"  enctype="multipart/form-data" data-parsley-validate >
+      <form action="{$config['url']}/login/save" method="post"  enctype="multipart/form-data"   data-parsley-validate >
         <div class="login_form">
           <div class="log_fields">
-            <p>User Name <span class="red">*</span>:</p>
-            <input type="text" id="username" name="username" required placeholder="Enter username"  class="textbox">
+            <p>Email <span class="red">*</span>:</p>
+            <div class="col-md-8 padle">
+            <input type="email" id="username" name="username" data-parsley-error-message="Enter email" value="{$remembermeuser}" required placeholder="Enter email"  class="form-control" style="height:auto;width:204px"></div>
           </div>
           <span class="red fl"></span>
           <div class="log_fields">
             <p>Password <span class="red">*</span>:</p>
-            <input type="password" id="password" name="password" required value=""  class="textbox">
-          </div>
+            <div class="col-md-8 padle">
+            <input type="password" id="password" name="password" data-parsley-error-message="Enter password" required value=""  class="form-control" style="height:auto;width:204px">
+          </div></div>
         </div>
         <span class="red fl"></span>
         <div class="login_check">
@@ -26,13 +57,15 @@
           <label><a href="{$config['url']}/login/forgot_password" title="Forgot password">Forgot password?</a></label>
         </div>
       
-            <input type="submit" name="login" value="Signin" class="btn save_btn" title="SIGNIN">
+           <div style="clear: both;">  <input type="submit" name="login" value="Signin" class="btn save_btn" title="SIGNIN"></div>
          
         <div style="padding-top: 10px; float:left"> <span class="Loading_Img" style="display:none">
           <p style="width:195px; padding-left: 0px; color:black;font: bold 13px/16px arial;"> <img src="http://unieauction.com/platinum-demo/public/white/images/ajax-loader.gif" alt="loading"> <strong class="pls_wit" style="padding-top:0px; float:right; margin: -14px 90px;"> Processing... </strong> </p>
           </span> </div>
       </form>
     </div>
+    </div>
+     <div class="col-md-6">
     <div class="login_rgt">
       <!--<div class="login-social">
         <p>Login With</p>
@@ -46,17 +79,18 @@
       <span class="other">
       <label>(OR)</label>
       </span>-->
+     
       <div class="login_account text-center">
         <h2>Don't have an account</h2>
-        <p>Register now to bid, buy, or sell on any Auction site worldwide. It's easy and FREE. Already registered</p>
+        <p>Register now to bid, buy, or sell on any Auction site worldwide. It's easy and FREE. <!--Already registered--></p>
         <p>If you want to sign in, you'll need to register first.</p>
         <p>Registration is fast and FREE.</p>
-       <a href="javascript:void(0)" onclick="javascript:$('#reg_myModal').modal('show');" title="Register" class="btn save_btn">Register</a>
-      </div>
+       <a href="{$config.url}/register" title="Register" class="btn save_btn">Register</a>
+      </div></div>
     </div>
   </div>
   <!-- LOGIN ENDS!--> 
-  
+  </div>
 </div>
-<script src="{$config['url']}/js/register.js"  type="text/javascript"></script>
+
 {include file="common/footer-1.tpl" nocache}

@@ -29,7 +29,7 @@
            {else}
               {foreach $mywatchlist as $key => $val}
                 <div class="row mblue_box1">
-                  <div class="col-md-3"><a href="{$config['url']}/product/view/{$val.id}"><img src="{if $val.avatar == ''} {$config['imgpath']}no_img.png {else if $val.avatar != ''}{$config['imgpath']}product/{$val.avatar}{/if}" title="{$val.title}" width="65" height="65"></a></div>     
+                  <div class="col-md-3" style="clear:both;"><a href="{$config['url']}/product/view/{$val.id}"><img src="{if $val.avatar == ''} {$config['imgpath']}no_img.png {else if $val.avatar != ''}{$config['imgpath']}product/{$val.avatar}{/if}" title="{$val.title}" width="65" height="65"></a></div>     
                   <div class="col-md-3"><a href="{$config['url']}/product/view/{$val.id}" title="{$val.ptitle}"> {$val.title}</a></div>           
                   <div class="col-md-4">{$val.date_closed}</div>     
                   <div class="col-md-2"><a href="{$config.url}/dashboard/watchlist/{$val.id}" class="deleteicon" title="Delete"></a></div>

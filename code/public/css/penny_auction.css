@@ -1,6 +1,20 @@
 .pa_header {
 	width:100%;
 }
+.sort_by .fa {
+  font-size: 20px;
+  line-height: 24px;
+}
+.sort_by span ,.sort_by select {
+float:left;
+padding:0 5px;
+}
+.col-md-4.sort_by {
+	width:281px;
+}
+.nav-tabs {
+clear:both;
+}
 .pa_nav {
 width:1024px;
 margin:0px auto;
@@ -103,7 +117,7 @@ color:#fff;
 
 footer {
 width:100%;
-height:460px;
+min-height:197px;
 background:url("../images/footer.png") repeat-x;
 padding:20px;
 color:#fff;
@@ -129,6 +143,10 @@ vertical-align: bottom;
 .footer_links {
 	font-family: Arial;
 	font-size: 14px;
+	color: #fff;
+}
+.footer_links a{
+	text-decoration:none;
 	color: #fff;
 }
 .m15 {
@@ -199,6 +217,10 @@ padding: 20px 0;
 	border-radius: 0px;
 	border-top: 3px solid #4c4c4c;
 }
+.col-md-2.left_col
+{
+	
+}
 .blue_box li {
 border-bottom:1px dashed #4c4c4c;
 padding: 5px 0;
@@ -206,8 +228,13 @@ padding: 5px 0;
 .blue_box li:last-child {
 border:none;
 }
+.reg_try img
+{
+	width:100%;
+	margin:4px 0px;
+}
 .white_box {
-	width: 213px;
+	width: 100%;
 	min-height: 136px;
 	background-color: #fff;
 	-webkit-box-shadow: 1px 0 5px rgba(0,0,0,.75);
@@ -217,12 +244,21 @@ border:none;
 	/*margin-bottom:25px;*/
 }
 .main_container .row {
-width:1024px;
-margin:0px auto;
-}
 
+}
+.ship_bner .banner{
+margin:10px auto;
+display:block;
+float:none;
+clear:both;
+}
+.ship_bner.box {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 0px;
+}
 .whead{
-	width:213px;
+	width:100%;
 	height: 29px;
 	background-color: #4c4c4c;
 	color:#fff;
@@ -276,10 +312,10 @@ float: right;
 padding: 44px 120px 0 40px;
 }
 .node_jsb{
-background-color: #d1e8eb;
-width: 1024px;
-height: 238px;
-margin: 20px auto;
+  background-color: #d1e8eb;
+  max-width: 1140px;
+  height: 238px;
+  margin: 20px auto;
 }
 .njsb {
 	width:240px;
@@ -290,32 +326,36 @@ margin: 20px auto;
 width: 750px;
 /*padding: 25px;*/
 padding:0;
-margin:0px 15px;
+margin: 0px 0 0 15px;
 }
 .left_nj p {
 color:#02416f;
 font-size:13px;
 /*margin:20px 0;*/
-margin:13px 0;
+margin:10px 0;
+text-align: justify;
 font-family:Trebuchet MS;
+font-weight:normal;
 }
 .pbld {
-font-size: 26px;
+font-size: 24px;
 font-weight: bold;
 color: #fff;
-padding: 20px 40px;
-text-align: center;
+padding: 19px 0px 0px 18px;
+/*text-align: center;*/
 width: 180px;
 }
 .pbld span {
 font-size: 14px;
 font-weight: bold;
 color: #fff;
-padding: 10px 45px;
+padding: 10px 67px;
 text-align: center;
+/* padding-top: 28px; */
+line-height: 109px;
 }
 .today_auctions .col-md-4 {
-width: 24.333333%;
+width: 31%;
 border: 1px solid #ddd;
 margin: 8px;
 padding: 10px 10px 0;
@@ -373,21 +413,12 @@ float:left;
 padding: 10px 10px 0 40px;
 font-family: arial;
 }
-html,body {
-overflow-x:hidden;
+.html {
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
+.modal-backdrop {
+	height:100%;
+}
 .m-top-10
 {
 	margin-top:10px;
@@ -444,7 +475,7 @@ overflow-x:hidden;
 }
 footer
 {
-	height:400px !important;
+	min-height:197px !important;
 }
 .col-md-4 .ht_rimg1
 {
@@ -495,4 +526,48 @@ margin-left:6px;
 body
 {
 word-wrap:break-word;	
+}
+
+.fcorn-register #review-form .form-wrapper {
+background: #fff;
+margin: 0px;
+display: inline-block;
+width: 100%;
+}
+.rating-md
+{
+	font-size:23px !important;
+}
+.dropdown-menu > li > a
+{
+	white-space: inherit !important;
+}
+.media-body .pro_time
+{
+	height:50px;
+}
+
+.col-md-1.pull-left {
+    margin-left: 17px;
+    margin-right: 0;
+    margin-top: 38px;
+}
+
+
+form#user_search .setting-icon {
+	padding:9px 12px !important;
+}
+*  {
+outline:none !important;
+}
+.modal-open .input-group .form-control {
+	z-index:inherit;
+}
+.modal-open  {
+padding:0px !important;
+}
+@media (max-width:992px) {
+	.white_box {
+		min-height:inherit;
+	}
 }

@@ -1,14 +1,26 @@
 {include file="/admincp/header.tpl" nocache}
-<div class="container-fluid"> 
+<div class="main_container admin_wrapper">
+
+  {include file="/admincp/left-nav.tpl" nocache}  
   
+  <div class="right_admin_panel clearfix">
+        <div class="admin_rwrap">
+        <div class="aw_thead">Blog</div>
+        <div class="aw_thead1">
+            <div>Home</div>
+            <div><i class="fa fa-long-arrow-right"></i></div>
+            <div>Blog</div>
+            <div><i class="fa fa-long-arrow-right"></i></div>
+            <div>Add / Edit</div>
+        </div>
   <!-- Page Heading -->
-  <div class="row">
+  <!--<div class="row">
     <div class="col-lg-12">
       <ol class="breadcrumb">
         <li class="active"> <i class="fa fa-laptop"></i> Blogs <i class="fa fa-hand-o-right"></i> <i class="fa fa-edit"></i> {if $projects.id == 0 or $projects.id == ''} Add {else} Edit {/if}<i class="fa fa-hand-o-right"></i> {$projects.title} </li>
       </ol>
     </div>
-  </div>
+  </div>-->
   <!-- /.row -->
   <div class="row">
     <div class="col-lg-12"> {if $error == 'saved'}
@@ -41,9 +53,12 @@
     
   </div>
  </div> 
-
+</div>
+</div>
 {include file="/admincp/footer.tpl" nocache} 
 <script language="javascript" type="text/javascript">
+
+$('#generaltabid').click();
 
 $(function()
 {

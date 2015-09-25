@@ -2,14 +2,21 @@
 var common = require('./common');
 var dateFormat = require('dateformat');
 var mysqli = require('./mysqli');
-exports.mywithdraw = function(req,mysql,q)
+exports.mywithdraw = function(req,mysql,q,count)
 {
         $mysqli =  {};
        
-		strQuery = mysqli.mysqli($mysqli,170);	    
+	    var page = req.body.page;
+        page = (page > 0) ? (page-1)*5 : 0;
+		
+		if(count == 1)
+		strQuery = mysqli.mysqli($mysqli,'170count');
+		else
+		strQuery = mysqli.mysqli($mysqli,170);
+			    
 	    var defered = q.defer();
 	    
-	    var escape_data =  [req.session.userid];
+	    var escape_data =  [req.session.userid,page];
 	    console.log(escape_data);               
 		query =  mysql.query(strQuery,escape_data,defered.makeNodeResolver());
 		return defered.promise;

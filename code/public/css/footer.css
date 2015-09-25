@@ -1,0 +1,87 @@
+.qzp1m{
+	line-height:37px !important;
+}
+.ftr1{
+	width:23%;
+	
+}
+.ftr2{
+	width: 22%;
+	
+}
+.ftr3{
+	width: 30%;
+	
+}
+footer {
+  background: none repeat scroll 0 0 #eeeeee;
+}
+.call_us {
+  background: none repeat scroll 0 0 #D6D7D7;
+  height: 200px;
+   padding: 55px 17px;
+}
+.footer_logo {
+	padding-top:40px;
+}
+footer .row .col-md-2 {
+     padding: 20px 15px;
+}
+footer .row .col-md-2 h5 {
+  font-size: 16.47px;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+footer .row .col-md-2 li{
+	margin-top:12px;
+}
+.cu_num {
+  font-size: 24.29px;
+  font-weight: 500;
+}
+.cror3f{
+	color:#fe5a01;
+}
+.lcall_us {
+  font-size: 22.38px;
+  font-weight: 500;
+}
+.copyright {
+  background: none repeat scroll 0 0 #626262;
+  width: 100%;
+  min-height: 30px;
+  line-height: 32px;
+  color: #fff;
+  text-align: center;
+  max-width:100%;
+}
+.mftp{
+	margin-bottom:8px;
+}
+.ftrwt{
+padding :0;
+ margin-top:15px;
+}
+.cror3fec{
+	color:#0089FF;
+}
+.mnm2{
+	color:#626262;
+	font-size:26px;
+}
+
+@media screen and (max-width: 990px) {
+	.ftr1{
+	width:auto !important;
+	
+}
+.ftr2{
+	width:auto !important;
+	
+}
+.ftr3{
+	width:auto !important;
+	
+}
+}

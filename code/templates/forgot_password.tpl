@@ -1,10 +1,44 @@
 {include file="common/header-1.tpl" nocache}
-<div class="container">
+<style>
+.log_fields input[type=text], .log_fields input[type=password]{
+	width:100%;
+	height:34px;
+}
+.login_head{
+	border-bottom:none;
+}
+.frpw1{
+	min-height:400px;
+}
+.login_middle {
+    background: url('../images/sing.png') repeat-x;
+    width: 50%;
+    height: 220px;
+    float: left;
+    border: 1px solid #dedddf;
+	    padding-left: 80px;
+    padding-top: 26px;
+}
+.login_lft {
+    width: 315px;
+    float: left;
+    padding: 10px 0 0 20px;
+}
+.login_form {
+        width: 97%;
+    float: left;
+}
+.login_head {
+    width: 100%;
+    float: left;
+    padding-bottom: 10px;
+   }
+</style>
+<div class="container frpw1">
+<div class="banner_inner">
   <div class="banner_inner">
-    <div class="banner_inner">
-      <div class="login_head">
-      
-   {if $textStatus != ''}   <div class="dash_heads">
+    <div class="login_head"> {if $textStatus != ''}
+      <div class="dash_heads">
         <div class="span-22a">
           <center>
             <div id="messagedisplay">
@@ -17,35 +51,27 @@
           </center>
         </div>
       </div>
-      
       {/if}
       
       
-        <ul>
-          <li><a href="{$config['url']}" title="HOME">Home </a></li>
-          <li><a href="" title="arr_bg"><img src="http://unieauction.com/platinum-demo/public/white/images/arr_bg.png" width="13" height="11" alt="Arrow" /></a></li>
-          <li class="active"><a  title="SIGN IN">Sign in</a></li>
-        </ul>
-      </div>
+      
       
       {if $step1}
       <form action="/login/forgot_password" method="post" accept-charset="utf-8" data-parsley-validate required>
-        <div class="login-part">
+        <div class="login-part text-center">
           <h2 title="Forgot Password">Forgot Password</h2>
         </div>
-        <div class="login_middle">
+        
+        <div class="login_middle bidonregi1">
           <div class="login_lft">
             <div class="login_form">
-              <div class="log_fields">
+              
                 <p>Your Email <span class="red">*</span>:</p>
-                <input type="email" id="email" name="email" placeholder="Enter your email" value="" maxlength="30" class="textbox" required/>
+                <input type="email" id="email" name="email" placeholder="Enter your email" data-parsley-error-message="Enter valid email address" value="" maxlength="100" class="form-control bidonregi2" required/>
               </div>
-              <span class="red"></span> </div>
-            <div class="login_button">
-                <input type="submit" name="submit_forgot_password" class="btn save_btn" value="Send" title="Send"/>
               </div>
-                      </div>
-          </div>
+            <div class="m-top-30"><input type="submit" name="submit_forgot_password" value="Send" title="Send" class="btn btn-success bidonregi2"/></div>
+          
         </div>
       </form>
       {/if}
@@ -53,48 +79,49 @@
       {if $step2}
       <form action="/login/changepassword" method="post" id="change_password" name="change_password" accept-charset="utf-8" data-parsley-validate>
         <input type="hidden" name="id" value="{$id}" />
-        <div class="login_middle_common_profil">
+        <div class="col-md-12">
+        <div class="login_middle_common_profil" style="padding-left:0;">
           <div class="user_name_common">
-            <div class="log_fields">
-              <p>New Password <span class="red">*</span>:</p>
-              <h2>
-                <input type="password" id="new_password" name="new_password" title="New Password" maxlength="20" required >
-              </h2>
+           <div class="col-md-4">
+              <p>New Password <span class="red">*</span>:</p></div>
+              <div class="col-md-6">
+                <input type="password" id="new_password" name="new_password" title="New Password" maxlength="20" class="form-control"  required >
+              </div>
             </div>
             <span class="red"> </span> </div>
+            </div>
+            
+            <div class="col-md-12">
           <div class="user_name_common">
             <div class="log_fields">
-              <p>Confirm Password <span class="red">*</span>:</p>
-              <h2>
-                <input type="password" id="new_password" name="confirm_password" title="Confirm Password" maxlength="20" required data-parsley-equalto="#new_password">
-              </h2>
+            <div class="col-md-4">
+              <p>Confirm Password <span class="red">*</span>:</p></div>
+              <div class="col-md-6">
+                <input type="password" id="new_password" name="confirm_password" title="Confirm Password" class="form-control"  maxlength="20" required data-parsley-equalto="#new_password" >
+              </div>
             </div>
             <span class="red"> </span> </div>
+            </div>
+            <div class="col-md-12">
           <div class="user_name_common">
             <div class="no_img">
               <div class="buton_green">
                 <div class="profil_butoon">
-                  <div class="res_left"></div>
-                  <div class="res_mid"><a title="RESET">
-                    <input type="submit" name="submit_user" value="RESET">
-                    </a></div>
-                  <div class="res_right"></div>
-                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-9">
+                <div class="col-md-6"> <button type="reset" class="btn btn-primary">RESET</button></div>
+                                  
                 <span> </span>
-                <div class="grand_total_btn_cp">
-                  <div class="save_left"></div>
-                  <div class="save_mid"><a title="SAVE">
-                    <input type="submit" name="submit_change_pass" value="SAVE">
-                    </a></div>
-                  <div class="save_right"></div>
-                </div>
-              </div>
+                <div class="col-md-2"><input type="submit" name="submit_change_pass" value="SAVE"  class="btn btn-success" ></div>
+                </div></div>
+              
             </div>
           </div>
+        </div>
         </div>
       </form>
       {/if} </div>
     <div class="user" style="display:none;" ></div>
   </div>
-</div>
+</div> </div>
 {include file="common/footer-1.tpl" nocache}

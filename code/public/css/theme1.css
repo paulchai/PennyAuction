@@ -1,0 +1,98 @@
+.vivi{
+	display:none;
+}
+row .col-md-2 ul li a {
+  padding-top: 13.13px;
+  color: white !important;
+  font-size: 13px;
+  text-decoration: none;
+}
+.gtfot{
+	padding-left:0;
+	padding-right:0;
+}
+.wht3{
+	color:white !important;
+	text-decoration:none;
+}
+.nav.nav-bar{
+	background-color: #004477 !important;
+	-webkit-box-shadow: 5px 2px 5px rgba(0,0,0,.46)!important;
+	-moz-box-shadow: 5px 2px 5px rgba(0,0,0,.46)!important;
+	box-shadow: 5px 2px 5px rgba(0,0,0,.46) !important;
+}
+
+.menu_bar li.active, .menu_bar li:hover {
+    background-color: #4c4c4c !important;
+    border-color: #272700 !important;
+}
+
+.category_sb {
+    background-color: #004477;
+}
+
+.whead {
+    background-color: #004477;
+}
+
+.nbtn-group {
+    background-color: #004477;
+}
+
+.category_box {
+	background: #f0f9ff;
+	background: -moz-linear-gradient(top, #f0f9ff 0%, #cbebff 47%, #a1dbff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0f9ff), color-stop(47%,#cbebff), color-stop(100%,#a1dbff));
+	background: -webkit-linear-gradient(top, #f0f9ff 0%,#cbebff 47%,#a1dbff 100%);
+	background: -o-linear-gradient(top, #f0f9ff 0%,#cbebff 47%,#a1dbff 100%);
+	background: -ms-linear-gradient(top, #f0f9ff 0%,#cbebff 47%,#a1dbff 100%);
+	background: linear-gradient(to bottom, #f0f9ff 0%,#cbebff 47%,#a1dbff 100%);
+}
+
+.form-control:hover, .file:hover .gui-input {
+	border:1px solid #acdfff;
+}
+
+.navbar-default {
+  background-image: url('../image/125b.png') !important;
+  height: 71px;
+  background-size: 100% 76px;
+  background-repeat: no-repeat;
+  z-index: 999999999999999999999;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  max-width: 1140px;
+  margin: 0px auto;
+}
+
+.fotdi1 {
+  background: #3caff7;
+}
+
+.fotdi6 {
+  background: #3caff7;
+}
+
+.fotdi {
+  background: #3caff7;
+}
+
+.finbum {
+  background: #3caff7;
+}
+
+.srbt {
+  background: #3caff7 !important;
+}
+
+.hty3:hover {
+  background: #222222;
+}
+
+.bttny2:hover {
+  background: #4d4d4d !important;
+}
+
+.bttny2 {
+  background: #3caff7 !important;
+}

@@ -1,129 +1,109 @@
-{include file="common/header-1.tpl" nocache} 
-<script src="{$config.url}/js/countdown.js"></script> 
-<script>  var clock = [];  var targetDate = [];  var clearvar = []; </script>
-{include file="common/topnav.tpl" nocache} 
-{if $view ==''}
-<h3>{$pagetitle}</h3>
-<div class="row fauction">
-  <div class="col-md-12 feature_auctions">
-    <div class="row"> {foreach $projects.project as $key => $val}
-      <div class="col-md-3 item" style="margin-bottom:20px">
-       {if $pagetitle== 'Future Auctions'} <div class="future_rib"><img src="images/future_img.png"></div> {/if}
-              <img class="img-responsive" src="{if $val.avatar == ''}{$config['imgpath']}no_img.png    {else if $val.avatar != ''}{$config['imgpath']}product/{$val.avatar}{/if}" alt="{$val.title}" style="width:244px;height:225px;cursor:pointer" onclick="window.location = '{$config['url']}/product/view/{$val.id}'">
-        <div class="clearfix euro">
-          <div class="pull-left">
-            <div>{$val.ptitle}</div>
-            <div id="my{$val.id}">{$val.day}</div>
-            <script>   clock['{$val.id}'] = document.getElementById('my{$val.id}')
-    , targetDate['{$val.id}'] = new Date('{$val.closed}'); 
- 
-  clock['{$val.id}'].innerHTML = countdown(targetDate['{$val.id}']).toString();
- clearvar['{$val.id}'] =  setInterval(function(){
-	if(targetDate['{$val.id}']>new Date())
-    clock['{$val.id}'].innerHTML = countdown(targetDate['{$val.id}']).toString();
-	else
-	clock['{$val.id}'].innerHTML = 'Closed';
-  }, 1000);
-  </script> 
-          </div>
-          <div class="pull-right">$ {$val.wprice}</div>
-        </div>
-        <div class="last_bidders">{$val.pdescription}</div>
-        <div class="col">
-        {if $val.status == 'open' AND $pageofjs != '/future'}  <input type="button" value="{if $pageofjs == '/shop'}BUY NOW{else if $pageofjs != '/shop'}BID NOW{/if}" onclick="window.location = '{$config['url']}/product/view/{$val.id}'" style="float: left;" class="butt1">
-         {/if}
-          <input type="button" value="VIEW DETALS" onclick="window.location = '{$config['url']}/product/view/{$val.id}'" style="float: right;" class="butt1">
-        </div>
-      </div>
-      {/foreach} </div>
-  </div>
-  
-  {if $projects.project|count == 0}
-  <p> No Results found </p>
-  {/if}
-</div>
-{$pagination_html}
-{else}
-<div class="main_container">
-		<div class="brown_box">
-			<div>FULL LIST </div>
-			<a href="{$config['url']}/#activeauction"><div>Current</div> </a>
-			<a href="{$config['url']}/closed?view=list"><div>Finished</div></a>
-		</div>
-		<div class="row light_brown_box">
-			<div class="col-md-2 lv_tcenter">Image</div>
-			<div class="col-md-4">Title</div>
-			<div class="col-md-2 lv_tcenter">Time Remaining</div>
-			<div class="col-md-2">Price</div>
-		</div>
-        
-         {foreach $projects.project as $key => $val}
-		<div class="row light_box">
-			<div class="col-md-2"><img class="img-responsive" src="{if $val.avatar == ''}{$config['imgpath']}no_img.png    {else if $val.avatar != ''}{$config['imgpath']}product/{$val.avatar}{/if}" alt="{$val.title}" style="width:110px;height:79px;cursor:pointer" onclick="window.location = '{$config['url']}/product/view/{$val.id}'"></div>
-			<div class="col-md-4">
-				<div class="lv_ptitle">{$val.ptitle}</div>
-				<!--<div>(A218c95f0a4)</div>-->
-				<div>Retailprice ${$val.bprice}</div>
-			</div>
-			<div class="col-md-2"><div class="time_box" id="my{$val.id}">{$val.day}</div>  <script>   clock['{$val.id}'] = document.getElementById('my{$val.id}')
-    , targetDate['{$val.id}'] = new Date('{$val.closed}'); 
- 
-  clock['{$val.id}'].innerHTML = countdown(targetDate['{$val.id}']).toString();
- clearvar['{$val.id}'] =  setInterval(function(){
-	if(targetDate['{$val.id}']>new Date())
-    clock['{$val.id}'].innerHTML = countdown(targetDate['{$val.id}']).toString();
-	else
-	clock['{$val.id}'].innerHTML = 'Closed';
-  }, 1000);
-  </script> </div>
-			<div class="col-md-2 lv_plbl">$ {$val.wprice}</div>
-			<div class="col-md-2">
-            
-             {if $val.status == 'open'}
-				<div><button class="btn btn-gray1" onclick="window.location = '{$config['url']}/product/view/{$val.id}'">BID NOW</button></div>
-				<div><button class="btn btn-gray2" onclick="window.location = '{$config['url']}/product/buy/{$val.id}'">BUY NOW</button></div>
-             {elseif $val.status == 'sold'}
-             <div><button class="btn btn-gray1" onclick="window.location = '{$config['url']}/product/view/{$val.id}'">SOLD</button></div>
-             {elseif $val.status != 'sold'}
-             <div><button class="btn btn-gray1" onclick="window.location = '{$config['url']}/product/view/{$val.id}'">CLOSED</button></div>
-             {/if}
-            
-			</div>
-		</div>  {/foreach} 
-		<div class="row btmpg ">
-			<div class="col-md-10">
-            
-            {$pagination_html}
-				<!--<ul class="pagination">
-					
-					<li><a href="#" class="active">1</a></li>
-					<li><a href="#">2</a></li>
-					<li><a href="#">3</a></li>
-					<li><a href="#">4</a></li>
-					<li><a href="#">5</a></li>
-					<li>
-					  <a href="#" aria-label="Next">
-						<span aria-hidden="true">&raquo;</span>
-					  </a>
-					</li>
-				  </ul>-->
-			</div>
-			<!--<div class="col-md-2">
-				<div class="pp_box">
-					page 1 of 27
-				</div>
-			</div>-->
-		</div>
-	</div>  
-{/if}
+{include file="/common/header-1.tpl" nocache}
+ <link href="{$config['url']}/assets/css/custom.css" rel="stylesheet">
 
-
+    <!-- Owl Carousel Assets -->
+    <link href="{$config['url']}/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="{$config['url']}/owl-carousel/owl.theme.css" rel="stylesheet">
 <style>
-.btmpg .pagination
-{
-width:450px;	
+.row .row {
+  width: auto;
 }
+#owl-demo .item img{
+     display: block;
+     width:100%;
+	 max-width:880px;
+     margin: 0px auto;
+}
+ 
+.ontimwid {
+	width:6%;
+ }
+@media screen and (max-width: 990px){
+.ipm0px{
+	padding:10px;
+}
+}
+@media screen and (max-width: 390px){
+.fotdi6{
+	min-height: 63px !important;
+}
+.futexcen1{
+	  padding-left: 112px;
+}
+}
+@media screen and (max-width: 770px) {
+#owl-demo .item img{
+	width:100%;
+	margin-left:0;
+}
+	
+}
+@-moz-document url-prefix() { 
+.ontimwid {
+	width:-1px !important;
+ }
+  }
 </style>
+
+<div class="col-md-12" style="margin-top:-21px;">
+  <div class="col-md-2 ftmdpro ontimwid" ></div>
+  <div class="col-md-12">
+<div id="demo">
+        <div class="container">
+          <div class="row">
+        
+            <div class="span12">
+             
+              <div id="owl-demo" class="owl-carousel">
+
+                <div class="item"><img src="{$config['url']}/image/Banner_1.png" alt="The Last of us"></div>
+                <div class="item"><img src="{$config['url']}/image/Banner_2.png" alt="The Last of us"></div>
+                 <div class="item"><img src="{$config['url']}/image/Banner_3.png" alt="The Last of us"></div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+</div>
+<script type="text/javascript">
+function update(obj) {
+  var date = new Date()
+
+  var hours = date.getHours();
+  if (hours < 10) hours = '0'+hours
+  document.getElementById('hour').innerHTML = hours
+
+  var minutes = date.getMinutes()
+  if (minutes < 10) minutes = '0'+minutes
+  document.getElementById('min').innerHTML = minutes
+
+  var seconds = date.getSeconds()
+  if (seconds < 10) seconds = '0'+seconds
+  document.getElementById('sec').innerHTML = seconds
+}
+</script>
+
+  <div class="row">
+    <div class="col-md-12 fotdi6">
+
+<div class="col-md-6 pull-left futexcen1" style="margin-top: 8px;">{$pagetitle}</div>
+<div class="col-md-3 pull-right auto_width" style="margin-top: 8px;"><span>Sort By:</span> 
+<select onchange="searchitems(this)">
+  <option  value="01" {if $get.sort == '01'}selected {/if} >Time: newly listed</option>
+  <option  value="02" {if $get.sort == '02'}selected {/if}>Time: ending soonest</option>
+  <option   value="03" {if $get.sort == '03'}selected {/if}>Price: lowest first</option>
+  <option  value="04" {if $get.sort == '04'}selected {/if}>Price: highest first</option>
+</select>
+</div>
+
+</div>
+      <div class="col-md-12"> {assign var="proj" value=$projects.project}
+      {include file="projects-new.tpl" nocache}
+      
+      {if $projects.project|count == 0} <p class="text-center" style="margin-bottom:10px">No Results Found {/if} </p> </div>
+    </div>
 
 <script> 
 
@@ -132,7 +112,7 @@ width:450px;
 
    clearInterval(clearvar[id]);
     clock[id] = document.getElementById('my'+id)
-    , targetDate[id] = new Date(dateee); // Jan 1, 2050; 
+    , targetDate[id] = new Date(dateee); // Jan 1, 2050;
  
   clock[id].innerHTML = countdown(targetDate[id]).toString();
   clearvar[id] =  setInterval(function(){
@@ -150,4 +130,92 @@ width:450px;
      });
 
 </script> 
-{include file="common/footer-1.tpl" nocache}
+
+<script>
+    $(document).ready(function() {
+
+      var time = 5; // time in seconds
+
+      var $progressBar,
+          $bar, 
+          $elem, 
+          isPause, 
+          tick,
+          percentTime;
+
+        //Init the carousel
+        $("#owl-demo").owlCarousel({
+          slideSpeed : 500,
+          paginationSpeed : 500,
+          singleItem : true,
+          afterInit : progressBar,
+          afterMove : moved,
+          startDragging : pauseOnDragging
+        });
+
+        //Init progressBar where elem is $("#owl-demo")
+        function progressBar(elem){
+          $elem = elem;
+          //build progress bar elements
+          buildProgressBar();
+          //start counting
+          start();
+        }
+
+        //create div#progressBar and div#bar then prepend to $("#owl-demo")
+        function buildProgressBar(){
+          $progressBar = $("<div>",{
+            id:"progressBar"
+          });
+          $bar = $("<div>",{
+            id:"bar"
+          });
+          $progressBar.append($bar).prependTo($elem);
+        }
+
+        function start() {
+          //reset timer
+          percentTime = 0;
+          isPause = false;
+          //run interval every 0.01 second
+          tick = setInterval(interval, 10);
+        };
+
+        function interval() {
+          if(isPause === false){
+            percentTime += 1 / time;
+            $bar.css({
+               width: percentTime+"%"
+             });
+            //if percentTime is equal or greater than 100
+            if(percentTime >= 100){
+              //slide to next item 
+              $elem.trigger('owl.next')
+            }
+          }
+        }
+
+        //pause while dragging 
+        function pauseOnDragging(){
+          isPause = true;
+        }
+
+        //moved callback
+        function moved(){
+          //clear interval
+          clearTimeout(tick);
+          //start again
+          start();
+        }
+
+        //uncomment this to make pause on mouseover 
+        // $elem.on('mouseover',function(){
+        //   isPause = true;
+        // })
+        // $elem.on('mouseout',function(){
+        //   isPause = false;
+        // })
+    });
+    </script>
+
+{include file="/common/footer-1.tpl" nocache}	

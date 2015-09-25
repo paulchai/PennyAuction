@@ -1,0 +1,50 @@
+.bttny2{
+	background:#4d4d4d;
+}		
+.navbar-default .navbar-nav > li > a{
+	color:white;
+	text-decoration:none;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.navbar-default .navbar-nav > li > a:hover{
+	color:#FFF;
+	text-decoration:none;
+}
+
+
+.cursor
+{
+cursor:pointer;	
+}
+.block
+{
+	display:inline-block;
+}
+
+@media screen and (max-width: 770px) {
+	.midqurn{
+		background:#505050;
+		margin-top: 0px;
+  margin-left: 6px;
+}
+.navbar-default{
+	background-image:none !important;
+	
+}
+.l9ie{
+	visibility:hidden;
+	line-height:0 !important;
+}
+.mg42min{
+	margin-top:-42px;
+	width:10%;
+}
+	
+}
+@media (max-width:767px) {
+html {
+overflow-x:hidden;
+}
+
+}

@@ -1,85 +1,256 @@
-{include file="common/header-1.tpl" nocache} 
-<div class="row">
-<div class="col-md-2 left_col">
-  <div class="white_box">
-    <div class="whead">{$_phrase.welcome}</div>
-    <div class="b_lbl">We Support below Types in our Release 1</div>
-    <div class="wb_lbl"><i class="fa fa-caret-right"></i>What is Penny Auction?</div>
-    <div class="wb_lbl"><i class="fa fa-caret-right"></i>What is  Peak Auction?</div>
-    <div class="wb_lbl"><i class="fa fa-caret-right"></i>Reserve Bidding</div>
-  </div>
-  <div class="white_box">
-    <div class="whead">Bidding Type</div>
-    <div class="wb_lbl"><i class="fa fa-caret-right"></i>Beginner</div>
-    <div class="wb_lbl"><i class="fa fa-caret-right"></i>Penny Auction</div>
-    <div class="wb_lbl"><i class="fa fa-caret-right"></i>Peak Auction</div>
-    <div class="wb_lbl"><i class="fa fa-caret-right"></i>Reverse Auction</div>
-  </div>
-  <div class="reg_try"> <img src="{$config.url}/images/reg_try.png" alt="" /> </div>
-</div>
-<div class="col-md-10">
-<div class="banner">
-  <div class="bann_rht">
-    <div class="rb_head">Own Your Penny Auction at Auction Software.com</div>
-    <div class="rb_shead">Our penny auction product runs on NODE.JS</div>
-    <div class="clearfix">
-      <div class="pull-left"><img src="{$config.url}/images/node_js.png" alt="" /></div>
-      <div class="pull-right"><img src="{$config.url}/images/buy_now.png" alt="" /></div>
+{include file="/common/header-1.tpl" nocache}
+<link href="{$config['url']}/assets/css/custom.css" rel="stylesheet">
+
+<!-- Owl Carousel Assets -->
+<link href="{$config['url']}/owl-carousel/owl.carousel.css" rel="stylesheet">
+<link href="{$config['url']}/owl-carousel/owl.theme.css" rel="stylesheet">
+<style>
+    .row .row {
+        width: auto;
+    }
+
+    #owl-demo .item img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    #owl-demo .item img {
+        width: 100%;
+        max-width: 880px;
+        margin: 0 auto;
+    }
+
+    .ontimwid {
+        width: 6%;
+    }
+
+    @media screen and (max-width: 990px) {
+        .ipm0px {
+            padding: 10px;
+        }
+    }
+
+    @media screen and (max-width: 390px) {
+        .fotdi6 {
+            min-height: 63px !important;
+        }
+
+        .futexcen1 {
+            padding-left: 112px;
+        }
+    }
+
+    @media screen and (max-width: 770px) {
+        #owl-demo .item img {
+            width: 100%;
+            margin-left: 0;
+        }
+
+    }
+
+    @-moz-document url-prefix() {
+        .ontimwid {
+            width: -1px !important;
+        }
+    }
+</style>
+
+<div class="col-md-12" style="margin-top:-21px;">
+    <div id="demo">
+        <div class="row">
+
+            <div class="span12">
+
+                <div id="owl-demo" class="owl-carousel">
+
+                    <div class="item"><img src="{$config['url']}/image/Banner_1.png" alt="The Last of us"></div>
+                    <div class="item"><img src="{$config['url']}/image/Banner_2.png" alt="The Last of us"></div>
+                    <div class="item"><img src="{$config['url']}/image/Banner_3.png" alt="The Last of us"></div>
+
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-<div class="today_auctions">
-  <div class="clearfix">
-    <div class="pull-left td_act">Recent Auctions</div>
-    <div class="pull-right"><a href="{$config.url}/live" class="vall orng_txt">View All</a></div>
-  </div>
-  {assign var="proj" value=$projects.open_project}
-
-  {include file="projects-new.tpl" nocache} </div>
-  </div>
-  </div>
-<div class="node_jsb">
-  <div class="pull-left njsb">
-    <div class="pbld">Product build <span>via</span></div>
-  </div>
-  <div class="pull-left left_nj">
-    <p>After detailed research we built in Node.Js.</p>
-    <p>Problem</p>
-    <p> 1. Bidding in Php delay in response from Server. As you grow to million of users server slown down in PHP
-</p>
-<p>Solution</p>
-    <p>1. In Node.Js server responds back in milliseconds.</p>
-    <p>2. Have you ever worked with real time events? If so, (Node.js penny auction by AuctionSoftware.com) is the best solution.</p>
-    <p>3. What would you plan to use for storing real-time bidding while processing it server –> client and reverse (MySql or other database/storage)? We're talking about millisecond events here that can be accomplished only via Node.Js developed by AuctionSoftware.com.</p>
-  </div>
-
-
 </div>
 
-<script> 
+<div class="row ftmdpro">
+    <div class="col-md-12 fotdi6">
 
- function meee(id,dateee)
-  {  
+        <div class="col-md-6 pull-left futexcen1" style="margin-top: 8px;">Live Auction</div>
+        <div class="col-md-3 pull-right auto_width" style="margin-top: 8px;"><span>Sort By:</span>
+            <select onchange="searchitems(this)">
+                <option value="01" {if $get.sort=='01'}selected {/if} >Time: newly listed</option>
+                <option value="02" {if $get.sort=='02'}selected {/if}>Time: ending soonest</option>
+                <option value="03" {if $get.sort=='03'}selected {/if}>Price: lowest first</option>
+                <option value="04" {if $get.sort=='04'}selected {/if}>Price: highest first</option>
+            </select>
+        </div>
 
-   clearInterval(clearvar[id]);
-    clock[id] = document.getElementById('my'+id)
-    , targetDate[id] = new Date(dateee); // Jan 1, 2050;
- 
-  clock[id].innerHTML = countdown(targetDate[id]).toString();
-  clearvar[id] =  setInterval(function(){
-	
-	if(targetDate[id]>new Date())
-    clock[id].innerHTML = countdown(targetDate[id]).toString();
-	else
-	clock[id].innerHTML = 'Closed';  
-    }, 1000);
-    
-  }
-     
-     socket.on('bidAddtime', function(msg){   
-     meee(msg.id,msg.date);
+    </div>
+    <div class="col-md-12 ipm0px">
+        {assign var="proj" value=$projects.open_project}
+        {include file="projects-new.tpl" nocache}
+        {if $projects.open_project|count==16}
+        <div class="two cursor" onclick="window.location='{$config[\'url\']}/live'" style="margin:0;margin-bottom:10px">
+            View All
+        </div>
+        {/if}
+    </div>
+</div>
 
-     });
 
-</script> 
-{include file="common/footer-1.tpl" nocache}
+{if $seated  and  $projects.seated_project|count>0}
+<div class="row ftmdpro">
+    <div class="col-md-12 fotdi6">
+
+        <div class="col-md-6 pull-left futexcen1" style="margin-top: 8px;">Seated Auction</div>
+        <!--<div class="col-md-3 pull-right auto_width" style="margin-top: 8px;"><span>Sort By:</span>
+        <select onchange="searchitems(this)">
+          <option value="01" {if $get.sort == '01'}selected {/if} >Time: newly listed</option>
+          <option  value="02" {if $get.sort == '02'}selected {/if}>Time: ending soonest</option>
+          <option value="03" {if $get.sort == '03'}selected {/if}>Price: lowest first</option>
+          <option  value="04" {if $get.sort == '04'}selected {/if}>Price: highest first</option>
+        </select>
+        </div>-->
+
+    </div>
+
+
+    <div class="col-md-12 ipm0px">
+        {assign var="proj" value=$projects.seated_project}
+        {include file="projects-new-seated.tpl" nocache}
+        {if $projects.open_project|count==16}
+        <div class="two cursor" onclick="window.location='{$config[\'url\']}/live'" style="margin:0;margin-bottom:10px">
+            View All
+        </div>
+        {/if}
+    </div>
+</div> {/if}
+
+
+<script>
+
+    function meee(id, dateee, price) {
+
+        clearInterval(clearvar[id]);
+        clock[id] = document.getElementById('my' + id);
+        targetDate[id] = new Date(dateee); // Jan 1, 2050;
+
+        clock[id].innerHTML = countdown(targetDate[id]).toString();
+        document.getElementById('price' + id).innerHTML = price;
+        clearvar[id] = setInterval(function () {
+
+            if (targetDate[id] > new Date())
+                clock[id].innerHTML = countdown(targetDate[id]).toString();
+            else
+                clock[id].innerHTML = '00H:00M:00S';
+        }, 1000);
+
+    }
+
+    socket.on('bidAddtime', function (msg) {
+        meee(msg.id, msg.date, msg.price);
+
+    });
+
+    socket.on('autoBid', function (emits) {
+
+        var increasesec = "{$config['general']['bidincreaseseconds']}";
+        var t = new Date(emits.date);
+        t.setSeconds(t.getSeconds() + parseInt(increasesec));
+        meee(emits.pID, t, emits.wprice);
+        $('.wprice' + emits.pID).html(emits.wprice);
+        //meee(msg.id,msg.date,msg.price);
+
+    });
+
+</script>
+
+<script>
+    $(document).ready(function () {
+
+        var time = 5; // time in seconds
+
+        var $progressBar,
+                $bar,
+                $elem,
+                isPause,
+                tick,
+                percentTime;
+
+        //Init the carousel
+        $("#owl-demo").owlCarousel({
+            slideSpeed: 500,
+            paginationSpeed: 500,
+            singleItem: true,
+            afterInit: progressBar,
+            afterMove: moved
+        });
+
+        //Init progressBar where elem is $("#owl-demo")
+        function progressBar(elem) {
+            $elem = elem;
+            //build progress bar elements
+            buildProgressBar();
+            //start counting
+            start();
+        }
+
+        //create div#progressBar and div#bar then prepend to $("#owl-demo")
+        function buildProgressBar() {
+            $progressBar = $("<div>", {
+                id: "progressBar"
+            });
+            $bar = $("<div>", {
+                id: "bar"
+            });
+            $progressBar.append($bar).prependTo($elem);
+        }
+
+        function start() {
+            //reset timer
+            percentTime = 0;
+            isPause = false;
+            //run interval every 0.01 second
+            tick = setInterval(interval, 10);
+        }
+
+        function interval() {
+            if (isPause === false) {
+                percentTime += 1 / time;
+                $bar.css({
+                    width: percentTime + "%"
+                });
+                //if percentTime is equal or greater than 100
+                if (percentTime >= 100) {
+                    //slide to next item
+                    $elem.trigger('owl.next')
+                }
+            }
+        }
+
+        //pause while dragging 
+        function pauseOnDragging() {
+            isPause = true;
+        }
+
+        //moved callback
+        function moved() {
+            //clear interval
+            clearTimeout(tick);
+            //start again
+            start();
+        }
+
+        //uncomment this to make pause on mouseover 
+        // $elem.on('mouseover',function(){
+        //   isPause = true;
+        // })
+        // $elem.on('mouseout',function(){
+        //   isPause = false;
+        // })
+    });
+</script>
+
+{include file="/common/footer-1.tpl" nocache}	

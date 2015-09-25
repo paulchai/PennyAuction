@@ -1,0 +1,32 @@
+.navbar-default {
+	  background-image: url('../image/125.png') !important;
+	  height: 71px;
+	  background-size: 100% 61px;
+	  background-repeat: no-repeat;
+	  z-index: 999999999999999999999;
+	  background-color: transparent !important;
+	  border-color: transparent !important;
+	  max-width: 1140px;
+      margin: 0px auto;
+}
+
+.bttny2{
+	background:#4d4d4d;
+}
+
+footer .row .col-md-2 li{
+	margin-top:12px;
+}
+.his3{
+	color:black;
+}
+row .col-md-2 li a {
+  padding-top: 13.13px;
+  color: black;
+  font-size: 13px;
+  text-decoration: none;
+}
+.vivi{
+	display:none;
+}
+

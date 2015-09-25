@@ -1,4 +1,4 @@
-{include file="common/header.tpl" nocache}
+{include file="common/header-1.tpl" nocache}
 <div class="container">
    <div class="dash_heads">
       <ul>
@@ -41,7 +41,7 @@
       </form>
    </div>
 </div>
-{include file="common/footer.tpl" nocache}
+{include file="common/footer-1.tpl" nocache}
  
    
 <script type="text/javascript">

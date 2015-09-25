@@ -1,0 +1,387 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    font-family: MYRIADPRO4 !important;
+}
+
+.bidonregi1 {
+    margin-left: 273px;
+    margin-top: 25px;
+}
+
+.bidonregi2 {
+    margin-top: 20px;
+}
+
+.whiteborbg2 {
+    border: 1px solid #a7a7a7;
+    min-height: 288px;
+
+}
+
+.whiteborbg3 {
+    border: 1px solid #a7a7a7;
+
+}
+
+.whitehead4 {
+    background: #4c4c4c;
+    line-height: 38px;
+    text-indent: 5px;
+    color: white;
+    font-size: 24px;
+}
+
+.buecl {
+    color: #678fba;
+    text-indent: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.padlf {
+    padding-left: 0;
+}
+
+.padrt {
+    padding-right: 0;
+}
+
+.padal {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.pdtpm30 {
+    padding-top: 16px;
+}
+
+.m5mrgpz {
+    margin-left: 5px;
+}
+
+.divone21 {
+    font-size: 11px;
+    color: #56acec;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.ftsiz18 {
+    font-size: 18px;
+}
+
+.pribtnon {
+    height: 23px;
+    line-height: 2px !important;
+}
+
+.padbtrum30pxon {
+    padding-bottom: 30px;
+}
+
+.padtp11pxon {
+    padding-top: 10px;
+}
+
+.forstore22 {
+    color: #019bb2;
+    font-size: 26px;
+}
+
+.mid_consote {
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.scnddivbr {
+    border-top: 1px solid;
+    margin-bottom: 10px;
+    margin-top: 18px;
+}
+
+.divforcol3 {
+    background: #ededed;
+    width: 19% !important;
+    margin-bottom: 20px;
+}
+
+.btptptmg {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.eleftn1 {
+    font-size: 28px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.divforcol4 {
+    background: #ededed;
+    width: 19% !important;
+    margin-bottom: 20px;
+    min-height: 380px !important;
+}
+
+.onlycenr2 {
+    text-align: center;
+}
+
+.two {
+    margin-left: -4px;
+    background: #636363;
+    margin-right: -4px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+    margin-bottom: 13px;
+    margin-top: -5px;
+}
+
+.trediv {
+    margin-top: 10px;
+    margin-right: -15px;
+    margin-left: -15px;
+    border-top: 1px solid;
+    text-align: center;
+}
+
+.alcente {
+    text-align: center;
+    background: #363636;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.btnpridi {
+    border-radius: 10px;
+    width: 45%;
+}
+
+.fotdi {
+    /*background: #428bca;*/
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.qmzw {
+    color: #3a4fe5;
+    padding-bottom: 20px;
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.cont1 {
+    font-weight: 700;
+    font-size: 14px;
+    padding: 15px 0;
+    color: #fe5a01;
+}
+
+.premi2 a {
+    font-size: 14px;
+    margin: 6px 0;
+    color: #666666;
+    text-decoration: none;
+    display: block;
+}
+
+.active2 {
+    color: #fe5a01 !important;
+    font-weight: 700;
+
+}
+
+.omj2 {
+    color: #fe5a01 !important;
+}
+
+.fotdiv2 {
+    border-bottom: 2px solid;
+    width: 50%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.fordiv3 {
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+
+.thumbnail {
+    display: block !important;
+    padding: 4px;
+    margin-bottom: 20px !important;
+    line-height: 1.42857143 !important;
+    background-color: #fff !important;
+    border: 1px solid #ddd !important;
+    border-radius: 0px !important;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+    min-height: 414px;
+    max-height: 414px;
+}
+
+.fotdi5 {
+    color: #8c8c8c;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.fotdi55 {
+    color: #ff2323;
+    padding-bottom: 5px;
+}
+
+.fotdi7 {
+    border-top: 1px solid #c6c6c6;
+}
+
+.fotdi1 {
+    background: #428bca;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.fotdi6 {
+    background: #428bca;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 10px;
+    min-height: 35px !important;
+    padding-top: 6px;
+    font-size: 16px;
+    margin: 0 15px;
+    max-width: 1140px;
+    padding-top: 0px;
+}
+
+.fotdi6 select {
+    color: #333;
+}
+
+.finbum {
+    background: #428bca;
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    border: none;
+    width: 35%;
+    font-size: 16px;
+}
+
+.fotdi3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff0000;
+    padding-bottom: 5px;
+}
+
+.fotdi4 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #ff7e00;
+    padding-bottom: 5px;
+}
+
+.srbt {
+    background: #428bca !important;
+    color: white !important;
+}
+
+.srbt3 {
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+}
+
+.srbt4 {
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    cursor: pointer;
+}
+
+.srtr3 {
+    color: #428bca;
+    margin-top: 5px;
+    font-size: 16px;
+    width: auto;
+    float: right;
+}
+
+.txt_arht {
+    text-align: right;
+}
+
+.l9ie {
+    line-height: 45px;
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.hty3:hover {
+    background: #428bca;
+    color: white !important;
+}
+
+.hifiy {
+    clear: both;
+    border-radius: 15px !important;
+    margin-bottom: 0 !important;
+}
+
+.ftmdpro {
+    font-family: MYRIADPRO4 !important;
+}
+
+.ft12px1 {
+    font-size: 12px;
+}
+
+.themeselector {
+    margin-top: -103px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #fff;
+}
+
+@media screen and (max-width: 990px) {
+    .one .col-md-3 {
+        width: 50% !important;
+    }
+
+    .thumbnail {
+        padding: 10px !important;
+    }
+
+    .bidonregi1 {
+        margin-left: 0;
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .themeselector {
+        margin-top: -100px;
+        z-index: 99999999;
+        margin-right: 80px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .themeselector {
+        margin-top: -78px;
+        z-index: 99999999;
+        float: left !important;
+    }
+}

@@ -1,5 +1,29 @@
 @charset "utf-8";
 /* CSS Document */
+@media screen and (max-width: 990px) {
+.login_middle {
+  background:none !important;
+  width: 100%;
+  height: 100% !important;
+  float: left;
+  border: 1px solid #dedddf;
+}
+.login_rgt {
+  width: auto;
+  float: left;
+ background:none !important;
+  padding-top: 27px;
+}
+
+}
+@media screen and (max-width: 520px) {
+	.login_check {
+  width: 243px !important;
+  float: left;
+  clear: both;
+  padding: 15px 0px 0px 0;
+}
+}
 
 .parsley-errors-list.filled
 {
@@ -1307,7 +1331,7 @@ li.flike a{background: url("../images/flike.png") no-repeat left top;width:64px;
 
 
 
-.countdown{float:left;width:auto;}
+.countdown{float:left;width:100%;text-align:center;}
 .res_mid a input{width:auto!important;}
 
 .errore_msg{float:left;width:100%;}
@@ -1467,7 +1491,7 @@ li.flike a{background: url("../images/flike.png") no-repeat left top;width:64px;
 /*****************
 Sidebar
 ****************/
-/*.user_panel{ width:284px; float:left;}*/
+.user_panel{ width:284px; float:left;}
 .user_panel_left{ float:left; width:5px; height:30px; background:url('../images/user_panel_left.png') no-repeat;}
 .user_panel_mid{ float:left; width:274px; height:30px; background:url('../images/user_panel_mid.png') repeat-x;}
 .user_panel_right{ float:left; width:5px; height:30px; background:url('../images/user_panel_right.png') no-repeat;}
@@ -1517,6 +1541,7 @@ Sidebar
     height:32px !important;
     line-height:32px;
                 cursor:pointer;
+				
 }
 
 /* dynamically created SPAN, placed below the SELECT */

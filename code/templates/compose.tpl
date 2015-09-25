@@ -1,18 +1,13 @@
 {include file="common/header-1.tpl" nocache}
-{include file="common/topnav.tpl" nocache} 
-<div class="row dashboard user_panel">
-   {include file="left-nav-dashboard.tpl" nocache}
-  <div class="col-md-9" style="width:65%">
-  <div class="dash"></div>
-      <div class="abutop">My Messages</div>
+<div class="main_container">
+  <div class="row dashboard">
+    <div class="col-md-3"> {include file="left-nav-dashboard.tpl" nocache} </div>
+    <div class="col-md-9">
       <div class="row ds_brd">
         <div class="col-md-8">
-           </div>
-        <div class="col-md-3">
-          <button class="btn btn-blue">
-          <a href="{$config.url}/dashboard/messages/compose">Compose</a>
-          </button>
+          <h4>My Messages</h4>
         </div>
+       
       </div>
       <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" {if $action == ''} class="active" {/if}><a href="{$config.url}/dashboard/messages/" >All</a></li>
@@ -27,8 +22,8 @@
          <form action="{$config.url}/dashboard/messages/save"  method="POST" enctype="multipart/form-data" class="admin_form" data-parsley-validate>
          <input type="hidden" value="0" name="r_id">
           <div class="row">
-            <div class="col-md-1">To</div>
-            <div class="col-md-11">
+            <div class="col-xs-3 col-sm-1 col-md-1">To</div>
+            <div class="col-xs-9 col-sm-11 col-md-11">
               <input class="form-control searching" name="username" id="username" value="Admin" disabled="disabled" placeholder="User Name">
             </div>
             <div id="result"></div>
@@ -40,7 +35,7 @@
           </div>
           <div class="row">
             <div class="col-md-12">
-              <textarea class="form-control" name="message" data-parsley-group="block1" required data-parsley-maxlength="500" data-parsley-length="[100, 500]" value="" onkeyup="limitlengths(this, 500,'product_info_label')"  rows="5"></textarea>
+              <textarea class="form-control" name="message" data-parsley-group="block1" required onkeyup="limitlengths(this, 500,'product_info_label')"  rows="5"></textarea>
             </div>
             <div class="row">
               <div class="col-md-3  m-top-10 padding-20">

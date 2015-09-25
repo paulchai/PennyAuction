@@ -1,0 +1,157 @@
+
+.bttny2 {
+  background: #242525;
+}
+.vihi{
+	display:none;
+}
+ 
+row .col-md-2 ul li a {
+  padding-top: 13.13px;
+  color: white !important;
+  font-size: 13px;
+  text-decoration: none;
+}
+.gtfot{
+	padding-left:0;
+	padding-right:0;
+}
+.wht3{
+	color:white !important;
+	text-decoration:none;
+}
+
+.nav.nav-bar{
+	background-color: #000 !important;
+	-webkit-box-shadow: 5px 2px 5px rgba(0,0,0,.46)!important;
+	-moz-box-shadow: 5px 2px 5px rgba(0,0,0,.46)!important;
+	box-shadow: 5px 2px 5px rgba(0,0,0,.46) !important;
+}
+
+.menu_bar li.active, .menu_bar li:hover {
+    background-color: #4c4c4c !important;
+    border-color: #272700 !important;
+}
+
+.category_sb {
+    background-color: #000;
+}
+
+.whead {
+    background-color: #000;
+}
+
+.nbtn-group {
+    background-color: #000;
+}
+
+.category_box {	
+	background: rgb(76,76,76);
+background: -moz-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(0,0,0,1) 0%, rgba(102,102,102,1) 0%, rgba(89,89,89,1) 1%, rgba(0,0,0,1) 2%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(28,28,28,1) 91%, rgba(43,43,43,1) 100%, rgba(17,17,17,1) 100%, rgba(19,19,19,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(76,76,76,1)), color-stop(0%,rgba(0,0,0,1)), color-stop(0%,rgba(102,102,102,1)), color-stop(1%,rgba(89,89,89,1)), color-stop(2%,rgba(0,0,0,1)), color-stop(39%,rgba(71,71,71,1)), color-stop(50%,rgba(44,44,44,1)), color-stop(91%,rgba(28,28,28,1)), color-stop(100%,rgba(43,43,43,1)), color-stop(100%,rgba(17,17,17,1)), color-stop(100%,rgba(19,19,19,1)));
+background: -webkit-linear-gradient(top, rgba(76,76,76,1) 0%,rgba(0,0,0,1) 0%,rgba(102,102,102,1) 0%,rgba(89,89,89,1) 1%,rgba(0,0,0,1) 2%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(28,28,28,1) 91%,rgba(43,43,43,1) 100%,rgba(17,17,17,1) 100%,rgba(19,19,19,1) 100%);
+background: -o-linear-gradient(top, rgba(76,76,76,1) 0%,rgba(0,0,0,1) 0%,rgba(102,102,102,1) 0%,rgba(89,89,89,1) 1%,rgba(0,0,0,1) 2%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(28,28,28,1) 91%,rgba(43,43,43,1) 100%,rgba(17,17,17,1) 100%,rgba(19,19,19,1) 100%);
+background: -ms-linear-gradient(top, rgba(76,76,76,1) 0%,rgba(0,0,0,1) 0%,rgba(102,102,102,1) 0%,rgba(89,89,89,1) 1%,rgba(0,0,0,1) 2%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(28,28,28,1) 91%,rgba(43,43,43,1) 100%,rgba(17,17,17,1) 100%,rgba(19,19,19,1) 100%);
+background: linear-gradient(to bottom, rgba(76,76,76,1) 0%,rgba(0,0,0,1) 0%,rgba(102,102,102,1) 0%,rgba(89,89,89,1) 1%,rgba(0,0,0,1) 2%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(28,28,28,1) 91%,rgba(43,43,43,1) 100%,rgba(17,17,17,1) 100%,rgba(19,19,19,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
+box-shadow:0 1px 1px #000;
+border:0px solid #000;
+}
+
+.search_lbl {
+	color :#fff;
+}
+
+.btn-primary {
+	background-color:#4c4c4c !important;
+	border:0px solid #000 !important;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background-color: #242424 !important;
+}
+
+a {
+	color:#242424;
+}
+
+.node_jsb {
+	background-color:#1e1e1e !important;
+}
+
+.left_nj p {
+	color:#FFF;
+}
+
+.blue_box {
+	background-color:#575757;
+}
+
+.blue_box li .fa {
+	color:#000;
+}
+
+.dropdown-menu {
+	box-shadow:0 4px 8px #000;
+}
+
+.dropdown-menu > li > a {
+	color:#000;
+}
+
+.form-control:hover, .file:hover .gui-input {
+	border:1px solid #000;
+}
+.menu_bar li {
+	border:1px solid  #323232;
+}
+
+.navbar-default {
+  background-image: url('../image/125bck.png') !important;
+  height: 71px;
+  background-size: 100% 76px;
+  background-repeat: no-repeat;
+  z-index: 999999999999999999999;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  max-width: 1140px;
+      margin: 0px auto;
+}
+
+.fotdi1 {
+  background: #242525;
+}
+
+.fotdi6 {
+  background: #242525;
+}
+
+.fotdi {
+  background: #242525;
+}
+
+.finbum {
+  background: #242525;
+}
+
+.srbt {
+  background: #242525 !important;
+}
+
+.hty3:hover {
+  background: #787a78;
+}
+
+.bttny2:hover {
+  background: #4d4d4d !important;
+}
+ 
+
+@media (max-width:767px) {
+.footer_logo img.vihi {
+  display: none;
+}
+.footer_logo img.vivi {
+  display: block !important;
+}
+}

@@ -1,15 +1,23 @@
-
  function searchProject()
  {
-  params = 'dummy=1&'+$('#user_search').serialize()+'&cid='+$('.mdropdown').val();
+
+  //start 
+  $('#user_search').submit();
+  return false;
+  //end
+  
+  params = 'dummy=1&'+$('#user_search').serialize()/*+'&cid='+$('.mdropdown').val()*/;
   if($('.subslice2').length == 0)
   {
-    lreload('/search?'+params);
+	 // alert(ILBASE+'/search?'+params);
+  //  lreload(ILBASE+'/search?'+params);
+  //window.location = ILBASE+'/search?'+params;
+  $('#user_search').submit();
   }
   console.log(params);
   $.ajax({
   type: "POST",
-  url: "/search",
+  url: ILBASE+"/search",
   data: params,
   dataType:'json',
   success: function(data){
@@ -18,17 +26,63 @@
   }
   });
  }
+ function numberformat()
+ {
+	
+	 $('.format').each(function()
+     {
+		 // alert(parseFloat($(this).html()));
+	    $(this).html(format(parseFloat($(this).html()),''));
+	})
+	 
+ }
+ 
  $(function()
  {
   $('.floatpoint').each(function()
   {
-     console.log(this);
-    $(this).keypress(function(event)
+    $(this).keyup(function()
      {
-             if ((event.which != 46 || $(this).val().indexOf('.') != -1) && (event.which < 48 || event.which > 57)) {
-                event.preventDefault();
-              }
+           this.value = this.value.replace(/[^0-9\.]/g,'');
      })
+  });
+  
+/* numberformat();*/
+  
+  
+   $('input[name="zipcode"],input[name="phone"],input[name="zip"]').keyup(function()
+   {
+     this.value = this.value.replace(/[^0-9]/g,'');
+    
+  });
+  
+   $('input[name="zipcode"],input[name="phone"],input[name="zip"]').each(function()
+  {
+     this.value = this.value.replace(/[^0-9]/g,'');
+  });
+  
+  $('.count_numbers').each(function()
+  {
+      $(this).parent().find('label').css('width','100%').append('<span style="float:right;width:50%;text-align:right;font-weight:normal;"> <font class="cnter"> '+$(this).val().length+'</font> of '+$(this).attr('data-parsley-maxlength')+' characters</span>');
+      $(this).on('keypress',function()
+      {
+             $(this).parent().find('.cnter').html($(this).val().length);
+             if($(this).val().length > parseInt($(this).attr('data-parsley-maxlength')))
+             {
+                 // $(this).parent().find('.cnter').html($(this).attr('data-parsley-maxlength'));
+                  return false;
+             }
+      }); 
+      $(this).on('change',function()
+      {
+             $(this).parent().find('.cnter').html($(this).val().length);
+             if($(this).val().length > parseInt($(this).attr('data-parsley-maxlength')))
+             {
+                  //$(this).parent().find('.cnter').html($(this).attr('data-parsley-maxlength'));
+                  return false;
+             }
+             
+      }); 
   });
  });
  function addtowatchlist(id)
@@ -85,46 +139,47 @@
     });
  }
  
- 
- function searchProjectAjax()
- {
-  params = 'dummy=1&'+$('#leftnavs').serialize();
- /* if($('.subslice2').length == 0)
-  {
-    lreload('/search?'+params);
-  }*/
-  console.log(params);
-  $.ajax({
-  type: "POST",
-  url: "/search",
-  data: params,
-  dataType:'json',
-  success: function(data){
-   // alert(data.html);
-	 $('.searchresult').html(data.html);
-   // $('.subslice2').html(data.html);
-  }
-  });
- } 
- 
- function loginaction()
- {
-	// alert(11);
-	var gologin = 1;
-	if($('#username').val() == '')
-	{
-		//alert(111111);
-		$('#username').css('border','1px solid red');
-		gologin = 0;
-	}
-	if($('#passowrd').val() == '')
-	{
-		$('#passowrd').css('border','1px solid red');
-		gologin = 0;
-	}
-	if(gologin == 1)
-	$('#loginform').submit();
-	else return 0;
-	 
+ function format(n, currency) {
+    return currency + " " + n.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,");
+}
+
+ function loginauto(tis) {
+	// alert(1);
+   var logintype = $(tis).val();
+   //alert (logintype);
+	    if(logintype == 'buyer')
+		{ 
+			 $('#autologinuserid').val('developscriptbuyer@gmail.com');	
+			 $('#autologin').submit();		 
+		}
+		 if(logintype == 'seller')
+		{ 
+			 $('#autologinuserid').val('buyer@gmail.com');	
+			 $('#autologin').submit();		
+		}
+		else if(logintype == 'admin')
+		{
+			 $('#autologinuserid').val('admin@auctionsoftware.com');
+			 $('#autologin').attr('action', ILBASE+"/admin/login/save").submit();
+		}
+
+//  $('#autologin').submit();
+}
+
+function searchitems(tis)
+{
+	var m = $(tis).val();
+	$('#sort').val(m);
+	searchProject();
+	//alert(m);
+	
+}
+
+ function PopupBox(link, content) {
+     var r = confirm(content);
+     if (r) {
+         window.location.href = link;
+     } else {
+         return false;
+     }
  }
- 

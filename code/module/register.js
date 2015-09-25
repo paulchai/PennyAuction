@@ -6,14 +6,14 @@ var cryptos =  require('./crypto');
 
 
 //required js
-var configure = require('../configure');
+/*var configure = require('../configure');
 
 //default setters
 var config = configure.app();
 
 $arr = {
   config : config
-}
+}*/
 
 
 exports.show = function(mysql,callback)
@@ -27,7 +27,12 @@ exports.loadPage = function(req,res,$arr,config)
 	 if(typeof(req.param('id')) !='undefined')
 	 $arr.r_id = req.param('id');
 	 $arr.register_fail = true;
-	 $arr.register_error = (typeof(req.param('error'))!='undefined')?req.param('error'):'-';
+	 //$arr.register_error = req.param('error');
+	 if(typeof(req.param('error')) !== 'undefined')
+	 $arr.register_error = req.param('error');
+	 else
+	 $arr.register_error = '';
+	 
 	 $arr.externaljs = ['register'];
 	 Recaptcha = require('recaptcha').Recaptcha; 
 
@@ -41,7 +46,7 @@ exports.loadPage = function(req,res,$arr,config)
   
   function processIndex(row)
   {
-    common.tplFile('home.tpl');
+    common.tplFile('login.tpl');
     common.headerSet(1);
     common.loadTemplateHeader(req,res,$arr);
   }
@@ -81,11 +86,14 @@ exports.save = function(mysql,req,res)
 	 console.log(1);
      customerio.inits();     
      customerio.createCustomer({email:req.body.email,user:{firstName:req.body.first_name,lastName:req.body.last_name}});
-     customerio.sendEmail({event:'Signed Up',content:{user:req.body.first_name+' '+req.body.last_name}});
-		 req.session.userid = result.insertId;
-     req.session.email = req.body.email;
-     req.session.first_name = req.body.first_name;
-     req.session.last_name = req.body.last_name;
+	 var hw = cryptos.encrypt(result.insertId.toString());
+	 var activation =  config.url+'/login/activation?id='+hw;
+     //customerio.sendEmail({event:'Signed Up',content:{user:req.body.first_name+' '+req.body.last_name,activeurl:activation}});
+	  customerio.sendEmail({event:'verification',content:{user:req.body.first_name+' '+req.body.last_name,activeurl:activation}});
+		// req.session.userid = result.insertId;
+   //  req.session.email = req.body.email;
+    // req.session.first_name = req.body.first_name;
+    // req.session.last_name = req.body.last_name;
 	    if(typeof(req.body.fid) !== 'undefined')
 	    {
 	        self.updateFid(mysql,req,res,result.insertId);
@@ -95,10 +103,14 @@ exports.save = function(mysql,req,res)
 	        self.updateLid(mysql,req,res,result.insertId);
 	    } 
      console.log(2);
-		 res.writeHead(302, {
+		 /*res.writeHead(302, {
 	       'Location': '/'
 	        //add other headers here...
-	      });
+	      });*/
+		  
+		   res.writeHead(302, {
+             'Location': '/index/log/Verification email has been dispatched to you. Please verify!'
+            });
 	 res.end();
 	 return false;
 

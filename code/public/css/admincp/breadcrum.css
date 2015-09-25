@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+.breadcrumb > li + li:before {
+        content: "\3E" /* Hex code for > */
+    }
+	
+	.store
+	{
+		background-color:#f5f5f5;
+	}
+	
+	.label
+	{
+		display: block;
+    padding-left: 30px;
+    text-indent: -15px;
+	}
+	.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.pd3letyqi{
+	padding-left:15px !important;
+}
+
+.mrgleftne5px{
+	margin-left:10px;
+}
+
+.pdtlli3{
+	padding-top:10px;
+}
+
+.ondi{
+	border: 1px solid #CCCCCC;
+	height:186;
+	width: 100%;
+}
+.togiv{
+	background-color: #dbdbdb;
+	width: 82px;
+	height: 24px;
+	padding-top: 0px;
+	margin-top: 10px;
+}
+
+.thrdiv{
+	position: absolute;
+	  left: 120px; 
+	  bottom: 99px; 
+	   font-family: &quot;arial&quot;arial&amp;quot;
+	   font-size: 18px;
+}
+.frdiv{
+	background-color: #dbdbdb;
+	width: 82px;
+	height: 24px;
+	padding-top: 1px;
+}
+.sidiv{
+	padding-left: 47px;
+	padding-top: 6px;
+}
+.sevdiv{
+	width:125px;
+	 float:right;
+}
+.eigdiv{
+	margin-left: -28px;
+	margin-top: 17px;
+}
+.nidiv{
+	color: #ff5043;
+	left: 5px;
+}

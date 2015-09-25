@@ -9,14 +9,14 @@ var app = express.Router();
 
 
 //required js
-var configure = require('../configure');
+/*var configure = require('../configure');
 
 //default setters
 var config = configure.app();
 
 $arr = {
   config : config
-}
+}*/
  var profile = require('../module/profile_settings');
 //
 app.get('/', function(req, res){
@@ -30,7 +30,6 @@ app.get('/', function(req, res){
 		    $arr['users'] = results[0][0];
 		    q.all(profile.listUserCategories(req,config.mysql,q)).then(function(results2){ 
 		           $arr['mcats'] = results2[0][0]['mcat'];
-				   console.log($arr['mcats']);
 				   common.tplFile('profile_settings.tpl');
 				   common.headerSet(1);
 				   common.loadTemplateHeader(req,res,$arr);

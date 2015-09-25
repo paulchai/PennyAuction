@@ -1,7 +1,18 @@
 {include file="/admincp/header.tpl" nocache}
-<div class="container-fluid">
+<div class="main_container admin_wrapper">
 
-                   
+  {include file="/admincp/left-nav.tpl" nocache}  
+  
+  <div class="right_admin_panel clearfix">
+        <div class="admin_rwrap">
+        <div class="aw_thead">Messages</div>
+        <div class="aw_thead1">
+            <div>Home</div>
+            <div><i class="fa fa-long-arrow-right"></i></div>
+            <div>Messages</div>
+            <div><i class="fa fa-long-arrow-right"></i></div>
+            <div>View</div>
+        </div>      
                 <div class="row">
                   <div class="col-lg-12 m-top-20">
                <div class="table-responsive">
@@ -71,7 +82,7 @@
                                  <form action="{$config.url}/admincp/messages/save"  method="POST" enctype="multipart/form-data" class="admin_form" data-parsley-validate>
                                    <input type="hidden" value="{$r_id}" name="r_id">
                                       <h2>
-                           <textarea name="message" id="product_info" data-parsley-group="block1" required class="form-control" data-parsley-maxlength="500" data-parsley-length="[100, 500]" value="" onkeyup="limitlengths(this, 500,'product_info_label')"></textarea>                           
+                           <textarea name="message" id="product_info" data-parsley-group="block1" required class="form-control" data-parsley-maxlength="500" data-parsley-length="[100, 500]" value="" onkeyup="limitlengths(this, 500,'product_info_label')"></textarea>
                         </h2>
                                   <input type="submit" value="Reply" class="btn btn-success" />
 
@@ -103,5 +114,9 @@
                
                 <!-- /.row -->
 </div>
-           
+ </div>
+ </div>   
 {include file="/admincp/footer.tpl" nocache}
+<script language="javascript" type="text/javascript">
+$('#generaltabid').click();
+</script>

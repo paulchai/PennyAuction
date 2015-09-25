@@ -2,7 +2,7 @@
         <div class="dash_tops">User Panel</div>
         <div class="dash_lsd user_panel_list">
           <ul>
-            <li class="" id="dashboard_active"><a href="{$config.url}/dashboard/" title="Dash Board">Dash Board</a></li>
+            <li class="" id="dashboard_active"><a href="{$config.url}/dashboard/" title="Dashboard">Dashboard</a></li>
 			<li class="" id="edit_profile_active"><a href="{$config.url}/profile_settings" title="Edit Profile">Edit Profile</a></li>
 			<li class="" id="my_message_active"><a href="{$config.url}/dashboard/messages" title="My Messages">My Messages</a></li>
 			<li class="fl clr" id="change_password_active"><a href="{$config.url}/dashboard/password" title="Change Password">Change Password</a></li>

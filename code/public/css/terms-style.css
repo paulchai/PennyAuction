@@ -1,0 +1,185 @@
+@charset "utf-8";
+/* CSS Document */
+
+.terms1 {
+	padding-left:0;
+}
+.terms2 {
+	padding-right:0;
+}
+.terms3 {
+	padding-left:0;
+	padding-right:0;
+}
+.ftmdpro {
+  font-family: MYRIADPRO4 !important;
+}
+.fotdi1 {
+  background: #428bca;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.ft12px1 {
+  font-size: 12px;
+}
+.txt_arht {
+  text-align: right;
+}
+.block {
+  display: inline-block;
+}
+.cursor {
+  cursor: pointer;
+}
+.oe3 {
+  color: white;
+  text-decoration: none;
+}
+.ftmdpro {
+  font-family: MYRIADPRO4 !important;
+}
+
+.srtr3 {
+  color: #428bca;
+  margin-top: 5px;
+  font-size: 16px;
+  width: auto;
+  float: right;
+}
+
+
+.navbar-default .navbar-nav > li > a:hover{
+	color:#FFF;
+	text-decoration:none;
+}
+.l9ie {
+  line-height: 45px;
+  color: #fff;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.hty3:hover{
+	background:#428bca;
+	  color: white !important;
+}
+
+.terms4 {
+  padding-top: 25px;
+  padding-bottom: 15px;
+  font-size: 26px;
+  color: #1a374d;
+}
+.panel-body div {
+	line-height:26px;
+  font-size: 16px;
+  color: #1a374d;
+  font-weight:bold;
+	
+}
+
+.panel-body p {
+	line-height:26px;
+  font-size: 14px;
+  color:#069;
+	
+}
+.panel-title {
+	 color: #1a374d;
+  font-weight:bold;
+}
+
+.ftrwt {
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-top: 15px;
+}
+footer {
+  background: none repeat scroll 0 0 #eeeeee;
+}
+footer {
+  min-height: 197px !important;
+}
+footer {
+  width: 100%;
+  min-height: 197px;
+  background:#eee;
+  padding: 20px;
+  color: #fff;
+}
+
+.ftmdpro {
+  font-family: MYRIADPRO4 !important;
+}
+.fotdi {
+  /* background: #428bca; */
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.vivi {
+  display:none;
+}
+
+footer .row .col-md-2 h5 {
+  font-size: 16.47px;
+  font-weight: bold;
+  padding: 5px 0;
+}
+.his3 {
+  color: black;
+}
+
+footer .row .col-md-2  ul {
+	padding-left:0;
+}
+footer .row .col-md-2 li {
+  margin-top: 12px;
+  list-style:none;
+  padding-left:0;
+}
+
+
+.call_us {
+  background: none repeat scroll 0 0 #D6D7D7;
+  height: 200px;
+  padding: 55px 17px;
+}
+
+.mnm2 {
+  color: #626262;
+  font-size: 26px;
+}
+.mftp {
+  margin-bottom: 8px;
+}
+
+.cror3f {
+  color: #fe5a01;
+}
+.cu_num {
+  font-size: 24.29px;
+  font-weight: 500;
+}
+
+.cror3fec {
+  color: #0089FF;
+}
+
+.copyright {
+  background: none repeat scroll 0 0 #626262;
+  width: 100%;
+  min-height: 30px;
+  line-height: 32px;
+  color: #fff;
+  text-align: center;
+}
+
+
+@media screen and (max-width:768px) {
+	
+	.terms5 {
+		visibility:hidden;
+	}
+}

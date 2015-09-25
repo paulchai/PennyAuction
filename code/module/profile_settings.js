@@ -7,9 +7,9 @@ var fs = require('fs');
 //var products = require('./products');
 var common = require('./common');
 var url = require('url');
-var configure = require('../configure');
+/*var configure = require('../configure');
 //default setters
-var config = configure.app();
+var config = configure.app();*/
 
 exports.profileDetails = function(req,mysql,q,fields)
 {

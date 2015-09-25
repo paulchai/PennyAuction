@@ -59,7 +59,7 @@ app.use('/admincp',admincp);
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
     err.status = 404;
-    console.log(err.message);
+    //console.log(err.message);
     next(err);
 });
 
@@ -92,9 +92,9 @@ io.sockets.on('connection', function(socket){    //send data to client
 	
 	
 	socket.on('bidAddtime', function(msg){
-		//console.log(msg);
+		////console.log(msg);
      io.sockets.emit('bidAddtime',  msg);
-	 //console.log('#my'+msg);
+	 ////console.log('#my'+msg);
 	 });
    
 });

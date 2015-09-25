@@ -1,0 +1,145 @@
+.vivi{
+	display:none;
+}
+row .col-md-2 ul li a {
+  padding-top: 13.13px;
+  color: white !important;
+  font-size: 13px;
+  text-decoration: none;
+}
+.gtfot{
+	padding-left:0;
+	padding-right:0;
+}
+.wht3{
+	color:white !important;
+	text-decoration:none;
+}
+
+.nav.nav-bar{
+	background-color: #4c064c !important;
+	-webkit-box-shadow: 5px 2px 5px rgba(0,0,0,.46)!important;
+	-moz-box-shadow: 5px 2px 5px rgba(0,0,0,.46)!important;
+	box-shadow: 5px 2px 5px rgba(0,0,0,.46) !important;
+}
+
+.menu_bar li.active, .menu_bar li:hover {
+    background-color: #4c4c4c !important;
+    border-color: #272700 !important;
+}
+
+.category_sb {
+    background-color: #4c064c;
+}
+
+.whead {
+    background-color: #4c064c;
+}
+
+.nbtn-group {
+    background-color: #4c064c;
+}
+
+.category_box {	
+	background: rgba(203,96,179,1);
+	background: -moz-linear-gradient(left, rgba(203,96,179,1) 0%, rgba(168,0,119,1) 0%, rgba(105,13,74,1) 33%, rgba(105,13,74,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(203,96,179,1)), color-stop(0%, rgba(168,0,119,1)), color-stop(33%, rgba(105,13,74,1)), color-stop(100%, rgba(105,13,74,1)));
+	background: -webkit-linear-gradient(left, rgba(203,96,179,1) 0%, rgba(168,0,119,1) 0%, rgba(105,13,74,1) 33%, rgba(105,13,74,1) 100%);
+	background: -o-linear-gradient(left, rgba(203,96,179,1) 0%, rgba(168,0,119,1) 0%, rgba(105,13,74,1) 33%, rgba(105,13,74,1) 100%);
+	background: -ms-linear-gradient(left, rgba(203,96,179,1) 0%, rgba(168,0,119,1) 0%, rgba(105,13,74,1) 33%, rgba(105,13,74,1) 100%);
+	background: linear-gradient(to right, rgba(203,96,179,1) 0%, rgba(168,0,119,1) 0%, rgba(105,13,74,1) 33%, rgba(105,13,74,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#690d4a', GradientType=1 );
+	border:1px solid rgba(203,96,179,1);
+}
+
+.search_lbl {
+	color :#fff;
+}
+
+.btn-primary {
+	background-color:rgba(203,96,179,1) !important;
+	border-color:rgba(168,0,119,1) !important;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background-color: #b2479a !important;
+}
+
+a {
+	color:rgba(168,0,119,1);
+}
+
+.node_jsb {
+	background-color:rgba(203, 96, 179, 1) !important;
+}
+
+.left_nj p {
+	color:#FFF;
+}
+
+.blue_box {
+	background-color:#fbc8f8;
+}
+
+.blue_box li .fa {
+	color:#690d4a;
+}
+
+.dropdown-menu {
+	box-shadow:0 4px 8px #690d4a;
+}
+
+.form-control:hover, .file:hover .gui-input {
+	border:1px solid #c22567;
+}
+
+.navbar-default {
+  background-image: url('../image/125pur.png') !important;
+  height: 71px;
+  background-size: 100% 76px;
+  background-repeat: no-repeat;
+  z-index: 999999999999999999999;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  max-width: 1140px;
+      margin: 0px auto;
+}
+
+.fotdi1 {
+  background: #c22567;
+}
+
+.bttny2:hover {
+  background: #4d4d4d;
+}
+
+
+
+
+.fotdi6 {
+  background: #c22567;
+}
+
+.fotdi {
+  background: #c22567;
+}
+
+.finbum {
+  background: #c22567;
+}
+
+.srbt {
+  background: #c22567 !important;
+}
+
+.hty3:hover {
+  background: #222222;
+}
+
+.bttny2 {
+  background: #c22567;
+}
+
+.bttny2:hover {
+  background: #4d4d4d !important;
+}

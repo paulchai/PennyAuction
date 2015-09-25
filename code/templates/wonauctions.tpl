@@ -1,27 +1,26 @@
 {include file="common/header-1.tpl" nocache}
-{include file="common/topnav.tpl" nocache} 
-<div class="row dashboard user_panel">
-   {include file="left-nav-dashboard.tpl" nocache}
-  <div class="col-md-9" style="width:65%">
-   <div class="dash"></div>
-      <div class="abutop">Penny Won Auctions</div>
-         <div class="row mblue_box">
-        <div class="col-md-3">Image</div>
-        <div class="col-md-2">Title</div>
-        <div class="col-md-3">End Time </div>
-        <div class="col-md-2"> Amount </div>
-        <div class="col-md-2"> Status</div>
+<div class="main_container">
+  <div class="row dashboard">
+    <div class="col-md-3"> {include file="left-nav-dashboard.tpl" nocache} </div>
+    <div class="col-md-9">
+      <h4 class="ds_brd">Penny Won Auctions</h4>
+      <div class="row mblue_box md_hide">
+        <div class="col-md-2 text-center">Image</div>
+        <div class="col-md-2 text-center">Title</div>
+        <div class="col-md-4 text-center">End Time </div>
+        <div class="col-md-3 text-center"> Amount </div>
+        <div class="col-md-1 text-center" style="padding-left:0"> Status</div>
       </div>
       {if $mybids|count <=  0}
-        <div class="col-md-12 text-center m-top-20 font-12">No Results found Found</div>
+        <div class="col-md-12 text-center m-top-20 font-12">No Results Found</div>
               {else}
       {foreach $mybids as $key => $val}
       <div class="row mblue_box1">
-        <div class="col-md-3"><a href=""><img src="{if $val.avatar == ''} {$config['imgpath']}no_img.png {else if $val.avatar != ''}{$config['imgpath']}product/{$val.avatar}{/if}" title="{$val.title}" width="65" height="65"></a></div>
-        <div class="col-md-2"><a href="{$config['url']}/product/view/{$val.id}" title="{$val.ptitle}"> {$val.title}</a></div>
-        <div class="col-md-3">{$val.date_closed}</div>
-        <div class="col-md-2">{$val.proposed_amount}</div>
-        <div class="col-md-2">{$val.status}</div>
+        <div data-label="Image" class="account_p_lbl col-md-2 text-center" style="clear:both;"><a href=""><img src="{if $val.avatar == ''} {$config['imgpath']}no_img.png {else if $val.avatar != ''}{$config['imgpath']}product/{$val.avatar}{/if}" title="{$val.title}" width="auto" height="65"></a></div>
+        <div data-label="Title" class="account_p_lbl col-md-2 text-center"><a href="{$config['url']}/product/view/{$val.id}" title="{$val.ptitle}"> {$val.title}</a></div>
+        <div data-label="End Time" class="account_p_lbl col-md-4 text-center">{$val.date_closed}</div>
+        <div data-label="Amount" class="account_p_lbl col-md-3 text-center">${$val.proposed_amount}</div>
+        <div data-label="Status" class="account_p_lbl col-md-1 text-center" style="padding-left:0">Paid</div>
       </div>
       {/foreach} 
       {/if} {$pagination_html} </div>

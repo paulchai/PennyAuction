@@ -14,14 +14,14 @@ var q = require('q');
 var user_json = [];
 
 //required js
-var configure = require('../configure');
+/*var configure = require('../configure');
 
 //default setters
 var config = configure.app();
 
 $arr = {
   config : config
-} 
+} */
 // Passport session setup.
 //   To support persistent login sessions, Passport needs to be able to
 //   serialize users into and deserialize users out of the session.  Typically,

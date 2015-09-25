@@ -1,41 +1,32 @@
-{include file="/admincp/header.tpl" nocache}
-<div class="container-fluid"> 
-  
-  <!-- Page Heading -->
-  <div class="row">
-    <div class="col-lg-12">
-      <ol class="breadcrumb">
-        <li class="active"> <i class="fa fa-user"></i> Login </li>
-      </ol>
-    </div>
-  </div>
-  <!-- /.row -->
-  <div class="row">
-    <div class="col-lg-12"> {if $error == 'saved'}
-      <div class="alert alert-success"> <strong>Saved!</strong> {$users.first_name} profile was successfully changed. </div>
-      {elseif $error != ''}
-      <div class="alert alert-danger"> <strong>{$error}</strong> </div>
-      {/if} </div>
-    <div class="col-lg-6">
-    <form action="{$config['url']}/admin/login/save" method="post"  enctype="multipart/form-data"  >
-      <div class="form-label">
-        <label>User Name </label>
-        <input type="text" id="username" name="username" placeholder="Enter username"  class="form-control">
-      </div>
-      <div class="form-label">
-        <label>Password </label>
-        <input type="password" id="password" name="password" value=""  class="form-control">
-      </div>
-     <div class="col-lg-12">
-      <br />
-                          <div class="col-lg-4">    
-                             <input type="submit" value="Login" name="id" class="btn-success btn" />
-                          </div>    
-                           </div>
-    </form>
-     </div>
-  </div>
-  
-  <!-- /.row --> 
-</div>
-{include file="/admincp/footer.tpl" nocache} 
+{include file="/admincp/header.tpl"}
+<div class="main_container login_wrapper">
+	<div class="panel panel-primary">
+		<div class="panel-heading">LOG IN TO ADMIN PANEL</div>
+		<div class="panel-body">
+          <form action="{$config['url']}/admin/login/save" method="post"  enctype="multipart/form-data"  >
+			<div class="row">
+				<div class="col-md-3">User Name<span class="pull-right">:</span></div>
+				<div class="col-md-9">
+                     <input type="text" id="username" name="username" value="admin@auctionsoftware.com" placeholder="Enter username"  class="form-control">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">Password<span class="pull-right">:</span></div>
+				<div class="col-md-9">
+					<input type="password" id="password" name="password" value="chennai"  class="form-control">
+				</div>
+			</div>
+			<div class="vsep"></div>
+			<div class="row">
+				<div class="col-md-9 fget_psd">
+					<!--<a href="">Forget your password?</a>-->
+				</div>
+				<div class="col-md-3">
+                	<input type="submit" value="Login" name="id" class="btn btn-primary" />					
+				</div>
+			</div>
+          </form>
+		</div>
+	</div>
+</div>	
+{include file="/admincp/footer.tpl"}
