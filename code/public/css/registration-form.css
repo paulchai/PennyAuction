@@ -1,0 +1,382 @@
+/**
+ * Registration Form
+ * -------------------------------------
+ */
+.fcorn-register {
+  font-family: "Source Sans Pro";
+  width:680px;
+  margin: 0 auto;
+  padding:0;
+  letter-spacing: 1px;
+  box-shadow: 0 0 2px rgba(60, 60, 60, 0.1);
+  overflow:hidden;
+}
+.ds.modal.fade.in {
+top:5%;
+}
+.fcorn-register div {
+  margin:10px 0;
+}
+.fcorn-register .form-wrapper{
+background: #fff;
+margin: 0px;
+display: table;
+width: 100%;
+}
+.fcorn-register div.register-info {
+  background: #b5b5b5;
+  color: #fff;
+  padding: 8px 15px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+.fcorn-register div.row {
+margin:0px;
+}
+.fcorn-register div > input,
+.fcorn-register div > select {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 15px;
+  font-weight: 100;
+  color: #686868;
+  border: 1px solid rgba(159, 159, 159, 0.2);
+  box-shadow: 0 0 3px rgba(60, 60, 60, 0.05);
+}
+.fcorn-register div > input:focus,
+.fcorn-register div > select:focus {
+  border: 1px solid #63c6ef;
+  outline: none;
+}
+.fcorn-register div > select:focus {
+  border: 1px solid rgba(159, 159, 159, 0.2);
+}
+  /** To hide default arrow */
+.fcorn-register div > select {
+  text-indent: 0.01px;   /** if it doesn't work change to something 0.05 etc... **/
+  text-overflow: "";
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.fcorn-register div > select::-ms-expand {
+  display: none;
+}
+.fcorn-register div.gender-wrap,
+.fcorn-register div.country-wrap {
+  position: relative;
+}
+.fcorn-register div.gender-wrap:before,
+.fcorn-register div.country-wrap:before {
+    /** For custom arrow in select box **/
+  position: absolute;
+  content: "#";
+  font-family: "entypo";
+  font-size: 18px;
+  color: #686868;
+  top: 10px;
+  right: 25px;
+}
+.fcorn-register div > span.extern-type {
+  float: right;
+  text-align: right;
+  font-size: 12px;
+  display: block;
+  color: #b5b5b5;
+}
+
+  /** Register Toogle Btn **/
+.fcorn-register div.register-toggle {
+  position: relative;
+}
+.fcorn-register div.register-toggle > .info {
+font-size: 13px;
+margin-left: 20px;
+line-height: 25px;
+}
+.fcorn-register div.register-toggle > label.toggle-label {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  display: inline-block;
+  background:#004477;
+  width: 60px;
+  height: 24px;
+  float: left;
+  position: relative;
+  font-size: 10px;
+  color: #fff;
+}
+.fcorn-register div.register-toggle > label.toggle-label > input.toggle-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+  /** this is for labeling of on/off text **/
+.fcorn-register div.register-toggle > label.toggle-label:before,
+.fcorn-register div.register-toggle > label.toggle-label:after {
+  position: absolute;
+  top: 30%;
+  line-height: 1.1;
+  font-weight: 100;
+}
+.fcorn-register div.register-toggle > label.toggle-label:before {
+  content: attr(data-on);
+  left: 7px;
+}
+.fcorn-register div.register-toggle > label.toggle-label:after {
+  content: attr(data-off);
+  right: 7px;
+}
+  /** handle switch **/
+.fcorn-register div.register-toggle > label.toggle-label .toggle-handle {
+  position: absolute;
+  background: #fff;
+  left: 0;
+  top: 0;
+  border: 1px solid#004477;
+  display: inline-block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  box-shadow: inset 0 0 5px rgba(50, 50, 50, 0.1);
+  width: 50%;
+  height: inherit;
+}
+.fcorn-register div.register-toggle > label.toggle-label > input.toggle-input:checked ~ .toggle-handle {
+  left: 30px;
+}
+
+  /* Register button */
+.fcorn-register div.register-submit {
+display: inline-block;
+float: left;
+margin-left: 15px;
+}
+.fcorn-register div.register-toggle > .info1 {
+font-size: 13px;
+margin: 10px 0;
+clear:both;
+}
+.fcorn-register div.register-submit > input {
+  border: none;
+  width: 200px;
+  color: #fff;
+  padding: 10px 15px;
+  background:#004477;
+  text-align: center;
+  box-shadow: 0 1px 1px#004477;
+}
+.fcorn-register div.register-submit > input:focus {
+  border: none;
+  outline: none;
+}
+.fcorn-register div.register-submit > input:hover {
+  background: #39b7eb;
+}
+.fcorn-register div.register-submit > input:active {
+  box-shadow: inset 0 0 10px #1daae3;
+  -webkit-transform: translate(0, 1px);
+  -ms-transform: translate(0, 1px);
+  transform: translate(0, 1px);
+}
+ ul.social {
+	  padding-left: 0;
+	  list-style: none;
+	  margin-top: 15px;
+	  margin: 0;
+	  text-align: center;
+	}
+	ul.social > li {
+	  width: 48%;
+	  display: inline-block;
+	
+	  float: left;
+}
+	ul.social > li:first-child {
+	  background: #3b5998;
+	  margin-right: 6px;
+	}
+		ul.social > li:first-child:hover {
+		  background: #37538d;
+		}
+		ul.social > li:last-child {
+		  background: #15b3e4;
+		}
+			ul.social > li:last-child:hover {
+			  background: #14a8d6;
+			}
+			 ul.social > li > a {
+			  display: inline-block;
+			  padding: 7px 5px 8px;
+			  color: #fff;
+			  letter-spacing: 1px;
+			}
+				 ul.social > li > a:active,
+				.fcorn-login .login-right ul.social > li > a:focus,
+				.fcorn-login .login-right ul.social > li > a:hover {
+				  text-decoration: none;
+				  outline: none;
+				}
+				 ul.social > li > a:before {
+				  line-height: 1.428571429;
+				  margin-right: 10px;
+				  position: relative;
+				  top: 2px;
+				}
+.prepend-icon {
+display: inline-block;
+vertical-align: top;
+position: relative;
+width: 100%;
+}
+.gui-input,.gui-textarea {
+padding: 10px;
+}
+ .prepend-icon>input,.prepend-icon>textarea {
+padding-left: 36px;
+}
+.prepend-icon .field-icon {
+top: 0;
+z-index: 4;
+width: 42px;
+height: 42px;
+color: inherit;
+line-height: 42px;
+position: absolute;
+text-align: center;
+-webkit-transition: all .5s ease-out;
+-moz-transition: all .5s ease-out;
+-ms-transition: all .5s ease-out;
+-o-transition: all .5s ease-out;
+transition: all .5s ease-out;
+pointer-events: none;
+}
+ .prepend-icon>input {
+background: #fff;
+position: relative;
+vertical-align: top;
+border:1px solid #bdc3c7;
+display: -moz-inline-stack;
+display: inline-block;
+color: #34495e;
+outline: 0;
+height: 42px;
+width: 100%;
+border: 1px solid rgba(159, 159, 159, 0.2);
+box-shadow: 0 0 3px rgba(60, 60, 60, 0.05);
+border-radius:0px;
+}
+.sign_up{
+background:#004477;
+color: #fff;
+padding: 1px 45px;
+}
+.ds .checkbox, .ds .radio {
+padding: 0px;
+margin: 0;
+right: 5px;
+}
+.ds .social .prepend-icon .field-icon {
+height:40px;
+line-height:40px;
+}
+
+
+.spacer-b30 {
+clear:both;
+}
+.socail .btn-success{
+background: #3b5998;
+margin-right: 6px;
+}
+.social .btn{
+width:100%;
+padding: 10px 15px;
+color:#fff;
+border-radius:0px;
+}
+.social .btn.btn-success{
+background:#3b5998 !important;
+border-color:#3b5998 !important;
+opacity:.8;
+height:auto !important;
+}
+.social .btn.btn-success:hover {
+opacity:1;
+}
+.ds .btn .field-icon i{
+color:#fff !important;
+}
+.row.option-group .col-md-3 {
+width: 32%;
+padding: 0px 21px;
+}
+.modal-header.csgray_box {
+background: #004477;
+color: #fff;
+padding: 10px 10px;
+height: 44px;
+margin: 0;
+/*margin: 0px 0 5px;*/
+}
+.modal-header.csgray_box .fa {
+color: #fff;
+font-size: 27px;
+opacity: 1;
+}
+.modal-header.csgray_box .close {
+margin: 2px;
+opacity: 1;
+width: 33px;
+font-size:23px;
+}
+ .login-btn {
+  position: relative;
+}
+ .login-btn > input,
+ .signup-btn {
+  border: none;
+  width: 128px;
+  display: inline-block;
+  color: #fff !important;
+  padding: 8px 15px;
+  background:#004477;
+  box-shadow: 0 1px 1px#004477;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  position: relative;
+  opacity:.8;
+}
+ .login-btn > input:focus,
+ .signup-btn:focus {
+  border: none;
+  outline: none;
+}
+ .login-btn > input:hover,
+ .signup-btn:hover {
+ opacity:1;
+}
+ #login {
+ width:500px;
+ height:550px;
+ top:15%;
+ }
+ #login .checkbox {
+ margin-left:6px;
+ }
+ .forget-pass{
+ line-height: 34px;
+text-align: right;
+}
+.modal-title {
+line-height:29px;
+}
+#reg_myModal {
+top: 5%;
+height: auto;
+}

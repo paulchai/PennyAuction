@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+.user1{
+	background: #4d4d4d;
+	height: 50px;
+	font-size: 26px;
+	color: white;
+	text-align: center;
+	margin-bottom: 3px;
+	line-height: 50px;
+}
+.user2 ul{
+	margin: 0;
+	padding: 0;
+	list-style-type:none;
+}
+
+.user2 ul li{
+	background: #b3a78c;
+	height: 50px;
+	padding: 5px 0;
+	border-bottom: 3px solid #fff;
+	font-size:16px;
+	font-family: 'Open Sans';
+}
+.user2 ul li.active,.user2 ul li:hover {
+	background:#C0C0C0
+}
+.user2 ul li span {
+width:65px;
+display:inline-block;
+}
+.user2{
+	background:#f2f4f5;
+}
+.user2 ul li a {
+	font-size: 16px;
+	color: white;
+	display: block;
+	padding-left: 10px;
+}
+
+.dash{
+	background:url(../images/sliderbar.png) no-repeat;
+	height: 60px;
+	font-size: 26px;
+	text-align: center;
+	position: relative;
+	top: -12px;
+	left: -39px;
+}
+
+.redwid25{
+	width:26%;
+	
+}
+.arrow-right {
+	font-size: 0px; line-height: 0%; width: 0px;
+	border-top: 10px solid #f6f6f6;
+	border-left: 20px solid #77c;
+	border-bottom: 10px solid #f6f6f6;
+}
+.abutop{
+	top: 0;
+	color: white;
+	position: absolute;
+	font-size: 24px;
+	line-height: 50px;
+	font-family: 'Open Sans';
+}
+.user_panel {
+margin-top:20px;
+}

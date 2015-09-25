@@ -1,0 +1,203 @@
+.winners {
+	width: 770px;
+	height: 36px;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 18px;
+	background-color: #2592c9;
+	margin-left: 50px;
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+	font-family: 'Open Sans';
+}
+.green_ribbon {
+	width: 168px;
+	height: 30px;
+	color:#fff;
+	font-size:16px;
+	line-height:30px;
+	font-family: 'Open Sans';
+	text-align:center;
+	margin: 30px 6px;
+	-webkit-border-radius: 15px 0 0 15px;
+	-moz-border-radius: 15px 0 0 15px;
+	border-radius: 15px 0 0 15px;
+	background-color: #2d3134;
+	background-image: -webkit-linear-gradient(left, #098400, #4ba700 63%, #00aa0c 88%, #248702 93%, #4ce03d 97%, #195200);
+	background-image: -moz-linear-gradient(left, #098400, #4ba700 63%, #00aa0c 88%, #248702 93%, #4ce03d 97%, #195200);
+	background-image: -o-linear-gradient(left, #098400, #4ba700 63%, #00aa0c 88%, #248702 93%, #4ce03d 97%, #195200);
+	background-image: -ms-linear-gradient(left, #098400, #4ba700 63%, #00aa0c 88%, #248702 93%, #4ce03d 97%, #195200);
+	background-image: linear-gradient(to right, #098400, #4ba700 63%, #00aa0c 88%, #248702 93%, #4ce03d 97%, #195200);
+}
+.panel-primary.bb_box {
+	border:1px solid  #3bc8dd;
+	width: 770px;
+	margin: 20px 50px;
+}
+.panel-primary.bb_box .panel-body {
+	padding:0px;
+}
+.media-object.blue_bck {
+	width: 120px;
+	height: 126px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background-color: #2592c9;
+	text-align: center;
+	line-height: 126px;
+	padding: 0px;
+}
+.media-body div {
+	color:#6B7882;
+	font-size:16px;
+	padding:0 10px;
+	font-family: 'Open Sans';
+}
+.con_lbl {
+	font-size:16px;
+	padding:2px 10px;
+	font-family: 'Open Sans';
+}
+.pblue_txt {
+	color:#3180D7;
+}
+.wpro_btm {
+	clear:both;
+	padding:10px 0;
+}
+.pred_txt {
+	color:#E72900;
+}
+.wp_left {
+	width: 596px;
+	float: left;
+	padding: 15px;
+}
+.rev_head {
+	font-family: 'Open Sans';
+	font-size: 24px;
+	padding: 15px 0 10px;
+	border-bottom: 2px solid #ddd;
+	margin-bottom: 10px;
+}
+.wp_right {
+	width: 172px;
+	float: left;
+}
+.blue_box {
+	display:none;
+}
+.left_col {
+	margin-top: 10px;
+	padding: 0px;
+}
+.banner {
+	margin-top: 10px;
+}
+.col-md-3 .gbox {
+	box-shadow: 0px 1px 1px #e4e4e4;
+	-moz-box-shadow: 0px 1px 1px #e4e4e4;
+	-webkit-box-shadow: 0px 1px 1px #e4e4e4;
+	-o-box-shadow: 0px 1px 1px #e4e4e4;
+	-ms-box-shadow: 0px 1px 31px #e4e4e4;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-khtml-border-radius: 0px;
+	-ms-border-radius: 0px;
+	-o-border-radius: 0px;
+	background: white;
+	background: -moz-linear-gradient(100% 100% 90deg, #efefef, white);
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, from(white), to(#efefef));
+	background: -o-linear-gradient(white, #efefef);
+	background: -ms-linear-gradient(top, white 0%, #efefef 100%);
+	border: 1px solid #ccc;
+	width:250px;
+	height:60px;
+	margin:20px 0;
+	padding: 10px;
+}
+.rimg {
+	border: 1px solid #ddd;
+	width: 250px;
+}
+.rhead {
+	color: #2a90c3;
+	font-size: 19px;
+	font-weight: 700;
+	font-family: 'Open Sans';
+	padding: 0;
+}
+.rev_txt {
+	color:#424242;
+	font-size:14px;
+	font-weight:500;
+	font-family: 'Open Sans';
+	padding:5px 0;
+	text-align:justify;
+}
+
+.customer_name {
+	color:#424242;
+	font-size:14px;
+	font-weight:700;
+	font-family: 'Open Sans';
+}
+.rating img {
+padding:0 2px;
+}
+.rating span {
+	font-size:14px;
+	line-height: 25px;
+	float: right;
+	margin-left: 5px;
+	font-family: 'Open Sans';
+}
+.main_container.review .col-md-3 {
+padding:0px;
+}
+.main_container.review  .panel {
+	margin:20px 0;
+}
+.main_container.review .btn {
+	margin: 10px auto;
+	width: 150px;
+	display: block;
+}
+
+/* Star Rating
+    ----------------------------------
+  **/
+ .ratings > label.rating-star {
+  cursor: pointer;
+  float: right;
+  left: -100px;
+  color: #828282;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+ .ratings > label.rating-star:before {
+  font-size: 30px;
+  line-height: 1.428571429;
+}
+ .ratings > input[type="radio"]:hover ~ label,
+ .ratings > input[type="radio"]:checked ~ label {
+  color: #fd8564;
+}
+ .ratings > input[type="radio"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+#review label.fa {
+font: normal normal normal 14px/1 FontAwesome;
+}
+.main_container.review .col-md-6 .row {
+width:100%;
+margin:20px 0;
+}

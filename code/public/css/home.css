@@ -1,0 +1,372 @@
+@charset "utf-8";
+/* CSS Document */
+/*body{
+	background:#bfbfbf !important;
+	overflow:hidden;
+}*/
+.but{
+	text-align: center;
+line-height: 60px;
+}
+.btn-default{
+	border-radius:22px !important;
+}
+.padding0{
+	padding:0;
+}
+#owl-demo_4 .owl-prev {
+position: absolute;
+top: 0;
+left: -95px;
+opacity: 1;
+background-image: url("../assets/img/leftarr.png");
+height: 100%;
+width: 63px;
+background-repeat: no-repeat;
+background-position: center;
+}
+.hei{
+	height:auto !important;
+	border: 1px solid black;
+}
+/*.mrg1{
+	margin:5px !important;
+	
+}*/
+.defal{
+	margin: 0 auto;
+/*position: absolute;*/
+z-index: 1;
+width: 100%;
+opacity: 0.9;
+}
+.padding_flude{
+	padding:0;
+}
+.mid_auction{
+	BACKGROUND: #6a6760;
+height: 43px;
+position: relative;
+}
+.mrg{
+	position:relative;
+	width:50%;
+	margin:0 auto;
+}
+.adj2{
+	padding:0;
+}
+#owl-demo_4 .owl-next {
+position: absolute;
+top: 0;
+right: -95px;
+opacity: 1;
+background-image: url("../assets/img/rightarr.png");
+height: 100%;
+width: 63px;
+background-repeat: no-repeat;
+/* background-attachment: fixed; */
+background-position: center;
+}
+.testimonial{
+	text-align:justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-success {
+	background-color: #6a6760 !important;
+	border-color: #6a6760 !important;
+	height:32px;
+}
+.nav-pills li a {
+	color:black;
+}
+.back-color {
+	background: #e7e8e9;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	opacity: 0.4;
+}
+.content_1 {
+	z-index:2;
+	z-index: 2;
+	position: relative;
+}
+.page-header {
+	margin:-10px !important;
+}
+
+.page-header {
+	border-bottom:none !important;
+}
+.mid_auction p {
+	color: #958669;
+	margin: 0 auto;
+	width: 250px;
+	line-height: 37px;
+	font-size: 25px;
+}
+.mid_auction{
+	BACKGROUND: #6a6760;
+height: 43px;
+position:relative;
+}
+
+.owl-pagination{
+	position: relative;
+top: 0px;
+right: 0px;
+}
+.euro span{
+	float: left;
+color: white;
+}
+.euro{
+	background: #6a6760;
+	padding-top: 10px;
+	height:70px;
+}
+.euro h4{
+	line-height: 40px;
+text-indent: 5px;
+}
+.col{
+	padding: 7px;
+background: #45433e;
+height: 45px;
+color: #7f7c75;
+}
+
+.butt1{
+	background:transparent;
+border-radius: 3px;
+border: 1px solid;
+}
+
+.euro1{
+	padding-bottom: 1px;
+	
+background: #6a6760;
+}
+.fun1{
+	
+	border:1px solid #6a6760;
+}
+
+.chec{
+	padding-left: 0;
+padding-right: 0;
+border: 1px solid #69655c;
+}
+.slidesjs-container{
+	height: 427.340426px !important;
+}
+.pic{
+	background-image:url(../assets/img/bidconnect1%20.png);
+	padding: 0;
+}
+.fill_1{
+	text-align:center;
+}
+.ali{
+	text-align: center;
+color: white;
+
+font-size: 26px;
+font-weight: bold;
+}
+.al1{
+	text-align:center;
+}
+.sie{
+	font-size:30px;
+}
+.sie p{
+	font-size:18px;
+}
+.colr{
+	COLOR: #445e6a;
+}
+.colr p{
+	font-size:26px;
+}
+.ali1{
+	text-align: center;
+color: white;
+font-size: 18px;
+}
+
+
+.euro1{
+	background: #2f627f;
+	padding-top: 10px;
+
+}
+#owl-demo .owl-pagination{
+	display: inline-block;
+}
+#owl-demo .owl-page{
+	display: block ;
+}
+#owl-demo .owl-controls{
+	position:absolute;
+	bottom:0;
+}
+.col1{
+	padding: 7px;
+background: #183241;
+height: 45px;
+color: #7f7c75;
+	
+}
+.bid{
+	background-image:url(../assets/img/bidconnect.png);
+	height:410px;
+	overflow-x:hidden;
+}
+.btn-warning{
+	width: 150px !important;
+	height: 40px !important;
+	
+}
+.btn-primary{
+	background:#09F !important;
+	width: 150px !important;
+	margin-right: 18px !important;
+	height: 40px !important;
+}
+.bton{
+	padding-left: 83px;
+}
+	.adj1 label{
+	FONT-SIZE: 36PX;
+COLOR: white;
+font-weight: bold;
+padding-left: 60px;
+padding-top: 31px;
+}
+.adj1 p{
+	color: white;
+	padding-left: 95px;
+}
+.adj1 {
+line-height: 45px;
+padding-top: 60px;
+text-align:center;
+}
+.footer2 label{
+	line-height: 50px;
+text-indent: 87px;
+font-size: 20px;
+	}
+.footer2{
+	color: white;
+line-height: 60px;
+}
+.footer1{
+	background: #57544e;
+}
+.set12{
+	margin:0;
+}
+.btm{
+	margin-bottom:0;
+}
+	
+.set{
+	text-align: center;
+}
+.bg_whit{
+	background:white;
+	height:auto;
+	padding:24px;
+	
+}
+#owl-demo1 .owl-pagination{
+	position: absolute;
+top: -28px;
+right: 20px;
+}
+#owl-demo1 .owl-controls{
+	margin:0 auto;
+}
+.mca
+{
+width:1024px;
+margin:auto;
+margin-top:30px;
+margin-bottom:20px;	
+}
+
+<!--our chnagess-->
+.col-md-9.search_right .butt1, .col-md-12.feature_auctions .butt1
+{
+width:auto !important;	
+}
+
+.highbid{
+text-align: center;
+width: 900px;
+margin: auto;
+margin-bottom: 10px;
+}
+
+
+
+.m-top-10
+{
+	margin-top:10px;
+}
+.m-top-20
+{
+	margin-top:20px;
+}
+.m-top-30
+{
+	margin-top:30px;
+}
+.m-top-40
+{
+	margin-top:40px;
+}
+.m-top-50
+{
+	margin-top:50px;
+}
+.m-bottom-10
+{
+	margin-bottom:10px;
+}
+.m-bottom-20
+{
+	margin-bottom:20px;
+}
+.m-bottom-30
+{
+	margin-bottom:30px;
+}
+.m-bottom-40
+{
+	margin-bottom:40px;
+}
+.m-bottom-50
+{
+	margin-bottom:50px;
+}
+.padding-20
+{
+	padding:20px;
+}
