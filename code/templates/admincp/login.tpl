@@ -1,4 +1,4 @@
-{include file="/admincp/header.tpl"}
+{include file="/admincp/header.tpl" nocache}
 <div class="main_container login_wrapper">
 	<div class="panel panel-primary">
 		<div class="panel-heading">LOG IN TO ADMIN PANEL</div>
@@ -29,4 +29,4 @@
 		</div>
 	</div>
 </div>	
-{include file="/admincp/footer.tpl"}
+{include file="/admincp/footer.tpl" nocache}

@@ -929,6 +929,8 @@ app.get(['/projects/:action/', '/projects/:action/:id', '/projects/:action/:id/:
     } else if (action == 'new') {
         $arr['menu']['projectsnewmenu'] = 'active';
         $arr['action'] = "New";
+        // Reset cache image if exists
+        $arr['image'] = "";
         common.tplFile('admincp/nproject.tpl');
         common.headerSet(1);
         common.loadTemplateHeader(req, res, $arr);
@@ -957,7 +959,7 @@ app.post(['/products/save'], function (req, res) {
     req.body.storeid = (typeof(req.body.id) === 'undefined') ? 0 : req.body.storeid;
     if (req.body.id > 0) {
         admin.deleteAttachment(config.mysql, q, req);
-        //attach.save('product',req,res);
+        attach.save('product',req,res);
         admin.saveProduct(req, config.mysql, q);
         if (typeof(req.files.product_image) !== 'undefined') {
             var m = req.files.product_image;

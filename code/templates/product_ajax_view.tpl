@@ -53,7 +53,7 @@
     <div class="ab6">Total Seats:{$projects.seats}</div>
     <div class="ab6">{$projects.seatsLeft} Seats left</div>
     <div class="ab6">Only ${$projects.seatAmount} to join and play</div>
-    <div class="ab6 ab7">Auction start at :<span class="ab1">{$projects.stime}</span></div>
+    <div class="ab6 ab7">Auction starts at :<span class="ab1">{$projects.stime}</span></div>
     <div class="ab6 ba1">Auction ends at :<span class="ab1">{$projects.ctime}</span></div>
 
 
@@ -81,7 +81,7 @@
 
 
     <div class="gray_txt">
-        <div>Value Price $<span class="format">{$projects.mprice}</span></div>
+        <div>Value Price ${$projects.mprice}</span></div>
         <div>Bids Credit ${$config.general['eachbidpay']}</div>
         {if $bid_credits > 0}
         <div>Buynow Price $<span class="format">{$projects.bprice}</span></div>

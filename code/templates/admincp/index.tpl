@@ -1,4 +1,4 @@
-{include file="/admincp/header.tpl"}
+{include file="/admincp/header.tpl" nocache}
 
 
 
@@ -143,4 +143,4 @@
             </div>
 
            
-{include file="/admincp/footer.tpl"}
+{include file="/admincp/footer.tpl" nocache}

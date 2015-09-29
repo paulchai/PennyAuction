@@ -11,7 +11,7 @@ exports.winnerPrd = function (mysql, q, data) {
     query = mysql.query(strQuery, defered.makeNodeResolver());
 
     return defered.promise;
-}
+};
 exports.post = function (req, res, arr) {
     common.tplFile('post.tpl');
     common.headerSet(1);
@@ -29,7 +29,7 @@ exports.deleteWatchlist = function (req, mysql, q) {
 
     query = mysql.query(strQuery, escape_data, defered.makeNodeResolver());
     return defered.promise;
-}
+};
 exports.mywatchlist = function (req, mysql, q) {
     $mysqli = {};
     var page = req.body.page;
@@ -44,7 +44,7 @@ exports.mywatchlist = function (req, mysql, q) {
     // console.log(escape_data);
     query = mysql.query(strQuery, escape_data, defered.makeNodeResolver());
     return defered.promise;
-}
+};
 exports.totalmywatchlist = function (req, mysql, q) {
     $mysqli = {};
     page = req.body.page;
@@ -56,7 +56,7 @@ exports.totalmywatchlist = function (req, mysql, q) {
     //console.log(escape_data);
     query = mysql.query(strQuery, escape_data, defered.makeNodeResolver());
     return defered.promise;
-}
+};
 exports.searchProducts = function (mysql, q, data, req) {
     var row = '';
     var limit = '';
@@ -173,7 +173,7 @@ exports.isinWatchlist = function (req, mysql, q) {
     query = mysql.query(strQuery, escapeData, defered.makeNodeResolver());
 
     return defered.promise;
-}
+};
 exports.addWatchlist = function (req, mysql, q) {
 
     $mysqli = {};
@@ -306,19 +306,19 @@ exports.myproducts = function (req, mysql, q, cnt) {
     query = mysql.query(strQuery, escape_fields, defered.makeNodeResolver());
 
     return defered.promise;
-}
+};
 exports.productDetail = function (req, mysql, q) {
 
     $mysqli = {};
     var defered = q.defer();
 
     strQuery = mysqli.mysqli($mysqli, 19);
-    escape_fields = [req.param('id')]
+    escape_fields = [req.param('id')];
     //console.log(escape_fields);
     query = mysql.query(strQuery, escape_fields, defered.makeNodeResolver());
 
     return defered.promise;
-}
+};
 exports.productDetails = function (req, mysql, q) {
 
     $mysqli = {};
@@ -331,7 +331,7 @@ exports.productDetails = function (req, mysql, q) {
     query = mysql.query(strQuery, escape_fields, defered.makeNodeResolver());
 
     return defered.promise;
-}
+};
 exports.closeProject = function (req, mysql, q, status) {
     $mysqli = {};
     var defered = q.defer();
@@ -342,7 +342,7 @@ exports.closeProject = function (req, mysql, q, status) {
     query = mysql.query(strQuery, escape_fields, defered.makeNodeResolver());
 
     return defered.promise;
-}
+};
 exports.closeProjects = function (req, mysql, q, status, pid) {
     $mysqli = {};
     var defered = q.defer();
@@ -353,7 +353,7 @@ exports.closeProjects = function (req, mysql, q, status, pid) {
     query = mysql.query(strQuery, escape_fields, defered.makeNodeResolver());
 
     return defered.promise;
-}
+};
 exports.shopProducts = function (mysql, q) {
     datge = dateFormat(new Date(), "yyyy-mm-dd HH:MM:ss");
     $mysqli = {datge: datge};
@@ -364,7 +364,7 @@ exports.shopProducts = function (mysql, q) {
     query = mysql.query(strQuery, defered.makeNodeResolver());
 
     return defered.promise;
-}
+};
 exports.bidWinner = function (req, mysql, q) {
     $mysqli = {};
     strQuery = mysqli.mysqli($mysqli, 160);
@@ -376,7 +376,7 @@ exports.bidWinner = function (req, mysql, q) {
     query = mysql.query(strQuery, escape_fields, defered.makeNodeResolver());
 
     return defered.promise;
-}
+};
 exports.auctionSold = function (req, mysql, q) {
     $mysqli = {};
     strQuery = mysqli.mysqli($mysqli, 161);
@@ -386,7 +386,7 @@ exports.auctionSold = function (req, mysql, q) {
     query = mysql.query(strQuery, escape_fields, defered.makeNodeResolver());
 
     return defered.promise;
-}
+};
 exports.closeProducts = function (mysql, q) {
     datge = dateFormat(new Date(), "yyyy-mm-dd HH:MM:ss");
     $mysqli = {datge: datge};
@@ -401,7 +401,7 @@ exports.closeProducts = function (mysql, q) {
 exports.shortDescribe = function (results) {
     req_data = [];
     //console.log(results);
-    for (i in results) {
+    for (var i in results) {
         //console.log(results[i]['date_closed']);
         if (results[i]['date_closed'] !== null || typeof(results[i]['date_closed']) !== 'undefined') {
             //console.log(1);
@@ -464,13 +464,13 @@ exports.projectDetails = function (req, mysql, q, fields, id) {
     var defered = q.defer();
 
     strQuery = mysqli.mysqli($mysqli, 55);
-    escape_fields = [fields, id]
+    escape_fields = [fields, id];
     //console.log(escape_fields);
     query = mysql.query(strQuery, escape_fields, defered.makeNodeResolver());
 
 
     return defered.promise;
-}
+};
 
 exports.removeProject = function (req, mysql, q, id) {
 
@@ -478,12 +478,12 @@ exports.removeProject = function (req, mysql, q, id) {
     var defered = q.defer();
 
     strQuery = mysqli.mysqli($mysqli, 56);
-    escape_fields = [id]
+    escape_fields = [id];
     //  console.log(escape_fields);
     query = mysql.query(strQuery, escape_fields, defered.makeNodeResolver());
 
     return defered.promise;
-}
+};
 
 exports.addShipping = function (req, mysql, q) {
     $mysqli = {};
@@ -495,4 +495,4 @@ exports.addShipping = function (req, mysql, q) {
     query = mysql.query(strQuery, escape_fields, defered.makeNodeResolver());
 
     return defered.promise;
-}
+};

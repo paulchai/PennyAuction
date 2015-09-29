@@ -62,9 +62,14 @@
                         <div class="form-group">
                             <label>Photo</label>
                             <br/>
+                            {if $image == ""}
+                            <div class="pro_image">
+                                <img src="{$config.url}/uploads/no_img.png" alt="No Image" width="82" title="No Image" height="83"/>
+                            </div>
+                            {else/}
                             {foreach $image as $key2 => $val2}
                             <div class="pro_image pro_image_{$val2.id}"><img
-                                    src="{if $val2.avatar == '' or $val2.avatar == null} {$config['imgpath']}no_img.png {else if $val2.avatar != ''}{$config['imgpath']}product/{$val2.avatar}{/if}"
+                                    src="{if $val2.avatar == '' or $val2.avatar == null} {$config.url}/uploads/no_img.png {else if $val2.avatar != ''}{$config['imgpath']}product/{$val2.avatar}{/if}"
                                     width="82" title="{$projects.title}" height="83" alt="{$val2.title}">
                                 <input type="hidden" name="image_id[]" value="{$val2.id}"/>
                                 <input type="hidden" name="image[]" value="{$val2.image}"/>
@@ -72,10 +77,12 @@
                                 <a href="javascript:void(0);" onclick="$('.pro_image_{$val2.id}').remove();">
                                     Delete </a></div>
                             {/foreach}
+                            {/if}
+                            <div id="dvPreview" style="padding:10px;"></div>
                             <div>
                                 <input name="product_image" type="file" class="file-upload fileupload-input" multiple>
                             </div>
-                            <div id="dvPreview" style="padding:10px;"></div>
+
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -310,7 +317,9 @@
     });
 
     $(function () {
+        $("#dvPreview").html("");
         $(".fileupload-input").change(function () {
+            $(".pro_image").detach();
             if (typeof (FileReader) != "undefined") {
                 var dvPreview = $("#dvPreview");
                 dvPreview.html("");

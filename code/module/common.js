@@ -115,7 +115,7 @@ exports.checkLogin = function (req, res, id) {
 };
 exports.admincheckLogin = function (req, res, id) {
     //console.log(333333);console.log(req.session.admin);return 0;
-    if (typeof(req.session) === 'undefined' || id == 0) {
+    if (typeof(req.session) === 'undefined' && id == 0) {
         res.writeHead(302, {
             'Location': '/admin/login'
             //add other headers here...
@@ -138,11 +138,8 @@ exports.admincheckLogin = function (req, res, id) {
         else {
             delete req.session.userid;
             delete req.session.email;
-            delete req.session.autologin;
             req.session.destroy();
             delete req.session;
-            delete req.body.autologin;
-            //req.session.destroy();
             // this.admincheckLogin(req,res,0);
 
             res.writeHead(302, {
@@ -230,7 +227,9 @@ exports.loadTemplateHeader = function (req, res, arr) {
         //console.log(req.url);
         var originalurl = req.originalUrl;
         arr.pageofjs = req.originalUrl;
+        nsmarty.clearCache(arr.file);
         if (originalurl.indexOf("/dashboard") > -1 || originalurl == '/profile_settings')
+
             arr.pageofjs = '/dashboard/';
         //console.log(arr.pageofjs);
         var datam = results[0][0];

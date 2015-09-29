@@ -13,7 +13,7 @@
               data-parsley-validate>
             {if $save}
             <div class="row">
-                <div class="bg bg-success padding-20"><i class="fa fa-warning"></i> profile saved successfully!</div>
+                <div class="bg bg-success padding-20">Profile saved successfully!</div>
             </div>
             {/if}
             <div class="row hrht">
