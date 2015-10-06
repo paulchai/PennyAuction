@@ -515,7 +515,7 @@ exports.updateUser = function (req, mysql, q) {
     strQuery = mysqli.mysqli($mysqli, 54);
     var defered = q.defer();
 
-    var escape_data = [req.body.email, req.body.first_name, req.body.last_name, req.body.aboutme, req.body.avatar, req.body.image, req.body.address1, req.body.address2, req.body.country, req.body.state, req.body.city, req.body.zip, req.body.phone, req.body.id];
+    var escape_data = [req.body.email, req.body.username, req.body.first_name, req.body.last_name, req.body.aboutme, req.body.avatar, req.body.image, req.body.address1, req.body.address2, req.body.country, req.body.state, req.body.city, req.body.zip, req.body.phone, req.body.id];
     console.log(escape_data);
     query = mysql.query(strQuery, escape_data, defered.makeNodeResolver());
     return defered.promise;
@@ -600,7 +600,7 @@ exports.editUser = function (req, mysql, q) {
     strQuery = mysqli.mysqli($mysqli, 25);
     var defered = q.defer();
 
-    var escape_data = [['email', 'first_name', 'last_name', 'balance', 'id', 'avatar', 'aboutme', 'password_hash', 'password_salt', 'status', 'image', 'address1', 'address2', 'country', 'state', 'city', 'zip', 'phone'], req.body.id];
+    var escape_data = [['email', 'username', 'first_name', 'last_name', 'balance', 'id', 'avatar', 'aboutme', 'password_hash', 'password_salt', 'status', 'image', 'address1', 'address2', 'country', 'state', 'city', 'zip', 'phone'], req.body.id];
 
     query = mysql.query(strQuery, escape_data, defered.makeNodeResolver());
     return defered.promise;

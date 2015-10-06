@@ -124,7 +124,7 @@ function loginauto(tis) {
     var logintype = $(tis).val();
     //alert (logintype);
     if (logintype == 'buyer') {
-        $('#autologinuserid').val('developscriptbuyer@gmail.com');
+        $('#autologinuserid').val('developscriptbuyer');
         $('#autologin').submit();
     }
     if (logintype == 'seller') {
@@ -132,7 +132,7 @@ function loginauto(tis) {
         $('#autologin').submit();
     }
     else if (logintype == 'admin') {
-        $('#autologinuserid').val('admin@auctionsoftware.com');
+        $('#autologinuserid').val('admin');
         $('#autologin').attr('action', ILBASE + "/admin/login/save").submit();
     }
 

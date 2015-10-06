@@ -48,7 +48,9 @@ app.post('/save', function (req, res) {
 
             delete req.session.userid;
             delete req.session.email;
+            delete req.session.username;
             req.session.email = row[0].email;
+            req.session.username = row[0].username;
             req.session.userid = row[0].id;
             req.session.first_name = row[0].first_name;
             req.session.last_name = row[0].last_name;
@@ -93,6 +95,7 @@ app.get('/', function (req, res) {
 app.get('/logout', function (req, res) {
     delete req.session.userid;
     delete req.session.email;
+    delete req.session.username;
     //req.session = {};
     req.session.destroy();
     common.checkLogin(req, res, 0);
@@ -124,11 +127,11 @@ app.get('/forgot_password', function (req, res) {
 
 //send forgot password email
 app.post('/forgot_password', function (req, res) {
-    $mysqli = {email: req.body.email};
+    $mysqli = {username: req.body.username};
     strQuery = mysqli.mysqli($mysqli, 12);
     mysql = config.mysql;
     query = mysql.query(strQuery, function (error, results, fields) {
-        if (results.length > 0 && results[0]['email'] == req.body.email) {
+        if (results.length > 0 && results[0]['username'] == req.body.username) {
             customerio = require('../module/customerio');
             customerio.uid = results[0]['id'];
             customerio.inits();

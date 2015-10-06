@@ -41,10 +41,11 @@ exports.saveDetails = function(req,mysql,q)
 	});
 	}
     strQuery = mysqli.mysqli($mysqli,54); 
-    escape_fields = [userdet.email,userdet.firstname,userdet.lastname,userdet.aboutme,userdet.image,userdet.avatar,userdet.address1,userdet.address2,userdet.country,userdet.state,userdet.city,userdet.zip,userdet.phone,req.session.userid]
+    escape_fields = [userdet.email,userdet.username,userdet.firstname,userdet.lastname,userdet.aboutme,userdet.image,userdet.avatar,userdet.address1,userdet.address2,userdet.country,userdet.state,userdet.city,userdet.zip,userdet.phone,req.session.userid]
  console.log(userdet);
 	query =  mysql.query(strQuery,escape_fields,defered.makeNodeResolver());
 	req.session.email =  req.body.email;
+	req.session.username =  req.body.username;
 	req.session.first_name =  req.body.firstname;
 	req.session.last_name =  req.body.lastname;
 	

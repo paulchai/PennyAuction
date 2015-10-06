@@ -115,6 +115,14 @@
                         </div>
 
                         <div class="form-group">
+                            <label for="username">User Name</label>
+                            <input class="form-control" id="username" name="username" value="{$users.username}"
+                                   data-parsley-group="block1" data-parsley-required-message="Enter User Name"
+                                   data-parsley-pattern="/^[a-z0-9]+(?:[ _-][a-z0-9]+)*$/"
+                                   required>
+                        </div>
+
+                        <div class="form-group">
                             <label for="email_address">Email</label>
                             <input class="form-control" id="email_address" name="email" type="email"
                                    value="{$users.email}"

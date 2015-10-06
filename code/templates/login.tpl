@@ -39,9 +39,9 @@
       <form action="{$config['url']}/login/save" method="post"  enctype="multipart/form-data"   data-parsley-validate >
         <div class="login_form">
           <div class="log_fields">
-            <p>Email <span class="red">*</span>:</p>
+            <p>User Name <span class="red">*</span>:</p>
             <div class="col-md-8 padle">
-            <input type="email" id="username" name="username" data-parsley-error-message="Enter email" value="{$remembermeuser}" required placeholder="Enter email"  class="form-control" style="height:auto;width:204px"></div>
+            <input id="username" name="username" data-parsley-error-message="Enter user name" value="{$remembermeuser}" required placeholder="Enter user name"  class="form-control" style="height:auto;width:204px"></div>
           </div>
           <span class="red fl"></span>
           <div class="log_fields">

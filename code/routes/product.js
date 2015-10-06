@@ -527,6 +527,7 @@ app.get(['/buy/:id', '/buynow/:id/:ship'], function (req, res) {
             payments.sessionsdata = [];
             payments.sessionsdata.title = pid.title;
             payments.sessionsdata.email = req.session.email;
+            payments.sessionsdata.username = req.session.username;
             payments.sessionsdata.url = config.url + '/product/buy/' + pid.id;
             payments.sessionsdata.userid = req.session.userid;
             payments.sessionsdata.first_name = req.session.first_name;
@@ -538,6 +539,7 @@ app.get(['/buy/:id', '/buynow/:id/:ship'], function (req, res) {
             payments.insertInvoice();
             payments.sessionsdata.userid = pid.user_id;
             payments.sessionsdata.email = pid.email;
+            payments.sessionsdata.username = req.session.username;
             payments.sessionsdata.first_name = pid.first_name;
             payments.sessionsdata.last_name = pid.last_name;
             payments.type = 'sold';

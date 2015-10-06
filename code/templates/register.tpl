@@ -28,7 +28,7 @@
                      <div class="colm1_width fl">
                         <p>Email <span class="red">*</span>:</p>
                      </div>
-                     <input id="email" name="email" placeholder="Enter your email" maxlength="30" data-parsley-group="block1" required class="textbox" type="email">         
+                     <input id="email" name="email" placeholder="Enter your email" maxlength="30" data-parsley-group="block1" required class="textbox" type="email">
                   </div>
                   <label style="width:250px;"><span class="red"></span></label>
                </div>

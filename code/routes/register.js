@@ -20,7 +20,7 @@ $arr = {
 app.post('/save', function (req, res) {
     data = req.body;
 
-    if (data.email == '' || data.password == '' || data.repassword == '' || data.first_name == '' || data.last_name == '') {
+    if (data.email == '' || data.username == '' || data.password == '' || data.repassword == '' || data.first_name == '' || data.last_name == '') {
         res.writeHead(302, {
             'Location': '/index/reg/Required Field Was Missing'
         });
@@ -51,7 +51,7 @@ app.post('/save', function (req, res) {
     q.all([register.checkemail(config.mysql, req)]).then(function (results) {
         if (results[0][0].length > 0) {
             res.writeHead(302, {
-                'Location': '/index/reg/Email Already Exist!.'
+                'Location': '/index/reg/User Name Already Exist!'
                 //add other headers here...
             });
             res.end();

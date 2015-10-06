@@ -55,7 +55,7 @@ exports.loadPage = function(req,res,$arr,config)
 exports.checkemail = function(mysql,req)
 {
   $mysqli = {
-    	       email:req.body.email
+    	       username:req.body.username
     	       
     	    };
     

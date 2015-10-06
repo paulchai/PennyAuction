@@ -9,7 +9,7 @@ exports.mysqli = function (data, row) {
 };
 
 var mysqli = [];
-mysqli[0] = 'select email,id,password_salt,password_hash,first_name,last_name,admin,status from users where email = "{{username}}" Limit 1';
+mysqli[0] = 'select email,username,id,password_salt,password_hash,first_name,last_name,admin,status from users where username = "{{username}}" Limit 1';
 mysqli[1] = 'select * from projects where date_added <= "{{datge}}" and date_closed >= "{{datge}}" and market_status not in ("sold","closed","removed") and auctionType !="seated" order by id desc LIMIT 16';
 mysqli[3] = 'select * from projects  where date_added >= "{{datge}}" and market_status = "open"  order by id desc LIMIT 10';
 mysqli[4] = 'select * from projects  where date_closed <= "{{datge}}" order by id desc limit 10';
@@ -21,7 +21,7 @@ mysqli[8] = 'select p.* from projects AS p inner join categories AS c on c.id = 
 mysqli[9] = 'select p.* from projects AS p inner join categories AS c on c.id = p.category_id,  categories AS parent where c.lft BETWEEN parent.lft AND parent.rgt  and date_closed <= "{{datge}}" and market_status != "removed"  {{cid}}  {{search}} group by p.id order by p.id desc ';
 mysqli[10] = 'select p.* from projects AS p inner join categories AS c on c.id = p.category_id,  categories AS parent where c.lft BETWEEN parent.lft AND parent.rgt  and date_added <= "{{datge}}" and date_closed >= "{{datge}}" {{cid}}  and market_status = "open"   {{search}} and buynow = 1';
 mysqli[11] = 'insert into users (email,role,first_name,last_name,password_hash,password_salt,created_at,balance,status) values ("{{email}}","{{role}}",?,?,"{{password_hash}}","{{password_salt}}","{{created_at}}",0,"moderate")';
-mysqli[12] = 'select id,email,first_name,last_name from users  where email = "{{email}}" order by id desc';
+mysqli[12] = 'select id,email,first_name,last_name,username from users  where username = "{{username}}"order by id desc';
 mysqli['cid'] = ' and p.category_id IN (select c.id from categories as s WHERE c.lft between s.lft and s.rgt and s.id={{cid}})';
 mysqli['search'] = ' and (p.title like "%{{search}}%" or p.description like "%{{search}}%") ';
 mysqli['title'] = ' and p.title like "%{{search}}%"';
@@ -70,10 +70,10 @@ mysqli[50] = 'INSERT INTO watchlists (id,project_id,user_id,date_added) VALUES (
 mysqli[51] = 'select p.title,b.user_id,p.status,p.avatar,p.date_closed,p.id from watchlists AS b inner join projects as p on p.id = b.project_id and b.user_id = ? order by b.id desc limit ?, 5';
 mysqli[52] = 'select p.id  from watchlists AS b inner join projects as p on p.id = b.project_id and b.user_id = ? order by b.id desc';
 mysqli[53] = 'delete from watchlists where project_id = ? and user_id = ? limit 1';
-mysqli[54] = 'update users set email = ?, first_name = ?, last_name = ?,aboutme = ?,avatar = ?,  image = ?, address1 = ?, address2 = ?, country	= ?, state = ?, city = ?, zip = ?, phone = ?  where id =  ? limit 1';
+mysqli[54] = 'update users set email = ?, username = ?, first_name = ?, last_name = ?,aboutme = ?,avatar = ?,  image = ?, address1 = ?, address2 = ?, country	= ?, state = ?, city = ?, zip = ?, phone = ?  where id =  ? limit 1';
 mysqli[55] = 'select ?? from projects where id = ? Limit 1';
 mysqli[56] = 'update projects set market_status = "removed", status = 0 where id =  ?  limit 1';
-mysqli[57] = 'update users set password_hash = ?, password_salt = ? where email =  ? limit 1';
+mysqli[57] = 'update users set password_hash = ?, password_salt = ? where id =  ? limit 1';
 mysqli[58] = 'select transactionid from invoices where transactionid = ? limit 1';
 mysqli[59] = 'select sum(if(date_added <= ? and  date_closed >= ? and market_status = "open",1,0)) as open, sum(if(date_added <= ? and  date_closed <= ?,1,0)) as closed, sum(if(date_added >= ? and  date_closed >= ?,1,0)) as future, sum(if(market_status = "sold",1,0)) as sold from projects';
 mysqli[60] = 'select sum(if(status = "active",1,0)) as active, sum(if(status = "unverified",1,0)) as unverified, sum(if(status = "moderate",1,0)) as moderate, sum(if(status = "deactivate" or status = "unsubscribe",1,0)) as cancel  from users';
@@ -87,8 +87,8 @@ mysqli[67] = 'select id from users ';
 mysqli[68] = 'update bids set reserved = 0  where id = ? limit 1';
 
 mysqli[69] = 'update users set status = ?  where id = ? limit 1';
-mysqli[70] = 'select email,first_name,last_name,balance,status,date_format(created_at,"%d %M, %Y") as cdate,id from users where email like "%{{email}}%" and last_name like "%{{last_name}}%" and status like "%{{status}}%" and first_name like "%{{first_name}}%" order by id asc limit ?, 10';
-mysqli[71] = 'select email,first_name,last_name,balance,status,date_format(created_at,"%d %M, %Y") as cdate,id from users where email like "%{{email}}%" and last_name like "%{{last_name}}%" and status like "%{{status}}%" and first_name like "%{{first_name}}%" order by id asc';
+mysqli[70] = 'select email,first_name,last_name,balance,status,date_format(created_at,"%d %M, %Y") as cdate,id from users where (email like "%{{email}}%" or username like "%{{email}}%") and last_name like "%{{last_name}}%" and status like "%{{status}}%" and first_name like "%{{first_name}}%" order by id asc limit ?, 10';
+mysqli[71] = 'select email,first_name,last_name,balance,status,date_format(created_at,"%d %M, %Y") as cdate,id from users where (email like "%{{email}}%" or username like "%{{email}}%") and last_name like "%{{last_name}}%" and status like "%{{status}}%" and first_name like "%{{first_name}}%" order by id asc';
 mysqli[72] = 'update projects  set title = ?,description = ?,avatar = ?,image = ?,category_id = ?,tags = ?,shipping_price = ?,shipping_description = ?,buynow = ?,feature = ?,date_added = ?,date_closed = ?,bprice = ?,mprice = ?,auctionType = ?,seats = ?,seatAmount = ? where id = ? limit 1';
 
 mysqli[73] = 'select p.*,date_format(p.date_added,"%m/%d/%Y") as date_add,date_format(p.date_closed,"%m/%d/%Y") as date_close,u.first_name,u.email,u.last_name from projects as p left join users as u on u.id = p.user_id where p.id > 0 {{where}}  order by p.id desc  limit ?, 10';
@@ -201,7 +201,7 @@ mysqli[141] = 'update users set status = "active"  where id =  ? limit 1';
 mysqli['170count'] = 'select id from withdrawals where user_id = ? order by id desc';
 mysqli['105count'] = 'select r.id from referral as r left join users as u on r.to_id = u.id  where r.from_id = ?   order by r.id desc ';
 mysqli[142] = 'select b.amount,b.discount,b.paid,b.bidcredits from buynow AS b inner join projects as p on p.id = b.project_id and b.user_id = ? and b.project_id = ?';
-mysqli[143] = 'SELECT id,email,first_name,last_name FROM users WHERE status = "active" AND role <> 0';
+mysqli[143] = 'SELECT id,email,username,first_name,last_name FROM users WHERE status = "active" AND role <> 0';
 mysqli[144] = 'insert into email_template (event,subject,message,created_on,updated_on,status,user_id) values (?,?,?,?,?,?,?)';
 mysqli[145] = 'update email_template set event = ? ,subject = ?,message = ?,updated_on = ? where id = ?';
 mysqli[146] = 'select p.*,date_format(p.created_on,"%m/%d/%Y") as date_add,u.first_name,u.email,u.last_name,SUBSTR(p.message,1,50) as description_short from email_template as p left join users as u on u.id = p.user_id where p.id > 0   order by p.id desc  limit ?, 10';

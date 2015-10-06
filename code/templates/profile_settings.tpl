@@ -42,6 +42,16 @@
                     </div>
                     <div class="row">
                         <div class="form-group">
+                            <label for="username" class="col-xs-12 col-sm-6 col-md-4">User Name*:</label>
+
+                            <div class="col-xs-12 col-sm-5 col-md-6">
+                                <input type="text" id="username" name="username" value="{$users.username}" maxlength="20"
+                                       title="User Name" class="form-control" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
                             <label for="first_name" class="col-xs-12 col-sm-6 col-md-4">First Name*:</label>
 
                             <div class="col-xs-12 col-sm-5 col-md-6">

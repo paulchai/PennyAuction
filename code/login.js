@@ -6,6 +6,7 @@ module.exports = function (app, config, $arr) {
             ////console.log(row);
             if (row.length > 0) {
                 req.session.email = row[0].email;
+                req.session.username = row[0].username;
                 req.session.userid = row[0].id;
                 $arr.session = req.session;
                 //app.use(session({user: row}));

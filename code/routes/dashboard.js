@@ -421,7 +421,7 @@ app.post('/changepassword', function (req, res) {
 
     if (typeof(req.body.isajax) != 'undefined' && req.body.isajax == 1) {
 
-        $mysqli = {username: req.session.email};
+        $mysqli = {username: req.session.username};
         strQuery = mysqli.mysqli($mysqli, 0);
 
         query = mysql.query(strQuery, function (error, results, fields) {
@@ -444,7 +444,7 @@ app.post('/changepassword', function (req, res) {
 
         $mysqli = {};
         var defered = q.defer();
-        escape_data = [password, password_salt, req.session.email];
+        escape_data = [password, password_salt, req.session.userid];
         query = mysql.query(strQuery, escape_data, defered.makeNodeResolver());
         res.writeHead(302, {
             'Location': '/dashboard/password'

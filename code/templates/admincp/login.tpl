@@ -7,7 +7,7 @@
 			<div class="row">
 				<div class="col-md-3">User Name<span class="pull-right">:</span></div>
 				<div class="col-md-9">
-                     <input type="text" id="username" name="username" value="admin@auctionsoftware.com" placeholder="Enter username"  class="form-control">
+                     <input type="text" id="username" name="username" value="admin" placeholder="Enter username"  class="form-control">
 				</div>
 			</div>
 			<div class="row">

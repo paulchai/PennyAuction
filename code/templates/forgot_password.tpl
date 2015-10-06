@@ -66,8 +66,8 @@
           <div class="login_lft">
             <div class="login_form">
               
-                <p>Your Email <span class="red">*</span>:</p>
-                <input type="email" id="email" name="email" placeholder="Enter your email" data-parsley-error-message="Enter valid email address" value="" maxlength="100" class="form-control bidonregi2" required/>
+                <p>Your User Name <span class="red">*</span>:</p>
+                <input id="username" name="username" placeholder="Enter your user name" data-parsley-error-message="Enter valid user name" value="" maxlength="100" class="form-control bidonregi2" required/>
               </div>
               </div>
             <div class="m-top-30"><input type="submit" name="submit_forgot_password" value="Send" title="Send" class="btn btn-success bidonregi2"/></div>

@@ -261,6 +261,7 @@ exports.addBidInvoice = function (req, mysql, q) {
     payments.sessionsdata = {};
     payments.sessionsdata.title = req.body.title;
     payments.sessionsdata.email = req.session.email;
+    payments.sessionsdata.username = req.session.username;
     payments.sessionsdata.userid = req.session.userid;
     payments.sessionsdata.first_name = req.session.first_name;
     payments.sessionsdata.last_name = req.session.last_name;

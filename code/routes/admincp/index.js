@@ -1079,12 +1079,12 @@ app.post(['/users/:action/'], function (req, res) {
                 //req.body.email = '';
                 console.log('stop this');
             }
-            if (typeof(req.body.email) === 'undefined' || typeof(req.body.first_name) === 'undefined' || typeof(req.body.last_name) === 'undefined' || typeof(req.body.aboutme) === 'undefined' || typeof(req.body.status) === 'undefined') {
+            if (typeof(req.body.email) === 'undefined' || typeof(req.body.username) === 'undefined' || typeof(req.body.first_name) === 'undefined' || typeof(req.body.last_name) === 'undefined' || typeof(req.body.aboutme) === 'undefined' || typeof(req.body.status) === 'undefined') {
                 res.writeHead(302, {'Location': '/admincp/users/edit/' + req.body.id + '/Invalid Data'});
                 res.end();
                 return false;
             }
-            else if (req.body.email == '' || req.body.first_name == '' || req.body.last_name == '' || req.body.aboutme == '' || req.body.status == '') {
+            else if (req.body.email == '' || req.body.username == '' || req.body.first_name == '' || req.body.last_name == '' || req.body.aboutme == '' || req.body.status == '') {
                 res.writeHead(302, {'Location': '/admincp/users/edit/' + req.body.id + '/Invalid Data'});
                 res.end();
                 return false;

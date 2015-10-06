@@ -26,11 +26,13 @@ app.post(['/login/save'], function (req, res) {
             if (row[0].admin == 1) {
                 delete req.session.userid;
                 delete req.session.email;
+                delete req.session.username;
                 delete req.session.autologin;
                 delete session;
 
                 req.session.admin = 1;
                 req.session.email = row[0].email;
+                req.session.username = row[0].username;
                 req.session.userid = row[0].id;
                 req.session.first_name = row[0].first_name;
                 req.session.last_name = row[0].last_name;

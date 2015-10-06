@@ -138,6 +138,7 @@ exports.admincheckLogin = function (req, res, id) {
         else {
             delete req.session.userid;
             delete req.session.email;
+            delete req.session.username;
             req.session.destroy();
             delete req.session;
             // this.admincheckLogin(req,res,0);

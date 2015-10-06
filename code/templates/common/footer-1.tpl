@@ -108,7 +108,17 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-md-6">
+                        <label class="field prepend-icon">
+                            <input type="text" name="username" id="username" class="gui-input"
+                                   placeholder="User Name" data-parsley-required-message="Enter User Name"
+                                   data-parsley-pattern="/^[a-z0-9]+(?:[ _-][a-z0-9]+)*$/"
+                                   data-parsley-pattern-message="Special Characters are not allowed"
+                                   data-required="true" data-parsley-group="block1" required>
+                            <label for="username" class="field-icon"><i class="fa fa-user"></i></label>
+                        </label>
+                    </div>
+                    <div class="col-md-6">
                         <label class="field prepend-icon">
                             <input type="email" name="email" id="email_search" class="gui-input"
                                    placeholder="Email Address" data-parsley-required-message="Enter email address"
@@ -116,9 +126,8 @@
                                    data-parsley-type-message="Enter valid email address"
                                    data-required="true" onkeyup="check_userlist()" data-parsley-group="block1"
                                    required>
-                            <label for="email_search" class="field-icon"><i class="fa fa-user"></i></label>
+                            <label for="email_search" class="field-icon"><i class="fa fa-envelope"></i></label>
                         </label>
-
                     </div>
                 </div>
             </div>
@@ -209,13 +218,13 @@
 
                 <div class="col-md-12">
                     <label class="field prepend-icon">
-                        <input class="form-control gui-input email" type="email" name="username"
-                               value="{$remembermeuser}" data-parsley-required-message="Enter email address"
-                               data-parsley-type="email"
-                               data-parsley-type-message="Enter valid email address"
+                        <input class="form-control gui-input" name="username"
+                               value="{$remembermeuser}" data-parsley-required-message="Enter user name"
+                               data-parsley-pattern="/^[a-z0-9]+(?:[ _-][a-z0-9]+)*$/"
+                               data-parsley-type-message="Enter valid user name"
                                id="u_name" size="30" autocomplete="off" required data-trigger="change"
-                               placeholder="Email Address">
-                        <label for="u_name" class="field-icon"><i class="fa fa-envelope"></i></label>
+                               placeholder="User Name">
+                        <label for="u_name" class="field-icon"><i class="fa fa-user"></i></label>
                     </label>
                 </div>
                 <div class="row">

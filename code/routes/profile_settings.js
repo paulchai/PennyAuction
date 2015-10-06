@@ -26,7 +26,7 @@ app.get('/', function(req, res){
 	 $arr.pagetitle = '';
 	 $arr.ptitle = 'profile_settings';
 	 common.checkLogin(req,res,0);
-		q.all(profile.profileDetails(req,config.mysql,q,['email','id','first_name','last_name','aboutme','image','avatar','address1','address2','country','state','city','zip','phone'])).then(function(results){ 
+		q.all(profile.profileDetails(req,config.mysql,q,['email','username','id','first_name','last_name','aboutme','image','avatar','address1','address2','country','state','city','zip','phone'])).then(function(results){
 		    $arr['users'] = results[0][0];
 		    q.all(profile.listUserCategories(req,config.mysql,q)).then(function(results2){ 
 		           $arr['mcats'] = results2[0][0]['mcat'];
