@@ -50,7 +50,7 @@ app.get(['/', '/reg/:error', '/log/:lerror', '/reg/', '/log/'], function (req, r
 app.get('/language', function (req, res) {
     var module = require('../module');
     $arr.ptitle = 'index';
-    $arr.pagetitle = 'Live Auctions';
+    $arr.pagetitle = $arr._phrase.live + $arr._phrase.engspace + $arr._phrase.auction + $arr._phrase.s;
     function processIndex(row) {
         common.processIndex(row, req, res, $arr);
     }
@@ -63,7 +63,7 @@ app.get('/language', function (req, res) {
 app.get('/live', function (req, res) {
     var module = require('../module');
     $arr.ptitle = 'live';
-    $arr.pagetitle = 'Live Auctions';
+    $arr.pagetitle = $arr._phrase.live + $arr._phrase.engspace + $arr._phrase.auction + $arr._phrase.s;
     function processIndex(row) {
         common.processIndex(row, req, res, $arr);
     }
@@ -98,7 +98,7 @@ app.get('/search', function (req, res) {
 
     function processIndex(row) {
         //console.log(row);
-        $arr.pagetitle = 'Search Products';
+        $arr.pagetitle = $arr._phrase.search + $arr._phrase.engspace + $arr._phrase.auction + $arr._phrase.s;
         $arr.ptitle = (typeof(req.param('page')) != 'undefined') ? req.param('page') : 'live';
         $arr.cid_search = (typeof(req.param('cid')) !== 'undefined') ? req.param('cid') : 0;
         $arr.search_search = (typeof(req.param('search')) !== 'undefined') ? req.param('search') : '';
@@ -141,7 +141,7 @@ app.post('/search', function (req, res) {
 });
 
 app.get('/future', function (req, res) {
-    $arr.pagetitle = 'Future Auctions';
+    $arr.pagetitle = $arr._phrase.futureauction+ $arr._phrase.s;
     $arr.ptitle = 'future';
     var module = require('../module');
 
@@ -154,7 +154,7 @@ app.get('/future', function (req, res) {
 });
 
 app.get('/closed', function (req, res) {
-    $arr.pagetitle = 'Closed Auctions';
+    $arr.pagetitle = $arr._phrase.closed + $arr._phrase.engspace + $arr._phrase.auction + $arr._phrase.s;
     $arr.ptitle = 'closed';
     var module = require('../module');
 
@@ -169,7 +169,7 @@ app.get('/closed', function (req, res) {
 
 app.get('/shop', function (req, res) {
     $arr.ptitle = 'shop';
-    $arr.pagetitle = 'Buy Now Auctions';
+    $arr.pagetitle = $arr._phrase.buy_now + $arr._phrase.s;
     $arr['buy_this'] = true;
     var module = require('../module');
 

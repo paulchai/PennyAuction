@@ -103,23 +103,23 @@ var clearvar = [];
                         </b>
                     </div>
                     <div>Price Starting From : $ {$projects.sprice}</div>
-                    <div>Start time : {$projects.stime}</div>
-                    <div>End time : {$projects.ctime}</div>
+                    <div>{$_phrase.start}{$_phrase.engspace}{$_phrase.time} : {$projects.stime}</div>
+                    <div>{$_phrase.end}{$_phrase.engspace}{$_phrase.time} : {$projects.ctime}</div>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4">
                     <div>
                         <b>
-                            SHIPPING DETAILS
+                            {$_phrase.shipping|upper} DETAILS
                         </b>
                     </div>
                     <div>Shipping Fee :$ {$projects.shipping_price}</div>
-                    <div>Shipping information : {$projects.shipping_description}</div>
+                    <div>{$_phrase.shipping} information : {$projects.shipping_description}</div>
                 </div>
             </div>
             <div class="row gray_txt spd_desc">
                 <div>
                     <b>
-                        PRODUCT DESCRIPTION
+                        PRODUCT{$_phrase.engspace}{$_phrase.description|upper}
                     </b>
                 </div>
                 <p> {$projects.description} </p>
@@ -145,7 +145,7 @@ var clearvar = [];
                     <div class="pull-left mfrs1"> {if $projects.market_status == 'open' or $projects.market_status ==
                         'draft'}
                         <h3 class="countdown" id="my{$projects.id}">{$projects.day}</h3>
-                        {else} Auction Closed{/if}
+                        {else} {$_phrase.auction}{$_phrase.engspace}{$_phrase.closed}{/if}
                     </div>
                 </div>
                 <div class="clearfix pro_row">
@@ -193,7 +193,7 @@ var clearvar = [];
                         <div class="pull-left mfrs1"> {if $projects.market_status == 'open' or $projects.market_status
                             == 'draft'}
                             <h3 class="countdown" id="my1{$projects.id}">{$projects.day}</h3>
-                            {else} Auction Closed{/if}
+                            {else} {$_phrase.auction}{$_phrase.engspace}{$_phrase.closed}{/if}
                         </div>
                     </div>
                     <div class="clearfix pro_row">

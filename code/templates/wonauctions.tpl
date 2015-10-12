@@ -7,12 +7,12 @@
       <div class="row mblue_box md_hide">
         <div class="col-md-2 text-center">Image</div>
         <div class="col-md-2 text-center">Title</div>
-        <div class="col-md-4 text-center">End Time </div>
+        <div class="col-md-4 text-center">{$_phrase.end}{$_phrase.engspace}{$_phrase.time} </div>
         <div class="col-md-3 text-center"> Amount </div>
         <div class="col-md-1 text-center" style="padding-left:0"> Status</div>
       </div>
       {if $mybids|count <=  0}
-        <div class="col-md-12 text-center m-top-20 font-12">No Results Found</div>
+        <div class="col-md-12 text-center m-top-20 font-12">{$_phrase.noresultsfound}</div>
               {else}
       {foreach $mybids as $key => $val}
       <div class="row mblue_box1">

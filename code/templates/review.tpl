@@ -11,7 +11,7 @@
    
    <div class="my_message_right">
       <div class="message_common_border">
-         <h1 style="width:168px;" title="Add Product">Add Reviews</h1>
+         <h1 style="width:168px;" title="Add Product">{$_phrase.add}{$_phrase.engspace}{$_phrase.reviews}</h1>
          
       </div>
       <div class="message_common">

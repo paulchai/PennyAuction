@@ -20,7 +20,7 @@
         </div>
       </div>
       {if $seatedAuction|count <=  0}
-      <div class="col-md-12 text-center m-top-20 font-12">No Results Found</div>
+      <div class="col-md-12 text-center m-top-20 font-12">{$_phrase.noresultsfound}</div>
       {else}
       {foreach $seatedAuction as $key => $alist}
       <div class="row mblue_box1"  style="background:none">

@@ -8,11 +8,11 @@
             <div class="row mblue_box md_hide">
                 <div class="col-md-3">Image</div>
                 <div class="col-md-3">Title</div>
-                <div class="col-md-3">End Time</div>
+                <div class="col-md-3">{$_phrase.end}{$_phrase.engspace}{$_phrase.time}</div>
                 <div class="col-md-3">Amount</div>
             </div>
             {if $mybuynow|count <= 0}
-            <div class="col-md-12 text-center m-top-20 font-12">No Results Found</div>
+            <div class="col-md-12 text-center m-top-20 font-12">{$_phrase.noresultsfound}</div>
             {else}
             {foreach $mybuynow as $key => $val}
             <div class="row mblue_box1">

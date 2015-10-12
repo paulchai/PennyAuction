@@ -8,15 +8,15 @@
   <div class="row dashboard">
     <div class="col-md-3"> {include file="left-nav-dashboard.tpl" nocache} </div>
     <div class="col-md-9"> 
-      <h4 class="ds_brd">Shipping Address</h4>
+      <h4 class="ds_brd">{$_phrase.shipping}{$_phrase.engspace}{$_phrase.address}</h4>
       {if $shipping|count == 0} <a href="{$config['url']}/dashboard/Address/shipping" title="ADD SHIPPING ADDRESS" name="key" style="text-decoration:none">
-      <button class="btn edit_shipin">Add Shipping Address</button>
+      <button class="btn edit_shipin">{$_phrase.add}{$_phrase.engspace}{$_phrase.shipping}{$_phrase.engspace}{$_phrase.address}</button>
       </a> {/if}
       {if $shipping|count > 0}
-      <!--<h4 class="shead">Shipping Address</h4>-->
+      <!--<h4 class="shead">{$_phrase.shipping}{$_phrase.engspace}{$_phrase.address}</h4>-->
       <div class="row mblue_box md_hide">
         <div class="ship_add">Name </div>
-        <div class="ship_add">Address</div>
+        <div class="ship_add">{$_phrase.address}</div>
         <div class="ship_add"> State </div>
         <div class="ship_add">City</div>
         <div class="ship_add">Postcode </div>
@@ -36,15 +36,15 @@
       
       
       
-      <h4 class="ds_brd m-top-20">Billing Address</h4>
+      <h4 class="ds_brd m-top-20">{$_phrase.billing}{$_phrase.engspace}{$_phrase.address}</h4>
       {if $billing|count == 0}<a href="{$config['url']}/dashboard/Address/billing" title="ADD BILLING ADDRESS" name="key" style="text-decoration:none">
-      <button class="btn edit_shipin">Add Billing Address</button>
+      <button class="btn edit_shipin">{$_phrase.add}{$_phrase.engspace}{$_phrase.billing}{$_phrase.engspace}{$_phrase.address}</button>
       </a> {/if} 
       {if $billing|count > 0}
-     <!-- <h4 class="shead">Billing Address</h4>-->
+     <!-- <h4 class="shead">{$_phrase.billing}{$_phrase.engspace}{$_phrase.address}</h4>-->
       <div class="row mblue_box md_hide">
         <div class="ship_add">Name </div>
-        <div class="ship_add">Address</div>
+        <div class="ship_add">{$_phrase.address}</div>
         <div class="ship_add"> State </div>
         <div class="ship_add">City</div>
         <div class="ship_add">Postcode </div>

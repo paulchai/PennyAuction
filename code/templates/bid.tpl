@@ -73,8 +73,8 @@
             <h1>Price Details</h1>
             <div class="detail-action_detail_lef">
               <h2> Price Starting From :</h2>
-              <h2>Start time : </h2>
-              <h2>End time :</h2>
+              <h2>{$_phrase.start}{$_phrase.engspace}{$_phrase.time} :</h2>
+              <h2>{$_phrase.end}{$_phrase.engspace}{$_phrase.time} :</h2>
             </div>
             <div class="detail-action_detail_rgt">
               <p><font class="">$</font> {$projects.sprice} </p>
@@ -83,10 +83,10 @@
             </div>
           </div>
           <div class="detail-action_detail detail_last-bgnone">
-            <h1>Shipping Details</h1>
+            <h1>{$_phrase.shipping} Details</h1>
             <div class="detail-action_detail_lef">
-              <h2>Shipping Fee :</h2>
-              <h2>Shipping information :</h2>
+              <h2>{$_phrase.shipping} Fee :</h2>
+              <h2>{$_phrase.shipping} information :</h2>
             </div>
             <div class="detail-action_detail_rgt">
               <p><font class="">$</font> {$projects.shipping_fee}</p>
@@ -95,7 +95,7 @@
           </div>
         </div>
         <div class="detail_product_description">
-          <h1>Product Description</h1>
+          <h1>Product{$_phrase.engspace}{$_phrase.description}</h1>
           <p>{$projects.description}</p>
         </div>
       </div>

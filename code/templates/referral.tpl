@@ -17,7 +17,7 @@
       <div class="row mblue_box md_hide">
         <div class="col-md-2">Image </div>
         <div class="col-md-3">Name </div>
-        <div class="col-md-3"> Email </div>
+        <div class="col-md-3"> {$_phrase.email} </div>
         <div class="col-md-2">Joined</div>
          <div class="col-md-2">Status</div>
       </div>

@@ -43,7 +43,7 @@
     <br/>
 
     <div class="gray_txt">{if $projects.market_status == 'open' or $projects.market_status == 'draft'}<h3
-            class="countdown" id="my{$projects.id}">{$projects.day}</h3>{else} Auction Closed{/if}
+            class="countdown" id="my{$projects.id}">{$projects.day}</h3>{else} {$_phrase.auction}{$_phrase.engspace}{$_phrase.closed}{/if}
     </div>
     <div class="proc_title">{$projects.title}</div>
 

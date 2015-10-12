@@ -15,34 +15,34 @@
                     </div>
 
                     <div class="col-xs-6 col-sm-3 col-md-2">
-                        <h5 class="ftw500 his3">Company</h5>
+                        <h5 class="ftw500 his3">{$_phrase.company}</h5>
                         <ul>
                             <li>
-                                <a class="alg_reg light_blck ftw500 wht3" href="/about">About</a>
+                                <a class="alg_reg light_blck ftw500 wht3" href="/about">{$_phrase.about}</a>
                             </li>
                             <li>
-                                <a class="alg_reg light_blck ftw500 wht3" href="/contact">Contact</a>
+                                <a class="alg_reg light_blck ftw500 wht3" href="/contact">{$_phrase.contact}</a>
                             </li>
                             <li>
-                                <a class="alg_reg light_blck ftw500 wht3" href="/news">News</a>
+                                <a class="alg_reg light_blck ftw500 wht3" href="/news">{$_phrase.news}</a>
                             </li>
                         </ul>
                     </div>
 
                     <div class="col-xs-6 col-sm-3 col-md-2">
-                        <h5 class="ftw500 his3">Services</h5>
+                        <h5 class="ftw500 his3">{$_phrase.services}</h5>
                         <ul>
                             <li>
-                                <a class="alg_reg light_blck ftw500 wht3" href="/how_it_works">How it Works</a>
+                                <a class="alg_reg light_blck ftw500 wht3" href="/how_it_works">{$_phrase.howitworks}</a>
                             </li>
                             <li>
-                                <a class="alg_reg light_blck ftw500 wht3" href="/reviews">Reviews</a>
+                                <a class="alg_reg light_blck ftw500 wht3" href="/reviews">{$_phrase.reviews}</a>
                             </li>
                             <li>
-                                <a class="alg_reg light_blck ftw500 wht3" href="/dispute">Dispute</a>
+                                <a class="alg_reg light_blck ftw500 wht3" href="/dispute">{$_phrase.dispute}</a>
                             </li>
                             <li>
-                                <a class="alg_reg light_blck ftw500 wht3" href="/faq">FAQ</a>
+                                <a class="alg_reg light_blck ftw500 wht3" href="/faq">{$_phrase.faq}</a>
                             </li>
                         </ul>
                     </div>

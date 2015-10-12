@@ -89,12 +89,12 @@ function update(obj) {
     <div class="col-md-12 fotdi6">
 
 <div class="col-md-6 pull-left futexcen1" style="margin-top: 8px;">{$pagetitle}</div>
-<div class="col-md-3 pull-right auto_width" style="margin-top: 8px;"><span>Sort By:</span> 
+<div class="col-md-3 pull-right auto_width" style="margin-top: 8px;"><span>{$_phrase.sortby}:</span> 
 <select onchange="searchitems(this)">
-  <option  value="01" {if $get.sort == '01'}selected {/if} >Time: newly listed</option>
-  <option  value="02" {if $get.sort == '02'}selected {/if}>Time: ending soonest</option>
-  <option   value="03" {if $get.sort == '03'}selected {/if}>Price: lowest first</option>
-  <option  value="04" {if $get.sort == '04'}selected {/if}>Price: highest first</option>
+  <option  value="01" {if $get.sort == '01'}selected {/if} >{$_phrase.time}: {$_phrase.newlylisted}</option>
+  <option  value="02" {if $get.sort == '02'}selected {/if}>{$_phrase.time}: {$_phrase.endingsoonest}</option>
+  <option   value="03" {if $get.sort == '03'}selected {/if}>{$_phrase.price}: {$_phrase.lowestfirst}</option>
+  <option  value="04" {if $get.sort == '04'}selected {/if}>{$_phrase.price}: {$_phrase.highestfirst}</option>
 </select>
 </div>
 
@@ -102,7 +102,7 @@ function update(obj) {
       <div class="col-md-12"> {assign var="proj" value=$projects.project}
       {include file="projects-new.tpl" nocache}
       
-      {if $projects.project|count == 0} <p class="text-center" style="margin-bottom:10px">No Results Found {/if} </p> </div>
+      {if $projects.project|count == 0} <p class="text-center" style="margin-bottom:10px">{$_phrase.noresultsfound} {/if} </p> </div>
     </div>
 
 <script> 

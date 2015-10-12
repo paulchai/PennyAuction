@@ -188,7 +188,7 @@
 					</div>
 
 					<div class="col-md-10"></div>
-					<div class="col-md-2" style="color:#6DCBDB;">View all</div>
+					<div class="col-md-2" style="color:#6DCBDB;">{$_phrase.viewall}</div>
 
 				</div>
 

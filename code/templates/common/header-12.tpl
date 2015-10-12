@@ -108,7 +108,7 @@ var socket = io.connect();
 				   {/foreach} 
 				  </ul>
 			</div>
-			<label class="pull-left search_lbl">Search</label>
+			<label class="pull-left search_lbl">{$_phrase.search}</label>
 			<div class="input-group em_search pull-left;">
 			
                         <select class="input-group-addon btn selc mdropdown" name="cid" id="cid_search" onchange="searchProject();">

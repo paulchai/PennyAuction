@@ -52,7 +52,7 @@
             </div>-->
             <div class="col-md-1"></div>
             <div class="col-md-7">
-                <h3 class="rev_head">Reviews</h3>
+                <h3 class="rev_head">{$_phrase.reviews}</h3>
                
                     {foreach $review as $key => $val} 
                      <div class="m-top-20">  
@@ -108,7 +108,7 @@
                     </div>
                 </div>
                     <div class="panel panel-default">
-                    <div class="panel-heading">Contact Support</div>
+                    <div class="panel-heading">{$_phrase.contact}{$_phrase.engspace}{$_phrase.support}</div>
                     <div class="panel-body">
                         Got a question? We've got answers. For simple solutions, check out our easy-to-access Help section. For stickier situations, please email us at
                         <a href="">support@auctionsoftware.com </a>

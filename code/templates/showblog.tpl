@@ -3,7 +3,7 @@
             <div class="col-md-9" style="margin-bottom: 10px;padding-bottom: 10px;">
                 <div class="news_head">Blog post</div>
                 <div class="news_posth" style="padding-left: 20px;"><h3>{$blog.title}</h3></div>
-                  <div><img src="{$config.url}/images/note.png" alt="" /><span class="post-date">{$blog.date_add}</span> Posted by {$blog.first_name} {$blog.last_name} </div>
+                  <div><img src="{$config.url}/images/note.png" alt="" /><span class="post-date">{$blog.date_add}</span> {$_phrase.postedby} {$blog.first_name} {$blog.last_name} </div>
                     {if $blog.image != ''}<div class="blog_img"><img src="{$config.url}/uploads/blog/{$blog.avatar}" style="max-width:100%;" /> </div>{/if} 
                                            
                                             
@@ -23,7 +23,7 @@
         </form>
       </div>
       <div id="recent-posts-2" class="widget widget_recent_entries">
-        <h4 class="widget-title">Recent Posts</h4>
+        <h4 class="widget-title">{$_phrase.recentpost}{$_phrase.s}</h4>
         <ul>
           {foreach $rblog as $key => $val}
           

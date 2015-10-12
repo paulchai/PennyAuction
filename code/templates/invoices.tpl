@@ -21,7 +21,7 @@
             <table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" class="table-top">
               <thead>
                 <tr>
-                  <th  align="center"> <b>Description</b> </th>
+                  <th  align="center"> <b>{$_phrase.description}</b> </th>
                   <th  align="center"> <b>Type</b> </th>
                   <th  align="center"> <b>Amount</b> </th>
                   <th  align="center"> <b>Date Added</b> </th> 

@@ -16,7 +16,7 @@
       <div class="row mblue_box">
             <div class="col-md-3">Image  </div>     
             <div class="col-md-3">   Title   </div>          
-            <div class="col-md-4"> End Time    </div>     
+            <div class="col-md-4"> {$_phrase.end}{$_phrase.engspace}{$_phrase.time}    </div>     
             <div class="col-md-2">Delete</div>
           </div>
 

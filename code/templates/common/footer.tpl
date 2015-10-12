@@ -59,7 +59,7 @@
         <ul>
           <li><a href="<h3>#</h3>" title="My Page">My Page</a></li>
           <strong>Customer Service</strong>
-          <li><a href="#" title="Contact Us ">Contact Us </a></li>
+          <li><a href="#" title="Contact Us ">{$_phrase.contact}{$_phrase.engspace}{$_phrase.us} </a></li>
         </ul>
       </div>
       <div class="footer_inner_right_right">
@@ -68,10 +68,10 @@
           <li><a href="#" title="Customer Support">Customer Support</a></li>
           <li><a href="#" title="Terms Conditions">Terms Conditions</a></li>
           <li><a href="#" title="Feed Back">Feed Back</a></li>
-          <li><a href="#" title="About Us">About Us</a></li>
-          <li><a href="#" title="How it works">How it works</a> </li>
+          <li><a href="#" title="About Us">{$_phrase.about}{$_phrase.engspace}{$_phrase.us}</a></li>
+          <li><a href="#" title="How it works">{$_phrase.howitworks}</a> </li>
           <li><a href="#" title="What Auction">What Auction</a></li>
-          <li><a href="#" title="Blog">Blog</a></li>
+          <li><a href="#" title="Blog">{$_phrase.blog}</a></li>
           <li><a href="#" title="Testimonials">Testimonials</a></li>
         </ul>
       </div>

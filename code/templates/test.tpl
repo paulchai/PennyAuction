@@ -7,7 +7,7 @@
       </div>
       <div class="arrow_one"></div>
       <div class="today_head_rgt">
-        <p><a href="live.html" title="View All">View All</a></p>
+        <p><a href="live.html" title="View All">{$_phrase.viewall}</a></p>
       </div>
     </div>
     <div class="subslice2"> {assign var="proj" value=$projects.open_project}

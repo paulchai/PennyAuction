@@ -12,10 +12,10 @@ body{
  <div class="row">
 		<div class="col-md-12 about_us">
         <div class="col-md-3">
-        <div class="premi2"><a href="/about">About Us</a></div>
+        <div class="premi2"><a href="/about">{$_phrase.about}{$_phrase.engspace}{$_phrase.us}</a></div>
         <div class="premi2"><a href="/how_it_works">How PennyAuction Work</a></div>
-        <div class="premi2"><a href="/faq" class="active2">FAQs</a></div>
-        <div class="premi2"><a href="/contact">Contact US</a></div>
+        <div class="premi2"><a href="/faq" class="active2">{$_phrase.faq}{$_phrase.s}</a></div>
+        <div class="premi2"><a href="/contact">{$_phrase.contact}{$_phrase.engspace}{$_phrase.us|upper}</a></div>
         </div>
         <div class="col-md-9">
 			<div class="ft25 title_about">Frequently Asked Questions</div>

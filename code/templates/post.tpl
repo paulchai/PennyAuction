@@ -11,7 +11,7 @@
    
    <div class="my_message_right">
       <div class="message_common_border">
-         <h1 style="width:168px;" title="Add Product">Add Product</h1>
+         <h1 style="width:168px;" title="Add Product">{$_phrase.add}{$_phrase.engspace}Product</h1>
          <p style="width:551px;">&nbsp;</p>
       </div>
       <form method="POST" enctype="multipart/form-data" class="admin_form" data-parsley-validate name="add-product" id="add-product" action="/product/save">
@@ -61,7 +61,7 @@
                      </span>
                   </div>
                   <div class="user_name_common">
-                     <p>Product Description<span class="red">*</span>  :</p>
+                     <p>Product{$_phrase.engspace}{$_phrase.description}<span class="red">*</span>  :</p>
                      <div class="text_feeld">
                         <h2>
                            <textarea name="description" id="product_info" data-parsley-group="block1" required class="resizetextarea" data-parsley-maxlength="500" data-parsley-length="[100, 500]" value="" onkeyup="limitlengths(this, 500,'product_info_label')"></textarea>
@@ -107,7 +107,7 @@
                      </div>
                   </div>
                   <div class="user_name_common" id="shippingfee-field">
-                     <p>Shipping Amount  :</p>
+                     <p>{$_phrase.shipping} Amount  :</p>
                      <div class="text_feeld">
                         <h2>
                            <input name="shipping_fee" id="shipping_fee"  data-parsley-group="block1" required maxlength="12" value="" type="text">

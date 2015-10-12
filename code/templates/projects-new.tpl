@@ -68,7 +68,7 @@ var clearvar = []; </script>
             </button>
             {/if}
             <div class="fotdi7">
-                <div class="fotdi5">Description</div>
+                <div class="fotdi5">{$_phrase.description}</div>
                 <div style="height:20px;overflow:hidden;color:#428bca;">{$val.description}</div>
             </div>
 

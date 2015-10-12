@@ -4,7 +4,7 @@
  <div class="col-md-12 m-top-40 m-bottom-20"> 
  <div class="bg bg-danger padding-20">  
   <i class="fa fa-warning"></i>
-  Some Error Occured.Go Back to site <a href="{$config.url}">Click Here</a>
+  {$_phrases.someerrorbacktosite} <a href="{$config.url}">Click Here</a>
   <br /><div class="font-12 text-danger">{$message}</div>
  </div>
 </div>

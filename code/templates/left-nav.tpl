@@ -23,7 +23,7 @@
 			<li class="fl clr wau" id="buy_now"><a href="{$config.url}/dashboard/buynow" title="Buy Now" id="buy_now_active">Buy Now</a></li>
             <li class="fl clr wau" id="buy_now"><a href="{$config.url}/dashboard/autobid" title="Buy Now" id="buy_now_active">Auto Bid</a></li>
 			<li class="fl clr" id="my_pending_active"><a href="{$config.url}/dashboard/referral" title="Referrals / Invite">Referrals / Invite</a></li>
-			<li class="fl clr" id="my_review_active"><a href="{$config.url}/dashboard/review" title="Review">Reviews</a></li>
+			<li class="fl clr" id="my_review_active"><a href="{$config.url}/dashboard/review" title="Review">{$_phrase.reviews}</a></li>
 			
 			
 			</li>

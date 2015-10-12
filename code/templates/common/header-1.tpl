@@ -97,38 +97,38 @@
             <div class="row top_nav">
                 <div class="col-md-6">Auction Software Version 1.0 Demo</div>
                 <div class="col-md-6 txt_arht tn_rht">
-                    <span> View &nbsp; </span>
+                    <span> {$_phrase.view} &nbsp; </span>
                     <span class="block">
                         <form action="{$config['url']}/index/changetheme"
                               id="change_theme" method="post"
                               enctype="multipart/form-data">
                             <input type="hidden" name="gopage" value="{$config['url']}{$pageofjs}">
                             <select onChange="changetheme(this)" name="themeno" style="color:#000">
-                                <option value="0" {if $themeno== 1} selected {/if}>Auction Stone</option>
-                                <option value="4" {if $themeno== 4} selected {/if}>Black Forest</option>
-                                <option value="1" {if $themeno== 1} selected {/if}>Baby Blue</option>
-                                <option value="2" {if $themeno== 2} selected {/if}>Glossy Byzantium</option>
-                                <option value="3" {if $themeno== 3} selected {/if}>Deep Red</option>
+                                <option value="0" {if $themeno== 1} selected {/if}>{$_phrase.auctionstone}</option>
+                                <option value="4" {if $themeno== 4} selected {/if}>{$_phrase.blackforest}</option>
+                                <option value="1" {if $themeno== 1} selected {/if}>{$_phrase.babyblue}</option>
+                                <option value="2" {if $themeno== 2} selected {/if}>{$_phrase.glossybyzantium}</option>
+                                <option value="3" {if $themeno== 3} selected {/if}>{$_phrase.deepred}</option>
                             </select>
                         </form>
                     </span> &nbsp;| &nbsp;
-                    <span class="cursor">Login as</span> &nbsp;
+                    <span class="cursor">{$_phrase.loginas}</span> &nbsp;
     <span class="block">
         <form action="{$config['url']}/login/save" id="autologin" method="post"
               enctype="multipart/form-data">
             <input type="hidden" name="autologin" value="1">
             <input type="hidden" name="username" id="autologinuserid" value="">
             <select onChange="loginauto(this)" name="autologinoption" style="color:#000">
-                <option value="0" {if $autologin== 0} selected {/if}>Select</option>
-                <option value="buyer" {if $autologin=='buyer'} selected {/if}>Buyer</option>
-                <option value="admin" {if $autologin=='admin'} selected {/if}>Admin</option>
+                <option value="0" {if $autologin== 0} selected {/if}>{$_phrase.select}</option>
+                <option value="buyer" {if $autologin=='buyer'} selected {/if}>{$_phrase.buyer}</option>
+                <option value="admin" {if $autologin=='admin'} selected {/if}>{$_phrase.admin}</option>
             </select>
         </form>
     </span>
                     <!--<span class="cursor" onClick="window.location='{$config['url']}/admincp'">Admin</span>-->
 
                     <a href="/contact" class="oe3">{$_phrase.contact_us} </a> &nbsp| &nbsp;<a
-                        href="http://www.auctionsoftware.com" class="oe3"> Back to Auctionsoftware.com</a></div>
+                        href="http://www.auctionsoftware.com" class="oe3"> {$_phrase.backto} Auctionsoftware.com</a></div>
             </div>
         </div>
     </div>
@@ -150,7 +150,7 @@
                           enctype="multipart/form-data">
                         <div class="input-group">
                             <input type="text" class="form-control srbt3" value="{$search_search}" name="search"
-                                   id="search" maxlength="300" placeholder="Search">
+                                   id="search" maxlength="300" placeholder="{$_phrase.search}">
                             <!--<input type="hidden" value="{$ptitle}" name="page" /> -->
                             <input type="hidden" value="{$ptitle}" name="page"/>
                             <input type="hidden" value="01" name="sort" id="sort"/>
@@ -191,22 +191,19 @@
                             <li class="hty3" style="margin-left: 18px;"><a href="{$config.url}" title="Home">
                                 {$_phrase.home}</a></li>
                             <li class="l9ie">|</li>
-                            <li class="hty3"><a href="{$config.url}/live" title="Live Auctions"> {$_phrase.live}
-                                {$_phrase.auction}{$_phrase.s}</a></li>
+                            <li class="hty3"><a href="{$config.url}/live" title="Live Auctions"> {$_phrase.live}{$_phrase.engspace}{$_phrase.auction}{$_phrase.s}</a></li>
                             <li class="l9ie">|</li>
-                            <li class="hty3"><a href="{$config.url}/future" title="Future Auctions"> {$_phrase.future}
-                                {$_phrase.auction}{$_phrase.s} </a></li>
+                            <li class="hty3"><a href="{$config.url}/future" title="Future Auctions"> {$_phrase.futureauction} </a></li>
                             <li class="l9ie">|</li>
-                            <li class="hty3"><a href="{$config.url}/closed" title="Closed Auctions"> {$_phrase.closed}
-                                {$_phrase.auction}{$_phrase.s}</a></li>
+                            <li class="hty3"><a href="{$config.url}/closed" title="Closed Auctions"> {$_phrase.closed}{$_phrase.engspace} {$_phrase.auction}{$_phrase.s}</a></li>
                             <li class="l9ie">|</li>
                             <li class="hty3"><a href="{$config.url}/shop" title="Shop Now"> {$_phrase.buy_now}</a></li>
                             <li class="l9ie">|</li>
                             <li class="hty3"><a href="{$config.url}/winner" title="Winners">
                                 {$_phrase.winner}{$_phrase.s}</a></li>
-                            <li class="l9ie">|</li>
+                            <!--<li class="l9ie">|</li>
                             <li class="hty3"><a href="{$config.url}/blog" title="Blogs">{$_phrase.blog}
-                                <!--{$_phrase.s}--></a></li>
+                                {$_phrase.s}--></a></li>
                         </ul>
                     </div>
                 </div>

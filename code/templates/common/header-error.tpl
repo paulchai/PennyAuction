@@ -78,11 +78,11 @@ var socket = io.connect();
 	   <div class="nav nav-bar">
 			<ul class="menu_bar">
 				  <li class="{if $pageofjs == '' or $pageofjs == '/'}active{/if}"><a href="{$config.url}" title="Home"> Home</a></li>
-			      <li class="{if $pageofjs == '/live'}active{/if}"><a href="{$config.url}/live" title="Live Auctions"> Live Auctions</a></li>
-			      <li class="{if $pageofjs == '/future'}active{/if}"><a href="{$config.url}/future" title="Future Auctions"> Future Auctions </a></li>
-			      <li class="{if $pageofjs == '/closed'}active{/if}"><a href="{$config.url}/closed" title="Closed Auctions"> Closed Auctions</a></li>
+			      <li class="{if $pageofjs == '/live'}active{/if}"><a href="{$config.url}/live" title="Live Auctions"> {$_phrase.live}{$_phrase.engspace}{$_phrase.auction}{$_phrase.s}</a></li>
+			      <li class="{if $pageofjs == '/future'}active{/if}"><a href="{$config.url}/future" title="Future Auctions"> {$_phrase.futureauction}{$_phrase.s} </a></li>
+			      <li class="{if $pageofjs == '/closed'}active{/if}"><a href="{$config.url}/closed" title="Closed Auctions"> {$_phrase.closed}{$_phrase.engspace}{$_phrase.auction}{$_phrase.s}</a></li>
 			      <li class="{if $pageofjs == '/shop'}active{/if}"><a href="{$config.url}/shop" title="Shop Now"> Shop Now</a></li>
-			      <li class="{if $pageofjs == '/winner'}active{/if}"><a href="{$config.url}/winner" title="Winners"> Winners</a></li>
+			      <li class="{if $pageofjs == '/winner'}active{/if}"><a href="{$config.url}/winner" title="Winners"> {$_phrase.winner}{$_phrase.s}</a></li>
 			      <li  class="{if $pageofjs == '/blog'}active{/if}"><a href="{$config.url}/blog" title="Blogs">Blogs</a></li>
 			      <li  class="{if $pageofjs == '/package'}active{/if}"><a href="{$config.url}/package" title="Buy Packages"> Deposit</a></li>
 			</ul>
@@ -100,7 +100,7 @@ var socket = io.connect();
 				   {/foreach} 
 				  </ul>
 			</div>
-			<label class="pull-left search_lbl">Search</label>
+			<label class="pull-left search_lbl">{$_phrase.search}</label>
 			<div class="input-group em_search pull-left;">
 			
                         <select class="input-group-addon btn selc mdropdown" name="cid" id="cid_search" onchange="searchProject();">

@@ -5,7 +5,7 @@
     <div class="col-md-9">
       <h4 class="ds_brd">My Transaction</h4>
       <div class="row mblue_box md_hide">
-        <div class="col-md-2">Description </div>
+        <div class="col-md-2">{$_phrase.description} </div>
         <div class="col-md-2"> Type</div>
         <div class="col-md-2"> Amount </div>
         <div class="col-md-2">Date</div>
@@ -13,7 +13,7 @@
         <div class="col-md-2">Status</div>
       </div>
       {if $transaction|count <=  0}
-      <div class="col-md-12 text-center m-top-20 font-12">No Results Found</div>
+      <div class="col-md-12 text-center m-top-20 font-12">{$_phrase.noresultsfound}</div>
       {else}
       {foreach $transaction as $key => $val}
       <div class="row mblue_box1">

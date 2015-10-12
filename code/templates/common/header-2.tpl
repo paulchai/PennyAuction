@@ -95,7 +95,7 @@ function changetheme(dis) {
 <div class="row">
 <div class="col-md-6">Auction Software Version 1.0 Demo</div>
 <div class="col-md-6 txt_arht">
-   <span> View &nbsp; </span> <span class="block"><form action="{$config['url']}/index/changetheme" id="change_theme" method="post" enctype="multipart/form-data"  >
+   <span> {$_phrase.view} &nbsp; </span> <span class="block"><form action="{$config['url']}/index/changetheme" id="change_theme" method="post" enctype="multipart/form-data"  >
      <input type="hidden" name="gopage"  value= "{$config['url']}{$pageofjs}">
          <select onChange="changetheme(this)" name="themeno" style="color:#000">
             <option value="0" {if $themeno == 1} selected {/if}>Auction Stone</option>
@@ -105,7 +105,7 @@ function changetheme(dis) {
             <option value="3" {if $themeno == 3} selected {/if}>Deep Red</option>           
          </select>
     </form> </span>  &nbsp;|  &nbsp;
- <span class="cursor">Login as</span>  &nbsp;
+ <span class="cursor">{$_phrase.loginas}</span>  &nbsp;
     <span class="block"><form action="{$config['url']}/login/save" id="autologin" method="post" enctype="multipart/form-data"  >
          <input type="hidden" name="autologin"  value= "1">
          <input type="hidden" name="username" id="autologinuserid"  value= "">
@@ -120,7 +120,7 @@ function changetheme(dis) {
     
 <!--<span class="cursor" onClick="window.location='{$config['url']}/admincp'">Admin</span>-->
 
-<a href="/contact" class="oe3">{$_phrase.contact_us} </a> &nbsp| &nbsp;<a href="http://www.auctionsoftware.com" class="oe3"> Back to Auctionsoftware.com</a></div>
+<a href="/contact" class="oe3">{$_phrase.contact_us} </a> &nbsp| &nbsp;<a href="http://www.auctionsoftware.com" class="oe3"> {$_phrase.backto} Auctionsoftware.com</a></div>
 </div>
 </div>
 </div>
@@ -168,11 +168,11 @@ function changetheme(dis) {
       
                 <li class="hty3" style="margin-left: 18px;"><a href="{$config.url}" title="Home"> {$_phrase.home}</a></li>
                <li class="l9ie" >|</li>
-       <li class="hty3"><a href="{$config.url}/live" title="Live Auctions"> {$_phrase.live} {$_phrase.auction}{$_phrase.s}</a></li>
+       <li class="hty3"><a href="{$config.url}/live" title="Live Auctions"> {$_phrase.live}{$_phrase.engspace}{$_phrase.auction}{$_phrase.s}</a></li>
      <li class="l9ie">|</li>
-        <li class="hty3"><a href="{$config.url}/future" title="Future Auctions"> {$_phrase.future} {$_phrase.auction}{$_phrase.s} </a></li>
+        <li class="hty3"><a href="{$config.url}/future" title="Future Auctions"> {$_phrase.futureauction}{$_phrase.s} </a></li>
        <li class="l9ie">|</li>
-        <li class="hty3"><a href="{$config.url}/closed" title="Closed Auctions"> {$_phrase.closed} {$_phrase.auction}{$_phrase.s}</a></li>
+        <li class="hty3"><a href="{$config.url}/closed" title="Closed Auctions"> {$_phrase.closed}{$_phrase.engspace}{$_phrase.auction}{$_phrase.s}</a></li>
        <li class="l9ie">|</li>
         <li class="hty3"><a href="{$config.url}/shop" title="Shop Now"> {$_phrase.buy_now}</a></li>
         <li class="l9ie">|</li>

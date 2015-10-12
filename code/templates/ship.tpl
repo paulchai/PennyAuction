@@ -68,7 +68,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-xs-5 col-sm-4 col-md-4">
-                                    <div class="dtimelft">Shipping Cost (USD $)</div>
+                                    <div class="dtimelft">{$_phrase.shipping} Cost (USD $)</div>
                                 </div>
                                 <div class="col-xs-1 col-sm-1 col-md-1">
                                     <div class="dtimelft">:</div>
@@ -115,7 +115,7 @@
                     </div>
 
                     <div class="col-md-12">
-                        <div class="product">Product Description</div>
+                        <div class="product">Product{$_phrase.engspace}{$_phrase.description}</div>
                         <div class="para"> {$product.description}</div>
                     </div>
                 </div>
@@ -132,7 +132,7 @@
                     <div class="row">
                         <form action="{$config['url']}/product/buy/{$product.id}/" method="get" id="shipping"
                               name="shipping" accept-charset="utf-8" data-parsley-validate>
-                            <div class="shping"> Shipping Address</div>
+                            <div class="shping"> {$_phrase.shipping}{$_phrase.engspace}{$_phrase.address}</div>
                             <div class="row pding">
                                 <div class="col-xs-12 col-sm-12 col-md-8">
                                     <input class="form-control ct" placeholder="Enter your name" name="name"

@@ -11,7 +11,7 @@
 <div class="row dashboard">
     <div class="col-md-3"> {include file="left-nav-dashboard.tpl" nocache}</div>
     <div class="col-md-9">
-        <h4 class="ds_brd" style="text-transform: capitalize;">Add {$type} Address</h4>
+        <h4 class="ds_brd" style="text-transform: capitalize;">{$_phrase.add}{$type}{$_phrase.engspace}{$_phrase.address}</h4>
 
         <form action="{$config['url']}/dashboard/Myaddress" method="post" id="shipping" name="shipping"
               accept-charset="utf-8" data-parsley-validate>

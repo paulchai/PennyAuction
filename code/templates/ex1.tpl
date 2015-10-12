@@ -18,7 +18,7 @@ Stores
 <div class="col-md-12">Lorem ipsum dolor sit amet, vim eu primis assueverit cotidieque. Id modus apeirian ius, et feugiat necessitatibus vix....</div>
 <div class="col-md-12">
 <div class="col-md-8"></div>
-<div class="col-md-4"><button type="button" class="btn btn-primary pribtnon">View</button></div>
+<div class="col-md-4"><button type="button" class="btn btn-primary pribtnon">{$_phrase.view}</button></div>
 
 </div>
 </div>
@@ -32,7 +32,7 @@ Stores
 <div class="col-md-12">Lorem ipsum dolor sit amet, vim eu primis assueverit cotidieque. Id modus apeirian ius, et feugiat necessitatibus vix....</div>
 <div class="col-md-12">
 <div class="col-md-8"></div>
-<div class="col-md-4"><button type="button" class="btn btn-primary pribtnon">View</button></div>
+<div class="col-md-4"><button type="button" class="btn btn-primary pribtnon">{$_phrase.view}</button></div>
 
 </div>
 </div>
@@ -45,7 +45,7 @@ Stores
 <div class="col-md-12">Lorem ipsum dolor sit amet, vim eu primis assueverit cotidieque. Id modus apeirian ius, et feugiat necessitatibus vix....</div>
 <div class="col-md-12">
 <div class="col-md-8"></div>
-<div class="col-md-4"><button type="button" class="btn btn-primary pribtnon">View</button></div>
+<div class="col-md-4"><button type="button" class="btn btn-primary pribtnon">{$_phrase.view}</button></div>
 
 </div>
 </div>
@@ -63,7 +63,7 @@ Stores
 <div class="col-md-12">Lorem ipsum dolor sit amet, vim eu primis assueverit cotidieque. Id modus apeirian ius, et feugiat necessitatibus vix....</div>
 <div class="col-md-12">
 <div class="col-md-8"></div>
-<div class="col-md-4"><button type="button" class="btn btn-primary pribtnon">View</button></div>
+<div class="col-md-4"><button type="button" class="btn btn-primary pribtnon">{$_phrase.view}</button></div>
 
 </div>
 </div>
@@ -77,7 +77,7 @@ Stores
 <div class="col-md-12">Lorem ipsum dolor sit amet, vim eu primis assueverit cotidieque. Id modus apeirian ius, et feugiat necessitatibus vix....</div>
 <div class="col-md-12">
 <div class="col-md-8"></div>
-<div class="col-md-4"><button type="button" class="btn btn-primary pribtnon">View</button></div>
+<div class="col-md-4"><button type="button" class="btn btn-primary pribtnon">{$_phrase.view}</button></div>
 
 </div>
 </div>
@@ -90,7 +90,7 @@ Stores
 <div class="col-md-12">Lorem ipsum dolor sit amet, vim eu primis assueverit cotidieque. Id modus apeirian ius, et feugiat necessitatibus vix....</div>
 <div class="col-md-12">
 <div class="col-md-8"></div>
-<div class="col-md-4"><button type="button" class="btn btn-primary pribtnon">View</button></div>
+<div class="col-md-4"><button type="button" class="btn btn-primary pribtnon">{$_phrase.view}</button></div>
 
 </div>
 </div>
@@ -110,7 +110,7 @@ Stores
 <div class="col-md-12">Lorem ipsum dolor sit amet, vim eu primis assueverit cotidieque. Id modus apeirian ius, et feugiat necessitatibus vix....</div>
 <div class="col-md-12">
 <div class="col-md-8"></div>
-<div class="col-md-4"><button type="button" class="btn btn-primary pribtnon">View</button></div>
+<div class="col-md-4"><button type="button" class="btn btn-primary pribtnon">{$_phrase.view}</button></div>
 
 </div>
 </div>
@@ -124,7 +124,7 @@ Stores
 <div class="col-md-12">Lorem ipsum dolor sit amet, vim eu primis assueverit cotidieque. Id modus apeirian ius, et feugiat necessitatibus vix....</div>
 <div class="col-md-12">
 <div class="col-md-8"></div>
-<div class="col-md-4"><button type="button" class="btn btn-primary pribtnon">View</button></div>
+<div class="col-md-4"><button type="button" class="btn btn-primary pribtnon">{$_phrase.view}</button></div>
 
 </div>
 </div>
@@ -137,14 +137,14 @@ Stores
 <div class="col-md-12">Lorem ipsum dolor sit amet, vim eu primis assueverit cotidieque. Id modus apeirian ius, et feugiat necessitatibus vix....</div>
 <div class="col-md-12">
 <div class="col-md-8"></div>
-<div class="col-md-4"><button type="button" class="btn btn-primary pribtnon">View</button></div>
+<div class="col-md-4"><button type="button" class="btn btn-primary pribtnon">{$_phrase.view}</button></div>
 
 </div>
 </div>
 </div>
 <div class="col-md-12" style="padding-bottom:25px;">
 <div class="col-md-10"></div>
-<div class="col-md-2" style="color:#6DCBDB;">View All</div>
+<div class="col-md-2" style="color:#6DCBDB;">View all</div>
 </div>
 
 </div>

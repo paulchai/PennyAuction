@@ -37,7 +37,7 @@
             </div>
           </div>
         </div>-->
-        <div class="wieenners fotdi1">winners</div>
+        <div class="wieenners fotdi1">{$_phrase.winner}{$_phrase.s}</div>
         {foreach $projects as $key => $val} 
         <div class="panel panel-primary bb_box">
           <div class="panel-body">
@@ -49,20 +49,20 @@
                 {assign var="percentage" value=((($val.mprice-$val.wprice)/$val.mprice)*100)}
                 <div class="media-body jhk2">
                   <div>{$val.title}</div>
-                  <div>Bought For Only: ${$val.wprice}</div>
-                  <div>Price: ${$val.mprice}</div>
-                  <div>Auction closed on:{$val.date_closed}</div>
+                  <div>{$_phrase.boughtforonly}: ${$val.wprice}</div>
+                  <div>{$_phrase.price}: ${$val.mprice}</div>
+                  <div>{$_phrase.auctionclosedon}:{$val.date_closed}</div>
                 </div>
               </div>
               <div class="wpro_btm">
-                <div class="con_lbl pblue_txt">Winner:{$val.name}</div>
-                <div class="con_lbl pblue_txt">Location:{$val.state}</div>
+                <div class="con_lbl pblue_txt">{$_phrase.winner}:{$val.name}</div>
+                <div class="con_lbl pblue_txt">{$_phrase.location}:{$val.state}</div>
                 <div class="con_lbl pred_txt">{$val.country}</div>
-                <!--<div class="con_lbl pblue_txt">Profile:{$val.profile}</div>-->
+                <!--<div class="con_lbl pblue_txt">{$_phrase.profile}:{$val.profile}</div>-->
               </div>
             </div>
             <div class="wp_right">
-              <div class="green_ribbon">You Saved  <span class="roundit">{$percentage}</span>%</div>
+              <div class="green_ribbon">{$_phrase.yousaved}  <span class="roundit">{$percentage}</span>%</div>
               <div>
                 <img src="{if $val.avatar == ''} {$config['imgpath']}no_img.png {else if $val.avatar != ''}{$config['imgpath']}product/{$val.avatar}{/if}" width="122" height="122" alt="{$val.title}" title="{$val.title}" border="0"></div>
                 

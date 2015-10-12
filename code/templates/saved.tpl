@@ -24,7 +24,7 @@
       </div>
       <div class="arrow_one"></div>
       <div class="today_head_rgt">
-        <p><a href="live.html" title="View All">View All</a></p>
+        <p><a href="live.html" title="View All">{$_phrase.viewall}</a></p>
       </div>
     </div>
     <div class="subslice2">
@@ -198,11 +198,11 @@
       </div>
       <div class="today_head">
         <div class="today_head_lft">
-          <h2 title="Future Auction">Future Auctions</h2>
+          <h2 title="Future Auction">{$_phrase.futureauction}{$_phrase.s}</h2>
         </div>
         <div class="arrow_one"></div>
         <div class="today_head_rgt">
-          <p><a href="future.html" title="View All">View All</a></p>
+          <p><a href="future.html" title="View All">{$_phrase.viewall}</a></p>
         </div>
       </div>
       <div class="slice2">

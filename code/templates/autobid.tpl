@@ -91,7 +91,7 @@
                 </div>
             </div>
             {if $Autobids|count <= 0}
-            <div class="col-md-12 text-center m-top-20 font-12">No Results Found</div>
+            <div class="col-md-12 text-center m-top-20 font-12">{$_phrase.noresultsfound}</div>
             {else}
             {foreach $Autobids as $key => $alist}
             <div class="row mblue_box1" style="background:none">
@@ -126,7 +126,7 @@
             </div>
 
             {if $AutobidsClosed|count <= 0}
-            <div class="col-md-12 text-center m-top-20 font-12">No Results Found</div>
+            <div class="col-md-12 text-center m-top-20 font-12">{$_phrase.noresultsfound}</div>
             {else}
             {foreach $AutobidsClosed as $key => $alist}
             <div class="row mblue_box1" style="background:none">
@@ -138,7 +138,7 @@
                 <div data-label="Bids Used" class="account_p_lbl col-md-2 text-center">{$alist.bids}</div>
                 <div data-label="Bid Amount" class="account_p_lbl col-md-2 text-center">${$alist.bidamount}</div>
                 <div data-label="Status" class="account_p_lbl col-md-2 text-center"> {if $alist.bids >= $alist.maxbids}
-                    Limit reached {elseif $alist.bids < $alist.maxbids} Auction Closed {/if}
+                    Limit reached {elseif $alist.bids < $alist.maxbids} {$_phrase.auction}{$_phrase.engspace}{$_phrase.closed} {/if}
                 </div>
                 <div data-label="Options" class="account_p_lbl col-md-2 text-center"><a title="View"
                                                                                         onclick="PopupBox('{$config[\'url\']}/dashboard/autobidremove/{$alist.aid}','Are you sure?');"

@@ -2,14 +2,14 @@
 
 <div class="row clearfix" style="min-height:350px">
   <div class="clearfix col-md-9 blog_left" style="margin-bottom: 10px;padding-bottom: 10px;">
-    <div class="clearfix news_head">Blog</div>
+    <div class="clearfix news_head">{$_phrase.blog}</div>
     {foreach $blog as $key => $val}
     <div class="news_posth">
       <h3><a href="{$config.url}/blog/{$val.id}">{$val.title}</a> </h3>
-      <div><img src="{$config.url}/images/note.png" alt=""><span class="post-date">{$val.date_add}</span> Posted by {$val.first_name} {$val.last_name}  </div>
+      <div><img src="{$config.url}/images/note.png" alt=""><span class="post-date">{$val.date_add}</span> {$_phrase.postedby} {$val.first_name} {$val.last_name}  </div>
       <p> {$val.description_short}.. </p>
    
-      <button class="btn nblue_btn" onclick="window.location='{$config.url}/blog/{$val.id}'">Read More</button>
+      <button class="btn nblue_btn" onclick="window.location='{$config.url}/blog/{$val.id}'">{$_phrase.readmore}</button>
        </div>
     {/foreach}
   </div>
@@ -25,7 +25,7 @@
         </form>
       </div>
       <div id="recent-posts-2" class="widget widget_recent_entries">
-        <h4 class="widget-title">Recent Posts</h4>
+        <h4 class="widget-title">{$_phrase.recentpost}{$_phrase.s}</h4>
         <ul>
           {foreach $rblog as $key => $val}
           

@@ -67,7 +67,7 @@ var socket = io.connect();
                 <div class="search_button">
                   <div class="search_button_lft"></div>
                   <div class="search_button_mid" style="cursor:pointer;">
-                    <p style="cursor:pointer;"><a class="fl" onclick="searchProject();" title="SEARCH">SEARCH</a></p>
+                    <p style="cursor:pointer;"><a class="fl" onclick="searchProject();" title="SEARCH">{$_phrase.search|upper}</a></p>
                   </div>
                   <div class="search_button_rgt"></div>
                 </div>
@@ -94,12 +94,12 @@ var socket = io.connect();
         </select>
       </li>
       <li  > <a href="{$config.url}" title="Home"> Home</a></li>
-      <li  ><a href="{$config.url}/live" title="Live Auctions"> Live Auctions</a></li>
-      <li ><a href="{$config.url}/future" title="Future Auctions"> Future Auctions </a></li>
-      <li   ><a href="{$config.url}/closed" title="Closed Auctions"> Closed Auctions</a></li>
+      <li  ><a href="{$config.url}/live" title="Live Auctions"> {$_phrase.live}{$_phrase.engspace}{$_phrase.auction}{$_phrase.s}</a></li>
+      <li ><a href="{$config.url}/future" title="Future Auctions"> {$_phrase.futureauction}{$_phrase.s} </a></li>
+      <li   ><a href="{$config.url}/closed" title="Closed Auctions"> {$_phrase.closed}{$_phrase.engspace}{$_phrase.auction}{$_phrase.s}</a></li>
       <li ><a href="{$config.url}/shop" title="Shop Now"> Shop Now</a></li>
-      <li><a href="{$config.url}/winner" title="Winners"> Winners</a></li>
-      <li ><a href="news.html" title="News"> News</a></li>
+      <li><a href="{$config.url}/winner" title="Winners"> {$_phrase.winner}{$_phrase.s}</a></li>
+      <li ><a href="news.html" title="News"> {$_phrase.news}</a></li>
       <li  ><a href="{$config.url}/package" title="Buy Packages"> Buy Packages</a></li>
     </ul>
   </div>

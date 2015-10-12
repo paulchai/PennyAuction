@@ -31,7 +31,7 @@
                         <div class="form-group">
                             <label for="product_name">Categories title</label>
                             <input name="title" data-parsley-group="block1" required id="product_name" maxlength="99"
-                                   data-parsley-pattern="^[A-z ,.'-]+$"
+                                   data-parsley-pattern="^[\u4e00-\u9fa5A-z ,.'-]+$"
                                    data-parsley-pattern-message="Special Characters are not allowed"
                                    value="{$categories.name}" onKeyUp="return limitlength(this,99,'info_label')"
                                    type="text" class="form-control">
