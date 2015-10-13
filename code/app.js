@@ -63,6 +63,7 @@ var index = require('./routes/index'),
     linked = require('./routes/linked'),
     admincplogin = require('./routes/admincp/login'),
     stores = require('./routes/stores');
+    mlmapi = require('./routes/api_mlm_v1');
 
 app.use('/', index);
 app.use('/login', login);
@@ -79,6 +80,7 @@ app.use('/linked', linked);
 app.use('/admincp', admincp);
 app.use('/admin', admincplogin);
 app.use('/stores', stores);
+app.use('/api', mlmapi);
 //$arr.categories = module.categories(config.mysql);
 
 //index router
@@ -90,7 +92,7 @@ app.use('/stores', stores);
 
 module.exports = app;
 var server = http.createServer(app);
-server.listen(8080);
+server.listen(8000);
 
 // use socket.io
 var io = require('socket.io').listen(server);
