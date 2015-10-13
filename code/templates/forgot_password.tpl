@@ -66,7 +66,7 @@
           <div class="login_lft">
             <div class="login_form">
               
-                <p>Your User Name <span class="red">*</span>:</p>
+                <p>{$_phrase.your}{$_phrase.engspace}{$_phrase.username} <span class="red">*</span>:</p>
                 <input id="username" name="username" placeholder="Enter your user name" data-parsley-error-message="Enter valid user name" value="" maxlength="100" class="form-control bidonregi2" required/>
               </div>
               </div>

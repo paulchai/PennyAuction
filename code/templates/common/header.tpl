@@ -86,8 +86,8 @@ var socket = io.connect();
     <ul>
       <li>
         <select class="mdropdown" onchange="searchProject();">
-          <option value="" disabled selected>Select Category</option>
-          <option value="0"> ALL CATEGORIES</option>
+          <option value="" disabled selected>{$_phrase.select}{$_phrase.engspace}{$_phrase.category}</option>
+          <option value="0"> {$_phrase.allcategories|upper}</option>
           {foreach $category as $key => $val}
           <option value="{$val.id}">{$val.name}</option>
           {/foreach}
@@ -100,7 +100,7 @@ var socket = io.connect();
       <li ><a href="{$config.url}/shop" title="Shop Now"> Shop Now</a></li>
       <li><a href="{$config.url}/winner" title="Winners"> {$_phrase.winner}{$_phrase.s}</a></li>
       <li ><a href="news.html" title="News"> {$_phrase.news}</a></li>
-      <li  ><a href="{$config.url}/package" title="Buy Packages"> Buy Packages</a></li>
+      <li  ><a href="{$config.url}/package" title="Buy Packages"> {$_phrase.buypackage}{$_phrase.s}</a></li>
     </ul>
   </div>
 </div>

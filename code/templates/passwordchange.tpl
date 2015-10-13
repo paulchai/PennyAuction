@@ -2,7 +2,7 @@
 <div class="row dashboard">
     <div class="col-md-3"> {include file="left-nav-dashboard.tpl" nocache}</div>
     <div class="col-md-9">
-        <h4 class="ds_brd">Change Password</h4>
+        <h4 class="ds_brd">{$_phrase.change}{$_phrase.engspace}{$_phrase.password}</h4>
 
         <form action="/dashboard/changepassword" method="post" id="change_password" name="change_password"
               accept-charset="utf-8" data-parsley-validate>
@@ -53,7 +53,7 @@
             <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-2">
-                    <button type="button" id="changepassword" class="btn save_btn">Save</button>
+                    <button type="button" id="changepassword" class="btn save_btn">{$_phrase.save}</button>
                 </div>
             </div>
         </form>

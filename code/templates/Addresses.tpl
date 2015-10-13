@@ -15,12 +15,12 @@
       {if $shipping|count > 0}
       <!--<h4 class="shead">{$_phrase.shipping}{$_phrase.engspace}{$_phrase.address}</h4>-->
       <div class="row mblue_box md_hide">
-        <div class="ship_add">Name </div>
+        <div class="ship_add">{$_phrase.name} </div>
         <div class="ship_add">{$_phrase.address}</div>
-        <div class="ship_add"> State </div>
-        <div class="ship_add">City</div>
+        <div class="ship_add"> {$_phrase.state} </div>
+        <div class="ship_add">{$_phrase.city}</div>
         <div class="ship_add">Postcode </div>
-        <div class="ship_add">Phone No </div>
+        <div class="ship_add">{$_phrase.phoneno} </div>
         <div class="ship_add"> Options</div>
       </div>
       <div class="row mblue_box1">
@@ -30,7 +30,7 @@
         <div data-label="City" class="account_p_lbl ship_add">{$shipping.city} </div>
         <div data-label="Postcode" class="account_p_lbl ship_add">{$shipping.zipcode} </div>
         <div data-label="Phone No" class="account_p_lbl ship_add">{$shipping.phone} </div>
-        <div data-label="Options" class="account_p_lbl ship_add"> <a href="{$config['url']}/dashboard/Address/shipping" title="Edit" class="delet_link">Edit</a> &nbsp;  &nbsp; <a href="javascript:void(0);" title="Edit" class="delet_link" onclick="if(confirm('Are you sure?'))window.location = '{$config['url']}/dashboard/RemoveAddress/shipping'">Delete</a> </div>
+        <div data-label="Options" class="account_p_lbl ship_add"> <a href="{$config['url']}/dashboard/Address/shipping" title="Edit" class="delet_link">{$_phrase.edit}</a> &nbsp;  &nbsp; <a href="javascript:void(0);" title="Edit" class="delet_link" onclick="if(confirm('Are you sure?'))window.location = '{$config['url']}/dashboard/RemoveAddress/shipping'">{$_phrase.delete}</a> </div>
       </div>
       {/if}
       
@@ -43,12 +43,12 @@
       {if $billing|count > 0}
      <!-- <h4 class="shead">{$_phrase.billing}{$_phrase.engspace}{$_phrase.address}</h4>-->
       <div class="row mblue_box md_hide">
-        <div class="ship_add">Name </div>
+        <div class="ship_add">{$_phrase.name} </div>
         <div class="ship_add">{$_phrase.address}</div>
-        <div class="ship_add"> State </div>
-        <div class="ship_add">City</div>
+        <div class="ship_add"> {$_phrase.state} </div>
+        <div class="ship_add">{$_phrase.city}</div>
         <div class="ship_add">Postcode </div>
-        <div class="ship_add">Phone No </div>
+        <div class="ship_add">{$_phrase.phoneno} </div>
         <div class="ship_add"> Options</div>
       </div>
       <div class="row mblue_box1" style="background:none">
@@ -58,7 +58,7 @@
         <div data-label="City" class="account_p_lbl ship_add">{$billing.city} </div>
         <div data-label="Postcode" class="account_p_lbl ship_add">{$billing.zipcode} </div>
         <div data-label="Phone No" class="account_p_lbl ship_add">{$billing.phone} </div>
-        <div data-label="Options" class="account_p_lbl ship_add"> <a href="{$config['url']}/dashboard/Address/billing" title="Edit" class="delet_link">Edit</a> &nbsp;  &nbsp; <a href="javascript:void(0);" title="Edit" class="delet_link" onclick="if(confirm('Are you sure?'))window.location = '{$config['url']}/dashboard/RemoveAddress/billing'">Delete</a> </div>
+        <div data-label="Options" class="account_p_lbl ship_add"> <a href="{$config['url']}/dashboard/Address/billing" title="Edit" class="delet_link">{$_phrase.edit}</a> &nbsp;  &nbsp; <a href="javascript:void(0);" title="Edit" class="delet_link" onclick="if(confirm('Are you sure?'))window.location = '{$config['url']}/dashboard/RemoveAddress/billing'">{$_phrase.delete}</a> </div>
       </div>
       {/if} </div>
   </div>

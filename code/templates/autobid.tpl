@@ -22,7 +22,7 @@
 
                         <div class="col-md-8">
                             <select name="project_id" class="form-control" id="project_id" required>
-                                <option value="">Select Product</option>
+                                <option value="">{$_phrase.select}{$_phrase.engspace}Product</option>
                                 {foreach $project as $val}
                                 <option value="{$val.id}">{$val.title} - #{$val.id}</option>
                                 {/foreach}
@@ -82,11 +82,11 @@
 
             <div class="row mblue_box md_hide">
                 <div class="row mblue_box m-top-20">
-                    <div class="col-md-2">Title</div>
+                    <div class="col-md-2">{$_phrase.title}</div>
                     <div class="col-md-2 text-center">Maxbids</div>
                     <div class="col-md-2 text-center">Bids used</div>
                     <div class="col-md-2 text-center">Bid Amt</div>
-                    <div class="col-md-2 text-center"> Status</div>
+                    <div class="col-md-2 text-center"> {$_phrase.status}</div>
                     <div class="col-md-2 text-center"> Options</div>
                 </div>
             </div>
@@ -108,7 +108,7 @@
                 <div data-label="Options" class="account_p_lbl  col-md-2 text-center"><a title="View"
                                                                                          onclick="PopupBox('{$config[\'url\']}/dashboard/autobidremove/{$alist.aid}','Are you sure?');"
                                                                                          href="javascript:void(0)">Remove</a>
-                    &nbsp;&nbsp;&nbsp;<a title="View" href="{$config['url']}/dashboard/autobid/{$alist.aid}">Edit</a>
+                    &nbsp;&nbsp;&nbsp;<a title="View" href="{$config['url']}/dashboard/autobid/{$alist.aid}">{$_phrase.edit}</a>
                 </div>
             </div>
             {/foreach}
@@ -117,11 +117,11 @@
             <h4 class="ds_brd m-top-20">Stopped Auto-bids</h4>
 
             <div class="row mblue_box m-top-20 md_hide">
-                <div class="col-md-2">Title</div>
+                <div class="col-md-2">{$_phrase.title}</div>
                 <div class="col-md-2 text-center">Maxbids</div>
                 <div class="col-md-2 text-center">Bids used</div>
                 <div class="col-md-2 text-center">Bid Amt</div>
-                <div class="col-md-2 text-center"> Status</div>
+                <div class="col-md-2 text-center"> {$_phrase.status}</div>
                 <div class="col-md-2 text-center"> Options</div>
             </div>
 

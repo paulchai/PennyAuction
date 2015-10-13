@@ -27,12 +27,12 @@
             <table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" class="table-top">
               <thead class="md_hide">
                 <tr>
-                  <th width="100" align="center"> <b>Image</b> </th>
-                  <th width="100" align="center"> <b>Title</b> </th>
+                  <th width="100" align="center"> <b>{$_phrase.image}</b> </th>
+                  <th width="100" align="center"> <b>{$_phrase.title}</b> </th>
                   <th width="150" align="center"> <b>Start date-Closed date</b> </th>
                   <th width="100" align="center" colspan="3"> <b>Action</b> </th>
                   <th width="100" align="center"></th>
-                  <th width="100" align="center"> <b> Status</b> </th>
+                  <th width="100" align="center"> <b> {$_phrase.status}</b> </th>
                 </tr>
               </thead>
               <tbody>
@@ -48,8 +48,8 @@
                 <td data-label="" class="account_p_lbl" width="100" align="center"><a href="{$config['url']}/product/view/{$val.id}" title="{$val.ptitle}"> {$val.ptitle}</a></td>
                 <td data-label="" class="account_p_lbl" width="400" align="center"><h2>{$val.date_added} - {$val.closed}</h2></td>
                 
-                <!--<td width="50" align="center"><a href="http://unieauction.com{$config.path}/editproduct/424 " title="Product Edit" class="editicon">Edit</a> &nbsp; </td>-->
-                <td data-label="" class="account_p_lbl" width="50" align="center" colspan="2"><a href="/product/remove/{$val.id}" class="deleteicon" title="Delete">Delete</a></td>
+                <!--<td width="50" align="center"><a href="http://unieauction.com{$config.path}/editproduct/424 " title="Product Edit" class="editicon">{$_phrase.edit}</a> &nbsp; </td>-->
+                <td data-label="" class="account_p_lbl" width="50" align="center" colspan="2"><a href="/product/remove/{$val.id}" class="deleteicon" title="Delete">{$_phrase.delete}</a></td>
                 <td width="" align="center"></td>
                 <td width="" align="center"></td>
                 <td width="50" align="center">{if $val.status == 1} Active {else $val.status != 1} Inactive{/if}</td>

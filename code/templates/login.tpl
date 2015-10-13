@@ -39,7 +39,7 @@
       <form action="{$config['url']}/login/save" method="post"  enctype="multipart/form-data"   data-parsley-validate >
         <div class="login_form">
           <div class="log_fields">
-            <p>User Name <span class="red">*</span>:</p>
+            <p>{$_phrase.username} <span class="red">*</span>:</p>
             <div class="col-md-8 padle">
             <input id="username" name="username" data-parsley-error-message="Enter user name" value="{$remembermeuser}" required placeholder="Enter user name"  class="form-control" style="height:auto;width:204px"></div>
           </div>

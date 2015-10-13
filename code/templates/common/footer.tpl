@@ -37,7 +37,7 @@
         </form>
       </div>
       <div class="footer_inner_right_left">
-        <label>Categories</label>
+        <label>{$_phrase.categories}</label>
         <ul class="footer-list">
           <li><a href="#" title="Mobile">Mobile</a></li>
           <li><a href="#" title="Computer">Computer</a></li>

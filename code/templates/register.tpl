@@ -26,7 +26,7 @@
                <div class="">
                   <div class="log_fields">
                      <div class="colm1_width fl">
-                        <p>Email <span class="red">*</span>:</p>
+                        <p>{$_phrase.email} <span class="red">*</span>:</p>
                      </div>
                      <input id="email" name="email" placeholder="Enter your email" maxlength="30" data-parsley-group="block1" required class="textbox" type="email">
                   </div>
@@ -53,7 +53,7 @@
                <div class="">
                   <div class="log_fields">
                      <div class="colm1_width fl">
-                        <p>First Name  <span class="red">*</span>:</p>
+                        <p>{$_phrase.firstname}  <span class="red">*</span>:</p>
                      </div>
                      <input id="firstname" name="first_name" placeholder="Enter your firstname" maxlength="20" class="textbox"  data-parsley-group="block1" required type="text">           
                   </div>
@@ -62,7 +62,7 @@
                <div class="" style="float:left;">
                   <div class="log_fields">
                      <div class="colm1_width fl" style="clear:both;width:100%;">
-                        <p>Last Name:</p>
+                        <p>{$_phrase.lastname}:</p>
                      </div>
                      <input id="lastname" name="last_name" placeholder="Enter your lastname" maxlength="20" data-parsley-group="block1" required class="textbox" type="text">            
                   </div>

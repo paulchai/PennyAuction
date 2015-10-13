@@ -95,14 +95,14 @@ function changetheme(dis) {
 <div class="row">
 <div class="col-md-6">Auction Software Version 1.0 Demo</div>
 <div class="col-md-6 txt_arht">
-   <span> {$_phrase.view} &nbsp; </span> <span class="block"><form action="{$config['url']}/index/changetheme" id="change_theme" method="post" enctype="multipart/form-data"  >
+   <span> {$_phrase.viewcolour} &nbsp; </span> <span class="block"><form action="{$config['url']}/index/changetheme" id="change_theme" method="post" enctype="multipart/form-data"  >
      <input type="hidden" name="gopage"  value= "{$config['url']}{$pageofjs}">
          <select onChange="changetheme(this)" name="themeno" style="color:#000">
-            <option value="0" {if $themeno == 1} selected {/if}>Auction Stone</option>
-            <option value="4" {if $themeno == 4} selected {/if}>Black Forest</option>
-            <option value="1" {if $themeno == 1} selected {/if}>Baby Blue</option>
-            <option value="2" {if $themeno == 2} selected {/if}>Glossy Byzantium</option>
-            <option value="3" {if $themeno == 3} selected {/if}>Deep Red</option>           
+            <option value="0" {if $themeno == 1} selected {/if}>{$_phrase.auctionstone}</option>
+            <option value="4" {if $themeno == 4} selected {/if}>{$_phrase.blackforest}</option>
+            <option value="1" {if $themeno == 1} selected {/if}>{$_phrase.babyblue}</option>
+            <option value="2" {if $themeno == 2} selected {/if}>{$_phrase.glossybyzantium}</option>
+            <option value="3" {if $themeno == 3} selected {/if}>{$_phrase.deepred}</option>           
          </select>
     </form> </span>  &nbsp;|  &nbsp;
  <span class="cursor">{$_phrase.loginas}</span>  &nbsp;
@@ -110,7 +110,7 @@ function changetheme(dis) {
          <input type="hidden" name="autologin"  value= "1">
          <input type="hidden" name="username" id="autologinuserid"  value= "">
          <select onChange="loginauto(this)" name="autologinoption" style="color:#000">
-            <option value="0" {if $autologin == 0} selected {/if}>Select</option>
+            <option value="0" {if $autologin == 0} selected {/if}>{$_phrase.select}</option>
             <option value="buyer" {if $autologin == 'buyer'} selected {/if}>Buyer</option>
             <option value="seller" {if $autologin == 'seller'} selected {/if}>Seller</option>
             <option value="admin" {if $autologin == 'admin'} selected {/if}>Admin</option>    

@@ -2,7 +2,7 @@
 <div class="row dashboard">
   <div class="col-md-3"> {include file="left-nav-dashboard.tpl" nocache} </div>
   <div class="col-md-9">
-    <h4 class="ds_brd">My Watchlist</h4>
+    <h4 class="ds_brd">{$_phrase.my}{$_phrase.engspace}{$_phrase.watchlist}</h4>
   
       {if $save}
         <div class="row">
@@ -14,10 +14,10 @@
 
       {/if}
       <div class="row mblue_box md_hide">
-            <div class="col-md-2 text-center">Image  </div>     
-            <div class="col-md-3 text-center">   Title   </div>          
+            <div class="col-md-2 text-center">{$_phrase.image}  </div>     
+            <div class="col-md-3 text-center">   {$_phrase.title}   </div>          
             <div class="col-md-5 text-center"> {$_phrase.end}{$_phrase.engspace}{$_phrase.time}    </div>     
-            <div class="col-md-2 text-center">Delete</div>
+            <div class="col-md-2 text-center">{$_phrase.delete}</div>
           </div>
 
            {if $mywatchlist|count <=  0}

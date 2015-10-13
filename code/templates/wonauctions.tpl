@@ -3,13 +3,13 @@
   <div class="row dashboard">
     <div class="col-md-3"> {include file="left-nav-dashboard.tpl" nocache} </div>
     <div class="col-md-9">
-      <h4 class="ds_brd">Penny Won Auctions</h4>
+      <h4 class="ds_brd">Penny {$_phrase.won}{$_phrase.engspace}{$_phrase.auction}{$_phrase.s}</h4>
       <div class="row mblue_box md_hide">
-        <div class="col-md-2 text-center">Image</div>
-        <div class="col-md-2 text-center">Title</div>
+        <div class="col-md-2 text-center">{$_phrase.image}</div>
+        <div class="col-md-2 text-center">{$_phrase.title}</div>
         <div class="col-md-4 text-center">{$_phrase.end}{$_phrase.engspace}{$_phrase.time} </div>
-        <div class="col-md-3 text-center"> Amount </div>
-        <div class="col-md-1 text-center" style="padding-left:0"> Status</div>
+        <div class="col-md-3 text-center"> {$_phrase.amount} </div>
+        <div class="col-md-1 text-center" style="padding-left:0"> {$_phrase.status}</div>
       </div>
       {if $mybids|count <=  0}
         <div class="col-md-12 text-center m-top-20 font-12">{$_phrase.noresultsfound}</div>

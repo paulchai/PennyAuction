@@ -79,7 +79,7 @@ var socket = io.connect();
 	   <div class="nav nav-bar">
 			<ul class="menu_bar"> 
                   {if $loged.userid > 0 and $pageofjs != '' and $pageofjs != '/'}
-                  <li class="{if $pageofjs == '/dashboard/'}active{/if}"><a href="{$config.url}/dashboard/" title="Home"> Dashboard</a></li>
+                  <li class="{if $pageofjs == '/dashboard/'}active{/if}"><a href="{$config.url}/dashboard/" title="Home"> {$_phrase.dashboard}</a></li>
                   {else}
 				  <li class="{if $pageofjs == '' or $pageofjs == '/'}active{/if}"><a href="{$config.url}" title="Home"> {$temp_text['_home']}</a></li>
 			      <li class="{if $pageofjs == '/live'}active{/if}"><a href="{$config.url}/live" title="Live Auctions"> {$temp_text['_live']} {$temp_text['_auction']}{$temp_text['_s']}</a></li>
@@ -99,7 +99,7 @@ var socket = io.connect();
 	     <div class="cin_box">
 			<div class="dropdown pull-left">
 				  <button class="btn btn-default category_sb dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-					All Categories
+					{$_phrase.allcategories}
 					<span class="caret"></span>
 				  </button>
 				  <ul class="dropdown-menu blue_box " role="menu" aria-labelledby="dropdownMenu1" >
@@ -112,7 +112,7 @@ var socket = io.connect();
 			<div class="input-group em_search pull-left;">
 			
                         <select class="input-group-addon btn selc mdropdown" name="cid" id="cid_search" onchange="searchProject();">
-          <option value="0"> All Categories</option>
+          <option value="0"> {$_phrase.allcategories}</option>
           {foreach $category as $key => $val}
           <option value="{$val.id}" {if $cid_search == $val.id} selected {/if}>{$val.name}</option>
           {/foreach}

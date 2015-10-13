@@ -1,8 +1,8 @@
 <div class="row mblue_box md_hide">
-  <div class="col-md-3">Name</div>
-  <div class="col-md-2">Subject</div>
-  <div class="col-md-5">Message</div>
-  <div class="col-md-2">Delete</div>
+  <div class="col-md-3">{$_phrase.name}</div>
+  <div class="col-md-2">{$_phrase.subject}</div>
+  <div class="col-md-5">{$_phrase.message}</div>
+  <div class="col-md-2">{$_phrase.delete}</div>
 </div>
 {foreach $messages as $key => $val}
 <div class="row mblue_box1">

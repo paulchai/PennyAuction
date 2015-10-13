@@ -53,8 +53,8 @@ var clearvar = [];
         {/if}
         {if $placedbid}
         <div class="row">
-            <div class="bg bg-success padding-20  m-top-40"><i class="fa fa-warning"></i> Your Bid amount
-                ${$placedbidamount} was Successfully Submitted.
+            <div class="bg bg-success padding-20  m-top-40"><i class="fa fa-warning"></i> {$_phrase.your}{$_phrase.engspace}{$_phrase.bid}{$_phrase.engspace}{$_phrase.amount|lower}
+                ${$placedbidamount} {$_phrase.was|lower}{$_phrase.engspace}{$_phrase.successfully}{$_phrase.engspace}{$_phrase.submitted}.
             </div>
         </div>
         {/if}

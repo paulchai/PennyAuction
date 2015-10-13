@@ -18,7 +18,7 @@
          <div class="message_common">
             <div class="login_middle_common_profil">
                <div class="user_name_common">
-                  <p>Product Name<span class="red">*</span>  :</p>
+                  <p>{$_phrase.productname}<span class="red">*</span>  :</p>
                   <div class="text_feeld">
                      <h2>
                         <input name="title" data-parsley-group="block1" required id="product_name" maxlength="99" value="" onkeyup="return limitlength(this,99,'info_label')" type="text">
@@ -27,11 +27,11 @@
                   <label class="errore_msg fl clr"><span class="red"></span></label>
                </div>
                <div class="user_name_common">
-                  <p>Product Category<span class="red">*</span> :</p>
+                  <p>Product{$_phrase.engspace}{$_phrase.category}<span class="red">*</span> :</p>
                   <div class="text_feeld">
                      <h2>
                         <select name="cid" data-parsley-group="block1" required  style="width:270px; height:30px;" id="product_category">
-                            <option value="">Please Select Category</option>
+                            <option value="">{$_phrase.please}{$_phrase.engspace}{$_phrase.select}{$_phrase.engspace}{$_phrase.category}</option>
                            {foreach $category as $key => $val}
                              <option value="{$val.id}">{$val.name}</option>
                            {/foreach}
@@ -107,7 +107,7 @@
                      </div>
                   </div>
                   <div class="user_name_common" id="shippingfee-field">
-                     <p>{$_phrase.shipping} Amount  :</p>
+                     <p>{$_phrase.shipping}{$_phrase.engspace}{$_phrase.amount}  :</p>
                      <div class="text_feeld">
                         <h2>
                            <input name="shipping_fee" id="shipping_fee"  data-parsley-group="block1" required maxlength="12" value="" type="text">

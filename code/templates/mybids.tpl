@@ -5,8 +5,8 @@
     <div class="col-md-9">
       <h4 class="ds_brd">My Bids</h4>
       <div class="row mblue_box md_hide">
-        <div class="col-md-3 text-center">Image</div>
-        <div class="col-md-2 text-center">Title</div>
+        <div class="col-md-3 text-center">{$_phrase.image}</div>
+        <div class="col-md-2 text-center">{$_phrase.title}</div>
         <div class="col-md-4 text-center" >{$_phrase.end}{$_phrase.engspace}{$_phrase.time} </div>
         <div class="col-md-3 text-center">Total Bids Placed</div>
         

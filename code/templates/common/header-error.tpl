@@ -91,7 +91,7 @@ var socket = io.connect();
 	     <div class="cin_box">
 			<div class="dropdown pull-left">
 				  <button class="btn btn-default category_sb dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-					All Categories
+					{$_phrase.allcategories}
 					<span class="caret"></span>
 				  </button>
 				  <ul class="dropdown-menu blue_box " role="menu" aria-labelledby="dropdownMenu1">
@@ -104,7 +104,7 @@ var socket = io.connect();
 			<div class="input-group em_search pull-left;">
 			
                         <select class="input-group-addon btn selc mdropdown" name="cid" id="cid_search" onchange="searchProject();">
-          <option value="0"> All Categories</option>
+          <option value="0"> {$_phrase.allcategories}</option>
           {foreach $category as $key => $val}
           <option value="{$val.id}" {if $cid_search == $val.id} selected {/if}>{$val.name}</option>
           {/foreach}

@@ -3,7 +3,7 @@
     <div class="row dashboard">
         <div class="col-md-3"> {include file="left-nav-dashboard.tpl" nocache}</div>
         <div class="col-md-9">
-            <h4 class="ds_brd">My Messages</h4>
+            <h4 class="ds_brd">{$_phrase.my}{$_phrase.engspace}{$_phrase.message}{$_phrase.s}</h4>
 
             <div class="message_wb">
                 <div class="media">
@@ -24,7 +24,7 @@
                                     class="mblue_txt">Undelete</a> {else if($messages[0].from_id != $loged.userid or
                                 $messages[0].from_status != 'delete') or ($messages[0].to_id != $loged.userid or
                                 $messages[0].to_status != 'delete'} <a
-                                    href="{$config.url}/dashboard/messages/delete/{$r_id}" class="mblue_txt">Delete</a>
+                                    href="{$config.url}/dashboard/messages/delete/{$r_id}" class="mblue_txt">{$_phrase.delete}</a>
                                 {/if}
                             </div>
                         </div>

@@ -7,10 +7,10 @@
       <div class="row mblue_box md_hide">
         <div class="col-md-2">{$_phrase.description} </div>
         <div class="col-md-2"> Type</div>
-        <div class="col-md-2"> Amount </div>
+        <div class="col-md-2"> {$_phrase.amount} </div>
         <div class="col-md-2">Date</div>
         <div class="col-md-2"> Gateway </div>
-        <div class="col-md-2">Status</div>
+        <div class="col-md-2">{$_phrase.status}</div>
       </div>
       {if $transaction|count <=  0}
       <div class="col-md-12 text-center m-top-20 font-12">{$_phrase.noresultsfound}</div>

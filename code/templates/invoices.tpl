@@ -23,10 +23,10 @@
                 <tr>
                   <th  align="center"> <b>{$_phrase.description}</b> </th>
                   <th  align="center"> <b>Type</b> </th>
-                  <th  align="center"> <b>Amount</b> </th>
+                  <th  align="center"> <b>{$_phrase.amount}</b> </th>
                   <th  align="center"> <b>Date Added</b> </th> 
                   <th  align="center"> <b>Gateway</b> </th>       
-                  <th  align="center"> <b> Status</b> </th>
+                  <th  align="center"> <b> {$_phrase.status}</b> </th>
                 </tr>
               </thead>
               <tbody>

@@ -21,13 +21,13 @@
             
             <div class="login_middle_common_profil">
                <div class="user_name_common">
-         <p>Subject<span class="red">*</span>  :</p>
+         <p>{$_phrase.subject}<span class="red">*</span>  :</p>
                   <div class="text_feeld">
                      <h2>
                         <input name="subject" data-parsley-group="block1" required id="subject" maxlength="99" value="" onkeyup="return limitlength(this,99,'info_label')" type="text" style="height:35;">
                      </h2>
                   </div>  
-          <p>Message<span class="red">*</span>  :</p>
+          <p>{$_phrase.message}<span class="red">*</span>  :</p>
                   <div class="text_feeld">
                      <h2>
                         <textarea name="message" id="message" class="resizetextarea"></textarea>

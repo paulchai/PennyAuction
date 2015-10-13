@@ -97,7 +97,7 @@
             <div class="row top_nav">
                 <div class="col-md-6">Auction Software Version 1.0 Demo</div>
                 <div class="col-md-6 txt_arht tn_rht">
-                    <span> {$_phrase.view} &nbsp; </span>
+                    <span> {$_phrase.viewcolour} &nbsp; </span>
                     <span class="block">
                         <form action="{$config['url']}/index/changetheme"
                               id="change_theme" method="post"
@@ -195,15 +195,14 @@
                             <li class="l9ie">|</li>
                             <li class="hty3"><a href="{$config.url}/future" title="Future Auctions"> {$_phrase.futureauction} </a></li>
                             <li class="l9ie">|</li>
-                            <li class="hty3"><a href="{$config.url}/closed" title="Closed Auctions"> {$_phrase.closed}{$_phrase.engspace} {$_phrase.auction}{$_phrase.s}</a></li>
+                            <li class="hty3"><a href="{$config.url}/closed" title="Closed Auctions"> {$_phrase.closed}{$_phrase.engspace}{$_phrase.auction}{$_phrase.s}</a></li>
                             <li class="l9ie">|</li>
                             <li class="hty3"><a href="{$config.url}/shop" title="Shop Now"> {$_phrase.buy_now}</a></li>
                             <li class="l9ie">|</li>
                             <li class="hty3"><a href="{$config.url}/winner" title="Winners">
                                 {$_phrase.winner}{$_phrase.s}</a></li>
                             <!--<li class="l9ie">|</li>
-                            <li class="hty3"><a href="{$config.url}/blog" title="Blogs">{$_phrase.blog}
-                                {$_phrase.s}--></a></li>
+                            <li class="hty3"><a href="{$config.url}/blog" title="Blogs">{$_phrase.blog}{$_phrase.s}--></a></li>
                         </ul>
                     </div>
                 </div>

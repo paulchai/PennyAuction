@@ -6,10 +6,10 @@
             <h4 class="ds_brd">Buy Now Transactions</h4>
 
             <div class="row mblue_box md_hide">
-                <div class="col-md-3">Image</div>
-                <div class="col-md-3">Title</div>
+                <div class="col-md-3">{$_phrase.image}</div>
+                <div class="col-md-3">{$_phrase.title}</div>
                 <div class="col-md-3">{$_phrase.end}{$_phrase.engspace}{$_phrase.time}</div>
-                <div class="col-md-3">Amount</div>
+                <div class="col-md-3">{$_phrase.amount}</div>
             </div>
             {if $mybuynow|count <= 0}
             <div class="col-md-12 text-center m-top-20 font-12">{$_phrase.noresultsfound}</div>

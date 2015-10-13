@@ -19,7 +19,7 @@
 
             <div class="row">
                 <div class="form-group">
-                    <label for="name" class="col-md-3">Name:</label>
+                    <label for="name" class="col-md-3">{$_phrase.name}:</label>
 
                     <div class="col-md-5">
                         <input type="text" id="name" name="name" placeholder="Enter your name" value="{$shipping.name}"
@@ -30,7 +30,7 @@
             </div>
             <div class="row">
                 <div class="form-group">
-                    <label for="address_line1" class="col-md-3">Address Line 1:</label>
+                    <label for="address_line1" class="col-md-3">{$_phrase.addressline1}:</label>
 
                     <div class="col-md-5">
                         <input type="text" id="address_line1" name="address1" placeholder="Enter your address line1"
@@ -42,7 +42,7 @@
             </div>
             <div class="row">
                 <div class="form-group">
-                    <label for="address_line2" class="col-md-3">Address Line 2:</label>
+                    <label for="address_line2" class="col-md-3">{$_phrase.addressline2}:</label>
 
                     <div class="col-md-5">
                         <input type="text" id="address_line2" name="address2" placeholder="Enter your address line2"
@@ -52,11 +52,11 @@
             </div>
             <div class="row">
                 <div class="form-group">
-                    <label for="country" class="col-md-3">Country:</label>
+                    <label for="country" class="col-md-3">{$_phrase.country}:</label>
 
                     <div class="col-md-5">
                         <select name="country" id="country" class="form-control" required data-parsley-required-message="Choose Country">
-                            <option value="" selected="selected">Select Country</option>
+                            <option value="" selected="selected">{$_phrase.select}{$_phrase.engspace}{$_phrase.country}</option>
                             {foreach $config.countries as $key => $val}
                             <option value="{$val.name}" {if $users.country==$val.name} selected {/if} attr="{$val.location_id}">{$val.name}</option>
                             {/foreach}
@@ -66,7 +66,7 @@
             </div>
             <div class="row">
                 <div class="form-group">
-                    <label for="state" class="col-md-3">State:</label>
+                    <label for="state" class="col-md-3">{$_phrase.state}:</label>
 
                     <div class="col-md-5">
                         <input type="text" id="state" name="state" placeholder="Enter state" class="form-control"
@@ -77,7 +77,7 @@
             </div>
             <div class="row">
                 <div class="form-group">
-                    <label for="town" class="col-md-3">City:</label>
+                    <label for="town" class="col-md-3">{$_phrase.city}:</label>
 
                     <div class="col-md-5">
                         <input type="text" id="town" name="city" placeholder="Enter city" class="form-control"
@@ -88,7 +88,7 @@
             </div>
             <div class="row">
                 <div class="form-group">
-                    <label for="zipcode" class="col-md-3">Zipcode:</label>
+                    <label for="zipcode" class="col-md-3">{$_phrase.zipcode}:</label>
 
                     <div class="col-md-5">
                         <input type="text" id="zipcode" name="zipcode" placeholder="Enter zipcode" class="form-control"
@@ -99,7 +99,7 @@
             </div>
             <div class="row">
                 <div class="form-group">
-                    <label for="phone" class="col-md-3">Phone Number:</label>
+                    <label for="phone" class="col-md-3">{$_phrase.phonenumber}:</label>
 
                     <div class="col-md-5">
                         <input type="text" id="phone" name="phone" placeholder="Eg: 0123123456, +919874563210"
@@ -112,7 +112,7 @@
             <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-2">
-                    <button class="btn save_btn" type="submit">Save</button>
+                    <button class="btn save_btn" type="submit">{$_phrase.save}</button>
                 </div>
             </div>
         </form>

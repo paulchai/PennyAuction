@@ -8,7 +8,7 @@
 		<div class="col-md-12 about_us">
        <div class="col-md-3" style="margin-top: 45px;">
         <div class="premi2"><a href="/about" class="active2">{$_phrase.about}{$_phrase.engspace}{$_phrase.us}</a></div>
-        <div class="premi2"><a href="/how_it_works">How PennyAuction Work</a></div>
+        <div class="premi2"><a href="/how_it_works">{$_phrase.howpennyauctionwork}</a></div>
         <div class="premi2"><a href="/faq">{$_phrase.faq}{$_phrase.s}</a></div>
         <div class="premi2"><a href="/contact">{$_phrase.contact}{$_phrase.engspace}{$_phrase.us|upper}</a></div>
         </div>

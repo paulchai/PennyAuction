@@ -5,7 +5,7 @@
     <div class="col-md-9">
       <div class="row ds_brd">
         <div class="col-md-8">
-          <h4>My Messages</h4>
+          <h4>{$_phrase.my}{$_phrase.engspace}{$_phrase.message}{$_phrase.s}</h4>
         </div>
        
       </div>
@@ -14,7 +14,7 @@
         <li role="presentation" {if $action == 'inbox'} class="active" {/if}><a href="{$config.url}/dashboard/messages/inbox">Inbox</a></li>
         <li role="presentation" {if $action == 'sent'} class="active" {/if}><a href="{$config.url}/dashboard/messages/sent">Sent</a></li>
         <li role="presentation" {if $action == 'archive'} class="active" {/if}><a href="{$config.url}/dashboard/messages/archive">Archive</a></li>
-        <li role="presentation" {if $action == 'delete'} class="active" {/if}><a href="{$config.url}/dashboard/messages/delete">Delete</a></li>
+        <li role="presentation" {if $action == 'delete'} class="active" {/if}><a href="{$config.url}/dashboard/messages/delete">{$_phrase.delete}</a></li>
         <li role="presentation" {if $action == 'compose'} class="active" {/if}><a href="{$config.url}/dashboard/messages/compose">Compose</a></li>
       </ul>
       <div class="tab-content">

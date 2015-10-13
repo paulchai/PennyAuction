@@ -19,7 +19,7 @@
 					</div>
 					<div class="col-md-12 pdtpm30">
 						<div class="whiteborbg3">
-							<div class="whitehead4">Categories</div>
+							<div class="whitehead4">{$_phrase.categories}</div>
 							<div class="checkbox m5mrgpz">
 								<label>
 									<input type="checkbox" value="">

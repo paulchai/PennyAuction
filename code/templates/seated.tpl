@@ -8,15 +8,15 @@
   <div class="row dashboard">
     <div class="col-md-3"> {include file="left-nav-dashboard.tpl" nocache} </div>
     <div class="col-md-9">
-      <h4 class="ds_brd">Scheduled Seated Auction</h4>
+      <h4 class="ds_brd">{$_phrase.scheduledseatedauction}</h4>
       <div class="row mblue_box md_hide">
         <div class="row mblue_box m-top-20">
-          <div class="col-md-2">Title</div>
-          <div class="col-md-2"> Seat Amount </div>
-          <div class="col-md-2"> Total seats </div>
-          <div class="col-md-2"> Seats left </div>
-          <div class="col-md-2"> Starts at</div>
-          <div class="col-md-2"> Ends at</div>
+          <div class="col-md-2">{$_phrase.title}</div>
+          <div class="col-md-2"> {$_phrase.seatamount} </div>
+          <div class="col-md-2"> {$_phrase.totalseat}{$_phrase.s} </div>
+          <div class="col-md-2"> {$_phrase.seatsleft} </div>
+          <div class="col-md-2"> {$_phrase.startsat}</div>
+          <div class="col-md-2"> {$_phrase.endsat}</div>
         </div>
       </div>
       {if $seatedAuction|count <=  0}

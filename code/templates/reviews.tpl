@@ -95,7 +95,7 @@
             <div class="col-md-3">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        Write a Review
+                        {$_phrase.writeareview}
                     </div>
                     <div class="panel-body">
                         <div>
@@ -104,7 +104,7 @@
                         <div>
                             We encourage all of our customers to share their thoughts, so if you'd like to be featured in one of our customer review posts and tell us what's on your mind!
                         </div>
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#review_form">Click here to Review</button>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#review_form">{$_phrase.clickheretoreview}</button>
                     </div>
                 </div>
                     <div class="panel panel-default">
@@ -120,7 +120,7 @@
     <div class="ds modal fade fcorn-register reg" id="review_form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
          <div class="modal-header csgray_box">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true" id="close_buttons_register">x</button>
-                <h4 class="modal-title blue_txt">Write Your Review</h4>
+                <h4 class="modal-title blue_txt">{$_phrase.writeyourreview}</h4>
          </div>
 
           <form method="post" data-validate="parsley" enctype="multipart/form-data" id="review-form" action="{$config.url}/dashboard/review/">
@@ -129,20 +129,20 @@
                     <div class="row zxce2">
                         
                         <div class="ratings col-md-9">
-                        <div class="col-md-4 pe2le">Rate our service<span style="color:#FF2A2A">*</span></div>
+                        <div class="col-md-4 pe2le">{$_phrase.rateourservice}<span style="color:#FF2A2A">*</span></div>
                                    <div class="col-md-8 aqw2 pe2le"><input id="input-27" class="rating"  name="rating"></div>
                                   <div style="text-align:center;margin:0"><input name="duplicate"  required id="duplicate" style="width:1px;height:1px;opacity:0;margin-top:-30px;" /> </div> 
                         </div>    
                     </div>
                     
                     <div class="row zxce2">
-                        <div class="col-md-12">Review Headline<span style="color:#FF2A2A">*</span> (if you could  say it in one sentence, what would you say?)</div>
+                        <div class="col-md-12">{$_phrase.reviewheadline}<span style="color:#FF2A2A">*</span> ({$_phrase.ifyoucouldsayitinonesentence})</div>
                     </div>
                     <div class="row ">
                         <div class="col-md-12"><input name="subject"  data-parsley-group="block1" required id="subject" maxlength="99" value="" onkeyup="return limitlength(this,99,'info_label')" type="text" class="gui-input" style="HEIGHT: 35PX;"></div>
                     </div>
                     <div class="row zxce2">
-                        <div class="col-md-12">Write Your Review<span style="color:#FF2A2A">*</span> (minimum 120 characters)</div>
+                        <div class="col-md-12">{$_phrase.writeyourreview}<span style="color:#FF2A2A">*</span> ({$_phrase.minimum}{$_phrase.engspace}120{$_phrase.engspace}{$_phrase.chige}{$_phrase.character}{$_phrase.s})</div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">

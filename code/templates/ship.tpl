@@ -122,7 +122,7 @@
                 <div class="panel-body" id="step2" style="display:none">
                     <div class="clearfix row tamount_paid">
                         <div class="col-md-4">
-                            <div class="tolalamnt">Total Amount to be paid</div>
+                            <div class="tolalamnt">{$_phrase.totalamounttobepaid}</div>
                             <div class="ship">(including shipping)</div>
                         </div>
                         <div class="col-md-4">
@@ -158,7 +158,7 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4">
                                     <select name="country" id="country" class="form-control" required>
-                                        <option value="" selected="selected">Select Country</option>
+                                        <option value="" selected="selected">{$_phrase.select}{$_phrase.engspace}{$_phrase.country}</option>
                                         {foreach $config.countries as $key => $val}
                                         <option value="{$val.name}" {if $users.country==$val.name} selected {/if} attr="{$val.location_id}">{$val.name}</option>
                                         {/foreach}
@@ -213,7 +213,7 @@
                     </div>
                     <div class="row amt">
                         <div class="col-xs-12 col-sm-6 col-md-5">
-                            <div class="amtpd">Total Amount to be paid</div>
+                            <div class="amtpd">{$_phrase.totalamounttobepaid}</div>
                             <div class="incldship">(including shipping)</div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-6">

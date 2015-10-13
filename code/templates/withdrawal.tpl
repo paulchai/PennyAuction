@@ -17,7 +17,7 @@
        <div class="col-md-6"> 
        <form name="" data-parsley-validate action="{$config.url}/dashboard/withdrawal" method="post">
        <div class="form-group">
-         <label>Amount to Withdraw</label>
+         <label>{$_phrase.amounttowithdraw}</label>
          <input type="text" name="amount" value="" placeholder="0.00" required class="form-control floatpoint">
 
        </div>
@@ -43,12 +43,12 @@
 
 
       <div class="row mblue_box md_hide">
-        <div class="col-md-2 text-center">Amount</div>
+        <div class="col-md-2 text-center">{$_phrase.amount}</div>
         <div class="col-md-3 text-center">Date Requested</div>
         <div class="col-md-1 text-center">Paid</div>
         <div class="col-md-2 text-center">Pay Method</div>
         <div class="col-md-3 text-center">Pay Method</div>
-        <!--<div class="col-md-3"> Amount </div>-->
+        <!--<div class="col-md-3"> {$_phrase.amount} </div>-->
       </div>
       {if $withdraw|count <=  0}
       <div class="row mblue_box1" style="text-align:center;"> No withdraw Found </div>
