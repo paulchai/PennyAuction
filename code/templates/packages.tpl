@@ -10,27 +10,27 @@
                  {$val.name} 
                 </li>
                 <li class="price">
-                  1 Lorieum ipsum
+                  1 {$_phrase.lorieum_ipsum}
                 </li>
                 <li>
-                  Lorieum ipsum
+                  {$_phrase.lorieum_ipsum}
                 </li>
                 <li>
-                  Lorieum ipsum
+                  {$_phrase.lorieum_ipsum}
                 </li>
                 <li>
-                  Lorieum ipsum
+                  {$_phrase.lorieum_ipsum}
                 </li>
                 <li>
-                  Lorieum ipsum
+                  {$_phrase.lorieum_ipsum}
                 </li>
                 <li>
-                  Lorieum ipsum
+                  {$_phrase.lorieum_ipsum}
                 </li>
                 <li class="ptitle rd_txt">${$val.price}</li>
                 <li class="button">
                  <a href="{$config.url}/package/buy/{$val.id}"> <button class="btn btn-large lred">
-                    BUY NOW
+                    {$_phrase.buy_now|upper}
                   </button></a>
                 </li>
               </ul>

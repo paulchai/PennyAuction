@@ -37,7 +37,7 @@
     <div class="rtext rtext{$projects.id}">$<span class="format">{$projects.wprice}</span></div>
     <div style="font-size: large;color:red;">
         {if $placedbid || $projects.user_has_bid}
-        {if $projects.met_reserve_price} Reserve price Met {else} Reserve Price Not met{/if}
+        {if $projects.met_reserve_price} {$_phrase.reserve_price_met} {else} {$_phrase.reserve_price_not_met}{/if}
         {/if}
     </div>
     <br/>
@@ -81,11 +81,11 @@
 
 
     <div class="gray_txt">
-        <div>Value Price ${$projects.mprice}</span></div>
-        <div>Bids Credit ${$config.general['eachbidpay']}</div>
+        <div>{$_phrase.value_price} ${$projects.mprice}</span></div>
+        <div>{$_phrase.bids_credit} ${$config.general['eachbidpay']}</div>
         {if $bid_credits > 0}
-        <div>Buynow Price $<span class="format">{$projects.bprice}</span></div>
-        <div>Bids Credit Spent ${$bid_credits}</div>
+        <div>{$_phrase.buynow_price} $<span class="format">{$projects.bprice}</span></div>
+        <div>{$_phrase.bids_credit_spent} ${$bid_credits}</div>
         {/if}
     </div>
 
@@ -105,7 +105,7 @@
     <div class="bid_his bid_his{$projects.id}"  style="max-height:400px;overflow-y:auto;"> {if $bcnt == 0}
         <ul>
             <li>
-                <p class="no_data proc_title">No Bids Yet</p>
+                <p class="no_data proc_title">{$_phrase.no_bids_yet}</p>
             </li>
         </ul>
         {else}
@@ -113,7 +113,7 @@
         <div class="winner">{$val.name} <!--2014-12-17 03:29:39--> ${$val.proposed_amount}</div>
         {/foreach}
         <div class="total_bids">
-            Total Bids : <span class="lcntbid lcntbid{$projects.id}">{$bcnt}</span>
+            {$_phrase.total_bid}{$_phrase.s} : <span class="lcntbid lcntbid{$projects.id}">{$bcnt}</span>
             <span class="pull-right"></span>
         </div>
         {/if}

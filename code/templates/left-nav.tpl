@@ -15,13 +15,13 @@
 			
 			<li class="fl clr" id="my_addresses_active"><a href="{$config.url}/dashboard/Myaddress" title="My Addresses">My Addresses</a></li>
 			
-			<li class="fl clr myb" id="my_bids"><a href="{$config.url}/dashboard/mybids" title="My Bids">My Bids</a></li>
+			<li class="fl clr myb" id="my_bids"><a href="{$config.url}/dashboard/mybids" title="My Bids">{$_phrase.my_bid}{$_phrase.s}</a></li>
 
-			<li class="fl clr" id="my_transactions_active"><a href="{$config.url}/dashboard/transactions" title="My Transactions">My Transactions</a></li>
+			<li class="fl clr" id="my_transactions_active"><a href="{$config.url}/dashboard/transactions" title="My Transactions">{$_phrase.my}{$_phrase.engspace}{$_phrase.transaction}{$_phrase.s}</a></li>
 
 			<li class="fl clr wau" id="won_menu"><a href="{$config.url}/dashboard/wonauctions" title="Won Auction" id="won_auctions_active">{$_phrase.won}{$_phrase.engspace}{$_phrase.auction}</a></li>
 			<li class="fl clr wau" id="buy_now"><a href="{$config.url}/dashboard/buynow" title="Buy Now" id="buy_now_active">Buy Now</a></li>
-            <li class="fl clr wau" id="buy_now"><a href="{$config.url}/dashboard/autobid" title="Buy Now" id="buy_now_active">Auto Bid</a></li>
+            <li class="fl clr wau" id="buy_now"><a href="{$config.url}/dashboard/autobid" title="Buy Now" id="buy_now_active">{$_phrase.auto_bid}</a></li>
 			<li class="fl clr" id="my_pending_active"><a href="{$config.url}/dashboard/referral" title="Referrals / Invite">Referrals / Invite</a></li>
 			<li class="fl clr" id="my_review_active"><a href="{$config.url}/dashboard/review" title="Review">{$_phrase.reviews}</a></li>
 			

@@ -3,16 +3,16 @@
   <div class="row dashboard">
     <div class="col-md-3"> {include file="left-nav-dashboard.tpl" nocache} </div>
     <div class="col-md-9">
-      <h4 class="ds_brd">My Bids</h4>
+      <h4 class="ds_brd">{$_phrase.my_bid}{$_phrase.s}</h4>
       <div class="row mblue_box md_hide">
         <div class="col-md-3 text-center">{$_phrase.image}</div>
         <div class="col-md-2 text-center">{$_phrase.title}</div>
         <div class="col-md-4 text-center" >{$_phrase.end}{$_phrase.engspace}{$_phrase.time} </div>
-        <div class="col-md-3 text-center">Total Bids Placed</div>
+        <div class="col-md-3 text-center">{$_phrase.total_bids_placed}</div>
         
       </div>
       {if $mybids|count <=  0}
-      <div class="row mblue_box1 masw2e"> No Bids Found </div>
+      <div class="row mblue_box1 masw2e"> {$_phrase.no_bids_found} </div>
       {else}
       {foreach $mybids as $key => $val}
       <div class="row mblue_box1">

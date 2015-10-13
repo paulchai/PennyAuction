@@ -59,9 +59,9 @@
       <div class="detail_bottom_outer">
         <div class="detail_bottom_outer_top">
           <div class="detail-action_detail">
-            <h1>Auctions Details</h1>
+            <h1>{$_phrase.auction}{$_phrase.s}{$_phrase.engspace}{$_phrase.detail}{$_phrase.s}</h1>
             <div class="detail-action_detail_lef">
-              <h2>Auction ID : </h2>
+              <h2>{$_phrase.auction_id} : </h2>
              
             </div>
             <div class="detail-action_detail_rgt">
@@ -70,9 +70,9 @@
             </div>
           </div>
           <div class="detail-action_detail">
-            <h1>Price Details</h1>
+            <h1>{$_phrase.price}{$_phrase.engspace}{$_phrase.detail}{$_phrase.s}</h1>
             <div class="detail-action_detail_lef">
-              <h2> Price Starting From :</h2>
+              <h2> {$_phrase.price_starting_from} :</h2>
               <h2>{$_phrase.start}{$_phrase.engspace}{$_phrase.time} :</h2>
               <h2>{$_phrase.end}{$_phrase.engspace}{$_phrase.time} :</h2>
             </div>
@@ -83,10 +83,10 @@
             </div>
           </div>
           <div class="detail-action_detail detail_last-bgnone">
-            <h1>{$_phrase.shipping} Details</h1>
+            <h1>{$_phrase.shipping}{$_phrase.engspace}{$_phrase.detail}{$_phrase.s}</h1>
             <div class="detail-action_detail_lef">
-              <h2>{$_phrase.shipping} Fee :</h2>
-              <h2>{$_phrase.shipping} information :</h2>
+              <h2>{$_phrase.shipping_fee} :</h2>
+              <h2>{$_phrase.shipping}{$_phrase.engspace}{$_phrase.information} :</h2>
             </div>
             <div class="detail-action_detail_rgt">
               <p><font class="">$</font> {$projects.shipping_fee}</p>
@@ -95,7 +95,7 @@
           </div>
         </div>
         <div class="detail_product_description">
-          <h1>Product{$_phrase.engspace}{$_phrase.description}</h1>
+          <h1>{$_phrase.product}{$_phrase.engspace}{$_phrase.description}</h1>
           <p>{$projects.description}</p>
         </div>
       </div>

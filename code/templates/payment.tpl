@@ -7,7 +7,7 @@
                     <div class="auctions_black_authorize_top_bg">
                         <div class="auctions_black_authorize_top_left"></div>
                         <div class="auctions_black_authorize_top_mid">
-                            <h2>Authorize Authentication</h2>
+                            <h2>{$_phrase.authorize_authentication}</h2>
 
                             <h2 class="validation"></h2>
                             {if $error!=''}
@@ -25,19 +25,19 @@
                                 <input type="hidden" name="id" value="{$id}"/>
 
                                 <div class="form-group">
-                                    <label for="payment">Pay Type:</label>
+                                    <label for="payment">{$_phrase.pay_type}:</label>
                                     <select id="payment" name="payment">
-                                        <option value="paypal">Paypal</option>
-                                        <option value="authorize">Authorize</option>
-                                        <option value="stripe">Stripe</option>
+                                        <option value="paypal">{$_phrase.paypal}</option>
+                                        <option value="authorize">{$_phrase.authorize_paytype}</option>
+                                        <option value="stripe">{$_phrase.stripe}</option>
                                     </select>
                                 </div>
                                 <div id="cardPayments" style="display:none;">
                                     <div class="form-group">
-                                        <h3>Card Type : <span class="label label-default" id="cardType">Type card number below</span></h3>
+                                        <h3>{$_phrase.card_type} : <span class="label label-default" id="cardType">Type card number below</span></h3>
                                     </div>
                                     <div class="form-group">
-                                        <label for="creditCardNumber">Card Number:</label>
+                                        <label for="creditCardNumber">{$_phrase.card_number}:</label>
 
                                         <div class="input-group">
                                             <input type="text" class="form-control cc-number" maxlength="19"
@@ -52,14 +52,14 @@
                                     <div class="col-md-12 padal">
                                         <div class="col-md-6 padlf">
                                             <div class="form-group">
-                                                <label for="cc-exp" class="control-label">Expiration Date</label>
+                                                <label for="cc-exp" class="control-label">{$_phrase.expiration_date}</label>
                                                 <input id="cc-exp" name="ccExp" type="tel" class="form-control cc-exp"
                                                        placeholder="•• / ••" required>
                                             </div>
                                         </div>
                                         <div class="col-md-6 padrt">
                                             <div class="form-group">
-                                                <label for="cc-cvc" class="control-label">CVV</label>
+                                                <label for="cc-cvc" class="control-label">{$_phrase.cvv}</label>
                                                 <input id="cc-cvc" name="ccCVV" type="tel" class="form-control cc-cvc"
                                                        placeholder="•••" required>
                                             </div>

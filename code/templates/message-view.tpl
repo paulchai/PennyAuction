@@ -16,8 +16,7 @@
                                     href="{$config.url}/dashboard/messages/unarchive/{$r_id}" class="mblue_txt">UnArchive</a>
                                 {else if($messages[0].from_id != $loged.userid or $messages[0].from_status != 'archive')
                                 or ($val.to_id != $loged.userid or $val.to_status != 'archive'} <a
-                                    href="{$config.url}/dashboard/messages/archive/{$r_id}" class="mblue_txt">Move to
-                                Archive</a> {/if}
+                                    href="{$config.url}/dashboard/messages/archive/{$r_id}" class="mblue_txt">{$_phrase.move_to}{$_phrase.engspace}{$_phrase.archive}</a> {/if}
                                 {if ($messages[0].from_id == $loged.userid and $messages[0].from_status == 'delete') or
                                 ($messages[0].to_id == $loged.userid and $messages[0].to_status == 'delete')} <a
                                     href="{$config.url}/dashboard/messages/undelete/{$r_id}"

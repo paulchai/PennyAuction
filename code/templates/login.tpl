@@ -45,7 +45,7 @@
           </div>
           <span class="red fl"></span>
           <div class="log_fields">
-            <p>Password <span class="red">*</span>:</p>
+            <p>{$_phrase.password} <span class="red">*</span>:</p>
             <div class="col-md-8 padle">
             <input type="password" id="password" name="password" data-parsley-error-message="Enter password" required value=""  class="form-control" style="height:auto;width:204px">
           </div></div>
@@ -54,7 +54,7 @@
         <div class="login_check">
           <input type="checkbox" name="remember" value="1">
           <p class="remeber">Remember me</p>
-          <label><a href="{$config['url']}/login/forgot_password" title="Forgot password">Forgot password?</a></label>
+          <label><a href="{$config['url']}/login/forgot_password" title="Forgot password">{$_phrase.forgot}{$_phrase.engspace}{$_phrase.password}?</a></label>
         </div>
       
            <div style="clear: both;">  <input type="submit" name="login" value="Signin" class="btn save_btn" title="SIGNIN"></div>

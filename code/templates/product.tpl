@@ -32,22 +32,19 @@ var clearvar = [];
 
         {if $highbid}
         <div class="row">
-            <div class="bg bg-success padding-20  m-top-40"><i class="fa fa-warning"></i> Congratulations! You are the
-                highest bidder of this product.
+            <div class="bg bg-success padding-20  m-top-40"><i class="fa fa-warning"></i> {$_phrase.congratulations}! {$_phrase.c_highest_bidder}
             </div>
         </div>
         {/if}
         {if $winbid}
         <div class="row">
-            <div class="bg bg-success padding-20  m-top-40"><i class="fa fa-warning"></i> Congratulations! You won this
-                product successfully.
+            <div class="bg bg-success padding-20  m-top-40"><i class="fa fa-warning"></i> {$_phrase.congratulations}! {$_phrase.c_won_this_product}
             </div>
         </div>
         {/if}
         {if $soldhim}
         <div class="row">
-            <div class="bg bg-success padding-20  m-top-40"><i class="fa fa-warning"></i> Congratulations! You bought
-                this product successfully.
+            <div class="bg bg-success padding-20  m-top-40"><i class="fa fa-warning"></i> {$_phrase.congratulations}! {$_phrase.c_bought_this_product}
             </div>
         </div>
         {/if}
@@ -69,7 +66,7 @@ var clearvar = [];
 
         {if $projects.market_status == 'open'}
         <div class="watch_list"><a href="javascript:void(0);" onclick="addtowatchlist({$projects.id})"><i
-                class="fa fa-eye"></i>&nbsp;+&nbsp;Watchlist</a></div>
+                class="fa fa-eye"></i>&nbsp;+&nbsp;{$_phrase.watchlist}</a></div>
         {/if}
         <div class="row proc_r">
             <div class="col-md-4">
@@ -90,36 +87,36 @@ var clearvar = [];
         <div class="lgr_box">
             <div class="row gray_txt">
                 <div class="col-xs-12 col-sm-4 col-md-4">
-                    <div><b>AUCTIONS DETAILS</b></div>
-                    <div>Auction ID : {$projects.id}</div>
-                    <div>Auction type(s) : {if $projects.auctionType !=''} {$projects.auctionType} {else}Beginner{/if}
+                    <div><b>{$_phrase.auction|upper}{$_phrase.s|upper}{$_phrase.engspace}{$_phrase.detail|upper}{$_phrase.s|upper}</b></div>
+                    <div>{$_phrase.auction_id} : {$projects.id}</div>
+                    <div>{$_phrase.auction_type} : {if $projects.auctionType !=''} {$projects.auctionType} {else}Beginner{/if}
                     </div>
-                    <div>Tag : {$projects.tags}</div>
+                    <div>{$_phrase.tag} : {$projects.tags}</div>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4 bdr">
                     <div>
                         <b>
-                            PRICE DETAILS
+                            {$_phrase.price|upper}{$_phrase.engspace}{$_phrase.detail|upper}{$_phrase.s|upper}
                         </b>
                     </div>
-                    <div>Price Starting From : $ {$projects.sprice}</div>
+                    <div>{$_phrase.price_starting_from} : $ {$projects.sprice}</div>
                     <div>{$_phrase.start}{$_phrase.engspace}{$_phrase.time} : {$projects.stime}</div>
                     <div>{$_phrase.end}{$_phrase.engspace}{$_phrase.time} : {$projects.ctime}</div>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4">
                     <div>
                         <b>
-                            {$_phrase.shipping|upper} DETAILS
+                            {$_phrase.shipping|upper}{$_phrase.engspace}{$_phrase.detail|upper}{$_phrase.s|upper}
                         </b>
                     </div>
-                    <div>Shipping Fee :$ {$projects.shipping_price}</div>
-                    <div>{$_phrase.shipping} information : {$projects.shipping_description}</div>
+                    <div>{$_phrase.shipping_fee} :$ {$projects.shipping_price}</div>
+                    <div>{$_phrase.shipping}{$_phrase.engspace}{$_phrase.information} : {$projects.shipping_description}</div>
                 </div>
             </div>
             <div class="row gray_txt spd_desc">
                 <div>
                     <b>
-                        PRODUCT{$_phrase.engspace}{$_phrase.description|upper}
+                        {$_phrase.product|upper}{$_phrase.engspace}{$_phrase.description|upper}
                     </b>
                 </div>
                 <p> {$projects.description} </p>
@@ -141,7 +138,7 @@ var clearvar = [];
                 <div class="proc_title">{$projects.title}</div>
                 <div><img src="{$config.url}images/sam_product.png" alt=""></div>
                 <div class="clearfix pro_row">
-                    <div class="pull-left ctxt_lbl">Time Left :</div>
+                    <div class="pull-left ctxt_lbl">{$_phrase.time_left} :</div>
                     <div class="pull-left mfrs1"> {if $projects.market_status == 'open' or $projects.market_status ==
                         'draft'}
                         <h3 class="countdown" id="my{$projects.id}">{$projects.day}</h3>
@@ -149,17 +146,17 @@ var clearvar = [];
                     </div>
                 </div>
                 <div class="clearfix pro_row">
-                    <div class="pull-left ctxt_lbl">Bid History :</div>
+                    <div class="pull-left ctxt_lbl">{$_phrase.bid_history} :</div>
                     <div class="pull-left sbid sbid{$projects.id} mfrs1"><font
-                            class="sbid sbid{$projects.id}">{$bcnt}</font> Bids
+                            class="sbid sbid{$projects.id}">{$bcnt}</font> {$_phrase.bid}{$_phrase.s}
                     </div>
                 </div>
                 <div class="clearfix pro_row">
-                    <div class="pull-left ctxt_lbl">Quantity :</div>
-                    <div class="pull-left mfrs1">1 ( 1 Left)</div>
+                    <div class="pull-left ctxt_lbl">{$_phrase.quantity} :</div>
+                    <div class="pull-left mfrs1">1 ( 1 {$_phrase.left})</div>
                 </div>
                 <div class="clearfix pro_row">
-                    <div class="pull-left ctxt_lbl">Buy Now Price :</div>
+                    <div class="pull-left ctxt_lbl">{$_phrase.buynow_price} :</div>
                     <div class="pull-left max_bid mfrs1">
                         <div>${$projects.bprice}</div>
                     </div>
@@ -189,7 +186,7 @@ var clearvar = [];
                     <div class="proc_title">{$projects.title}</div>
                     <div><img src="{$config.url}images/sam_product.png" alt=""></div>
                     <div class="clearfix pro_row">
-                        <div class="pull-left ctxt_lbl">Time Left :</div>
+                        <div class="pull-left ctxt_lbl">{$_phrase.time_left} :</div>
                         <div class="pull-left mfrs1"> {if $projects.market_status == 'open' or $projects.market_status
                             == 'draft'}
                             <h3 class="countdown" id="my1{$projects.id}">{$projects.day}</h3>
@@ -197,15 +194,15 @@ var clearvar = [];
                         </div>
                     </div>
                     <div class="clearfix pro_row">
-                        <div class="pull-left ctxt_lbl">Bid History :</div>
-                        <div class="pull-left mfrs1"><font class="sbid">{$bcnt}</font> Bids</div>
+                        <div class="pull-left ctxt_lbl">{$_phrase.bid_history} :</div>
+                        <div class="pull-left mfrs1"><font class="sbid">{$bcnt}</font> {$_phrase.bid}{$_phrase.s}</div>
                     </div>
                     <div class="clearfix pro_row">
-                        <div class="pull-left ctxt_lbl">Quantity :</div>
-                        <div class="pull-left mfrs1">1 ( 1 Left)</div>
+                        <div class="pull-left ctxt_lbl">{$_phrase.quantity} :</div>
+                        <div class="pull-left mfrs1">1 ( 1 {$_phrase.left})</div>
                     </div>
                     <div class="clearfix pro_row">
-                        <div class="pull-left ctxt_lbl">Your Max Bid :</div>
+                        <div class="pull-left ctxt_lbl">{$_phrase.your_max_bid} :</div>
                         <div class="pull-left max_bid mfrs1">
                             <div>$<font class="bamount bamount{$projects.id}">{$projects.wsprice}</font></div>
                         </div>

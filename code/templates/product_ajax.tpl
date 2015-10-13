@@ -5,16 +5,16 @@
           <div class="bid_history"  style="" rel="0" name="344">
             
             <div class="detail_big_history_content">
-              <p>{$bcnt} Bids Total</p>
+              <p>{$bcnt} {$_phrase.bids_total}</p>
             </div>
             <div class="detail_big_history_current_winning">
-              <h1>Current winning Bidders</h1>
+              <h1>{$_phrase.current_winning_bidder}{$_phrase.s}</h1>
             </div>
             <div class="winning_list">
               {if $bcnt == 0}
               <ul>
                 <li>
-                  <p class="no_data">No Bids Yet</p>
+                  <p class="no_data">{$_phrase.no_bids_yet}</p>
                 </li>
               </ul>
              {else}
@@ -38,7 +38,7 @@
           <div class="hb_bg_mid">
             <ul class="clearfix">
               <li>
-                <p><span>Highest Bidder :</span> <strong class="lastbidder">{if $bids|count == 0}No Bids Yet{else} {$bids[0]['name']} {/if}</strong></p>
+                <p><span>Highest Bidder :</span> <strong class="lastbidder">{if $bids|count == 0}{$_phrase.no_bids_yet}{else} {$bids[0]['name']} {/if}</strong></p>
               </li>
               <li>
                 {if $projects.market_status == 'open' or $projects.market_status == 'draft'}<h3 class="countdown" id="my{$projects.id}">{$projects.day}</h3>
@@ -49,7 +49,7 @@
                   <div class="hb_buy_now_button">
                     <div class="hb_buy_now_button_left"> </div>
                     <div class="hb_buy_now_button_mid">
-                      <p> <a href="{$config.url}/product/buy/{$projects.id}" title="Buy Now">Buy Now</a> </p>
+                      <p> <a href="{$config.url}/product/buy/{$projects.id}" title="Buy Now">{$_phrase.buy_now}</a> </p>
                     </div>
                     <div class="hb_buy_now_button_right"> </div>
                   </div>
@@ -93,7 +93,7 @@
               </li>
               <li class="hb_li_padding_bottom_none">
                 <div class="hb_buy_now_left">
-                  <p class="hb_font_weight_normal">Retail Price</p>
+                  <p class="hb_font_weight_normal">{$_phrase.retail_price}</p>
                 </div>
                 <div class="hb_buy_now_right hb_buy_now_right1">
                   <p class="hb_font_size_small"><font class="">$</font> {$projects.mprice}</p>
@@ -101,7 +101,7 @@
               </li>
               <li class="hb_li_padding_bottom_none">
                 <div class="hb_buy_now_left">
-                  <p class="hb_font_weight_normal">Buynow Price</p>
+                  <p class="hb_font_weight_normal">{$_phrase.buynow_price}</p>
                 </div>
                 <div class="hb_buy_now_right hb_buy_now_right1"> <span class="hb_font_size_small">
                   <p class="pricepaid"><font class="">$</font> {$projects.bprice}</p>

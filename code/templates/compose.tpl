@@ -10,19 +10,19 @@
        
       </div>
       <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" {if $action == ''} class="active" {/if}><a href="{$config.url}/dashboard/messages/" >All</a></li>
-        <li role="presentation" {if $action == 'inbox'} class="active" {/if}><a href="{$config.url}/dashboard/messages/inbox">Inbox</a></li>
-        <li role="presentation" {if $action == 'sent'} class="active" {/if}><a href="{$config.url}/dashboard/messages/sent">Sent</a></li>
-        <li role="presentation" {if $action == 'archive'} class="active" {/if}><a href="{$config.url}/dashboard/messages/archive">Archive</a></li>
-        <li role="presentation" {if $action == 'delete'} class="active" {/if}><a href="{$config.url}/dashboard/messages/delete">{$_phrase.delete}</a></li>
-        <li role="presentation" {if $action == 'compose'} class="active" {/if}><a href="{$config.url}/dashboard/messages/compose">Compose</a></li>
+        <li role="presentation" {if $action == ''} class="active" {/if}><a href="{$config.url}/dashboard/messages/" >{$_phrase.all_msg}</a></li>
+        <li role="presentation" {if $action == 'inbox'} class="active" {/if}><a href="{$config.url}/dashboard/messages/inbox">{$_phrase.inbox}</a></li>
+        <li role="presentation" {if $action == 'sent'} class="active" {/if}><a href="{$config.url}/dashboard/messages/sent">{$_phrase.sent_box}</a></li>
+        <li role="presentation" {if $action == 'archive'} class="active" {/if}><a href="{$config.url}/dashboard/messages/archive">{$_phrase.archive}</a></li>
+        <li role="presentation" {if $action == 'delete'} class="active" {/if}><a href="{$config.url}/dashboard/messages/delete">{$_phrase.delete_box}</a></li>
+        <li role="presentation" {if $action == 'compose'} class="active" {/if}><a href="{$config.url}/dashboard/messages/compose">{$_phrase.compose}</a></li>
       </ul>
       <div class="tab-content">
         <div class="compose_mbox">
          <form action="{$config.url}/dashboard/messages/save"  method="POST" enctype="multipart/form-data" class="admin_form" data-parsley-validate>
          <input type="hidden" value="0" name="r_id">
           <div class="row">
-            <div class="col-xs-3 col-sm-1 col-md-1">To</div>
+            <div class="col-xs-3 col-sm-1 col-md-1">{$_phrase.to_msg}</div>
             <div class="col-xs-9 col-sm-11 col-md-11">
               <input class="form-control searching" name="username" id="username" value="Admin" disabled="disabled" placeholder="User Name">
             </div>

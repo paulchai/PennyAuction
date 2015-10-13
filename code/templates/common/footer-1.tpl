@@ -245,7 +245,7 @@
                             <span class="checkbox"></span>Remember Me
                         </label>
                     </div>
-                    <div class="col-md-6 forget-pass"><a href="{$config.url}/login/forgot_password">Forgot Password?</a>
+                    <div class="col-md-6 forget-pass"><a href="{$config.url}/login/forgot_password">{$_phrase.forgot}{$_phrase.engspace}{$_phrase.password}?</a>
                     </div>
                 </div>
                 <div class="row">

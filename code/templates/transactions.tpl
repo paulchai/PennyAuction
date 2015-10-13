@@ -3,13 +3,13 @@
   <div class="row dashboard">
     <div class="col-md-3"> {include file="left-nav-dashboard.tpl" nocache} </div>
     <div class="col-md-9">
-      <h4 class="ds_brd">My Transaction</h4>
+      <h4 class="ds_brd">{$_phrase.my}{$_phrase.engspace}{$_phrase.transaction}</h4>
       <div class="row mblue_box md_hide">
         <div class="col-md-2">{$_phrase.description} </div>
-        <div class="col-md-2"> Type</div>
+        <div class="col-md-2"> {$_phrase.type}</div>
         <div class="col-md-2"> {$_phrase.amount} </div>
-        <div class="col-md-2">Date</div>
-        <div class="col-md-2"> Gateway </div>
+        <div class="col-md-2">{$_phrase.date}</div>
+        <div class="col-md-2"> {$_phrase.gateway} </div>
         <div class="col-md-2">{$_phrase.status}</div>
       </div>
       {if $transaction|count <=  0}

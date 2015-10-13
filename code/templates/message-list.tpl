@@ -1,5 +1,5 @@
 <div class="row mblue_box md_hide">
-  <div class="col-md-3">{$_phrase.name}</div>
+  <div class="col-md-3">{$_phrase.name_msg}</div>
   <div class="col-md-2">{$_phrase.subject}</div>
   <div class="col-md-5">{$_phrase.message}</div>
   <div class="col-md-2">{$_phrase.delete}</div>

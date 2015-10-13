@@ -8,7 +8,7 @@
         <div class="row">
              <div class="bg bg-success padding-20">  
                 <i class="fa fa-warning"></i>
-                 Watchlist Successfully Deleted!.
+                 {$_phrase.watchlist_successfully_deleted}!
              </div>
         </div>  
 

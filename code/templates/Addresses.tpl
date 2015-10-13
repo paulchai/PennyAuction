@@ -19,7 +19,7 @@
         <div class="ship_add">{$_phrase.address}</div>
         <div class="ship_add"> {$_phrase.state} </div>
         <div class="ship_add">{$_phrase.city}</div>
-        <div class="ship_add">Postcode </div>
+        <div class="ship_add">{$_phrase.postcode} </div>
         <div class="ship_add">{$_phrase.phoneno} </div>
         <div class="ship_add"> Options</div>
       </div>

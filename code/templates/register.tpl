@@ -35,7 +35,7 @@
                <div class="">
                   <div class="log_fields">
                      <div class="colm1_width fl">
-                        <p>Password <span class="red">*</span>:</p>
+                        <p>{$_phrase.password} <span class="red">*</span>:</p>
                      </div>
                      <input id="password" name="password" placeholder="Enter the password" maxlength="20"  data-parsley-group="block1" required class="textbox" type="password">         
                   </div>
@@ -44,7 +44,7 @@
                <div class="">
                   <div class="log_fields">
                      <div class="colm1_width fl">
-                        <p>Retype Password  <span class="red">*</span>:</p>
+                        <p>{$_phrase.retype}{$_phrase.engspace}{$_phrase.password}  <span class="red">*</span>:</p>
                      </div>
                      <input id="repassword" name="repassword" placeholder="Repeat the password" maxlength="20" data-parsley-group="block1" required class="textbox" type="password" data-parsley-equalto="#password">            
                   </div>

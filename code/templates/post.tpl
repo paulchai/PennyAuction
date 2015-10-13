@@ -11,7 +11,7 @@
    
    <div class="my_message_right">
       <div class="message_common_border">
-         <h1 style="width:168px;" title="Add Product">{$_phrase.add}{$_phrase.engspace}Product</h1>
+         <h1 style="width:168px;" title="Add Product">{$_phrase.add}{$_phrase.engspace}{$_phrase.product}</h1>
          <p style="width:551px;">&nbsp;</p>
       </div>
       <form method="POST" enctype="multipart/form-data" class="admin_form" data-parsley-validate name="add-product" id="add-product" action="/product/save">
@@ -27,7 +27,7 @@
                   <label class="errore_msg fl clr"><span class="red"></span></label>
                </div>
                <div class="user_name_common">
-                  <p>Product{$_phrase.engspace}{$_phrase.category}<span class="red">*</span> :</p>
+                  <p>{$_phrase.product}{$_phrase.engspace}{$_phrase.category}<span class="red">*</span> :</p>
                   <div class="text_feeld">
                      <h2>
                         <select name="cid" data-parsley-group="block1" required  style="width:270px; height:30px;" id="product_category">
@@ -61,7 +61,7 @@
                      </span>
                   </div>
                   <div class="user_name_common">
-                     <p>Product{$_phrase.engspace}{$_phrase.description}<span class="red">*</span>  :</p>
+                     <p>{$_phrase.product}{$_phrase.engspace}{$_phrase.description}<span class="red">*</span>  :</p>
                      <div class="text_feeld">
                         <h2>
                            <textarea name="description" id="product_info" data-parsley-group="block1" required class="resizetextarea" data-parsley-maxlength="500" data-parsley-length="[100, 500]" value="" onkeyup="limitlengths(this, 500,'product_info_label')"></textarea>
@@ -76,7 +76,7 @@
                   
                  
                   <div class="user_name_common" id="shipping_inf">
-                     <p>Buynow price :</p>
+                     <p>{$_phrase.buynow_price} :</p>
                      <div class="text_feeld">
                         <h2>
                            <input name="bprice" id="bprice" data-parsley-group="block1" required maxlength="20"  placeholder="0.00"  value="" type="text">
@@ -84,7 +84,7 @@
                      </div>
                   </div>
                   <div class="user_name_common" id="shipping_inf">
-                     <p>Market price :</p>
+                     <p>{$_phrase.market}{$_phrase.engspace}{$_phrase.price} :</p>
                      <div class="text_feeld">
                         <h2>
                            <input name="mprice" id="mprice" data-parsley-group="block1" required maxlength="20"  placeholder="0.00"  value="" type="text">
@@ -116,7 +116,7 @@
                      </div>
                   </div>
                   <div class="user_name_common" id="shipping_inf">
-                     <p>Shipping Information  :</p>
+                     <p>{$_phrase.shipping}{$_phrase.engspace}{$_phrase.information}  :</p>
                      <div class="text_feeld">
                         <h2>
                            <input name="shipping_description" id="shipping_info" data-parsley-group="block1" required maxlength="20" value="" type="text">
