@@ -60,7 +60,7 @@
                         <div class="pull-left rhead">{$val.subject}</div>
                         <div class="pull-right rating">
                          {if $val.rating == .5} 
-                            <img src="{$config.">url}/images/wstar.png" alt=""><img src="{$config.url}/images/wstar.png" alt=""><img src="{$config.url}/images/wstar.png" alt=""><img src="{$config.url}/images/wstar.png" alt=""><br /><span>"Very Bad"</span>
+                            <img src="{$config.">url}/images/hstar.png" alt=""><img src="{$config.url}/images/wstar.png" alt=""><img src="{$config.url}/images/wstar.png" alt=""><img src="{$config.url}/images/wstar.png" alt=""><br /><span>"Very Bad"</span>
                            {elseif $val.rating == 1} 
                             <img src="{$config.url}/images/gstar.png" alt=""><img src="{$config.url}/images/wstar.png" alt=""><img src="{$config.url}/images/wstar.png" alt=""><img src="{$config.url}/images/wstar.png" alt=""><img src="{$config.url}/images/wstar.png" alt=""><br /><span>"Bad"</span>
                             {elseif $val.rating == 1.5} 

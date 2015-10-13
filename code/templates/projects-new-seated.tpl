@@ -38,7 +38,7 @@
  -webkit-transition: border .2s ease-in-out;
  -o-transition: border .2s ease-in-out;
  transition: border .2s ease-in-out;
-	min-height: 414px;
+	min-height: 490px;
 	max-height: 490px;
 }
 .ab4 .finbum {

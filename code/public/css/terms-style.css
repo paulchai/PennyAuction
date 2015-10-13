@@ -11,9 +11,7 @@
 	padding-left:0;
 	padding-right:0;
 }
-.ftmdpro {
-  font-family: MYRIADPRO4 !important;
-}
+
 .fotdi1 {
   background: #428bca;
   color: white;
@@ -37,7 +35,7 @@
   text-decoration: none;
 }
 .ftmdpro {
-  font-family: MYRIADPRO4 !important;
+  font-family:sans-serif !important;
 }
 
 .srtr3 {
@@ -110,7 +108,7 @@ footer {
 }
 
 .ftmdpro {
-  font-family: MYRIADPRO4 !important;
+  font-family:sans-serif !important;
 }
 .fotdi {
   /* background: #428bca; */

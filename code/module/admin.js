@@ -454,28 +454,24 @@ exports.userProductSearch = function (req, mysql, q, count) {
 
     where = '';
 
-    status = (typeof(req.body.status) !== 'undefined' && req.body.status != '') ? req.body.status : '';
+    status = (typeof(req.query.status) !== 'undefined' && req.query.status != '') ? req.query.status : '';
     if (status != 'delete')
         where = ' and p.market_status != "removed"';
 
-    where += (typeof(req.body.title) !== 'undefined' && req.body.title != '') ? ' and p.title like "%' + req.body.title + '%"' : where;
-    where += (typeof(req.body.id) !== 'undefined' && req.body.id != '') ? ' and p.id = ' + req.body.id : where;
+    where += (typeof(req.query.title) !== 'undefined' && req.query.title != '') ? ' and p.title like "%' + req.query.title + '%"' : where;
+    where += (typeof(req.query.id) !== 'undefined' && req.query.id != '') ? ' and p.id = ' + req.query.id : where;
     date1 = dateFormat(new Date(), 'yyyy-mm-dd HH:MM:ss');
 
 
     if (status == 'open') {
         where += ' and p.date_added <= "' + date1 + '" and p.date_closed >= "' + date1 + '" and market_status="open"';
-    }
-    if (status == 'closed') {
+    } else if (status == 'closed') {
         where += ' and p.date_closed <= "' + date1 + '" and p.market_status != "sold"';
-    }
-    if (status == 'future') {
+    } else if (status == 'future') {
         where += ' and p.date_added >= "' + date1 + '" and  p.date_closed >= "' + date1 + '"';
-    }
-    if (status == 'sold') {
+    } else if (status == 'sold') {
         where += ' and p.market_status = "sold"';
-    }
-    if (status == 'delete') {
+    } else if (status == 'delete') {
         where += ' and p.market_status = "removed"';
     }
     //if(status == 'seated')

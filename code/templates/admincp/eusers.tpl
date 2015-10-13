@@ -91,7 +91,7 @@
 
                         <div class="form-group">
                             <label>First Name</label>
-                            <input class="form-control" placeholder="Enter First Name" value="{$users.first_name}"
+                            <input class="form-control splchar_restrict" placeholder="Enter First Name" value="{$users.first_name}"
                                    name="first_name" data-parsley-group="block1"
                                    data-parsley-error-message="Enter valid First Name" data-parsley-pattern="/^[A-z ,.'-]+$/i" required>
                         </div>
@@ -99,7 +99,7 @@
 
                         <div class="form-group">
                             <label>Last Name</label>
-                            <input class="form-control" placeholder="Enter Last Name" value="{$users.last_name}"
+                            <input class="form-control splchar_restrict" placeholder="Enter Last Name" value="{$users.last_name}"
                                    name="last_name" data-parsley-group="block1"
                                    data-parsley-error-message="Enter valid Last Name" data-parsley-pattern="^[A-z ,.'-]+$" required>
                         </div>
@@ -109,7 +109,7 @@
                             <input type="text" id="phone" name="phone" placeholder="Eg: 0123123456, +919874563210"
                                    class="form-control" value="{$users.phone}" data-parsley-maxlength="10"
                                    data-parsley-required-message="Enter Phone Name"
-                                   data-parsley-maxlength-message="Enter valid Phone number" title="Phone Number"
+                                   data-parsley-maxlength-message="Enter only 10 digits" title="Phone Number"
                                    maxlength="20"
                                    required>
                         </div>
@@ -126,7 +126,7 @@
                             <label for="email_address">Email</label>
                             <input class="form-control" id="email_address" name="email" type="email"
                                    value="{$users.email}"
-                                   data-parsley-group="block1" data-parsley-required-message="Enter Email Name"
+                                   data-parsley-group="block1" data-parsley-required-message="Enter Email Address"
                                    required>
                         </div>
 
@@ -166,25 +166,27 @@
 
                         <div class="form-group">
                             <label for="country">Country:</label>
-                            <p>
-                                {$users.country}
-                            </p>
+
 
                             <select name="country" id="country" class="form-control" required
                                     data-parsley-required-message="Choose Country">
                                 <option value="" selected="selected">Select Country</option>
-                                {foreach $config.countries as $key => $val}
-                                <option value="{$val.name}" {if $users.country==$val.name} selected {/if} attr="{$val.location_id}">{$val.name}</option>
-                                {/foreach}
+                                <!--{foreach $config.countries as $key => $val}-->
+                                <!--<option value="{$val.name}" {if $users.country==$val.name} selected {/if} attr="{$val.location_id}">{$val.name}</option>-->
+                                <!--{/foreach}foreach-->
                             </select>
                         </div>
 
                         <div class="form-group">
                             <label for="state">State:</label>
 
-                            <input type="text" id="state" name="state" placeholder="Enter state" class="form-control"
-                                   value="{$users.state}" title="State" maxlength="20" required
-                                   data-parsley-required-message="Enter state">
+                            <select name="state" id="state" class="form-control " required
+                                    data-parsley-required-message="Choose state">
+                                <option value="" selected="selected">Select state</option>
+                                <!--{foreach $config.countries as $key => $val}-->
+                                <!--<option value="{$val.name}" {if $users.state==$val.name} selected {/if} attr="{$val.location_id}">{$val.name}</option>-->
+                                <!--{/foreach}foreach-->
+                            </select>
                         </div>
                         <div class="form-group">
                             <label for="town">City:</label>
@@ -231,6 +233,8 @@
                             </span>
                             {/foreach}
                         </div>
+                        <input type="hidden" name="hidden_country" id="hidden_country" value="{$users.country}">
+                        <input type="hidden" name="hidden_state" id="hidden_state" value="{$users.state}">
                         <div class="col-md-12" style="padding-top:15px;">
                             <button type="submit" class="btn btn-success"><i class="fa fa-save"></i> Submit</button>
                         </div>
@@ -251,8 +255,27 @@
     });
 
     $(function () {
+        populateCountries("country", "state");
         var ctry = '{$users.country}';
         if (ctry != '')
             $('#country').val(ctry);
+        loadState();
+
+    });
+
+    var ctry = '{$users.country}';
+    console.log(ctry);
+    if(ctry !='')
+    {
+        $('#country').val(ctry);
+
+        loadState();
+
+    }
+
+
+    $('#country').on('change',function()
+    {
+        loadState();
     });
 </script>

@@ -859,10 +859,12 @@ app.get(['/projects/:action/', '/projects/:action/:id', '/projects/:action/:id/:
     $arr['projects'] = [];
     $arr['stores'] = [];
     if (action == 'open' || action == 'closed' || action == 'sold' || action == 'future') {
-        req.query.status = action;
+        req.query.status = req.body.status = action;
         req.url += '?status=' + action;
         action = req.body.action = 'list';
-    } else if (action == 'delete' && req.body.id > 0) {
+		
+    } 
+	 if (action == 'delete' && req.body.id > 0) {
         var bids = require('../../module/bid');
         q.all([bids.bidHistory(req, config.mysql, q, 1)]).then(function (results) {
             $arr['bcnt'] = results[0][0][0]['bid'];
@@ -882,22 +884,29 @@ app.get(['/projects/:action/', '/projects/:action/:id', '/projects/:action/:id/:
             }
         });
     } else if (action == 'list') {
+		
         $arr['deleted_project'] = $arr['undeleted_project'] = false;
-        if (typeof(global.projectdeleted) !== 'undefined') {
-            delete global.projectdeleted;
-            $arr['deleted_project'] = true;
-        }
-        if (typeof(global.unprojectdeleted) !== 'undefined') {
-            delete global.unprojectdeleted;
-            $arr['undeleted_project'] = true;
-        }
+		if(typeof(global) !== 'undefined')
+		{
+			if (typeof(global.projectdeleted) !== 'undefined') {
+				delete global.projectdeleted;
+				$arr['deleted_project'] = true;
+			}
+			if (typeof(global.unprojectdeleted) !== 'undefined') {
+				delete global.unprojectdeleted;
+				$arr['undeleted_project'] = true;
+			}
+		}
         $arr['menu']['projectsearchmenu'] = 'active';
         req.body.page = (typeof(req.param('page')) === 'undefined') ? 1 : req.param('page');
         $arr['menu']['projectsearchmenu'] = 'active';
         //console.log(req.body.page);
+		
         q.all([admin.userProductSearch(req, config.mysql, q, 0), admin.userProductSearch(req, config.mysql, q, 1)]).then(function (result) {
             $arr['pagination'] = result[1][0].length;
+			
             $arr['projects'] = projects.shortDescribe(result[0][0]);
+			
             var url = require('url');
             var url_parts = url.parse(req.url, true);
             var query = url_parts.query;
@@ -919,13 +928,17 @@ app.get(['/projects/:action/', '/projects/:action/:id', '/projects/:action/:id/:
                 $arr['menu']['projectsearchmenu'] = '';
             }
 
-            q.all(stores.showStores(req, 0)).then(function (ress) {
+            q.all(stores.showStores(req, 0)).then(function (ress) { 
                 $arr['stores'] = ress[0][0];
                 common.tplFile('admincp/project.tpl');
                 common.headerSet(1);
                 common.loadTemplateHeader(req, res, $arr);
             });
-        });
+        }).fail(function(err){
+		  res.send(err.stack);
+		  res.end();
+		  return false;
+	  }).done();;
     } else if (action == 'new') {
         $arr['menu']['projectsnewmenu'] = 'active';
         $arr['action'] = "New";
@@ -1059,7 +1072,7 @@ app.post(['/users/:action/'], function (req, res) {
                     if (!err)
                         console.log('successfully deleted ' + users.avatar);
                 });
-                var attach = require('../../module/attach');
+                var attach = reqpdatire('../../module/attach');
                 req.body.avatar = req.files.profile_image.name;
                 req.body.image = req.files.profile_image.originalname;
                 attach.save('profile', req, res);

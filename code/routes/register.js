@@ -5,18 +5,6 @@ var register = require('../module/register');
 var q = require('q');
 var app = express.Router();
 
-
-//required js
-/*var configure = require('../configure');
-
-//default setters
-var config = configure.app();
-
-$arr = {
-    config: config
-};*/
-
-
 app.post('/save', function (req, res) {
     data = req.body;
 

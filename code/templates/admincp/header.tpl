@@ -41,7 +41,7 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <script src="{$config['externaljs']}country.js"  type="text/javascript"></script>
     <!-- <script>
      var originaur      = window.location.href;
    var duplicateur = originaur.replace('8080', '8880');

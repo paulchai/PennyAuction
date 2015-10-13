@@ -155,3 +155,26 @@ function PopupBox(link, content) {
         return false;
     }
 }
+function loadState(){
+
+    if($('#country').val() == $('#hidden_country').val()){
+        populateStates("country", "state");
+        $('#state').val($('#hidden_state').val());
+
+
+    }
+    if($('#country1').val() == $('#hidden_country').val()) {
+        populateStates("country1", "state1");
+        $('#state1').val($('#hidden_state1').val());
+    }
+
+}
+
+$('.splchar_restrict').bind('keypress', function (event) {
+    var regex = new RegExp("^[a-zA-Z0-9_ ,]+$");
+    var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
+    if (!regex.test(key)) {
+        event.preventDefault();
+        return false;
+    }
+});
