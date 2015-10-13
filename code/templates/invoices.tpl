@@ -9,7 +9,7 @@
   {include file="left-nav.tpl" nocache}
   <div class="my_message_right" id="mybids_page">
     <div class="message_common_border">
-      <h1 title="MY PRODUCTS">My Bids</h1>
+      <h1 title="MY PRODUCTS">{$_phrase.my_bid}{$_phrase.s}</h1>
       <p>&nbsp;</p>
     </div>
     <div class="buton_green">

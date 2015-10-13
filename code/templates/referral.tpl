@@ -36,7 +36,7 @@
       </div>
       {/foreach}
       {else}
-     <div class="col-md-12 text-center m-top-20 font-12">  No referrals found </div> 
+     <div class="col-md-12 text-center m-top-20 font-12">  {$_phrase.no_referrals_found} </div> 
       {/if}  {$pagination_html} </div>
   </div>
 </div>

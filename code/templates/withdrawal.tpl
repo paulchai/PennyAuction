@@ -3,14 +3,14 @@
   <div class="row dashboard">
     <div class="col-md-3"> {include file="left-nav-dashboard.tpl" nocache} </div>
     <div class="col-md-9">
-      <h4 class="ds_brd">Withdrawals</h4>
+      <h4 class="ds_brd">{$_phrase.withdrawal}{$_phrase.s}</h4>
        {if $message != ''}
          <div class="row">
             <div class="bg {if $action == 'error'}bg-danger{else}bg-success{/if} padding-20  m-top-40"> <i class="fa fa-warning"></i> {$message}. </div>
           </div>
        {/if}
       <div class="row">
-       <div class="col-md-6"><b>Available Balance To Withdraw:</b>${$userbalance.ledger}
+       <div class="col-md-6"><b>{$_phrase.available_balance_to_withdraw}:</b>${$userbalance.ledger}
          </div>
       </div> 
       <div class="row">
@@ -23,20 +23,20 @@
        </div>
       
        <div class="form-group">
-         <label>Payment Mode</label>
+         <label>{$_phrase.payment_mode}</label>
          <select name="paymethod" required  class="form-control">
-                   <option value="Paypal">Paypal</option>
-                   <option value="ACH">ACH</option>
-                   <option value="Cheque">Cheque</option>
+                   <option value="Paypal">{$_phrase.paypal}</option>
+                   <option value="ACH">{$_phrase.ach}</option>
+                   <option value="Cheque">{$_phrase.cheque}</option>
          </select>
          
        </div>
        <div class="form-group">
-         <label>Payment Details(paypal address/ACH details/Bank Details)</label>
+         <label>{$_phrase.payment}{$_phrase.engspace}{$_phrase.detail}{$_phrase.s}({$_phrase.paypal|lower} {$_phrase.address|upper}/{$_phrase.ach} {$_phrase.detail|lower}{$_phrase.s}/{$_phrase.bank}{$_phrase.engspace}{$_phrase.detail}{$_phrase.s})</label>
          <textarea required name="paydetails"  class="form-control"></textarea>
          
        </div>
-       <button type="submit" class="btn btn-success">Confirm Withdraw</button>
+       <button type="submit" class="btn btn-success">{$_phrase.confirm}{$_phrase.engspace}{$_phrase.withdraw}</button>
       </form>
     </div>
       </div> 
@@ -44,14 +44,14 @@
 
       <div class="row mblue_box md_hide">
         <div class="col-md-2 text-center">{$_phrase.amount}</div>
-        <div class="col-md-3 text-center">Date Requested</div>
-        <div class="col-md-1 text-center">Paid</div>
-        <div class="col-md-2 text-center">Pay Method</div>
-        <div class="col-md-3 text-center">Pay Method</div>
+        <div class="col-md-3 text-center">{$_phrase.date_requested}</div>
+        <div class="col-md-1 text-center">{$_phrase.paid}</div>
+        <div class="col-md-2 text-center">{$_phrase.pay_method}</div>
+        <div class="col-md-3 text-center">{$_phrase.pay_method}</div>
         <!--<div class="col-md-3"> {$_phrase.amount} </div>-->
       </div>
       {if $withdraw|count <=  0}
-      <div class="row mblue_box1" style="text-align:center;"> No withdraw Found </div>
+      <div class="row mblue_box1" style="text-align:center;"> {$_phrase.no_withdraw_found} </div>
       {else}
       {foreach $withdraw as $key => $val}
       <div class="row mblue_box1">

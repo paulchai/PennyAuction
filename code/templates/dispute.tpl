@@ -69,7 +69,7 @@
 					<textarea class="form-control" rows="4"  name="message" id="message" class="form-control" required placeholder="Explain Dispute..."></textarea> 
 				</div></div>
 				<div class="row" style="margin-top:10px;">
-						<div class="col-md-4"><button class="btn btn-primary">{$_phrase.submit}xxx</button></div>
+						<div class="col-md-4"><button class="btn btn-primary">{$_phrase.submit}</button></div>
 						
 					</div>
 				</form>

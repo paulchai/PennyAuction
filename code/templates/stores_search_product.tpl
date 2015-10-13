@@ -74,7 +74,7 @@
 					</div>
 					<div class="col-md-12 pdtpm30 ">
 						<div class="whiteborbg3" style="min-height:100px;">
-							<div class="whitehead4">Price</div>
+							<div class="whitehead4">{$_phrase.price}</div>
 
 							<div class="col-md-3 padtp11pxon" style="padding-left: 4px;">
 								<input type="text" name="firstname" placeholder="From" style="width: 62px;">

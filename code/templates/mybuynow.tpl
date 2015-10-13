@@ -3,7 +3,7 @@
     <div class="row dashboard">
         <div class="col-md-3"> {include file="left-nav-dashboard.tpl" nocache}</div>
         <div class="col-md-9">
-            <h4 class="ds_brd">Buy Now Transactions</h4>
+            <h4 class="ds_brd">{$_phrase.buy_now_transactions}</h4>
 
             <div class="row mblue_box md_hide">
                 <div class="col-md-3">{$_phrase.image}</div>

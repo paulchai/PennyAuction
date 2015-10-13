@@ -8,7 +8,7 @@
         <div class="row">
              <div class="bg bg-success padding-20">  
                 <i class="fa fa-warning"></i>
-                 Watchlist Successfully Deleted!.
+                 {$_phrase.watchlist_successfully_deleted}!
              </div>
         </div>  
 
@@ -23,7 +23,7 @@
            {if $mywatchlist|count <=  0}
             <div class="row mblue_box1">
               <div class="col-md-12 text-center m-top-20 font-12">
-                 No Watchlist Items Found
+                 {$_phrase.no_watchlist_items_found}
               </div>   
            </div>
            {else}

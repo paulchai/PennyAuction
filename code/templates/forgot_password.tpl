@@ -59,7 +59,7 @@
       {if $step1}
       <form action="/login/forgot_password" method="post" accept-charset="utf-8" data-parsley-validate required>
         <div class="login-part text-center">
-          <h2 title="Forgot Password">Forgot Password</h2>
+          <h2 title="Forgot Password">{$_phrase.forgot}{$_phrase.engspace}{$_phrase.password}</h2>
         </div>
         
         <div class="login_middle bidonregi1">
@@ -83,7 +83,7 @@
         <div class="login_middle_common_profil" style="padding-left:0;">
           <div class="user_name_common">
            <div class="col-md-4">
-              <p>New Password <span class="red">*</span>:</p></div>
+              <p>{$_phrase.new}{$_phrase.engspace}{$_phrase.password} <span class="red">*</span>:</p></div>
               <div class="col-md-6">
                 <input type="password" id="new_password" name="new_password" title="New Password" maxlength="20" class="form-control"  required >
               </div>
@@ -95,7 +95,7 @@
           <div class="user_name_common">
             <div class="log_fields">
             <div class="col-md-4">
-              <p>Confirm Password <span class="red">*</span>:</p></div>
+              <p>{$_phrase.confirm}{$_phrase.engspace}{$_phrase.password} <span class="red">*</span>:</p></div>
               <div class="col-md-6">
                 <input type="password" id="new_password" name="confirm_password" title="Confirm Password" class="form-control"  maxlength="20" required data-parsley-equalto="#new_password" >
               </div>

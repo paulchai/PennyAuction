@@ -9,17 +9,17 @@
 					 <div class="wb_lbl"><a href="{$config.url}/package/"><span class="img_up"><img src="{$config.url}/images/db5.png" alt="" /></span>{$_phrase.buypackage}<i class="fa fa-chevron-circle-right"></i></a></div>
 				     <div class="wb_lbl"><a href=" {$config.url}/dashboard/watchlist"><span class="img_up"><img src="{$config.url}/images/db6.png" alt="" /></span>{$_phrase.my}{$_phrase.engspace}{$_phrase.watchlist}<i class="fa fa-chevron-circle-right"></i></a></div>
 					 <div class="wb_lbl"><a href=" {$config.url}/dashboard/Myaddress" customurl="dashboard/Address"><span class="img_up"><img src="{$config.url}/images/db7.png" alt="" /></span>{$_phrase.shipping}/{$_phrase.billing}{$_phrase.engspace}{$_phrase.address}<i class="fa fa-chevron-circle-right"></i></a></div>
-                     <div class="wb_lbl"><a href=" {$config.url}/dashboard/mybids"><span class="img_up"><img src="{$config.url}/images/db8.png" alt="" /></span>My Bids<i class="fa fa-chevron-circle-right"></i></a></div>
+                     <div class="wb_lbl"><a href=" {$config.url}/dashboard/mybids"><span class="img_up"><img src="{$config.url}/images/db8.png" alt="" /></span>{$_phrase.my_bid}{$_phrase.s}<i class="fa fa-chevron-circle-right"></i></a></div>
 					 <div class="wb_lbl"><a href=" {$config.url}/dashboard/wonauctions"><span class="img_up"><img src="{$config.url}/images/db10.png" alt="" /></span>Penny {$_phrase.won}{$_phrase.engspace}{$_phrase.auction}{$_phrase.s}<i class="fa fa-chevron-circle-right"></i></a></div>
-					 <div class="wb_lbl"><a href=" {$config.url}/dashboard/transactions"><span class="img_up"><img src="{$config.url}/images/db11.png" alt="" /></span>My transactions<i class="fa fa-chevron-circle-right"></i></a></div>
-					 <div class="wb_lbl disabled"><a href=" {$config.url}/dashboard/autobid"><span class="img_up"><img src="{$config.url}/images/db12.png" alt="" /></span>AutoBid<i class="fa fa-chevron-circle-right"></i></a></div>
+					 <div class="wb_lbl"><a href=" {$config.url}/dashboard/transactions"><span class="img_up"><img src="{$config.url}/images/db11.png" alt="" /></span>{$_phrase.my}{$_phrase.engspace}{$_phrase.transaction}{$_phrase.s}<i class="fa fa-chevron-circle-right"></i></a></div>
+					 <div class="wb_lbl disabled"><a href=" {$config.url}/dashboard/autobid"><span class="img_up"><img src="{$config.url}/images/db12.png" alt="" /></span>{$_phrase.auto_bid}<i class="fa fa-chevron-circle-right"></i></a></div>
 					
                     
-                   {if $seated}  <div class="wb_lbl disabled"><a href=" {$config.url}/dashboard/seated"><span class="img_up"><img src="{$config.url}/images/seat.png" alt="" /></span>Seated Auction<i class="fa fa-chevron-circle-right"></i></a></div>  {/if}
+                   {if $seated}  <div class="wb_lbl disabled"><a href=" {$config.url}/dashboard/seated"><span class="img_up"><img src="{$config.url}/images/seat.png" alt="" /></span>{$_phrase.seated_auction}<i class="fa fa-chevron-circle-right"></i></a></div>  {/if}
 					
                      <div class="wb_lbl"><a href=" {$config.url}/dashboard/referral"><span class="img_up"><img src="{$config.url}/images/db13.png" alt="" /></span>{$_phrase.referral}<i class="fa fa-chevron-circle-right"></i></a></div>
-					 <div class="wb_lbl"><a href=" {$config.url}/dashboard/buynow"><span class="img_up"><img src="{$config.url}/images/db14.png" alt="" /></span>Buy Now Transactions<i class="fa fa-chevron-circle-right"></i></a></div>
-					 <div class="wb_lbl"><a href=" {$config.url}/dashboard/withdrawal"><span class="img_up"><img src="{$config.url}/images/db11.png" alt="" /></span>Withdrawals<i class="fa fa-chevron-circle-right"></i></a></div>
+					 <div class="wb_lbl"><a href=" {$config.url}/dashboard/buynow"><span class="img_up"><img src="{$config.url}/images/db14.png" alt="" /></span>{$_phrase.buy_now_transactions}<i class="fa fa-chevron-circle-right"></i></a></div>
+					 <div class="wb_lbl"><a href=" {$config.url}/dashboard/withdrawal"><span class="img_up"><img src="{$config.url}/images/db11.png" alt="" /></span>{$_phrase.withdrawal}{$_phrase.s}<i class="fa fa-chevron-circle-right"></i></a></div>
 					</div>
 				</div>
 				

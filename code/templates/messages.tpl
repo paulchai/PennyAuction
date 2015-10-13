@@ -9,12 +9,12 @@
   </div>
 </div>
 <ul class="nav nav-tabs" role="tablist">
-  <li role="presentation" {if $action == ''} class="active" {/if}><a href="{$config.url}/dashboard/messages/" >All</a></li>
-  <li role="presentation" {if $action == 'inbox'} class="active" {/if}><a href="{$config.url}/dashboard/messages/inbox">Inbox</a></li>
-  <li role="presentation" {if $action == 'sent'} class="active" {/if}><a href="{$config.url}/dashboard/messages/sent">Sent</a></li>
-  <li role="presentation" {if $action == 'archive'} class="active" {/if}><a href="{$config.url}/dashboard/messages/archive">Archive</a></li>
-  <li role="presentation" {if $action == 'delete'} class="active" {/if}><a href="{$config.url}/dashboard/messages/delete">{$_phrase.delete}</a></li>
-  <li role="presentation" {if $action == 'compose'} class="active" {/if}><a href="{$config.url}/dashboard/messages/compose">Compose</a></li>
+  <li role="presentation" {if $action == ''} class="active" {/if}><a href="{$config.url}/dashboard/messages/" >{$_phrase.all_msg}</a></li>
+  <li role="presentation" {if $action == 'inbox'} class="active" {/if}><a href="{$config.url}/dashboard/messages/inbox">{$_phrase.inbox}</a></li>
+  <li role="presentation" {if $action == 'sent'} class="active" {/if}><a href="{$config.url}/dashboard/messages/sent">{$_phrase.sent_box}</a></li>
+  <li role="presentation" {if $action == 'archive'} class="active" {/if}><a href="{$config.url}/dashboard/messages/archive">{$_phrase.archive}</a></li>
+  <li role="presentation" {if $action == 'delete'} class="active" {/if}><a href="{$config.url}/dashboard/messages/delete">{$_phrase.delete_box}</a></li>
+  <li role="presentation" {if $action == 'compose'} class="active" {/if}><a href="{$config.url}/dashboard/messages/compose">{$_phrase.compose}</a></li>
 </ul>
 <div class="tab-content">
   <div role="tabpanel" class="tab-pane active" id="home"> {include file="message-list.tpl" nocache} </div>

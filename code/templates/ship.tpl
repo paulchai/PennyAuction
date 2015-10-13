@@ -35,7 +35,7 @@
                         <div class="col-xs-12 col-sm-8 col-md-8 ship_pro">
                             <div class="row">
                                 <div class="col-xs-5 col-sm-4 col-md-4">
-                                    <div class="dtimelft">Time Left</div>
+                                    <div class="dtimelft">{$_phrase.time_left}</div>
                                 </div>
                                 <div class="col-xs-1 col-sm-1 col-md-1">
                                     <div class="dtimelft">:</div>
@@ -46,7 +46,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-xs-5 col-sm-4 col-md-4">
-                                    <div class="dtimelft">Price (USD $)</div>
+                                    <div class="dtimelft">{$_phrase.price} (USD $)</div>
                                 </div>
                                 <div class="col-xs-1 col-sm-1 col-md-1">
                                     <div class="dtimelft">:</div>
@@ -57,7 +57,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-xs-5 col-sm-4 col-md-4">
-                                    <div class="dtimelft">Quantity</div>
+                                    <div class="dtimelft">{$_phrase.quantity}</div>
                                 </div>
                                 <div class="col-xs-1 col-sm-1 col-md-1">
                                     <div class="dtimelft">:</div>
@@ -68,7 +68,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-xs-5 col-sm-4 col-md-4">
-                                    <div class="dtimelft">{$_phrase.shipping} Cost (USD $)</div>
+                                    <div class="dtimelft">{$_phrase.shipping_cost} (USD $)</div>
                                 </div>
                                 <div class="col-xs-1 col-sm-1 col-md-1">
                                     <div class="dtimelft">:</div>
@@ -115,7 +115,7 @@
                     </div>
 
                     <div class="col-md-12">
-                        <div class="product">Product{$_phrase.engspace}{$_phrase.description}</div>
+                        <div class="product">{$_phrase.product}{$_phrase.engspace}{$_phrase.description}</div>
                         <div class="para"> {$product.description}</div>
                     </div>
                 </div>
@@ -123,7 +123,7 @@
                     <div class="clearfix row tamount_paid">
                         <div class="col-md-4">
                             <div class="tolalamnt">{$_phrase.totalamounttobepaid}</div>
-                            <div class="ship">(including shipping)</div>
+                            <div class="ship">({$_phrase.including_shipping})</div>
                         </div>
                         <div class="col-md-4">
                             <div class="rate">US ${$product.totalprice-$product.bid_credits}</div>
@@ -214,7 +214,7 @@
                     <div class="row amt">
                         <div class="col-xs-12 col-sm-6 col-md-5">
                             <div class="amtpd">{$_phrase.totalamounttobepaid}</div>
-                            <div class="incldship">(including shipping)</div>
+                            <div class="incldship">({$_phrase.including_shipping})</div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-6">
                             <div class="dlrpric">US <span

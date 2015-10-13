@@ -10,14 +10,14 @@
             <div class="row">
                 <div class="bg bg-success padding-20">
                     <i class="fa fa-warning"></i>
-                    Password Successfully Changed!.
+                    {$_phrase.password}{$_phrase.engspace}{$_phrase.successfully_changed}!.
                 </div>
             </div>
 
             {/if}
             <div class="row">
                 <div class="form-group">
-                    <label for="old_password" class="col-md-3">Old Password:</label>
+                    <label for="old_password" class="col-md-3">{$_phrase.old}{$_phrase.engspace}{$_phrase.password}:</label>
 
                     <div class="col-md-5">
                         <input type="password" id="old_password" name="old_password" title="Old Password"
@@ -28,7 +28,7 @@
             </div>
             <div class="row">
                 <div class="form-group">
-                    <label for="new_password" class="col-md-3">New Password:</label>
+                    <label for="new_password" class="col-md-3">{$_phrase.new}{$_phrase.engspace}{$_phrase.password}:</label>
 
                     <div class="col-md-5">
                         <input type="password" id="new_password" name="new_password" title="New Password"
@@ -39,7 +39,7 @@
             </div>
             <div class="row">
                 <div class="form-group">
-                    <label for="confirm_password" class="col-md-3">Confirm Password :</label>
+                    <label for="confirm_password" class="col-md-3">{$_phrase.confirm}{$_phrase.engspace}{$_phrase.password} :</label>
 
                     <div class="col-md-5">
                         <input type="password" id="confirm_password" name="confirm_password" title="Confirm Password"
@@ -77,7 +77,7 @@
                             if (data == 1)
                                 $('#change_password').submit();
                             else
-                                $('#old_password').next('ul').html('<li class="parsley-required">Old Password is in-correct</li>');
+                                $('#old_password').next('ul').html('<li class="parsley-required">{$_phrase.old}{$_phrase.engspace}{$_phrase.password}{$_phrase.engspace} is in-correct</li>');
                         }
                     });
         }

@@ -104,7 +104,7 @@
 <div class="row ftmdpro">
     <div class="col-md-12 fotdi6">
 
-        <div class="col-md-6 pull-left futexcen1" style="margin-top: 8px;">Seated Auction</div>
+        <div class="col-md-6 pull-left futexcen1" style="margin-top: 8px;">{$_phrase.seated_auction}</div>
         <!--<div class="col-md-3 pull-right auto_width" style="margin-top: 8px;"><span>{$_phrase.sortby}:</span>
         <select onchange="searchitems(this)">
           <option value="01" {if $get.sort == '01'}selected {/if} >{$_phrase.time}: {$_phrase.newlylisted}</option>

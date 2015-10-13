@@ -3,7 +3,7 @@
   <div class="slice2">
     <div class="today_head">
       <div class="today_head_lft">
-        <h2 title="TODAY  AUCTION">Today  Auctions</h2>
+        <h2 title="TODAY  AUCTION">{$_phrase.today}{$_phrase.engspace}{$_phrase.auction}{$_phrase.s}</h2>
       </div>
       <div class="arrow_one"></div>
       <div class="today_head_rgt">
