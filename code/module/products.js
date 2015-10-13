@@ -401,10 +401,30 @@ exports.closeProducts = function (mysql, q) {
 exports.shortDescribe = function (results) {
     req_data = [];
     //console.log(results);
+	 
     for (var i in results) {
         //console.log(results[i]['date_closed']);
-        if (results[i]['date_closed'] !== null || typeof(results[i]['date_closed']) !== 'undefined') {
+        if (results[i]['date_closed'] !== null && typeof(results[i]['date_closed']) !== 'undefined' && results[i]['date_added'] !== null && typeof(results[i]['date_added']) !== 'undefined') {
             //console.log(1);
+			if (results[i]['bprice'] === 'NaN') {
+                results[i]['bprice'] = 0.00;
+            }
+            ////console.log('Reserve '+results[i]['rprice'])
+            if (results[i]['sprice'] === 'NaN') {
+                results[i]['sprice'] = 0.00;
+            }
+            if (results[i]['rprice'] === 'NaN') {
+                results[i]['rprice'] = 0.00;
+            }
+            if (results[i]['iprice'] === 'NaN') {
+                results[i]['iprice'] = 0.00;
+            }
+            if (results[i]['wprice'] === 'NaN') {
+                results[i]['wprice'] = 0.00;
+            }
+			if (results[i]['mprice'] === 'NaN') {
+                results[i]['wprice'] = 0.00;
+            }
             date1 = new Date(results[i]['date_closed']);
             date3 = new Date(results[i]['date_added']);
             date2 = new Date();

@@ -601,6 +601,7 @@ app.get('/', function (req, res) {
     var user = require('../module/user');
     q.all([user.userInfo(req, config.mysql, q, req.session.userid, ['balance', 'reserve_amount'])]).then(function (results) {
         $arr['users'] = results[0][0][0];
+        $arr['login_fail'] = 0;
         $arr['users']['reserve_amount'] = parseFloat(results[0][0][0]['balance'] - results[0][0][0]['reserve_amount']).toFixed(2);
         common.tplFile('dashboard.tpl');
         common.headerSet(1);

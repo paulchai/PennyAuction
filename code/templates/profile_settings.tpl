@@ -9,8 +9,8 @@
     <div class="col-md-9 pst_wrap">
         <h4 class="ds_brd">Profile Settings</h4>
 
-        <form action="/profile_settings/update/" method="post" accept-charset="utf-8" enctype="multipart/form-data"
-              data-parsley-validate>
+        <form action="/profile_settings/update/" id="profile_settings" method="post" accept-charset="utf-8"
+              enctype="multipart/form-data">
             {if $save}
             <div class="row">
                 <div class="bg bg-success padding-20">Profile saved successfully!</div>
@@ -35,7 +35,8 @@
                             <label for="user_email_address" class="col-xs-12 col-sm-6 col-md-4">Email*:</label>
 
                             <div class="col-xs-12 col-sm-5 col-md-6">
-                                <input type="email" id="user_email_address" name="email" value="{$users.email}" maxlength="50" title="Email"
+                                <input type="email" id="user_email_address" name="email" value="{$users.email}"
+                                       maxlength="50" title="Email"
                                        class="form-control" required>
                             </div>
                         </div>
@@ -45,7 +46,8 @@
                             <label for="first_name" class="col-xs-12 col-sm-6 col-md-4">First Name*:</label>
 
                             <div class="col-xs-12 col-sm-5 col-md-6">
-                                <input type="text" id="first_name" name="firstname" value="{$users.first_name}" maxlength="20"
+                                <input type="text" id="first_name" name="firstname" value="{$users.first_name}"
+                                       maxlength="20"
                                        title="First Name" class="form-control" required>
                             </div>
                         </div>
@@ -55,7 +57,8 @@
                             <label for="last_name" class="col-xs-12 col-sm-6 col-md-4">Last Name*:</label>
 
                             <div class="col-xs-12 col-sm-5 col-md-6">
-                                <input type="text" id="last_name" name="lastname" value="{$users.last_name}" maxlength="20"
+                                <input type="text" id="last_name" name="lastname" value="{$users.last_name}"
+                                       maxlength="20"
                                        title="Last Name" class="form-control" required>
                             </div>
                         </div>
@@ -69,8 +72,7 @@
 
                     <div class="col-xs-12 col-sm-6 col-md-8">
                         <textarea name="aboutme" id="about_me" class="form-control" cols="28" rows="5" title="About Me"
-                                  data-parsley-rangelength="[100,200]" data-parsley-minlength="100"
-                                  data-parsley-maxlength="1000" maxlength="1000" required>{$users.aboutme}</textarea>
+                                  maxlength="1000" required>{$users.aboutme}</textarea>
                     </div>
                 </div>
             </div>
@@ -100,25 +102,31 @@
                     <label for="country" class="col-xs-12 col-sm-6 col-md-4">Country*:</label>
 
                     <div class="col-xs-12 col-sm-6 col-md-8">
-                        <select name="country" id="country" class="form-control" required>
-                            <option value="" selected="selected">Select Country</option>
-                            {foreach $config.countries as $key => $val}
-                            <option value="{$val.name}" {if $users.country==$val.name} selected {/if} attr="{$val.location_id}">{$val.name}</option>
-                            {/foreach}
-                        </select>
+                         <select name="country" id="country" class="form-control" required data-parsley-required-message="Choose Country">
+                                                    <option value="" selected="selected">Select Country</option>
+                                                
+
+                                                </select>
                     </div>
                 </div>
             </div>
+              <input type="hidden" name="hidden_country" id="hidden_country" value="{$users.country}">
+                            <input type="hidden" name="hidden_state" id="hidden_state" value="{$users.state}">
             <div class="row">
                 <div class="form-group">
                     <label for="state" class="col-xs-12 col-sm-6 col-md-4">State*:</label>
 
                     <div class="col-xs-12 col-sm-6 col-md-8">
-                        <input type="text" id="state" name="state" placeholder="Enter state" class="form-control"
-                               value="{$users.state}" title="State" maxlength="20" required>
+                        <select name="state" id="state" class="form-control" required
+                                                   data-parsley-required-message="Choose state">
+                                               <option value="" selected="selected">Select state</option>
+
+                                           </select>
                     </div>
                 </div>
             </div>
+
+
             <div class="row">
                 <div class="form-group">
                     <label for="town" class="col-xs-12 col-sm-6 col-md-4">City*:</label>
@@ -156,7 +164,7 @@
                     <div class="col-xs-12 col-sm-6 col-md-6">
                         <select class="form-control" name="categories[]" id="Categories" multiple="multiple">
                             {foreach $category as $key => $val}
-                            <option value="{$val.id}"> {$val.name}</option>
+                            <option value="{$val.id}"> {$val.aligned_name}</option>
                             {/foreach}
                         </select>
                         <!--  {foreach $category as $key => $val} <span class="w-100">
@@ -180,6 +188,7 @@
     </div>
 </div>
 {include file="common/footer-1.tpl" nocache}
+<script src="{$config.url}/bower_components/jquery-validation/dist/jquery.validate.js"></script>
 <script>
 
     var initValues = '{$mcats}';
@@ -218,4 +227,149 @@
         readURL(this);
     })
 
+</script>
+<script>
+    $(document).ready(function () {
+        $.validator.setDefaults({
+            errorElement: "span",
+            errorClass: "help-block",
+            highlight: function (element, errorClass, validClass) {
+                $(element).closest('.form-group').addClass('has-error');
+            },
+            unhighlight: function (element, errorClass, validClass) {
+                $(element).closest('.form-group').removeClass('has-error');
+            },
+            errorPlacement: function (error, element) {
+                if (element.parent('.input-group').length || element.prop('type') === 'checkbox' || element.prop('type') === 'radio') {
+                    error.insertAfter(element.parent());
+                } else {
+                    error.insertAfter(element);
+                }
+            }
+        });
+        $.validator.addMethod('le', function (value, element, param) {
+            return parseFloat(value) <= parseFloat($(param).val());
+        });
+        $.validator.addMethod('ge', function (value, element, param) {
+            return parseFloat(value) >= parseFloat($(param).val());
+        });
+        $.validator.addMethod('greaterThanStartDate', function (value, element, param) {
+            return moment(value, "MM/DD/YYYY HH:MM:SS") > moment($(param).val(), "MM/DD/YYYY HH:MM:SS");
+        });
+        $("#profile_settings").validate({
+            rules: {
+                email: {
+                    required: true,
+                    email: true,
+                    maxlength: 50
+                },
+                firstname: "required",
+                lastname: "required",
+                acoutme: {
+                    required: true,
+                    range: [13, 23]
+                },
+                address1: {
+                    required: true
+                },
+                address2: {
+                    maxlength: 50
+                },
+                country: {
+                    required: true
+                },
+                state: {
+                    required: true,
+                    maxlength: 20
+                },
+                city: {
+                    required: true,
+                    maxlength: 20
+                },
+                zip: {
+                    required: true,
+                    number: true,
+                    maxlength: 6
+                },
+                phone: {
+                    required: true,
+                    number: true,
+                    maxlength: 10
+                }
+            },
+            messages: {
+                email: {
+                    required: "Enter Email address",
+                    email: "Email address is required",
+                    maxlength: "Enter not more than 50 character"
+                },
+                firstname: "Enter First name",
+                lastname: "Enter Last name",
+                aboutme: {
+                    required: "Enter short detail about yourself",
+                    range: "Enter more than 100 character and less than 1000 character"
+                },
+                address1: {
+                    required: "Enter Address Line 1"
+                },
+                address2: {
+                    required: "Choose Auction Type"
+                },
+                country: {
+                    required: "Choose Country"
+                },
+                state: {
+                    required: "Enter state",
+                    maxlength: "State name cannot exceed 20 character limit"
+                },
+                city: {
+                    required: "Enter city",
+                    maxlength: "City name cannot exceed 20 character limit"
+                },
+                zip: {
+                    required: "Enter Zip code",
+                    number: "Enter only number",
+                    maxlength: "Zip code name cannot exceed 6 character limit"
+                },
+                phone: {
+                    required: "Enter phone number",
+                    number: "Enter only number",
+                    maxlength: "Enter no more than 10 digits"
+                }
+            }
+        });
+    });
+</script>
+
+<script>
+    $(function () {
+        var ctry = '{$shipping.country}';
+        if (ctry != '')
+            $('#country').val(ctry);
+    });
+
+    $(function () {
+        populateCountries("country", "state");
+        var ctry = '{$users.country}';
+        if (ctry != '')
+            $('#country').val(ctry);
+        loadState();
+
+    });
+
+    var ctry = '{$users.country}';
+    console.log(ctry);
+    if(ctry !='')
+    {
+        $('#country').val(ctry);
+
+        loadState();
+
+    }
+
+
+    $('#country').on('change',function()
+    {
+        loadState();
+    });
 </script>

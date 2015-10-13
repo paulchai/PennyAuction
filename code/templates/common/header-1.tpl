@@ -48,9 +48,9 @@
       if(window.location.href.indexOf("8080") > -1) {
           //alert(duplicateur);
        window.location.href = duplicateur;
-        }
+        } </script>-->
 
-        </script>-->
+
     <script src="{$config.url}/socket.io/socket.io.js"></script>
     <script src="{$config['url']}/bower_components/jquery/dist/jquery.js"></script>
     <!--<script src="{$config['externaljs']}theme.js"></script>-->
@@ -72,7 +72,7 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->
 
-
+    <script src="{$config['externaljs']}country.js"  type="text/javascript"></script>
 </head>
 <style>
     .oe3 {
@@ -127,7 +127,7 @@
     </span>
                     <!--<span class="cursor" onClick="window.location='{$config['url']}/admincp'">Admin</span>-->
 
-                    <a href="/contact" class="oe3">{$_phrase.contact_us} </a> &nbsp| &nbsp;<a
+                    <a href="/contact" class="oe3">{$_phrase.contact_us} </a> &nbsp;| &nbsp;<a
                         href="http://www.auctionsoftware.com" class="oe3"> Back to Auctionsoftware.com</a></div>
             </div>
         </div>
@@ -162,12 +162,12 @@
                     </form>
                 </div>
             </div>
-            <div class="col-md-2 srtr3">{if $loged.userid > 0} <a href="{$config.url}/dashboard/"
-                                                                  title="{$loged.first_name}">{$loged.first_name}</a> /
-                <a href="{$config.url}/login/logout/" title="Logout">{$_phrase.logout}</a> {else} <a data-toggle="modal"
-                                                                                                     data-target="#myModal"
-                                                                                                     href="javascript:void(0);">{$_phrase.register}
-                    / </a></span> <span> <a data-toggle="modal" data-target="#login" href="javascript:void(0);">{$_phrase.log_in}</a> {/if}
+            <div class="col-md-2 srtr3">{if $loged.userid > 0}
+                <a href="{$config.url}/dashboard/" title="{$loged.first_name}">{$loged.first_name}</a> /
+                <a href="{$config.url}/login/logout/" title="Logout">{$_phrase.logout}</a>
+                {else}
+                <a data-toggle="modal" data-target="#myModal" href="javascript:void(0);">{$_phrase.register}/</a>
+                <span> <a data-toggle="modal" data-target="#login" href="javascript:void(0);">{$_phrase.log_in}</a> </span> {/if}
             </div>
         </div>
         <div class="row">

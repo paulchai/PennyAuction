@@ -77,7 +77,7 @@
 <div class="row ftmdpro">
     <div class="col-md-12 fotdi6">
 
-        <div class="col-md-6 pull-left futexcen1" style="margin-top: 8px;">Live Auction</div>
+        <div class="col-md-6 pull-left futexcen1" style="margin-top: 8px;">Live Auctions</div>
         <div class="col-md-3 pull-right auto_width" style="margin-top: 8px;"><span>Sort By:</span>
             <select onchange="searchitems(this)">
                 <option value="01" {if $get.sort=='01'}selected {/if} >Time: newly listed</option>

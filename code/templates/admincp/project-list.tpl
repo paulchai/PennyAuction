@@ -14,7 +14,6 @@
             <th>Status</th>
             <th>Date Added</th>
             <th>Date Closed</th>
-            <th>Posted By</th>
             <th>Won Price</th>
             <th>Action</th>
         </tr>
@@ -28,10 +27,56 @@
             <td><a href="#" title="{$val.title}"> <img
                     src="{if $val.avatar == ''} {$config['imgpath']}no_img.png {else if $val.avatar != ''}{$config['imgpath']}product/{$val.avatar}{/if}"
                     width="50" height="50" alt="1"></a></td>
-            <td>{$val.status}</td>
+            <td style="text-align: center;">
+                {$val.status}
+                {if $val.user_id|default:FALSE}
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".address_{$val.id}">
+                    Address
+                </button>
+                <div class="modal fade address_{$val.id}" tabindex="-1" role="dialog"
+                     aria-labelledby="mySmallModalLabel">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">
+                                    <strong>Address</strong>
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                <address>
+                                    <strong>{$val.first_name} {$val.last_name}</strong><br>
+                                    {$val.address1}<br>
+                                    {$val.address2}<br>
+                                    {$val.city}<br>
+                                    {$val.state}<br>
+                                    {$val.country}<br>
+                                    {$val.zip}<br>
+                                    <abbr title="Phone">P:</abbr> (+1) {$val.phone}
+                                </address>
+
+                                <address class="line_below">
+                                    <strong>Email</strong><br>
+                                    <a target="_blank" href="mailto:#">{$val.email}</a>
+                                </address>
+
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" disabled> Shipped to buyer / Delivered
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/if}
+            </td>
             <td>{$val.stime}</td>
             <td>{$val.ctime}</td>
-            <td>{$val.email}</td>
             <td>${$val.wprice}</td>
             <td><a href="{$config.url}/admincp/projects/edit/{$val.id}">Edit</a>
                 <a onclick="PopupBox('{$config.url}/admincp/projects/delete/{$val.id}','Are you sure?');"
@@ -47,3 +92,9 @@
     </table>
     {$pagination_html}
 </div>
+<style type="text/css">
+    .line_below {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+</style>
