@@ -11,7 +11,7 @@
 <div class="row dashboard">
     <div class="col-md-3"> {include file="left-nav-dashboard.tpl" nocache}</div>
     <div class="col-md-9">
-        <h4 class="ds_brd" style="text-transform: capitalize;">{$_phrase.add}{$type}xxx{$_phrase.engspace}{$_phrase.address}</h4>
+        <h4 class="ds_brd" style="text-transform: capitalize;">{$_phrase.add}{$addresstype}{$_phrase.engspace}{$_phrase.address}</h4>
 
         <form action="{$config['url']}/dashboard/Myaddress" method="post" id="shipping" name="shipping"
               accept-charset="utf-8" data-parsley-validate>
@@ -22,7 +22,7 @@
                     <label for="name" class="col-md-3">{$_phrase.name}:</label>
 
                     <div class="col-md-5">
-                        <input type="text" id="name" name="name" placeholder="Enter your name" value="{$shipping.name}"
+                        <input type="text" id="name" name="name" placeholder="{$_phrase.enter_your_name}" value="{$shipping.name}"
 
                                class="form-control splchar_restrict" title="Enter your name" maxlength="20" data-parsley-required-message="Enter name" required>
                         <!--<input type="text" class="form-control wd60 splchar_restrict" id="exampleInputEmail1" name="tags" value="{$projects.tags}"  data-parsley-required-message="Please add keyword" required>-->
@@ -39,7 +39,7 @@
                     <label for="address_line1" class="col-md-3">{$_phrase.addressline1}:</label>
 
                     <div class="col-md-5">
-                        <input type="text" id="address_line1" name="address1" placeholder="Enter your address line1"
+                        <input type="text" id="address_line1" name="address1" placeholder="{$_phrase.enter_your_name} 1"
                                data-parsley-required-message="Enter Address line 1"
                                class="form-control" value="{$shipping.address1}" title="Address Line 1" maxlength="50"
                                required>
@@ -51,7 +51,7 @@
                     <label for="address_line2" class="col-md-3">{$_phrase.addressline2}:</label>
 
                     <div class="col-md-5">
-                        <input type="text" id="address_line2" name="address2" placeholder="Enter your address line2" data-parsley-required-message="Enter Address line 2"
+                        <input type="text" id="address_line2" name="address2" placeholder="{$_phrase.enter_your_name} 2" data-parsley-required-message="Enter Address line 2"
                                class="form-control" value="{$shipping.address2}" title="Address Line 2" maxlength="50" required>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
                     <label for="town" class="col-md-3">{$_phrase.city}:</label>
 
                     <div class="col-md-5">
-                        <input type="text" id="town" name="city" placeholder="Enter city" class="form-control"
+                        <input type="text" id="town" name="city" placeholder="{$_phrase.enter_city}" class="form-control"
                                data-parsley-required-message="Enter city"
                                value="{$shipping.city}" title="city" maxlength="20" required>
                     </div>
@@ -101,7 +101,7 @@
                     <label for="zipcode" class="col-md-3">{$_phrase.zipcode}:</label>
 
                     <div class="col-md-5">
-                        <input type="text" id="zipcode" name="zipcode" placeholder="Enter zipcode" class="form-control"
+                        <input type="text" id="zipcode" name="zipcode" placeholder="{$_phrase.enter_zipcode}" class="form-control"
                                data-parsley-required-message="Enter zipcode"
                                value="{$shipping.zipcode}" title="Zipcode" maxlength="10" required>
                     </div>
@@ -112,7 +112,7 @@
                     <label for="phone" class="col-md-3">{$_phrase.phonenumber}:</label>
 
                     <div class="col-md-5">
-                        <input type="text" id="phone" name="phone" placeholder="Eg: 0123123456, +919874563210"
+                        <input type="text" id="phone" name="phone" placeholder="{$_phrase.enter_phone}"
                                data-parsley-required-message="Enter Phone number"
                                class="form-control" value="{$shipping.phone}" title="Phone Number" maxlength="20" required
                                >
@@ -122,7 +122,7 @@
             <div class="row">
                         <div class="col-md-4"></div>
                         <div class="col-md-2">
-                            <input class="btn save_btn" type="submit" value="Save">
+                            <input class="btn save_btn" type="submit" value="{$_phrase.save}">
 
                     </div>
                     </div>

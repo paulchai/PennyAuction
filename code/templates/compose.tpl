@@ -30,7 +30,7 @@
           </div>
           <div class="row">
             <div class="col-md-12">
-              <input class="form-control" name="subject" value="" placeholder="Subject" required>
+              <input class="form-control" name="subject" value="" placeholder="{$_phrase.subject}" required>
             </div>
           </div>
           <div class="row">
@@ -39,7 +39,7 @@
             </div>
             <div class="row">
               <div class="col-md-3  m-top-10 padding-20">
-                <input type="submit" name="submit" value="Send" class="btn btn-blue1">
+                <input type="submit" name="submit" value="{$_phrase.send}" class="btn btn-blue1">
               </div>
             </div>
           </div>

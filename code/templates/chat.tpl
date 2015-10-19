@@ -38,7 +38,7 @@ body{
         <p></p>
       <p></p>
            <p>For more details, please visit our site</p>
-      <a href="http://www.auctionsoftware.com">www.auctionsoftware.com</a>
+      <a href="http://www.{$_phrase.domain|lower}">www.{$_phrase.domain}</a>
      
             
             

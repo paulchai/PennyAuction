@@ -37,7 +37,7 @@
 
                         <div class="col-md-8">
                             <input type="text" id="maxbids" name="maxbids"
-                                   placeholder="Enter your maximum bid count" value="{$aData.maxbids}" maxlength="20"
+                                   placeholder="{$_phrase.enter_your_maximum_bid_count}" value="{$aData.maxbids}" maxlength="20"
                                    class="form-control" required>
                         </div>
                     </div>
@@ -48,7 +48,7 @@
 
                         <div class="col-md-8">
                             <input type="text" id="start_amount" name="start_amount"
-                                   placeholder="Enter your Autobid start product price" value="{$aData.start_amount}"
+                                   placeholder="{$_phrase.enter_your_autobid_start_product_price}" value="{$aData.start_amount}"
                                    maxlength="20" class="form-control" required>
                             <!--<div class="abid_lbl">Auto bid start bid when reach your product current price</div>-->
                         </div>

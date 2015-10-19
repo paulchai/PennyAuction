@@ -111,7 +111,7 @@
                     <div class="panel-heading">{$_phrase.contact}{$_phrase.engspace}{$_phrase.support}</div>
                     <div class="panel-body">
                         Got a question? We've got answers. For simple solutions, check out our easy-to-access Help section. For stickier situations, please email us at
-                        <a href="">support@auctionsoftware.com </a>
+                        <a href="">{$_phrase.supportemail} </a>
                     </div>
                     </div>
                 </div>

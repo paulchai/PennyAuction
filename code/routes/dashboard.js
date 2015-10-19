@@ -502,7 +502,8 @@ app.get('/Address/:type', function (req, res) {
         if (results[0][0].length > 0)
             $arr['shipping'] = results[0][0][0];
 
-        $arr['type'] = req.body.type;
+        $arr['addresstype'] =  $arr._phrase[req.body.type.toLowerCase()];
+        $arr['type'] =  req.body.type;
         common.tplFile('Myaddress.tpl');
         common.headerSet(1);
         common.loadTemplateHeader(req, res, $arr);

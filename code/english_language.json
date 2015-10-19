@@ -203,7 +203,7 @@
 		"paypal": "Paypal",
 		"authorize": "Authorize",
 		"stripe": "Stripe",
-		"card_type": "Card Type,
+		"card_type": "Card Type",
 		"card_number": "Card Number",
 		"expiration_date": "Expiration Date",
 		"cvv": "CVV",
@@ -282,20 +282,24 @@
 		"bid": "Bid",
 		"quantity": "Quantity",
 		"your_max_bid": "Your Max Bid",
-		"left": "Left"
-		
-		
-				
-		
-		
-		
-		
-		
-
-		
-		
-		
-
+		"left": "Left",
+		"domain": "1688FUN.com",
+		"supportemail": "support@1688fun.com",
+		"remember_me" : "Remember me",
+		"member_login" : "Member Login",
+		"or" : "or",
+		"not_a_member" : "Not a member?",
+		"login" : "Login",
+		"enter_user_name" : "Enter user name",
+		"enter_your_maximum_bid_count" : "Enter your maximum bid count",
+		"enter_your_autobid_start_product_price" : "Enter your Autobid start product price",
+		"subject" : "Subject",
+		"send" : "Send",
+		"enter_your_name" : "Enter your name",
+		"enter_your_address_line" : "Enter your address line",
+		"enter_city" : "Enter city",
+		"enter_zipcode" : "Enter zipcode",
+		"enter_phone" : "Eg, +85287456321"
     }
   }
 }
