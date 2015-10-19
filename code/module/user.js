@@ -27,6 +27,20 @@ exports.userInfo = function (req, mysql, q, id, field) {
     query = mysql.query(strQuery, escape_data, defered.makeNodeResolver());
     return defered.promise;
 };
+
+exports.userBidCount = function (req, mysql, q, id) {
+    $mysqli = {};
+    page = req.body.page;
+    strQuery = mysqli.mysqli($mysqli, 'buyerbidcount');
+
+    var defered = q.defer();
+
+    var escape_data = [id];
+    console.log(escape_data);
+    query = mysql.query(strQuery, escape_data, defered.makeNodeResolver());
+    return defered.promise;
+};
+
 /**
  * Gets active user's id,email,first name and last name
  * @param mysql
@@ -42,3 +56,29 @@ exports.getActiveUsers = function (mysql, q) {
     return deferred.promise;
 };
 
+exports.getMlMUsers = function (mysql, q) {
+    $mysqli = {};
+    strQuery = mysqli.mysqli($mysqli, 'getmlmusers');
+    var escape_data = [];
+    var deferred = q.defer();
+    query = mysql.query(strQuery, escape_data, deferred.makeNodeResolver());
+    return deferred.promise;
+};
+
+exports.getMlMUsers = function (mysql, q) {
+    $mysqli = {};
+    strQuery = mysqli.mysqli($mysqli, 'getmlmusers');
+    var escape_data = [];
+    var deferred = q.defer();
+    query = mysql.query(strQuery, escape_data, deferred.makeNodeResolver());
+    return deferred.promise;
+};
+
+exports.createMlMUsers = function (req, mysql, q) {
+    $mysqli = {};
+    strQuery = mysqli.mysqli($mysqli, 'createmlmusers');
+    var escape_data = [];
+    var deferred = q.defer();
+    query = mysql.query(strQuery, escape_data, deferred.makeNodeResolver());
+    return deferred.promise;
+};

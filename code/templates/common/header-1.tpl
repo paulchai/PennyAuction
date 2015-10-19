@@ -50,9 +50,9 @@
        window.location.href = duplicateur;
         } </script>-->
 
-
     <script src="{$config.url}/socket.io/socket.io.js"></script>
     <script src="{$config['url']}/bower_components/jquery/dist/jquery.js"></script>
+    <script src="{$config['url']}/bower_components/countUp.js/countUp.js"></script>
     <!--<script src="{$config['externaljs']}theme.js"></script>-->
     <script>
         var socket = io.connect();
@@ -60,7 +60,15 @@
         function changetheme(dis) {
             $("#change_theme").submit();
         }
+        /*
+        window.onload = function() {
+            // setup CountUp object
+            jetportamount1 = new CountUp('jetportamount', {$jetport}, {$jetport}, 0, 2.5);
+            if ($('#userjetport').length > 0) {
+                userjetport = new CountUp('userjetport', {$userbalance.jetport}, {$userbalance.jetport}, 0, 2.5);
+            }
 
+        }*/
     </script>
     {foreach $external2css as $key => $val}
     <link rel="stylesheet" href="{$config['externalcss']}{$val}.css" type="text/css"/>
@@ -95,9 +103,9 @@
     <div class="fotdi1 ftmdpro">
         <div class="container ft12px1">
             <div class="row top_nav">
-                <div class="col-md-6">Auction Software Version 1.0 Demo</div>
+                <div class="col-md-6">Version 1.0 Demo</div>
                 <div class="col-md-6 txt_arht tn_rht">
-                    <span> {$_phrase.viewcolour} &nbsp; </span>
+                    <!-- paul remove <span> {$_phrase.viewcolour} &nbsp; </span>
                     <span class="block">
                         <form action="{$config['url']}/index/changetheme"
                               id="change_theme" method="post"
@@ -111,7 +119,7 @@
                                 <option value="3" {if $themeno== 3} selected {/if}>{$_phrase.deepred}</option>
                             </select>
                         </form>
-                    </span> &nbsp;| &nbsp;
+                    </span> &nbsp;| &nbsp; -->
                     <span class="cursor">{$_phrase.loginas}</span> &nbsp;
     <span class="block">
         <form action="{$config['url']}/login/save" id="autologin" method="post"
@@ -128,7 +136,7 @@
                     <!--<span class="cursor" onClick="window.location='{$config['url']}/admincp'">Admin</span>-->
 
                     <a href="/contact" class="oe3">{$_phrase.contact_us} </a> &nbsp| &nbsp;<a
-                        href="http://www.auctionsoftware.com" class="oe3"> {$_phrase.backto} Auctionsoftware.com</a></div>
+                        href="http://www.{$_phrase.domain|lower}" class="oe3"> {$_phrase.backto} {$_phrase.domain}</a></div>
             </div>
         </div>
     </div>
@@ -136,12 +144,12 @@
 
     <div class="container ftmdpro">
         <div class="row ftmdpro" style="margin-top:15px; margin-bottom:15px;">
-            <div class="col-md-4 logo_img" style="margin-top: -13px;">
+            <div class="col-md-4 footer_logo" style="margin-top: -13px;">
                 <a href="{$config.url}">
                     <img class="img-responsive" src="{$config['url']}/image/logo.png"/>
                 </a>
             </div>
-            <div class="col-md-6 search_wrap">
+            <div class="col-md-6 search_wrap" style="max-width: 500px;">
                 <button type="button" class="navbar-toggle srch_icon" data-toggle="collapse" data-target="#srch_items">
                     <i class="fa fa-search"></i>
                 </button>
@@ -162,12 +170,13 @@
                     </form>
                 </div>
             </div>
-            <div class="col-md-2 srtr3">{if $loged.userid > 0}
-                <a href="{$config.url}/dashboard/" title="{$loged.first_name}">{$loged.first_name}</a> /
-                <a href="{$config.url}/login/logout/" title="Logout">{$_phrase.logout}</a>
-                {else}
-                <a data-toggle="modal" data-target="#myModal" href="javascript:void(0);">{$_phrase.register}/</a>
-                <span> <a data-toggle="modal" data-target="#login" href="javascript:void(0);">{$_phrase.log_in}</a> </span> {/if}
+            <div class="col-md-2 srtr3">
+                {if $loged.userid > 0}
+                Your $:
+                <span id="userjetport">{$userbalance.jetport}</span> -
+                {/if}
+                Jetport: $
+                <span id="jetportamount">{$jetport}</span>
             </div>
         </div>
         <div class="row">
@@ -186,7 +195,7 @@
 
 
                     <div class="collapse navbar-collapse ftmdpro" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav midqurn" style="font-size:17px;">
+                        <ul class="nav navbar-nav midqurn" style="font-size:17px;margin-bottom: 0px;">
 
                             <li class="hty3" style="margin-left: 18px;"><a href="{$config.url}" title="Home">
                                 {$_phrase.home}</a></li>
@@ -202,7 +211,21 @@
                             <li class="hty3"><a href="{$config.url}/winner" title="Winners">
                                 {$_phrase.winner}{$_phrase.s}</a></li>
                             <!--<li class="l9ie">|</li>
-                            <li class="hty3"><a href="{$config.url}/blog" title="Blogs">{$_phrase.blog}{$_phrase.s}--></a></li>
+                            <li class="hty3"><a href="{$config.url}/blog" title="Blogs">{$_phrase.blog}{$_phrase.s}</a></li>-->
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right midqurn" style="font-size:17px;">
+                            {if $loged.userid > 0}
+                            <li class="hty3"><a href="{$config.url}/dashboard/" title="{$loged.first_name}">
+                                <span class="glyphicon glyphicon-user"></span> {$loged.first_name}</a></li>
+                            <li class="hty3"><a href="{$config.url}/login/logout/" title="Logout">
+                                <span class="glyphicon glyphicon-log-in"></span> {$_phrase.logout}</a></li>
+                            {else}
+                            <!-- paul remove
+                            <li class="hty3"><a data-toggle="modal" data-target="#myModal" href="javascript:void(0);">
+                                <span class="glyphicon glyphicon-user"></span> {$_phrase.register}</a></li>-->
+                            <li class="hty3"><a data-toggle="modal" data-target="#login" href="javascript:void(0);">
+                                <span class="glyphicon glyphicon-log-in"></span> {$_phrase.log_in}</a></li>
+                            {/if}
                         </ul>
                     </div>
                 </div>

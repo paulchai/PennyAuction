@@ -41,7 +41,7 @@
           <div class="log_fields">
             <p>{$_phrase.username} <span class="red">*</span>:</p>
             <div class="col-md-8 padle">
-            <input id="username" name="username" data-parsley-error-message="Enter user name" value="{$remembermeuser}" required placeholder="Enter user name"  class="form-control" style="height:auto;width:204px"></div>
+            <input id="username" name="username" data-parsley-error-message="Enter user name" value="{$remembermeuser}" required placeholder="{$_phrase.enter_user_name}"  class="form-control" style="height:auto;width:204px"></div>
           </div>
           <span class="red fl"></span>
           <div class="log_fields">
@@ -53,11 +53,11 @@
         <span class="red fl"></span>
         <div class="login_check">
           <input type="checkbox" name="remember" value="1">
-          <p class="remeber">Remember me</p>
+          <p class="remeber">{$_phrase.remember_me}</p>
           <label><a href="{$config['url']}/login/forgot_password" title="Forgot password">{$_phrase.forgot}{$_phrase.engspace}{$_phrase.password}?</a></label>
         </div>
       
-           <div style="clear: both;">  <input type="submit" name="login" value="Signin" class="btn save_btn" title="SIGNIN"></div>
+           <div style="clear: both;">  <input type="submit" name="login" value="{$_phrase.member_login}" class="btn save_btn" title="SIGNIN"></div>
          
         <div style="padding-top: 10px; float:left"> <span class="Loading_Img" style="display:none">
           <p style="width:195px; padding-left: 0px; color:black;font: bold 13px/16px arial;"> <img src="http://unieauction.com/platinum-demo/public/white/images/ajax-loader.gif" alt="loading"> <strong class="pls_wit" style="padding-top:0px; float:right; margin: -14px 90px;"> Processing... </strong> </p>
@@ -79,13 +79,13 @@
       <span class="other">
       <label>(OR)</label>
       </span>-->
-     
-      <div class="login_account text-center">
-        <h2>Don't have an account</h2>
-        <p>Register now to bid, buy, or sell on any Auction site worldwide. It's easy and FREE. <!--Already registered--></p>
+      <!-- paul remove
+       <div class="login_account text-center">
+         <h2>Don't have an account</h2>
+         <p>Register now to bid, buy, or sell on any Auction site worldwide. It's easy and FREE. --><!--Already registered--><!-- paul remove</p>
         <p>If you want to sign in, you'll need to register first.</p>
         <p>Registration is fast and FREE.</p>
-       <a href="{$config.url}/register" title="Register" class="btn save_btn">Register</a>
+       <a href="{$config.url}/register" title="Register" class="btn save_btn">Register</a>-->
       </div></div>
     </div>
   </div>

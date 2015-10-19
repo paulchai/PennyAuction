@@ -244,14 +244,8 @@
 
         <p>Solution</p>
 
-        <p>1. In Node.Js server responds back in milliseconds.</p>
+        <p>1. server responds back in milliseconds.</p>
 
-        <p>2. Have you ever worked with real time events? If so, (Node.js penny auction by AuctionSoftware.com) is the
-            best solution.</p>
-
-        <p>3. What would you plan to USe for storing real-time bidding while processing it server –> client and reverse
-            (MySql or other database/storage)? We're talking about millisecond events here that can be accomplished only
-            via Node.Js developed by AuctionSoftware.com.</p>
     </div>
 </div>
 {include file="common/footer-1.tpl" nocache}

@@ -64,9 +64,9 @@
 
                 <div id="owl-demo" class="owl-carousel">
 
-                    <div class="item"><img src="{$config['url']}/image/Banner_1.png" alt="The Last of us"></div>
-                    <div class="item"><img src="{$config['url']}/image/Banner_2.png" alt="The Last of us"></div>
-                    <div class="item"><img src="{$config['url']}/image/Banner_3.png" alt="The Last of us"></div>
+                    {foreach from=$banners item=banner}
+                    <li><div class="item"><img src="{$config['url']}/image/{$banner}" alt="The Last of us"></div></li>
+                    {/foreach}
 
                 </div>
             </div>
@@ -252,5 +252,17 @@
         // })
     });
 </script>
+<!--<script>
+    // create instance
+    window.onload = function() {
+        // setup CountUp object
+        jetportamount = new CountUp('jetportamount', 0, {$jetport}, 0, 2.5);
+        jetportamount.start();
+        if ($('userjetport').length > 0) {
+            userjetport = new CountUp('userjetport', {$userbalance.jetport}, {$userbalance.jetport}, 0, 2.5);
+        }
 
+    }
+
+</script>-->
 {include file="/common/footer-1.tpl" nocache}	

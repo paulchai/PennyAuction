@@ -55,6 +55,8 @@ mysqli[35] = 'update bids set awarded = 1,awarded_date = ? where id =  ? and awa
 mysqli[36] = 'select p.*,b.user_id,SUBSTRING(CONCAT(u.first_name," ",u.last_name),1,20) AS name,u.state,u.country,u.avatar AS uavatar,b.proposed_amount from bids AS b inner join users as u on u.id = b.user_id and b.awarded = 1 inner join projects as p on p.id = b.project_id order by p.date_closed desc';
 mysqli[37] = 'select p.title,b.user_id,b.proposed_amount,p.status,p.avatar,p.date_closed,p.id,(select count(bp.id) as id from bids AS bp where bp.user_id = b.user_id and bp.project_id = p.id) as bids from bids AS b inner join projects as p on p.id = b.project_id and b.user_id = ? order by b.id desc limit ?, 5';
 mysqli[38] = 'select p.id  from bids AS b inner join projects as p on p.id = b.project_id and b.user_id = ? order by b.id desc';
+mysqli['buyerbidcount'] = 'select count(b.id) AS noofbid from bids AS b where b.user_id = ? and b.created_at >= (LAST_DAY(CURDATE()) + INTERVAL 1 DAY - INTERVAL 1 MONTH) and b.created_at < (LAST_DAY(CURDATE()) + INTERVAL 1 DAY)';
+mysqli['jetport'] = 'SELECT amount FROM `jetport` ORDER BY id DESC LIMIT 1';
 mysqli[39] = 'select p.title,p.id,b.user_id,b.proposed_amount,p.status,p.avatar,p.date_closed,(select count(bp.id) as id from bids AS bp where bp.user_id = b.user_id and bp.project_id = p.id) as bids from bids AS b inner join projects as p on p.id = b.project_id and b.user_id = ? and b.awarded = 1 order by b.id desc limit ?, 10';
 mysqli[40] = 'select p.id  from bids AS b inner join projects as p on p.id = b.project_id and b.user_id = ? and b.awarded = 1 order by b.id desc';
 mysqli[41] = 'select * from invoices where user_id = ? order by id desc limit ?, 10';
@@ -202,6 +204,8 @@ mysqli['170count'] = 'select id from withdrawals where user_id = ? order by id d
 mysqli['105count'] = 'select r.id from referral as r left join users as u on r.to_id = u.id  where r.from_id = ?   order by r.id desc ';
 mysqli[142] = 'select b.amount,b.discount,b.paid,b.bidcredits from buynow AS b inner join projects as p on p.id = b.project_id and b.user_id = ? and b.project_id = ?';
 mysqli[143] = 'SELECT id,email,username,first_name,last_name FROM users WHERE status = "active" AND role <> 0';
+mysqli['getmlmusers'] = 'SELECT id,username,display_name,email,first_name,last_name,curr_rank,sp_no,date_format(created_at,"%m/%d/%Y %H:%i:%s"),balance,gender,address1,address2,zip,status FROM users WHERE role <> 0';
+mysqli['createmlmusers'] = 'insert into users (username,display_name,email,role,first_name,last_name,password_hash,password_salt,curr_rank,sp_no,created_at,balance,gender,address1,address2,zip,status) values ("{{username}}",{{display_name}}",{{email}}",0,?,?,"{{password_hash}}","{{password_salt}}","{{curr_rank}}","{{sp_no}}","{{created_at}}","{{balance}}","{{gender}},"{{address1}},"{{address2}},"{{zip}}","active")';
 mysqli[144] = 'insert into email_template (event,subject,message,created_on,updated_on,status,user_id) values (?,?,?,?,?,?,?)';
 mysqli[145] = 'update email_template set event = ? ,subject = ?,message = ?,updated_on = ? where id = ?';
 mysqli[146] = 'select p.*,date_format(p.created_on,"%m/%d/%Y") as date_add,u.first_name,u.email,u.last_name,SUBSTR(p.message,1,50) as description_short from email_template as p left join users as u on u.id = p.user_id where p.id > 0   order by p.id desc  limit ?, 10';

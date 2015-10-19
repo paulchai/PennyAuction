@@ -49,8 +49,8 @@
 
                     <div class="col-xs-12 col-sm-12 col-md-3 call_us">
                         <div class="lcall_us mftp mnm2">{$_phrase.contact_us}</div>
-                        <div class="cu_num  cror3f">972-200-5516</div>
-                        <div class="cror3fec">support@auctionsoftware.com</div>
+                        <!--paul remove <div class="cu_num  cror3f">972-200-5516</div>-->
+                        <div class="cror3fec">{$_phrase.supportemail}</div>
                     </div>
                 </div>
             </div>
@@ -58,7 +58,7 @@
     </div>
     <div class="container copyright text-center">
         <div class="row">
-            <div class="">© AuctionSoftware.com 2014-2015, All rights reserved</div>
+            <div class="">© {$_phrase.domain} 2014-2015, All rights reserved</div>
         </div>
     </div>
 </footer>
@@ -171,7 +171,7 @@
                 <div class="col-md-12">
                     <button type="button" class="btn btn-primary" id="join_deals"
                             onclick="$('#registerform').submit();">
-                        Join AuctionSoftware.com
+                        Join {$_phrase.domain}
                     </button>
                 </div>
             </div>
@@ -202,7 +202,7 @@
      aria-hidden="true">
     <div class="modal-header csgray_box">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true" id="close_buttons">x</button>
-        <h4 class="modal-title blue_txt">Login</h4>
+        <h4 class="modal-title blue_txt">{$_phrase.login}</h4>
     </div>
 
     <div class="form-wrapper"> <!-- Form-wrapper only for positioning -->
@@ -223,7 +223,7 @@
                                data-parsley-pattern="/^[a-z0-9]+(?:[ _-][a-z0-9]+)*$/"
                                data-parsley-type-message="Enter valid user name"
                                id="u_name" size="30" autocomplete="off" required data-trigger="change"
-                               placeholder="User Name">
+                               placeholder="{$_phrase.username}">
                         <label for="u_name" class="field-icon"><i class="fa fa-user"></i></label>
                     </label>
                 </div>
@@ -232,7 +232,7 @@
                         <label class="field prepend-icon">
                             <input type="password" name="password" id="u_pass" size="30" autocomplete="off"
                                    data-parsley-error-message="Enter password" required data-trigger="change"
-                                   class="gui-input" placeholder="Password">
+                                   class="gui-input" placeholder="{$_phrase.password}">
                             <label for="u_pass" class="field-icon"><i class="fa fa-lock"></i></label>
                         </label>
 
@@ -242,7 +242,7 @@
                     <div class="col-md-6">
                         <label class="option">
                             <input type="checkbox" name="remember" checked="">
-                            <span class="checkbox"></span>Remember Me
+                            <span class="checkbox"></span>{$_phrase.remember_me}
                         </label>
                     </div>
                     <div class="col-md-6 forget-pass"><a href="{$config.url}/login/forgot_password">{$_phrase.forgot}{$_phrase.engspace}{$_phrase.password}?</a>
@@ -250,19 +250,19 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <button type="button" class="btn btn-primary" onclick="$('#loginform').submit();">Member Login
+                        <button type="button" class="btn btn-primary" onclick="$('#loginform').submit();">{$_phrase.member_login}
                         </button>
                     </div>
-                </div>
+                </div><!-- paul removed
                 <div class="row">
                     <div class="col-md-6">
-                        <a href="{$config.url}/register">Not a member?</a>
+                        <a href="{$config.url}/register">{$_phrase.not_a_member}</a>
                     </div>
                 </div>
                 <div class="spacer-b30">
-                    <div class="tagline"><span>OR </span></div>
+                    <div class="tagline"><span>{$_phrase.or|upper} </span></div>-->
                     <!-- .tagline -->
-                </div>
+                <!-- paul removed</div>
                 <div class="row social">
 
                     <div class="col-md-6"><a href="{$config.url}/facebook/auth/facebook"
@@ -271,7 +271,7 @@
                     <div class="col-md-6"><a href="{$config.url}/linked/auth/linkedin"
                                              class="field prepend-icon btn btn-info">Login with Linked in<label
                             class="field-icon"><i class="fa fa-linkedin qzp1m"></i></label></a></div>
-                </div>
+                </div> -->
             </div>
         </form>
 

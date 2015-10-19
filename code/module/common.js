@@ -65,6 +65,8 @@ exports.processIndex = function (row, req, res, $arr) {
 
     $arr.loged = req.session;
 
+    $arr.banners = ["banner_iphone-33235.jpg", "banner_LV-57645.jpg", "banner_ipad-40447.jpg", "banner_note5-14858.jpg" ];
+
     if ($arr['pagetitle'] == '') {
         module.index(req, res, $arr);
     }
@@ -173,6 +175,16 @@ exports.productCategories = function (mysql, q) {
 
     return defered.promise;
 };
+exports.jetportamount = function (mysql, q) {
+    $mysqli = {};
+    strQuery = mysqli.mysqli($mysqli, 'jetport');
+    //console.log(strQuery);
+    var defered = q.defer();
+
+    query = mysql.query(strQuery, defered.makeNodeResolver());
+
+    return defered.promise;
+};
 exports.tplFile = function (file) {
     this.scriptfile = file;
 };
@@ -222,7 +234,11 @@ exports.loadTemplateHeader = function (req, res, arr) {
         }
     }
     arr.currencyconvertor = this.currencyConverter;
-    q.all([this.productCategories(arr.config.mysql, q), user.userInfo(req, arr.config.mysql, q, uid, ['balance', 'reserve_amount'])]).then(function (results) {
+    q.all([
+        this.productCategories(arr.config.mysql, q),
+        user.userInfo(req, arr.config.mysql, q, uid, ['balance', 'reserve_amount']),
+        this.jetportamount(arr.config.mysql,q),
+        user.userBidCount(req, arr.config.mysql, q, uid)]).then(function (results) {
 
         //var query = require('url').parse(req.url,true).query;
         //console.log(req.url);
@@ -252,6 +268,13 @@ exports.loadTemplateHeader = function (req, res, arr) {
             arr.userbalance = [];
             //arr.userbalance.ledger = arr.userbalance.balance = 0;
         }
+
+        arr.jetport = results[2][0][0]['amount'];
+
+        if (uid > 0 && results[3][0][0]['noofbid'] > 0 && arr.jetport > 0) {
+            arr.userbalance.jetport = Math.round(results[3][0][0]['noofbid'] / 1000 * 5 * arr.jetport);
+        }
+
         nsmarty.tpl_path = arr.config.path + '/templates/';
         //console.log(2);
         nsmarty.clearCache(arr.file);
