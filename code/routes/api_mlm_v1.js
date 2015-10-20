@@ -82,9 +82,27 @@ router.use(function(req, res, next) {
 
 // route to return all users (GET http://localhost:8080/api/users)
 router.get('/users', function(req, res) {
-    q.all([user.getActiveUsers(config.mysql, q)]).then(function (result) {
-        res.json(result[0][0]);
+    q.all([user.getMlMUsers(config.mysql, q)]).then(function (result) {
+        return res.json(result[0][0]);
     });
+});
+
+// route to create a user (POST http://localhost:8080/api/users)
+router.post('/users', function(req, res) {
+    q.all([user.checkUserExist(req, config.mysql, q)]).then(function (result) {
+        if (result[0][0].length > 0) {
+            return res.json({success: false, message: 'Failed to create user. User already exist!'});
+        } else {
+            q.all([user.createMlMUsers(req, config.mysql, q)]).then(function (result) {
+                return res.json({success: true, id: result[0][0].insertId});
+            }).fail(function (err) {
+                return res.json({success: false, message: 'Failed to create user.'});
+            });
+        }
+    }).fail(function(err) {
+        return res.json({ success: false, message: 'Failed to create user. SQL ERROR!' });
+    });
+
 });
 
 module.exports = router;

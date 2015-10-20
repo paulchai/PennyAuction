@@ -74,11 +74,42 @@ exports.getMlMUsers = function (mysql, q) {
     return deferred.promise;
 };
 
+exports.checkUserExist = function (req, mysql, q) {
+    $mysqli = {
+        username:req.body.username
+    };
+    strQuery = mysqli.mysqli($mysqli, 12);
+    var defered = q.defer();
+    query = mysql.query(strQuery, defered.makeNodeResolver());
+    return defered.promise;
+};
+
 exports.createMlMUsers = function (req, mysql, q) {
-    $mysqli = {};
+    var md5 = require('MD5');
+    var password_salt = '16**fun';
+    var password = md5(md5(req.body.password) + password_salt);
+    console.log(req.body);
+    $mysqli = {
+        username: req.body.username,
+        display_name: req.body.display_name,
+        email: req.body.email,
+        password_hash: password,
+        password_salt: password_salt,
+        curr_rank: req.body.curr_rank,
+        sp_no: req.body.sp_no,
+        created_at: req.body.created_at,
+        balance: req.body.balance,
+        gender: req.body.gender,
+        address1: req.body.address1,
+        address2: req.body.address2,
+        zip: req.body.zip
+    };
+
     strQuery = mysqli.mysqli($mysqli, 'createmlmusers');
-    var escape_data = [];
-    var deferred = q.defer();
-    query = mysql.query(strQuery, escape_data, deferred.makeNodeResolver());
-    return deferred.promise;
+
+    var defered = q.defer();
+    escape_data = [req.body.first_name, req.body.last_name];
+    query = mysql.query(strQuery, escape_data, defered.makeNodeResolver());
+
+    return defered.promise;
 };

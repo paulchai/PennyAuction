@@ -1,0 +1,1 @@
+ALTER TABLE `users` ADD `curr_rank` TINYINT(2) NULL AFTER `apaymentid`, ADD `sp_no` VARCHAR(20) NULL AFTER `curr_rank`;
