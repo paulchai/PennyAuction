@@ -30,7 +30,7 @@ app.post('/save', function (req, res) {
     function processObject(row) {
         //console.log(row);
         if (row.length > 0) {
-            if (row[0].status != 'active' && row[0].status == 'moderate') {
+            if (row[0].status != 'active') {
 
                 if (row[0].status == 'moderate') {
                     res.writeHead(302, {

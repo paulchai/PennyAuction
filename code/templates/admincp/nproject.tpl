@@ -460,7 +460,7 @@
             return parseFloat(value) >= parseFloat($(param).val());
         });
         $.validator.addMethod('greaterThanStartDate', function (value, element, param) {
-            return moment(value, "MM/DD/YYYY HH:MM:SS") > moment($(param).val(), "MM/DD/YYYY HH:MM:SS");
+            return moment(value, "MM/DD/YYYY HH:mm:ss") > moment($(param).val(), "MM/DD/YYYY HH:mm:ss");
         });
         $("#add-product").validate({
             rules: {

@@ -105,7 +105,7 @@
             <div class="row top_nav">
                 <div class="col-md-6">Version 1.0 Demo</div>
                 <div class="col-md-6 txt_arht tn_rht">
-                    <!-- paul remove <span> {$_phrase.viewcolour} &nbsp; </span>
+                    {if !$cusdisable} <span> {$_phrase.viewcolour} &nbsp; </span>
                     <span class="block">
                         <form action="{$config['url']}/index/changetheme"
                               id="change_theme" method="post"
@@ -119,7 +119,7 @@
                                 <option value="3" {if $themeno== 3} selected {/if}>{$_phrase.deepred}</option>
                             </select>
                         </form>
-                    </span> &nbsp;| &nbsp; -->
+                    </span> &nbsp;| &nbsp; {/if}
                     <span class="cursor">{$_phrase.loginas}</span> &nbsp;
     <span class="block">
         <form action="{$config['url']}/login/save" id="autologin" method="post"
@@ -144,7 +144,7 @@
 
     <div class="container ftmdpro">
         <div class="row ftmdpro" style="margin-top:15px; margin-bottom:15px;">
-            <div class="col-md-4 footer_logo" style="margin-top: -13px;">
+            <div class="col-md-4 logo_img" style="margin-top: -13px;">
                 <a href="{$config.url}">
                     <img class="img-responsive" src="{$config['url']}/image/logo.png"/>
                 </a>
@@ -210,8 +210,8 @@
                             <li class="l9ie">|</li>
                             <li class="hty3"><a href="{$config.url}/winner" title="Winners">
                                 {$_phrase.winner}{$_phrase.s}</a></li>
-                            <!--<li class="l9ie">|</li>
-                            <li class="hty3"><a href="{$config.url}/blog" title="Blogs">{$_phrase.blog}{$_phrase.s}</a></li>-->
+                            {if !$cusdisable}<li class="l9ie">|</li>
+                            <li class="hty3"><a href="{$config.url}/blog" title="Blogs">{$_phrase.blog}{$_phrase.s}</a></li>{/if}
                         </ul>
                         <ul class="nav navbar-nav navbar-right midqurn" style="font-size:17px;">
                             {if $loged.userid > 0}
@@ -220,9 +220,9 @@
                             <li class="hty3"><a href="{$config.url}/login/logout/" title="Logout">
                                 <span class="glyphicon glyphicon-log-in"></span> {$_phrase.logout}</a></li>
                             {else}
-                            <!-- paul remove
+                            {if !$cusdisable}
                             <li class="hty3"><a data-toggle="modal" data-target="#myModal" href="javascript:void(0);">
-                                <span class="glyphicon glyphicon-user"></span> {$_phrase.register}</a></li>-->
+                                <span class="glyphicon glyphicon-user"></span> {$_phrase.register}</a></li>{/if}
                             <li class="hty3"><a data-toggle="modal" data-target="#login" href="javascript:void(0);">
                                 <span class="glyphicon glyphicon-log-in"></span> {$_phrase.log_in}</a></li>
                             {/if}

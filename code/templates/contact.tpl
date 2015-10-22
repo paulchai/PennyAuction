@@ -95,8 +95,10 @@ body{
 
 						<h5 class="gotham_medium light_blck  clrorg">{$_phrase.email}</h5><br>
 						<a href="#" class="qmzw">{$_phrase.supportemail}</a>
-						<!-- paul remove <h5 class="gotham_medium light_blck">{$_phrase.phone}</h5>
-						<div>972-200-5516</div>-->
+            {if !$cusdisable}
+						<h5 class="gotham_medium light_blck">{$_phrase.phone}</h5>
+						<div>972-200-5516</div>
+            {/if}
 					</div>
         </div>
         

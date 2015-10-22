@@ -335,6 +335,7 @@ exports.loadTemplateHeader = function (req, res, arr) {
             res.setHeader('Content-Type', 'text/html; charset=UTF-8');
             arr.serverdate = dateFormat(new Date(), "yyyy/mm/dd HH:MM:ss");
             arr.seated = req.app.get('seated');
+            arr.cusdisable = true;
             //console.log('pandian  ips'); console.log(req.url);
             stream = nsmarty.assign(arr.file, arr);
 

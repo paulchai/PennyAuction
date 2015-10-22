@@ -35,9 +35,9 @@
                             <li>
                                 <a class="alg_reg light_blck ftw500 wht3" href="/how_it_works">{$_phrase.howitworks}</a>
                             </li>
-                            <li>
+                            {if !$cusdisable} <li>
                                 <a class="alg_reg light_blck ftw500 wht3" href="/reviews">{$_phrase.reviews}</a>
-                            </li>
+                            </li>{/if}
                             <li>
                                 <a class="alg_reg light_blck ftw500 wht3" href="/dispute">{$_phrase.dispute}</a>
                             </li>
@@ -49,7 +49,7 @@
 
                     <div class="col-xs-12 col-sm-12 col-md-3 call_us">
                         <div class="lcall_us mftp mnm2">{$_phrase.contact_us}</div>
-                        <!--paul remove <div class="cu_num  cror3f">972-200-5516</div>-->
+                        {if !$cusdisable} <div class="cu_num  cror3f">972-200-5516</div>{/if}
                         <div class="cror3fec">{$_phrase.supportemail}</div>
                     </div>
                 </div>
@@ -112,7 +112,7 @@
                         <label class="field prepend-icon">
                             <input type="text" name="username" id="username" class="gui-input"
                                    placeholder="User Name" data-parsley-required-message="Enter User Name"
-                                   data-parsley-pattern="/^[a-z0-9]+(?:[ _-][a-z0-9]+)*$/"
+                                   data-parsley-pattern="/^[A-z0-9]+(?:[ _-][A-z0-9]+)*$/"
                                    data-parsley-pattern-message="Special Characters are not allowed"
                                    data-required="true" data-parsley-group="block1" required>
                             <label for="username" class="field-icon"><i class="fa fa-user"></i></label>
@@ -220,7 +220,7 @@
                     <label class="field prepend-icon">
                         <input class="form-control gui-input" name="username"
                                value="{$remembermeuser}" data-parsley-required-message="Enter user name"
-                               data-parsley-pattern="/^[a-z0-9]+(?:[ _-][a-z0-9]+)*$/"
+                               data-parsley-pattern="/^[A-z0-9]+(?:[ _-][A-z0-9]+)*$/"
                                data-parsley-type-message="Enter valid user name"
                                id="u_name" size="30" autocomplete="off" required data-trigger="change"
                                placeholder="{$_phrase.username}">
@@ -253,16 +253,16 @@
                         <button type="button" class="btn btn-primary" onclick="$('#loginform').submit();">{$_phrase.member_login}
                         </button>
                     </div>
-                </div><!-- paul removed
+                </div>{if !$cusdisable}
                 <div class="row">
                     <div class="col-md-6">
                         <a href="{$config.url}/register">{$_phrase.not_a_member}</a>
                     </div>
                 </div>
                 <div class="spacer-b30">
-                    <div class="tagline"><span>{$_phrase.or|upper} </span></div>-->
+                    <div class="tagline"><span>{$_phrase.or|upper} </span></div>
                     <!-- .tagline -->
-                <!-- paul removed</div>
+                </div>
                 <div class="row social">
 
                     <div class="col-md-6"><a href="{$config.url}/facebook/auth/facebook"
@@ -271,7 +271,7 @@
                     <div class="col-md-6"><a href="{$config.url}/linked/auth/linkedin"
                                              class="field prepend-icon btn btn-info">Login with Linked in<label
                             class="field-icon"><i class="fa fa-linkedin qzp1m"></i></label></a></div>
-                </div> -->
+                </div> {/if}
             </div>
         </form>
 

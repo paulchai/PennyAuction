@@ -79,13 +79,13 @@
       <span class="other">
       <label>(OR)</label>
       </span>-->
-      <!-- paul remove
+      {if !$cusdisable}
        <div class="login_account text-center">
          <h2>Don't have an account</h2>
-         <p>Register now to bid, buy, or sell on any Auction site worldwide. It's easy and FREE. --><!--Already registered--><!-- paul remove</p>
+         <p>Register now to bid, buy, or sell on any Auction site worldwide. It's easy and FREE. --><!--Already registered--></p>
         <p>If you want to sign in, you'll need to register first.</p>
         <p>Registration is fast and FREE.</p>
-       <a href="{$config.url}/register" title="Register" class="btn save_btn">Register</a>-->
+       <a href="{$config.url}/register" title="Register" class="btn save_btn">Register</a>{/if}
       </div></div>
     </div>
   </div>
