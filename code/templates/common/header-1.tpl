@@ -103,7 +103,7 @@
     <div class="fotdi1 ftmdpro">
         <div class="container ft12px1">
             <div class="row top_nav">
-                <div class="col-md-6">Version 1.0 Demo</div>
+                <div class="col-md-6">{$_phrase.version}</div>
                 <div class="col-md-6 txt_arht tn_rht">
                     {if !$cusdisable} <span> {$_phrase.viewcolour} &nbsp; </span>
                     <span class="block">
@@ -119,7 +119,7 @@
                                 <option value="3" {if $themeno== 3} selected {/if}>{$_phrase.deepred}</option>
                             </select>
                         </form>
-                    </span> &nbsp;| &nbsp; {/if}
+                    </span> &nbsp;| &nbsp;
                     <span class="cursor">{$_phrase.loginas}</span> &nbsp;
     <span class="block">
         <form action="{$config['url']}/login/save" id="autologin" method="post"
@@ -132,11 +132,13 @@
                 <option value="admin" {if $autologin=='admin'} selected {/if}>{$_phrase.admin}</option>
             </select>
         </form>
-    </span>
+    </span>{/if}
                     <!--<span class="cursor" onClick="window.location='{$config['url']}/admincp'">Admin</span>-->
 
-                    <a href="/contact" class="oe3">{$_phrase.contact_us} </a> &nbsp| &nbsp;<a
-                        href="http://www.{$_phrase.domain|lower}" class="oe3"> {$_phrase.backto} {$_phrase.domain}</a></div>
+                    <a href="/contact" class="oe3">{$_phrase.contact_us} </a> &nbsp| &nbsp;
+                    <a href="http://www.{$_phrase.domain|lower}" class="oe3"> {$_phrase.backto} {$_phrase.domain}</a> &nbsp| &nbsp;
+                    <a href="{$_phrase.other_url}" class="oe3"> {$_phrase.other_lang}</a>
+                </div>
             </div>
         </div>
     </div>
@@ -172,10 +174,11 @@
             </div>
             <div class="col-md-2 srtr3">
                 {if $loged.userid > 0}
-                Your $:
-                <span id="userjetport">{$userbalance.jetport}</span> -
+                {$_phrase.yourshare} <span id="usershare">{$userbalance.share}</span> /
+                {else}
+                {$_phrase.totalshare} <span id="totalshare">{$share}</span> /
                 {/if}
-                Jetport: $
+                {$_phrase.jetport}: $
                 <span id="jetportamount">{$jetport}</span>
             </div>
         </div>

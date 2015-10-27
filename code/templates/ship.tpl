@@ -7,7 +7,7 @@
 </script>
 <div class="row">
     <div class="col-md-12 ship_bner">
-        <div class="banner">
+        <div class="banner">{if !$cusdisable}
             <div class="bann_rht">
                 <div class="rb_head">Own Your Penny Auction at Auction Software.com</div>
                 <div class="rb_shead">Our penny auction product runs on NODE.JS</div>
@@ -15,13 +15,13 @@
                     <div class="pull-left"><img src="{$config.url}/images/node_js.png" alt=""/></div>
                     <div class="pull-right"><img src="{$config.url}/images/buy_now.png" alt=""/></div>
                 </div>
-            </div>
+            </div>{/if}
         </div>
         <div class=" col-md-12 ship_bner box">
             <div class="panel panel-default">
                 <div class=" panel-heading">
                     <div class="row">
-                        <div class="crtitm"> Your Buynow Item</div>
+                        <div class="crtitm"> {$_phrase.your_buynow_item}</div>
                     </div>
                 </div>
                 <div class="panel-body" id="step1">
@@ -81,7 +81,7 @@
                             {if $product.bid_credits > 0}
                             <div class="row">
                                 <div class="col-xs-5 col-sm-4 col-md-4">
-                                    <div class="dtimelft">Bid Credit Spent (USD $)</div>
+                                    <div class="dtimelft">{$_phrase.bid_credit_spent} (USD $)</div>
                                 </div>
                                 <div class="col-xs-1 col-sm-1 col-md-1">
                                     <div class="dtimelft">:</div>
@@ -95,7 +95,7 @@
 
                             <div class="row">
                                 <div class="col-xs-5 col-sm-4 col-md-4">
-                                    <div class="dtimelft">Total Price (USD $)</div>
+                                    <div class="dtimelft">{$_phrase.total_price} (USD $)</div>
                                 </div>
                                 <div class="col-xs-1 col-sm-1 col-md-1">
                                     <div class="dtimelft">:</div>
@@ -107,7 +107,7 @@
                             <div class="row">
                                 <div class="col-md-3">
                                     <button type="button" onclick="nextstep('step2');" class="btn btn-primary blubt">
-                                        Proceed to Checkout
+                                        {$_phrase.proceed_to_checkout}
                                     </button>
                                 </div>
                             </div>
@@ -135,24 +135,24 @@
                             <div class="shping"> {$_phrase.shipping}{$_phrase.engspace}{$_phrase.address}</div>
                             <div class="row pding">
                                 <div class="col-xs-12 col-sm-12 col-md-8">
-                                    <input class="form-control ct" placeholder="Enter your name" name="name"
+                                    <input class="form-control ct" placeholder="{$_phrase.enter_your_name}" name="name"
                                            value="{$shipping.name}" required>
                                 </div>
                             </div>
                             <div class="row pding">
                                 <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <input type="email" class="form-control ct" placeholder="Enter your email"
+                                    <input type="email" class="form-control ct" placeholder="{$_phrase.enter_your_email}"
                                            name="email" value="{$useremail}" required>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <input class="form-control ct" placeholder="phone: ex:(465) 465-4654" name="phone"
+                                    <input class="form-control ct" placeholder="{$_phrase.enter_phone}" name="phone"
                                            value="{$shipping.phone}" data-parsley-maxlength="10" maxlength="10"
                                            required>
                                 </div>
                             </div>
                             <div class="row pding">
                                 <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <input class="form-control ct" placeholder="Enter your address" name="address"
+                                    <input class="form-control ct" placeholder="{$_phrase.enter_your_address_line}" name="address"
                                            value="{$shipping.address1}{if $shipping.address2 !=''},{$shipping.address2}{/if}"
                                            required>
                                 </div>
@@ -167,34 +167,36 @@
                             </div>
                             <div class="row pding">
                                 <div class="col-xs-12 col-sm-6 col-md-4">
-                                    <input class="form-control ct" placeholder="Enter your state" name="state"
+                                    <input class="form-control ct" placeholder="{$_phrase.enter_your_state}" name="state"
                                            value="{$shipping.state}" data-parsley-pattern="^[A-z ,.'-]+$"
                                            data-parsley-pattern-message="Only Alphabets are allowed" required>
                                 </div>
                                 <div class="col-xs-12 col-sm-3 col-md-2">
-                                    <input class="form-control ct" placeholder="City" name="city"
+                                    <input class="form-control ct" placeholder="{$_phrase.city}" name="city"
                                            value="{$shipping.city}" data-parsley-pattern="^[A-z ,.'-]+$"
                                            data-parsley-pattern-message="Only Alphabets are allowed" required>
                                 </div>
                                 <div class="col-xs-12 col-sm-3 col-md-2">
-                                    <input class="form-control ct" placeholder="Zipcode" name="zipcode"
+                                    <input class="form-control ct" placeholder="{$_phrase.zipcode}" name="zipcode"
                                            value="{$shipping.zipcode}" required>
                                 </div>
                             </div>
                             <div class="row pding">
-                                <div class="cupn">COUPON CODE<span class="validcupn">(Please enter valid coupon code if You have)</span>
+                                <div class="cupn">{$_phrase.coupon_code|upper}<span class="validcupn">({$_phrase.please_enter_valid_coupon})</span>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-3">
-                                    <input id="code" name="ccode" class="form-control" placeholder="COUPON CODE">
+                                    <input id="code" name="ccode" class="form-control" placeholder="{$_phrase.coupon_code|upper}">
                                 </div>
+                                {if !$cusdisable}
                             </div>
                             <div class="row pding">
                                 <div class="col-xs-12 col-sm-6 col-md-6">
-                                    <div class="paypl">Please Select checkout to proceed with paypal payment.</div>
+                                    <div class="paypl">{$_phrase.please_checkout_paypal}</div>
                                 </div>
+                                {/if}
                                 <div class="col-xs-12 col-sm-6 col-md-6">
-                                    <button type="button" onclick="checkCoupon();" class="btn btn-primary bltn">Check
-                                        Out
+                                    <button type="button" onclick="checkCoupon();" class="btn btn-primary bltn">
+                                        {$_phrase.checkout}
                                     </button>
                                 </div>
                             </div>
@@ -223,13 +225,14 @@
                     </div>
                     <div class="col-md-8"></div>
                     <div class="col-xs-12 col-sm-12 col-md-4">
-                        <button type="button" onclick="proceedBuy()" class="btn btn-primary btnt">Check Out</button>
+                        <button type="button" onclick="proceedBuy()" class="btn btn-primary btnt">{$_phrase.checkout}</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+{if !$cusdisable}
 <div class="clearfix node_jsb">
     <div class="pull-left njsb">
         <div class="pbld">Product build <span>via</span></div>
@@ -248,6 +251,7 @@
 
     </div>
 </div>
+{/if}
 {include file="common/footer-1.tpl" nocache}
 <script type="text/javascript">
     $(function () {

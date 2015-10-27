@@ -1,4 +1,4 @@
-{include file="common/header-2.tpl" nocache}
+{include file="common/header-1.tpl" nocache}
 <link rel="stylesheet" href="{$config.url}/css/terms-style.css" />
 <div class="container-fluid terms3">
 <img src="{$config.url}/images/terms_banner.png" class="img-responsive" style="width:100%;">
@@ -6,443 +6,708 @@
 
 <div class="container">
 <div class="col-md-12 terms4">TERMS & CONDITIONS</div>
-<div class="col-md-12"><p style="line-height:26px;">PLEASE READ CAREFULLY THE FOLLOWING AGREEMENT. BY ACCESSING, BROWSING, AND/OR OTHERWISE USING THE SERVICE, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THESE TERMS. IF YOU DO NOT AGREE TO THESE TERMS, THEN PLEASE DO NOT USE THE SERVICE.</p>
-<p>Penny Auction is part of DevelopScripts LLC company located in Dallas, TX and can be reached at 972-200-5516</p></div>
-<div class="col-md-12">
+<div class="col-md-12"><p style="line-height:26px;">The Terms and Conditions governing the use of the ATA Holdings Ltd. ” website
 
+  shall apply to all users of the said website.</p></div>
+<div class="col-md-12">
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingOne">
       <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          1. Eligibility; Service Access.
+          1. General Terms and Conditions of Use:
         </a>
       </h4>
     </div>
     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
       <div class="panel-body">
-      <div> I.</div> <p> COPPA Notice. THE SERVICE IS NOT AVAILABLE TO PERSONS UNDER THE AGE OF 13 OR TO ANY USERS SUSPENDED OR REMOVED FROM THE SERVICE BY PENNY AUCTION. BY USING THE SERVICE, YOU REPRESENT THAT YOU ARE AT LEAST 13 YEARS OF AGE AND HAVE NOT BEEN PREVIOUSLY SUSPENDED OR REMOVED FROM THE SERVICE. If you are 13 or older but under the age of 18, you MUST review THESE TERMS with your parent or guardian to make sure that you and your parent or guardian understand it.</p>
-<div>II.</div> <p> Authorized Use. Subject to your compliance with these Terms, Penny Auction grants you permission to use the Service as set forth in these Terms, and consistent with the intended fea</p>
+        <div>1.1</div><p> By using  ATA Holdings Ltd.  (hereinafter known as “the Website”), the
+
+        Customer agrees to be bound by the following Terms and Conditions of Use
+
+        (hereinafter known as “Terms and Conditions”) herein and all supplements,
+
+        amendments and variations shall collectively constitute the agreement between
+
+        YOU (hereinafter known as “the Customer”), and   ATA Holdings Ltd. ”
+
+        (hereinafter known as “Website Provider”), and shall apply to the bid on products
+
+        auctioned on the Website.
+
+      </p><div>1.2</div><p> Pursuant to these Terms and Conditions, the Website Provider demands that
+
+        the Customer visits and browses the “How It Works” section of the Website for
+
+        the Auction Services before proceeding to bid on products so as to be ready for
+
+        the auction process on the Website. If the Customer wins in an auction, the
+
+        Website Provider will arrange for the delivery/collection of the item(s) to/by the
+
+        Customer.
+
+      </p><div>1.3</div><p> Anyone who opens a user account with the Website in any manner permitted
+
+        by the Website Provider on the Website becomes a customer of the Website
+
+        subject to the Terms and Conditions of this Website. Customers agree to abide
+
+        by these Terms and Conditions upon opening a user account, and if approved by
+
+        the Website Provider.
+
+      </p><div>1.4</div><p> The Customer must register as a user of the Website by completing and
+
+        confirming a registration process. During the registration process, the Customer
+
+        will be required to select a username (“ID”) and a password.
+
+      </p><div>1.5</div><p> The Customer undertakes not to disclose to third parties any information of
+
+        the customer which permits access into the Customer’s user account to third
+
+        parties, irrespective of whether they are customers or otherwise. Any third party
+
+        who uses the Customer account information (whether intentionally and/or
+
+        inadvertently) shall do so at their own risk, and acknowledges that no liability
+
+        whatsoever (whether civil and/or criminal) shall be imposed upon or borne by the
+
+        Website Provider. In the event the Customer receives any material or data
+
+        containing information where the Customer is not the intended recipient, the
+
+        Customer agrees to delete such material or data and further agrees to notify the
+
+        Website Provider immediately.
+
+      </p><div>1.6.</div><p> To the fullest extent permissible under the law, the Customer agrees to use
+
+        the Auction Services offered on the Website, subject to these Terms and
+
+        Conditions.
+
+      </p><div>1.7</div><p> The Website Provider shall NOT be liable for damages caused by the
+
+        Customer’s unlawful activities and/or unacceptable conduct. Any user of the
+
+        Website who engages in unlawful activities and/or unacceptable conduct shall be
+
+        liable to the Website Provider for any and all costs, damages, losses and/or
+
+        expenses caused by such unlawful activities and/or unacceptable conduct,
+
+        including reasonable collection fees, legal fees (on an indemnity basis),
+
+        incidentals, court costs, and such other costs and expenses arising from the
+
+        Customer’s unlawful activities and/or unacceptable conduct herein.
+
+        Examples of unacceptable conduct include, but are not be limited to, hacking the
+
+        software, stealing the account or nickname of another user, sending a Trojan,
+
+        worm, time bomb, or other disabling device or other harmful component intended
+
+        to damage, detrimentally interfere with, surreptitiously intercept or expropriate
+
+        any system, data or personal information or attempting, soliciting or abetting any
+
+        of the above.
+
+      </p><div>1.8</div><p> As a winning bidder, the Customer shall be responsible for the Dealing Price
+
+        which is the last bidding price of any particular auction.
+
+      </p><div>1.9.</div><p> The Customer agrees not to damage, interfere with, or corrupt the Website
+
+        or its normal functioning in any way howsoever.
+
+      </p><div>1.10</div><p> The Customer agrees not to collect and/or retain any information about
+
+        other users on and off the Website, including e-mail addresses, without the prior
+
+        consent of such users, and/or the Website Provider.
+
+      </p><div>1.11</div><p> When using the Auction Services offered on the Website, the Customer
+
+        agrees to disclose only truthful and accurate information.
+
+      </p><div>1.12</div><p> The Customer agrees not to use the Website to distribute spam, chain mail,
+
+        pyramid schemes, viruses or any other information or technology deemed
+
+        inappropriate by the Website Provider. The Website Provider reserves the right to
+
+        take any measures deemed appropriate to stop the Customer from misusing the
+
+        Website.
+
+      </p><div>1.13</div><p> The Customer understands and accepts that the Website Provider is not an
+
+        agent, employee, broker, or representative of the Customer. The Customer also
+
+        understands that the Website Provider does not owe the Customer any duty or
+
+        obligation other than those expressly set forth in these Terms and Conditions.
+
+      </p><div>1.14</div><p> The Website Provider reserves the right to revoke any contract entered into
+
+        with the Customer if the Customer engages in inappropriate conduct. Examples
+
+        of inappropriate conduct include the use of scripts to take control of the Website,
+
+        as well as the use of the Website to harass others or to foist pyramid schemes on
+
+        others, and such other misconduct beyond the original scope and
+
+        comprehension of the Website Provider that compromises the Website and the
+
+        position of the Website Provider. In responding to inappropriate conduct of the
+
+        Customer, the Website Provider may block the usage of the Website and/or close
+
+        the user account that is the source of the inappropriate conduct in question, and
+
+        the Website Provider also reserves the right to refer the matter to the relevant
+
+        government authorities to seek relief from a court of competent jurisdiction, or
+
+        may take any other action deemed appropriate.
+
+      </p><div>1.15</div><p> The Customer shall not submit or transmit any image or program that would
+
+        violate the property rights of others, including unauthorized copyrighted images
+
+        or programs and trademarks or Website marks used in any act of infringement.
+
+      </p><div>1.16</div><p> Customer shall not interfere with other users in any way on the Website.
+
+      </p><div>1.17</div><p> Customer shall not submit or transmit any file which contains viruses,
+
+        worms, Trojan horses or any other contaminating or destructive features onto the
+
+        Website.
+
+      </p><div>1.18</div><p> Customer shall not collect, retain and/or circulate by any means whatsoever
+
+        any contact information from the Website for use related to commercial e-mail
+
+        (SPAM) and/or for any other unauthorized purpose.
+      </p>
       </div>
     </div>
   </div>
+
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingTwo">
       <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          2. Content Rights.
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          2. Intellectual Property
         </a>
       </h4>
     </div>
     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
       <div class="panel-body">
-       <p> The Content available on or through the Service is intended for personal, non-commercial use. All Content is owned or controlled by other users, Penny Auction and the Penny Auction licensors, and is protected by copyright and other intellectual property laws. You shall not copy, distribute or publish any Content owned or licensed by Penny Auction or other users, or any information obtained or derived therefrom, except as permitted on or through the Service, and if permitted you shall not remove, obstruct, distort, or alter the Penny Auction</p>
+        <div>2.1</div><p> The Website, comprising all its content, materials, documents including but
+
+        not limited to its trademarks/service marks, logos and other intellectual property
+
+        rights of the Website Provider in the Website encompassing all information,
+
+        details, graphics, data files, text, sound recordings and arrangements of the
+
+        same are the wholly owned and copyrighted work of the Website Provider, and
+
+        shall vest and belong to the Website Provider.
+
+      </p><div>2.2</div><p> None of the materials posted herein shall be copied, reproduced, distributed,
+
+        republished, downloaded, displayed, posted or transmitted in any form or by any
+
+        means, including but not limited to electronic, mechanical, photocopying,
+
+        recording, or other means, without the prior express written permission of the
+
+        Website Provider.
+
+      </p><div>2.3</div><p> Customers who post their own proprietary information on the Website thereby
+
+        grant consent and a license to the Website Provider to use that proprietary
+
+        information on the Website at no cost to the Website Provider, its agents, or
+
+        assigns. The Website Provider has the exclusive right to use anything posted by
+
+        the Customer on the Website in any way it deems appropriate on the Website,
+
+        subject to legal limitations. This includes allowing or prohibiting the use of the
+
+        posted information, including reproduction, distribution, translation and
+
+        adaptation, inclusion in compilations or databases, or communication to the
+
+        public.
+
+      </p><div>2.4</div><p> In the event of a breach of the intellectual property rights under these Terms
+
+        and Conditions, the Website Provider may resort to any available legal remedies,
+
+        which may include a demand for actual and/or statutory damages, costs and
+
+        expenses, legal fees (on an indemnity basis), and/or injunctive relief.
+      </p>
       </div>
     </div>
   </div>
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingThree">
       <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          3. Accounts / Membership.
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+          3. Requirements Needed to Participate
         </a>
       </h4>
     </div>
     <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
       <div class="panel-body">
-       <div>I.</div> <p> Establishing a membership. As a member to the Service, you will have to establish an account ("Account") that creates your membership. You are solely responsible for maintaining the confidentiality and security of your Account You are entirely responsible for all activities that occur on or through your account, and you agree to immediately notify Penny Auction of any unauthorized use of your account or any other breach of security. Penny Auction shall not be responsible for any losses arising out of the unauthorized or other improper use of your account. It is your sole responsibility and liability to upload Content to your account and Penny Auction is not liable for Content uploaded or responsible for the activity level on your account or on the Site.</p>
-<div>II.</div> <p> Refunds. Penny AUCTION RESERVES THE RIGHT TO NOT OFFER A REFUND. MEMBERS AND VENDORS AGREE THAT Penny AUCTION IS UNDER NO OBLIGATION TO OFFER A REFUND IN ANY KIND IF IT DEEMS APPROPRIATE.</p>
-<div>III.</div> <p> Entity Accounts. If you are using or opening an Account through the Service on behalf of a company, entity, or organization (a "Subscribing Organization"), then you represent and warrant that you are an authorized representative of that Subscribing Organization with the authority to bind such organization to these Terms; and agree to be bound by these Terms on behalf of such Subscribing Organization.</p>
-<div>IV.</div> <p> Account Security. You agree that the information you provide to Penny Auction on registration and at all other times will be true, accurate, current, and complete. You also agree that you will ensure that this information is kept accurate and up-to-date at all times. When you register, you will be asked to create a password. As you will be responsible for all activities that occur under your Account, you should keep your password confidential. You are solely responsible for maintaining the confidentiality of your account and password and for restricting access to your computer, and you agree to accept responsibility for all activities</p>
+        <div>3.1</div><p> A participant must be eighteen (18) years of age and above.
+
+      </p><div>3.2</div><p> A participant cannot be an employee of the Website Provider, or an employee
+
+        of a subsidiary of the Website Provider...
+
+      </p><div>3.3</div><p> A participant cannot be involved in any part of the execution or administration
+
+        of the Website.
+
+      </p><div>3.4</div><p> A participant cannot be an immediate family member of (parent, sibling,
+
+        spouse, child) or household member of the Website Provider’s employee, or an
+
+        employee of a subsidiary of the Website Provider, or a person involved in any
+
+        part of the administration and execution of the Website.
+
+      </p><div>3.5</div><p> The Customer further warrants and undertakes that the Customer is not an
+
+        agent or representative of the Website Provider, and if so, the Website Provider
+
+        shall close the account of such Customer on the Website, failing which, the
+
+        Website Provider shall automatically terminate this account.
+
+      </p><div>3.6</div><p> The Customer may participate in the auctions held on the Website by making
+
+        bids which the Customer can buy through one of our two 2 exclusive dealers. 
+
+        Namely, Shenzhen Vasabi Company Limited in The People’s Republic of China. 
+
+        And, Better-living Global Marketing Limited outside of China.
+
+      </p><div>3.7</div><p> The Website Provider may block, suspend, close or cancel Auctions if the
+
+        Website Provider’s computer system is damaged or interfered with or if a system
+
+        error occurs that has or may have an effect on the course of the Auction. Where
+
+        an Auction cannot be restored, the sole remedy available to the Customer shall
+
+        be the reimbursement of any bid-points used when making bids on the Auction.
+
+      </p><div>3.8</div><p> In addition to the Terms and Conditions herein, the Website Provider shall not
+
+        be liable or responsible for any losses, damages (whether special or
+
+        consequential), costs, expenses, embarrassment, opportunity costs, goodwill
+
+        expenses or loss of profit incurred or suffered by the Customer by reason of or in
+
+        connection with the following: -
+
+      </p><div>3.8.1</div><p> Any failure, delays in transmission, interruption, errors, omission or
+
+        breakdown of any equipment, system, server software or terminal of the Website
+
+        Provider;
+
+      </p><div>3.8.2</div><p> Interference by computer virus, corrupted data, malfunctions;
+
+      </p><div>3.8.3</div><p> Any failure or delay attributable to the Auction Services by its service
+
+        provider and/or its employees, servants, agents, and contractors ;
+
+      </p><div>3.8.4</div><p> Failure or delay due to causes beyond the control of the Website Provider
+
+        including causes such as strikes, industrial action, civil disturbances, flood,
+
+        earthquake, landslides or Acts of God or computer, electronic, communications
+
+        or electrical systems failures of any nature whatsoever, breakdown, interruptions,
+
+        non-supply, failure in the supply of electricity or power for any length of time;
+
+      </p><div>3.8.5</div><p> Any inaccuracies, errors, defects of any content of this Website or other
+
+        website linked to this Website;
+
+      </p><div>3.8.6</div><p> Any operation malfunctions or defects of the Customer’s computer terminal,
+
+        systems or software used in accessing the Website;
+
+      </p><div>3.8.7</div><p> Any access, use or inability to access or use this Website and/or any other
+
+        website linked to this Website.
+
+      </p><div>3.9</div><p> The Website Provider shall not be responsible for any losses if the Website is
+
+        not made available on the Auction Hours or otherwise.
+
+      </p><div>3.10</div><p> The Website Provider shall not interfere with the Auctions in any manner.
+
+      </p><div>3.11</div><p> The opening price of each item put up for Auction shall begin at HK$0.1.
+
+        The price of the item shall increase by HK$0.1 with each bid. The bidding time
+
+        (“Bidding Time”) will be displayed in a box near the item being sold at the
+
+        Auction. The length of the Bidding Time is fixed for each Auction. Each new bid
+
+        extends the Bidding Time by extending the remaining time because the Bidding
+
+        Time starts anew after every bid. By bidding on the Auction, the Customer makes
+
+        an offer to the Website Provider and the Website Provider accepts the
+
+        Customer’s offer to purchase the item being offered for sale.
+
+      </p><div>3.12</div><p> The Auction ends when
+
+        -No more bids are received within the time specified on the Website. At the end
+
+        of the Auction, the Customer will be considered the winning bidder only if the
+
+        Customer has submitted the last bid during the Bidding Time; 
+
+        If the Customer is the winning bidder, the Customer’s username will be displayed
+
+        in a box near the item sold at the Auction, and a valid, binding and enforceable
+
+        sales contract for the item sold at the Auction shall be deemed concluded
+
+        between the Website Provider and the Customer.
+
+      </p><div>3.13</div><p> The Customer agrees that his entitlement to purchase items on the Website
+
+        shall be restricted to a maximum of four (4) items at the Website per calendar
+
+        month.
+
+      </p><div>3.14</div><p> If the Customer is the winning bidder, he/she will able to see details and
+
+        make a payment (if necessary) for the won auction under “Winners” sections
+
+        after logging in. The Website Provider shall arrange for the delivery/collection of
+
+        the purchased item with the Customer within fourteen (14) days from the date
+
+        hand-over procedures are completed. The Customer shall have to pay for
+
+        shipping charges and insurance cost, if applicable, on the purchased item.
+
+      </p><div>3.15</div><p> Bid-points used to make bids are not refundable. No exceptions to this
+
+        condition will be permitted. The Customer should only buy as many bid-points as
+
+        the Customer is comfortable spending on the Auction.
+
+      </p><div>3.16</div><p> Each bid may costs from one (1) credit up to five (5) credits and raises the
+
+        price of the product by HK$0.1 to HK$1 depending on the kinds of merchandise.
+      </p>
       </div>
     </div>
   </div>
-</div>
-<div class="panel panel-default">
+  <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingFour">
       <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-         4. Use of the Service.
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+          4. Amendment of Terms and Conditions
         </a>
       </h4>
     </div>
     <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
       <div class="panel-body">
-        <p>Use of the Service requires compatible devices, Internet access (additional third-party fees may apply); may require periodic updates; and may be affected by the performance of these factors. You agree that these requirements, which may change from time to time, are your responsibility. The Service is not part of any other product or offering, and no purchase or obtaining of any other product shall be construed to represent or guarantee you access to the Service. Penny Auction reserves the right to change Content options (including eligibility for particular features) without notice.</p>
+        <div>4.1</div><p> The Website Provider may unilaterally amend, vary and/or add to these
+
+        Terms and Conditions by publishing a relevant notice of the amended, varied
+
+        and/or additional Terms and Conditions on the Website.
+
+      </p><div>4.2</div><p> Amendments, variations and/or additions to the Terms and Conditions shall
+
+        be valid, binding and enforceable immediately upon their publication on the
+
+        Website.
+
+      </p><div>4.3</div><p> The Customer should be able to view the revised Terms and Conditions upon
+
+        access to the Auction Services at the Website, and the use of the Auction
+
+        Services thereafter shall constitute the Customer’s consent to and acceptance of
+
+        the amendments, variations and/or additions therein appearing on the Website.
+      </p>
       </div>
     </div>
   </div>
-  
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingFive">
       <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-          5. Your Information.
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+          5. Termination of Using the Services
         </a>
       </h4>
     </div>
     <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
       <div class="panel-body">
-        <p>You agree to provide accurate, current, and complete information required to register with the Service and at other points as may be required in the course of using the Service ("Data"). You hereby confirm that any Data you already have provided to Penny Auction (including, without limitation, in the Penny Auction process or through prior use of the Service) has been accurate, current, and complete. You further agree to maintain and update your Data as required to keep it accurate, current, and complete.</p>
+        <div>5.1</div><p> The Customer may terminate the use of the Auction Services and close the
+
+        Customer user account. However, any contractual obligations incurred before the
+
+        termination of the account shall remain in full force and effect until the Customer
+
+        completely discharges them by paying for any outstanding purchases and any
+
+        applicable taxes or delivery charges.
+
+      </p><div>5.2</div><p> The Website Provider reserves the right to prohibit the Customer from using
+
+        the Website and to terminate the Customer’s account at any time without prior
+
+        notice and without any obligation whatsoever to give any reasons therefor; and/or
+
+        if, in the sole and absolute discretion of the Website Provider, it determines that
+
+        the Customer has engaged in any prohibited, and/or unacceptable conduct
+
+        and/or unlawful activity.
+      </p>
       </div>
     </div>
   </div>
-  
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingSix">
       <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-          6. Intellectual Property.
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+          6. Final Provisions 
         </a>
       </h4>
     </div>
     <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
       <div class="panel-body">
-        <div>I.</div> <p> Acknowledgement of Ownership. You agree that the Service contains proprietary information and material that is owned by Penny Auction and/or its licensors, and is protected by applicable intellectual property and other laws, including but not limited to copyright, and that you will not use such proprietary information or materials in any way whatsoever except for use of the Service in compliance with these Terms. No portion of the Service may be reproduced in any form or by any means.</p>
-<div>II.</div> <p> Copyrights. All copyrights in and to the Service are owned by Penny Auction and/or its licensors.</p>
-<div>III.</div> <p> Trademarks. Penny Auction, the Penny Auction logo, the Service and other Penny Auction trademarks, service marks, graphics, and logos used in connection with the Service are trademarks or registered trademarks of Penny Auction in the U.S. and/or other countries. You are granted no right or license with respect to any of the aforesaid trademarks and any use of such trademarks.</p>
+        <div>6.1</div><p> In addition to these Terms and Conditions, the relationship between the
+
+        Customer and the Website Provider shall be governed by the Website price list
+
+        for the Auction Services.
+
+      </p><div>6.2</div><p> Any disputes arising out of or in connection with the use of the Website shall
+
+        be resolved through negotiation; and if negotiations fail, the dispute shall be
+
+        referred to and resolved by the courts of law.
+
+      </p><div>6.3.</div><p> The Terms and Conditions embody all the terms and conditions agreed upon
+
+        between the Customer and the Website Provider and supersedes and cancels all
+
+        previous discussions/agreements amongst the parties hereto in relation to the
+
+        matters dealt with herein, whether such be written or oral, and represents the
+
+        entire understanding between the Customer and the Website Provider..
+
+      </p><div>6.4</div><p> If any one or more of the provisions contained in the Terms and Conditions
+
+        shall be deemed invalid illegal or unenforceable in any respect under any laws of
+
+        any relevant jurisdiction, the validity legality and enforceability of the remaining
+
+        provisions contained herein shall not in any way be affected or impaired.
+
+      </p><div>6.5</div><p> No remedy conferred by any of the Terms and Conditions is intended to be
+
+        exclusive of any other remedy which is otherwise available at law, in equity, by
+
+        statute or otherwise, and each and every other remedy shall be cumulative and
+
+        shall be in addition to every other remedy given hereunder or now or hereafter
+
+        existing at law, in equity, by statute or otherwise. The election of any one or more
+
+        of such remedies by the Website Provider shall not constitute a waiver by the
+
+        Website Provider of the right to pursue any other available remedies.
+
+      </p><div>6.6.</div><p> The Website is managed by the Website Provider. If there are any questions
+
+        or concerns please e-mail   xxxxxxxxxxxx
+      </p>
       </div>
     </div>
   </div>
-  
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingSeven">
       <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-          7. Content Removal.
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+          7. Indemnity
         </a>
       </h4>
     </div>
     <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
       <div class="panel-body">
-        <p>Penny Auction reserves the right to remove Content alleged to be infringing without prior notice to you and at its sole discretion. In appropriate circumstances, Penny Auction will also terminate your account if you repeat such infringements. Be aware that Penny Auction acts in accordance with the Digital Millennium Copyright Act (DMCA) and has designated a copyright agent to receive notifications of claimed infringement from the public (See § 512(c) of the DMCA).arks and any use of such trademarks.</p>
+        <div>7.1</div><p> The Customer agrees to fully indemnify and keep indemnified the Website
+
+        Provider against any and/or all liabilities, losses, damages, penalties, actions,
+
+        judgments, costs, expenses or disbursements of any kind whatsoever which may
+
+        be imposed on, incurred by the Website Provider in respect of the Customer’s
+
+        unlawful activities, communications, act, default and/or omission in any way
+
+        relating to or arising out of the negligence of or misconduct of or breach of or any
+
+        omission, delay or failure of the Customer’s obligations under the Terms and
+
+        Conditions as provided herein.
+
+      </p><div>7.2</div><p> The Customer further agrees that the Website Provider shall not be liable to
+
+        the Customer for and with respect to any third party claim and the Customer shall
+
+        indemnify and keep indemnified the Website Provider from any liability, claims,
+
+        losses, damages, costs or expense of any kind relating to or arising out of third
+
+        party rights thereof.
+
+      </p><div>7.3</div><p> This indemnity by the Customer herein shall survive the termination of any of
+
+        the Auction Services to the Customer.
+      </p>
       </div>
     </div>
   </div>
-  
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingEight">
       <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-         8. System Requirements.
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+          8. Restrictions
         </a>
       </h4>
     </div>
     <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
       <div class="panel-body">
-       <p>Use of the Service requires compatible hardware (fees may apply), Internet access (fees may apply), and certain software (fees may apply), and may require obtaining updates or upgrades from time to time. Because use of the Service involves hardware, software, and Internet access, your ability to use the Service may be affected by the performance of these factors. High speed Internet access is strongly recommended. You acknowledge and agree that such system requirements, which may be changed from time to time, are your</p>
+        <p>
+          Without assuming the responsibility therefor, the Website Provider reserves the
+
+          right to restrict conduct and/or take measures against conduct, which the Website
+
+          Provider shall deem in its sole discretion to be harmful or offensive to other users
+
+          or is unacceptable for any reason or no reason whatsoever or otherwise detracts
+
+          from the Auction Service or adversely affects the Website Provider, its business
+
+          or software in any manner whatsoever.
+        </p>
       </div>
     </div>
   </div>
-  
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingNine">
       <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-         9. Privacy.
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+          9. Disclaimer
         </a>
       </h4>
     </div>
     <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
       <div class="panel-body">
-       <p>Your privacy is important to Penny Auction and the users. The Penny Auction Privacy Policy that is hereby incorporated into these Terms by reference. Please read the Penny Auction Privacy Policy carefully for information relating to Penny Auction collection, use, and disclosure of your personal information.</p>
-             </div>
+        <div>9.1</div><p> Notwithstanding the information, materials and contents given herein on the
+
+        Website and/or on the Auction Services and/or web links on the Website
+
+        (‘Postings”), the Customer agrees that the Postings herein is provided on an “as
+
+        is” basis and are of a general nature and shall be subject to the Customer’s
+
+        obligation to take independent legal advice, or such other advice as the
+
+        Customer shall deem necessary.
+
+      </p><div>9.2</div><p> The Website Provider, its employees, and its authorized agents disclaim any
+
+        express or implied warranty or representation including but not limited to
+
+        conditions of merchantability, warranties of title, non-infringement of intellectual
+
+        property rights, usefulness, accuracy, quality or fitness for purpose of the Auction
+
+        Services or products transacted on the Website.
+
+      </p><div>9.3</div><p> The Website Provider does not warrant or represent that access to the
+
+        Website, the materials, contents, information and/or functions contained therein
+
+        will be provided uninterrupted or free from errors or that any identified defect
+
+        shall be corrected, or that there shall be no delay, failures, errors or loss of
+
+        transmitted information, that no viruses, or other contaminating or destructive
+
+        properties shall be transmitted or that no damage shall occur to the Customer’s
+
+        computer system.
+      </p>
+      </div>
     </div>
   </div>
-  
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingTen">
       <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-          10. Additional Terms
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+          10. Law and Jurisdiction
         </a>
       </h4>
     </div>
     <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
       <div class="panel-body">
-        <p>When using the Service, you will be subject to any additional posted guidelines or rules applicable to specific products, services, or features which may be posted from time to time (collectively, the "Guidelines"). All such Guidelines are hereby incorporated by reference into these Terms.</p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingEleven">
-      <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-          11. Modification of these Terms
-        </a>
-      </h4>
-    </div>
-    <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
-      <div class="panel-body">
-       <p>Penny Auction reserves the right, at Penny Auction's sole discretion, to change, modify, add, or remove portions of these Terms at any time. Please check these Terms and any Guidelines periodically for changes. Your continued use of the Service after the posting of changes constitutes your binding acceptance of such changes. For any material changes to these Terms, such amended terms will automatically be effective immediately upon their posting on or through the Site. In the event that such modifications materially alter your rights or obligations hereunder, such modified Terms will become effective immediately upon your continued use of the Service.</p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwelve">
-      <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-          12. Prohibited Uses.
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
-      <div class="panel-body">
-       <div>I.</div> <p> Territorial Limitations. Access to the Service from territories where its contents are illegal is prohibited. Those who choose to access the Service do so at their own initiative and are responsible for compliance with all local rules including without limitation rules about the internet, data, email, or privacy.</p>
-<div>II.</div> <p> Prohibit Uses. As a condition of your use of the Service, you will not use the Service for any purpose that is unlawful or prohibited by these Terms. You may not use the Service in any manner that, in Penny Auction's sole discretion, could damage, disable, overburden, or impair it or interfere with any other party's use and enjoyment of the Service. You may not attempt to gain unauthorized access to the Service, or any part of the Service, other accounts, computer systems, or networks connected to the Service, or any part of them, through hacking, password mining, or any other means or interfere or attempt to interfere with the proper working of the Service or any activities conducted on or through the Service. You may not obtain or attempt to obtain any materials or information through any means not intentionally made available through the Service. You agree neither to modify the Service in any manner or form, nor to use modified versions of the Service, including (without limitation) for the purpose of obtaining unauthorized access to the Service.</p>
-<div>III. </div> <p>Robot Exclusion Headers. You agree that you will not use any robot, spider, scraper, or other automated means to access the Site or the Service for any purpose without Penny Auction's express written permission or bypass Penny Auction's robot exclusion headers or other measures Penny Auction may use to prevent or restrict access to the Service.</p>
-<div>IV.</div> <p> Prohibited Content. By using the Service you undertake, including without limitation, not to:</p>
-<p>· 1. Distribute copyrighted material that is not your own or that you do not have the legal right to distribute and otherwise make available to others;</p>
-<p>· 2. Harass, threaten, or defraud other Service users;</p>
-<p>· 3. Send to other Service users pornographic, threatening, embarrassing, hateful, racially or ethnically insulting, libelous, defaming, or otherwise inappropriate content;</p>
-<p>· 4. Make unsolicited offers, advertisements, proposals, or send junk mail to other users;</p>
-<p>· 5. Impersonate another person or access another user's account without that person's permission;</p>
-<p>· 6. Share Penny Auction-issued passwords with any third party or encourage any other user to do so;</p>
-<p>· 7. Misrepresent the source, identity, or content of information transmitted via the Service;</p>
-<p>· 8. Use the Service for any illegal purpose or in any illegal manner; or</p>
-<p>· 9. Upload any executable code, scripts, or other data which alters the function, display, or content of computer systems or data of Penny Auction, its licensors or other users of the Service.</p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingThirteen">
-      <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
-          13. Submissions to the Service.
-        </a>
-      </h4>
-    </div>
-    <div id="collapseThirteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThirteen">
-      <div class="panel-body">
-       <div>I.</div>
-       <p> User Submissions. The Service may offer interactive features that allow you to submit materials (including links to third-party content) on areas of the Service accessible and viewable by the public. You agree that any use by you of such features, including any materials submitted by you, shall be your sole responsibility, shall not infringe or violate the rights of any other party or violate any laws, contribute to or encourage infringing or otherwise unlawful conduct, or otherwise be obscene, objectionable, or in poor taste. You also agree that you have obtained all necessary rights and licenses. You agree to provide accurate and complete information in connection with your submission of any materials on the Service.</p>
-<div>II.</div> <p> Ownership Rights. Penny AUCTION USERS OWN THEIR CONTENT. CONTENT IS DEFINED AS PHOTOGRAPHS OR VIDEOS PRODUCED AT Penny Auction. WE DO NOT OWN OR APPLY ANY CLAIM TO YOUR CONTENT. WE DO NOT HAVE THE RIGHT TO SELL OR TRADE YOUR CONTENT. YOU ARE THE SOLE OWNER AND CURATOR OF YOUR PHOTOTGRAPHS OR VIDEOS. WE WILL NOT SELL, LICENSE, DISTRIBUTE, COPY, MODIFY, DISPLAY, TRANSMIT, PUBLISH, EDIT, ADAPT, CREATE DERIVATIVE WORKS FROM, OR OTHERWISE MAKE UNAUTHORIZED USE OF YOUR MATERIALS.</p>
-<div>III.</div> <p> Ownership Rights. Penny AUCTION OWNS THE RIGHTS TO NAMES, LOGOS AND LEGAL ENTITIES CREATED FOR THE PURPOSE OF USING THE Penny AUCTION NETWORK. Penny AUCTION RESERVES THE RIGHT TO SELL AND OR TRANSFER OWNERSHIP OF SUCH NAMES, LOGOS AND OTHER GROUP IDENTIFYING INSIGNIA AT ITS SOLE DISCRETION IT DEEMS APPROPRIATE.</p>
-<div>IV.</div> <p> Content Removal. Penny Auction reserves the right to not post or publish any materials, and to remove or edit any material, at any time in its sole discretion without notice or liability. Penny Auction has the right, but not the obligation, to monitor any materials submitted by you or otherwise available on the Service, to investigate any reported or apparent violation of these Terms, and to take any action that Penny Auction in its sole discretion deems appropriate, including, without limitation, termination hereunder.</p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingFourteen">
-      <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
-         14. Objectionable Material.
-        </a>
-      </h4>
-    </div>
-    <div id="collapseFourteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFourteen">
-      <div class="panel-body">
-       <p>You understand that by subscribing to the Site you may encounter material that you may deem to be offensive, indecent, or objectionable, and that such content may or may not be identified as having explicit material. Nevertheless, you agree to use the Site at your sole risk and Penny Auction shall have no liability to you for material that may be found to be offensive, indecent, or objectionable. Any descriptions, if at all, are solely provided for convenience, and you agree that Penny Auction does not guarantee their accuracy.</p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingFifteen">
-      <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
-         15. Termination.
-        </a>
-      </h4>
-    </div>
-    <div id="collapseFifteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFifteen">
-      <div class="panel-body">
-       <div> I. </div> <p>By Penny Auction. You agree that Penny Auction, in its sole discretion and for any or no reason, may terminate these Terms, any account (or any part thereof) you may have with Penny Auction or your use of the Service and remove and discard all or any part of your account or any content uploaded by you, at any time Penny Auction may also in its sole discretion and at any time discontinue providing access to the Service, or any part thereof, with or without notice. You agree that any termination of these Terms, your access to the Service or any account you may have or portion thereof may be effected without prior notice, and you agree that Penny Auction will not be liable to you or any third party for any such termination except as described in these Terms. Penny Auction does not permit copyright infringing activities on or through the Service or otherwise and reserves the right to terminate access to the Service and remove all content submitted by any persons who are found to be repeat infringers. Any suspected fraudulent, abusive, or illegal activity that may be grounds for termination of your use of the Service may be referred to appropriate law enforcement authorities. These remedies are in addition to any other remedies Penny Auction may have at law or in equity.</p>
-<div>II.</div> <p> By You. You may terminate your account, these Terms and your right to use the Service at any time and for any reason or no reason, by contacting Penny Auction user support at support@Penny Auction.com. If you terminate these Terms or your account, you will remain obligated to pay all outstanding fees and charges, if any, relating to your use of the Service incurred before termination.</p>
-<div>III.</div> <p> Survival. Sections 4.2, 6.4 through 6.7, 6.10, and 18 though 28 will survive any termination of these Terms.</p>
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingSixteen">
-      <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
-         16. Ownership.
-        </a>
-      </h4>
-    </div>
-    <div id="collapseSixteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixteen">
-      <div class="panel-body">
-       <p>The Site and the Service are owned and operated by Penny Auction, LLC. The visual interfaces, graphics, design, compilation, systems, methods, information, computer code, products, software, services, and all other elements of the Service provided by Penny Auction ("Materials") are protected by United States copyright, trade dress, patent, and trademark laws, international conventions, and all other relevant intellectual property and proprietary rights, and applicable laws. Except for content uploaded by users, all Materials contained in the Service are the copyrighted property of Penny Auction or Penny Auction's subsidiaries or affiliated companies and/or third party licensors. All trademarks, service marks, and trade names are proprietary to Penny Auction or Penny Auction's affiliates and/or third-party licensors. Except as expressly authorized by Penny Auction, you agree not to sell, license, distribute, copy, modify, publicly perform, display, transmit, publish, edit, adapt, create derivative works from, or otherwise make unauthorized use of the Materials. THE USE OF ANY PART OF THE SERVICE or the Site, EXCEPT FOR USE OF THE SERVICE AS PERMITTED IN THESE TERMS, IS STRICTLY PROHIBITED AND INFRINGES ON THE INTELLECTUAL PROPERTY RIGHTS OF OTHERS AND MAY SUBJECT YOU TO CIVIL AND CRIMINAL PENALTIES, INCLUDING POSSIBLE MONETARY DAMAGES, FOR COPYRIGHT INFRINGEMENT.</p>
-      </div>
-    </div>
-  </div>
-  
-   
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingEighteen">
-      <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
-          17. Third-Party Sites and Services.
-        </a>
-      </h4>
-    </div>
-    <div id="collapseEighteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEighteen">
-      <div class="panel-body">
-        <p>The Service may include links to other websites or services ("Linked Sites") solely as a convenience to users. Penny Auction does not endorse any such Linked Sites or the information, material, products, or services contained on or accessible through Linked Sites. Furthermore, Penny Auction makes no express or implied warranties with regard to the information, material, products, or services that are contained on or accessible through Linked Sites. ACCESS AND USE OF LINKED SITES, INCLUDING THE INFORMATION, MATERIAL, PRODUCTS, AND SERVICES ON LINKED SITES OR AVAILABLE THROUGH LINKED SITES, IS SOLELY AT YOUR OWN RISK. Your correspondence or business dealings with, or participation in promotions of, advertisers found on or through the Service are solely between you and such advertiser. YOU AGREE THAT Penny AUCTION WILL NOT BE RESPONSIBLE OR LIABLE FOR ANY LOSS OR DAMAGE OF ANY SORT INCURRED AS THE RESULT OF ANY SUCH DEALINGS OR AS THE RESULT OF THE PRESENCE OF SUCH ADVERTISERS ON THE SERVICE.</p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingNineteen">
-      <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
-         18. Notice.
-        </a>
-      </h4>
-    </div>
-    <div id="collapseNineteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNineteen">
-      <div class="panel-body">
-       <p>Except as explicitly stated otherwise, legal notices will be served, with respect to Penny Auction and, with respect to you, to the email address you provide to Penny Auction during the registration process. Notice will be deemed given 24 hours after email is sent, unless the sending party is notified that the email address is invalid. Alternatively, Penny Auction may give you legal notice by mail to the address provided during the registration process, if any. In such case, notice will be deemed given three days after the date of mailing. You may give notice to Penny Auction with support@Penny Auction</p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwenty">
-      <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">
-          19. User Disagreements.
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwenty" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwenty">
-      <div class="panel-body">
-        <p>You alone are responsible for your involvement with other users. Penny Auction reserves the right, but has no obligation, to monitor disagreements between you and other users. If you have a dispute with one or more users, you irrevocably and forever release Penny Auction (and Penny Auction's users, officers, directors, agents, subsidiaries, joint ventures, and employees) from claims, demands, and damages (actual and consequential) of every kind and nature, known and unknown, arising out of or in any way connected with such disputes.</p>
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwentyone">
-      <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyone" aria-expanded="false" aria-controls="collapseTwentyone">
-          20. Disclaimers; No Warranties.
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwentyone" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwentyone">
-      <div class="panel-body">
-      <div>  I.</div> <p> UNLESS OTHERWISE EXPRESSLY STATED BY Penny AUCTION, THE SITE, THE SERVICE AND ANY CONTENT, SERVICES, OR APPLICATIONS MADE AVAILABLE IN CONJUNCTION WITH OR THROUGH THE SERVICE ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND EITHER EXPRESS OR IMPLIED. TO THE FULLEST EXTENT PERMISSIBLE PURSUANT TO APPLICABLE LAW, Penny AUCTION, THE PROVIDERS, AND Penny AUCTION'S SUPPLIERS AND PARTNERS DISCLAIM ALL WARRANTIES, STATUTORY, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT OF PROPRIETARY RIGHTS, CORRECTNESS, ACCURACY, AND RELIABILITY.</p>
-<div>II.</div> <p> UNLESS OTHERWISE EXPRESSLY STATED BY Penny AUCTION, Penny AUCTION, THE PROVIDERS, AND Penny AUCTION'S SUPPLIERS AND PARTNERS DO NOT WARRANT THAT THE SITE, THE SERVICE AND ANY CONTENT, SERVICES, OR APPLICATIONS MADE AVAILABLE IN CONJUNCTION WITH OR THROUGH THE SERVICE WILL BE UNINTERRUPTED OR ERROR-FREE, THAT DEFECTS WILL BE CORRECTED, OR THAT THE SITE, THE SERVICE AND ANY CONTENT, SERVICES, OR APPLICATIONS MADE AVAILABLE IN CONJUNCTION WITH OR THROUGH THE SERVICE OR THE SERVER THAT MAKES THEM AVAILABLE ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.</p>
-<div> III.</div> <p> CERTAIN STATE LAWS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES. IF THESE LAWS APPLY TO YOU, SOME OR ALL OF THE ABOVE DISCLAIMERS, EXCLUSIONS, OR LIMITATIONS MAY NOT APPLY TO YOU, AND YOU MIGHT HAVE ADDITIONAL RIGHTS.</p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwentytwo">
-      <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentytwo" aria-expanded="false" aria-controls="collapseTwentytwo">
-         21. Indemnification; Hold Harmless.
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwentytwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwentytwo">
-      <div class="panel-body">
-        <p>You agree to indemnify and hold harmless Penny Auction, its affiliated companies, its suppliers and partners, and the users from any claims, losses, damages, liabilities, including attorney's fees, arising out of your use or misuse of the Service, violation of these Terms, violation of the rights of any other person or entity, or any breach of the foregoing representations, warranties, and covenants. Penny Auction reserves the right, at its own expense, to assume the exclusive defense and control of any matter for which you are required to indemnify Penny Auction, and you agree to cooperate with such defense of these claims. YOU WAIVE ALL RIGHTS TO HOLD Penny AUCTION, LLC. AND ITS OWNERS LIABLE FOR ANY DAMAGES SUFFERED WHILE ATTENDING</p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwentythree">
-      <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentythree" aria-expanded="false" aria-controls="collapseTwentythree">
-          22. Waiver.
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwentythree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwentythree">
-      <div class="panel-body">
-        <p>A provision of these Terms may be waived only by a written instrument executed by the party entitled to the benefit of such provision. The failure of any party at any time to require performance of any provision of these Terms will in no manner affect such party's right at a later time to enforce the same. A waiver of any breach of any provision of these Terms will not be construed as a continuing waiver of other breaches of the same or other provisions of these Terms.</p>
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwentyfour">
-      <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyfour" aria-expanded="false" aria-controls="collapseTwentyfour">
-          23. Limitation of Liability and Damages.
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwentyfour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwentyfour">
-      <div class="panel-body">
-        <div>I.</div> <p> UNDER NO CIRCUMSTANCES, INCLUDING, BUT NOT LIMITED TO, NEGLIGENCE, WILL Penny AUCTION, THE PROVIDERS, OR Penny AUCTION'S AFFILIATES, VENDORS, EMPLOYEES, AGENTS, OR THIRD-PARTY PARTNERS OR SUPPLIERS BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, OR EXEMPLARY DAMAGES ARISING FROM OR RELATED TO THE USE OF THE SITE OR THE SERVICE, INCLUDING THOSE THAT RESULT FROM THE USE OR THE INABILITY TO USE THE MATERIALS ON THE SERVICE, OR ANY OTHER INTERACTIONS WITH Penny AUCTION, EVEN IF Penny AUCTION OR A Penny AUCTION AUTHORIZED REPRESENTATIVE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. APPLICABLE LAW MAY NOT ALLOW THE LIMITATION OR EXCLUSION OF LIABILITY OR INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATION OR EXCLUSION MAY NOT APPLY TO YOU. IN SUCH CASES, Penny AUCTION'S AND THE PROVIDERS' LIABILITY WILL BE LIMITED TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW.</p>
-        
-<div>II.</div> <p> IN NO EVENT WILL Penny AUCTION, THE PROVIDERS OR Penny AUCTION'S AFFILIATES, VENDORS, EMPLOYEES, AGENTS, OR THIRD-PARTY PARTNERS OR SUPPLIERS HAVE ANY LIABILITY TO YOU FOR DAMAGES, LOSSES, AND CAUSES OF ACTION ARISING OUT OF OR RELATING TO THESE TERMS OR YOUR USE OF THE SITE OR THE SERVICE (WHETHER IN CONTRACT, TORT INCLUDING NEGLIGENCE, WARRANTY, OR OTHERWISE).</p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwentyfive">
-      <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyfive" aria-expanded="false" aria-controls="collapseTwentyfive">
-         24. Digital Millennium Copyright Act Compliance (DMCA).
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwentyfive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwentyfive">
-      <div class="panel-body">
-      <div>I.</div>
-      <p> If you are a copyright owner or an agent thereof, and you believe that any content hosted on the Service infringes your copyrights, you may submit a notification pursuant to the Digital Millennium Copyright Act ("DMCA") by providing Penny Auction's Designated Copyright Agent with the following information in writing (see 17 U.S.C § 512(c)(3) for further detail):</p>
-<p>· 1. A physical or electronic signature of a person authorized to act on behalf of the owner of an exclusive right that is allegedly infringed;</p>
-<p>· 2. Identification of the copyrighted work claimed to have been infringed, or, if multiple copyrighted works on the Service are covered by a single notification, a representative list of such works at the Service;</p>
-<p>· 3. Identification of the material that is claimed to be infringing or to be the subject of infringing activity and that is to be removed or access to which is to be disabled, and information reasonably sufficient to permit Penny Auction to locate the material;</p>
-<p>· 4. Information reasonably sufficient to permit Penny Auction to contact the complaining party, such as an address, telephone number, and, if available, an electronic mail address at which the complaining party may be contacted;</p>
-<p>· 5. A statement that the complaining party has a good faith belief that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law; and</p>
-<p>· 6. A statement that the information in the notification is accurate, and under penalty of perjury, that the complaining party is authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.</p>
-<div>II.</div>
-<p> Penny Auction's Designated Copyright Agent to receive notifications of claimed infringement can be reached by email at support@Penny Auction.com. For the avoidance of doubt, only DMCA notices should go to Penny Auction's Designated Copyright Agent. Any other feedback, comments, requests for technical support or other communications should be directed to Penny Auction customer service through support@Penny Auction.com. You acknowledge that if you fail to comply with all of the requirements of this section, your DMCA notice may not be valid.</p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwentysix">
-      <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentysix" aria-expanded="false" aria-controls="collapseTwentysix">
-         25. Dispute Resolution.
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwentysix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwentysix">
-      <div class="panel-body">
-     <div> I. General.</div> <p>Generally, if a dispute arises between you, Penny Auction, and the users, Penny Auction's goal is to provide you with a neutral and cost effective means of resolving the dispute quickly. Accordingly, you, Penny Auction, and the users agree that the parties will resolve any claim or controversy at law or equity that arises out of these Terms or the Service in accordance with one of the subsections below or as you and Penny Auction otherwise agree in writing. Before resorting to these alternatives, Penny Auction strongly encourages you to first contact us directly to seek a resolution. Penny Auction will consider reasonable requests to resolve the dispute through alternative dispute resolution procedures, such as mediation or arbitration, as alternatives to litigation.</p>
-<div>II. Choice of Law; Forum.</div> <p>These Terms shall be governed in all respects by the laws of the State of California as they apply to agreements entered into and to be performed entirely within California between California residents, without regard to conflict of law provisions. You agree that any claim or dispute you may have against Penny Auction and/or the users must be resolved by a court located in Dallas, TX, except as otherwise agreed by the parties or as described in the Arbitration Option paragraph below. You agree to submit to the personal jurisdiction of the courts located within Dallas, TX for the purpose of litigating all such claims or disputes.</p>
-<div>III. Mandatory Arbitration.</div> <p>For any dispute you have with Penny Auction, you agree to first contact Penny Auction at support@Penny Auction.com to attempt to resolve the dispute with Penny Auction informally. In the unlikely event that Penny Auction has not been able to resolve a dispute it has with you after attempting to do so informally, Penny Auction and you each agree to resolve any claim, dispute, or controversy (excluding claims for injunctive or other equitable relief) arising out of or in connection with or relating to this Agreement, or the breach or alleged breach thereof (collectively, "Claims"), by binding arbitration by the American Arbitration Association ("AAA") under the Commercial Arbitration Rules and Supplementary Procedures for Consumer Related Disputes then in effect for the AAA, except as provided herein. Unless you and Penny Auction agree otherwise, the arbitration will be conducted in Dallas, Texas. Each party will be responsible for paying any AAA filing, administrative and arbitrator fees in accordance with AAA rules. The award rendered by the arbitrator shall include costs of arbitration, reasonable attorneys' fees and reasonable costs for expert and other witnesses, and any judgment on the award rendered by the arbitrator may be entered in any court of competent jurisdiction. Nothing in this Section shall prevent either party from seeking injunctive or other equitable relief from the courts for matters related to data security, intellectual property or unauthorized access to the Service. ALL CLAIMS MUST BE BROUGHT IN THE PARTIES' INDIVIDUAL CAPACITY, AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS OR REPRESENTATIVE PROCEEDING, AND, UNLESS Penny AUCTION IN ITS SOLE DISCRETION AGREES OTHERWISE, THE ARBITRATOR MAY NOT CONSOLIDATE MORE THAN ONE PERSON'S CLAIMS. YOU AGREE THAT, BY ENTERING INTO THIS AGREEMENT, YOU AND Penny AUCTION ARE EACH WAIVING THE RIGHT TO A TRIAL BY JURY OR TO PARTICIPATE IN A CLASS ACTION.</p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwentyseven">
-      <h4 class="panel-title">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyseven" aria-expanded="false" aria-controls="collapseTwentyseven">
-         26. Miscellaneous
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwentyseven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwentyseven">
-      <div class="panel-body">
-       <div> I. Severability. </div><p>If any provision of these Terms shall be invalid, unlawful, void, or for any reason unenforceable, then that provision will be deemed severable from these Terms and will not affect the validity and enforceability of any remaining provisions.</p>
-<div>II. Assignment.</div> <p>These Terms, and any rights and licenses granted hereunder, may not be transferred or assigned by you but may be assigned by Penny Auction without restriction.</p>
-<div>III. Headings.</div> <p>The heading references herein are for convenience purposes only, do not constitute a part of these Terms, and will not be deemed to limit or affect any of the provisions hereof.</p>
-<div>IV. Entire Agreement.</div> <p>These Terms, together with any other provisions incorporated hereunder by reference, as they may change from time to time in accordance with the terms herein, are the entire agreement between you and Penny Auction and the users relating to the subject matter herein and will not be modified except in writing, signed by both parties, or by a change to these Terms or Guidelines made by Penny Auction as set forth in Sections 12 and 13 above. You also may be subject to additional terms and conditions that may apply when you use affiliate services, third-party content, or third-party software.</p>
-<div>V. Claims. </div> <p>YOU AGREE THAT ANY CAUSE OF ACTION ARISING OUT OF OR RELATED TO THESE TERMS OR THE SERVICE MUST COMMENCE WITHIN ONE (1) MONTH AFTER THE CAUSE OF ACTION ACCRUES. OTHERWISE, SUCH CAUSE OF ACTION IS PERMANENTLY BARRED. Disclosures. The Services hereunder are offered by Penny Auction, email: support@Penny Auction.com.</p>
-<div>VI. Enforcement.</div> <p>Penny Auction reserves the right to take steps Penny Auction believes are reasonably necessary or appropriate to enforce and/or verify compliance with any part of these Terms. You agree that Penny Auction has the right, without liability to you, to disclose any registration data and/or Account information to law enforcement authorities, government officials, and/or a third party, as Penny Auction believes is reasonably necessary or appropriate to enforce and/or verify compliance with any part of these Terms (including but not limited to Penny Auction's right to cooperate with any legal process relating to your use of the Site and/or Service and/or other products, and/or a third-party claim that your use of the Service and/or other products is unlawful and/or infringes such third party's rights).</p>
-<div>VII. Electronic Submissions.</div> <p>Your use of the Services includes the ability to enter into agreements and/or to make transactions electronically. YOU ACKNOWLEDGE THAT YOUR ELECTRONIC SUBMISSIONS CONSTITUTE YOUR AGREEMENT AND INTENT TO BE BOUND BY AND TO PAY FOR SUCH AGREEMENTS AND TRANSACTIONS. YOUR AGREEMENT AND INTENT TO BE BOUND BY ELECTRONIC SUBMISSIONS APPLIES TO ALL RECORDS RELATING TO ALL TRANSACTIONS YOU ENTER INTO ON THE SITE, INCLUDING NOTICES OF CANCELLATION, POLICIES, CONTRACTS, AND APPLICATIONS. In order to access and retain your electronic records, you may be required to have certain hardware and software, which are your sole responsibility.</p>
- 
-      </div>
-    </div>
-  </div>
+        <div>10.1</div><p> The use of the Auction Services on the Website and the Terms and
 
+        Conditions herein shall be governed by and construed in accordance with the
+
+        laws of Hong Kong Special Administrative Region, People’s Republic of China,
+
+        and the parties hereby submit to the exclusive jurisdiction of the Courts of Hong
+
+        Kong notwithstanding that the Auction Services on the Website may be accessed
+
+        in other jurisdictions and not restricted to Hong Kong.
+
+      </p><div>10.2</div><p> The Customer hereby agrees that the Customer shall be solely responsible
+
+        for the compliance with all laws applicable to the Customer in the Customer’s
+
+        jurisdiction in respect of the use of the Auction Services.
+      </p>
+      </div>
+    </div>
+  </div>
+</div>
 
 </div>
 </div>

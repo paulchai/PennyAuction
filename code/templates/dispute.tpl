@@ -59,14 +59,14 @@
                  
 								<div class="row">
                                 <div class="col-md-9">
-                                <input name="subject"  data-parsley-group="block1" required id="subject" maxlength="99" value="" onkeyup="return limitlength(this,99,'info_label')" type="text" class="form-control" placeholder="Subject">
+                                <input name="subject"  data-parsley-group="block1" required id="subject" maxlength="99" value="" onkeyup="return limitlength(this,99,'info_label')" type="text" class="form-control" placeholder="{$_phrase.subject}">
                                 </div></div>
 				
 				
 								<div class="row">
                                 <p>&nbsp;</p>
                                 <div class="col-md-9">
-					<textarea class="form-control" rows="4"  name="message" id="message" class="form-control" required placeholder="Explain Dispute..."></textarea> 
+					<textarea class="form-control" rows="4"  name="message" id="message" class="form-control" required placeholder="{$_phrase.explaindispute}..."></textarea>
 				</div></div>
 				<div class="row" style="margin-top:10px;">
 						<div class="col-md-4"><button class="btn btn-primary">{$_phrase.submit}</button></div>

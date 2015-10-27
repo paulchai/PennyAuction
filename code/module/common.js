@@ -65,7 +65,7 @@ exports.processIndex = function (row, req, res, $arr) {
 
     $arr.loged = req.session;
 
-    $arr.banners = ["banner_iphone-33235.jpg", "banner_LV-57645.jpg", "banner_ipad-40447.jpg", "banner_note5-14858.jpg" ];
+    $arr.banners = global.language_identifier.banners;
 
     if ($arr['pagetitle'] == '') {
         module.index(req, res, $arr);

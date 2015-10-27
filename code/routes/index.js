@@ -247,6 +247,14 @@ app.get(['/terms'], function (req, res) {
     common.loadTemplateHeader(req, res, $arr);
 
 });
+app.get(['/privacy'], function (req, res) {
+
+
+    common.tplFile('privacy.tpl');
+    common.headerSet(1);
+    common.loadTemplateHeader(req, res, $arr);
+
+});
 app.get(['/about'], function (req, res) {
 
 

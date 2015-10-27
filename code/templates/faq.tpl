@@ -19,8 +19,8 @@ body{
         </div>
         <div class="col-md-9">
 			<div class="ft25 title_about">{$_phrase.frequentlyaskedquestions}</div>
-            
-            
+
+            {if !$cusdisable}
       <p>1.What is the minimun budget to start ?
         </p><p class="answer">Minimum budget to start with our project is 750$.</p>
       <p></p>
@@ -39,7 +39,7 @@ body{
       <p></p>
            <p>For more details, please visit our site</p>
       <a href="http://www.{$_phrase.domain}">www.{$_phrase.domain}</a>
-     
+     {/if}
             
             
             

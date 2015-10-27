@@ -3,6 +3,7 @@
     "language": "English",
     "language-code": "en-US",
     "phrases": {
+	    "version" : "Version 1.0 Demo",
       	"home": "Home",
 		"dashboard": "Dashboard",
 		"future": "Future",
@@ -53,6 +54,7 @@
 		"howpennyauctionwork": "How PennyAuction Work",
 		"reviews": "Reviews",
 		"dispute": "Dispute",
+	    "explaindispute": "Explain Dispute",
 		"faq": "FAQ",
 		"support": "Support",
 		"reportadispute": "Report a Dispute",
@@ -293,13 +295,28 @@
 		"enter_user_name" : "Enter user name",
 		"enter_your_maximum_bid_count" : "Enter your maximum bid count",
 		"enter_your_autobid_start_product_price" : "Enter your Autobid start product price",
-		"subject" : "Subject",
 		"send" : "Send",
 		"enter_your_name" : "Enter your name",
+	    "enter_your_email" : "Enter your email",
 		"enter_your_address_line" : "Enter your address line",
 		"enter_city" : "Enter city",
-		"enter_zipcode" : "Enter zipcode",
-		"enter_phone" : "Eg, +85287456321"
+	 	"enter_zipcode" : "Enter zipcode",
+	    "enter_your_state" : "Enter your State",
+		"enter_phone" : "Eg, +85287456321",
+	    "your_buynow_item" : "Your Buynow Item",
+	    "bid_credit_spent" : "Bid Credit Spent",
+	    "proceed_to_checkout" : "Proceed to Checkout",
+	    "checkout" : "Checkout",
+	    "coupon_code" : "coupon code",
+	    "please_enter_valid_coupon" : "Please enter valid coupon code if You have",
+	    "please_checkout_paypal" : "Please Select checkout to proceed with paypal payment.",
+	    "totalshare" : "Total Share",
+	    "yourshare" : "Your Share",
+	    "jetport" : "Jetport",
+	    "other_lang" : "中文",
+	    "other_url" : "http://cn.1688fun.com"
+
     }
-  }
+  },
+  "banners": ["banner_all-54983.jpg","banner_c100-04032.jpg","banner_ipad-40447.jpg","banner_iphone-33235.jpg","banner_LV-57645.jpg","banner_note5-14858.jpg","banner_rolex-47329.jpg","banner_w60-30667.jpg","banner_xt1-47329.jpg"]
 }

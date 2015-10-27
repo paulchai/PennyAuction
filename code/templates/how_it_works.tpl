@@ -19,10 +19,10 @@ body{
         </div>
         <div class="col-md-9">
 			<div class="ft25 title_about">{$_phrase.howitworks}</div>
-            
-            
-            
-           
+
+
+
+			{if !$cusdisable}
 			<p>
 				Penny auction is an online software market place where buyer can post their service needs and
 				request quotes from the service providers. He selects the best service provider as per
@@ -41,13 +41,13 @@ body{
 				To know more about clients
 				<a href="http://www.auctionsoftware.com/portfolio" class="omj2">{$_phrase.clickhere}</a>
 			</p>
-			
-			
-		
-		  
-		
-		
-		
+			{/if}
+
+
+
+
+
+
 		  	</div>
             </div>
 	</div>
