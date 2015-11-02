@@ -41,13 +41,13 @@
           <div class="log_fields">
             <p>{$_phrase.username} <span class="red">*</span>:</p>
             <div class="col-md-8 padle">
-            <input id="username" name="username" data-parsley-error-message="Enter user name" value="{$remembermeuser}" required placeholder="{$_phrase.enter_user_name}"  class="form-control" style="height:auto;width:204px"></div>
+            <input id="username" name="username" data-parsley-error-message="{$_phrase.enter_user_name}" value="{$remembermeuser}" required placeholder="{$_phrase.enter_user_name}"  class="form-control" style="height:auto;width:204px"></div>
           </div>
           <span class="red fl"></span>
           <div class="log_fields">
             <p>{$_phrase.password} <span class="red">*</span>:</p>
             <div class="col-md-8 padle">
-            <input type="password" id="password" name="password" data-parsley-error-message="Enter password" required value=""  class="form-control" style="height:auto;width:204px">
+            <input type="password" id="password" name="password" data-parsley-error-message="{$_phrase.enter_password}" required value=""  class="form-control" style="height:auto;width:204px">
           </div></div>
         </div>
         <span class="red fl"></span>

@@ -169,12 +169,12 @@
                                 <div class="col-xs-12 col-sm-6 col-md-4">
                                     <input class="form-control ct" placeholder="{$_phrase.enter_your_state}" name="state"
                                            value="{$shipping.state}" data-parsley-pattern="^[A-z ,.'-]+$"
-                                           data-parsley-pattern-message="Only Alphabets are allowed" required>
+                                           data-parsley-pattern-message="{$_phrase.only_alphabets_allowed}" required>
                                 </div>
                                 <div class="col-xs-12 col-sm-3 col-md-2">
                                     <input class="form-control ct" placeholder="{$_phrase.city}" name="city"
                                            value="{$shipping.city}" data-parsley-pattern="^[A-z ,.'-]+$"
-                                           data-parsley-pattern-message="Only Alphabets are allowed" required>
+                                           data-parsley-pattern-message="{$_phrase.only_alphabets_allowed}" required>
                                 </div>
                                 <div class="col-xs-12 col-sm-3 col-md-2">
                                     <input class="form-control ct" placeholder="{$_phrase.zipcode}" name="zipcode"

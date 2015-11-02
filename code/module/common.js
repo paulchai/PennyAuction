@@ -225,6 +225,7 @@ exports.loadTemplateHeader = function (req, res, arr) {
 
 
     arr._phrase = global.language_identifier.language.phrases;
+    arr.language =  global.language.language;
     //console.log(arr._);
     uid = 0;
     user = require('./user');

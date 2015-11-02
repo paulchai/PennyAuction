@@ -114,8 +114,6 @@
                     <div class="col-xs-12 col-sm-6 col-md-8">
                          <select name="country" id="country" class="form-control" required data-parsley-required-message="Choose Country">
                                                     <option value="" selected="selected">{$_phrase.select}{$_phrase.engspace}{$_phrase.country}</option>
-                                                
-
                                                 </select>
                     </div>
                 </div>
@@ -152,7 +150,7 @@
                     <label for="zipcode" class="col-xs-12 col-sm-6 col-md-4">{$_phrase.zipcode}*:</label>
 
                     <div class="col-xs-12 col-sm-6 col-md-8">
-                        <input type="text" id="zipcode" name="zip" placeholder="Enter zipcode" class="form-control"
+                        <input type="text" id="zipcode" name="zip" placeholder="{$_phrase.enter_zipcode}" class="form-control"
                                value="{$users.zip}" title="Zipcode" maxlength="6" required>
                     </div>
                 </div>

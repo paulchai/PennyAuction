@@ -67,10 +67,10 @@
             <div class="login_form">
               
                 <p>{$_phrase.your}{$_phrase.engspace}{$_phrase.username} <span class="red">*</span>:</p>
-                <input id="username" name="username" placeholder="Enter your user name" data-parsley-error-message="Enter valid user name" value="" maxlength="100" class="form-control bidonregi2" required/>
+                <input id="username" name="username" placeholder="{$_phrase.enter_user_name}" data-parsley-error-message="{$_phrase.enter_valid_user_name}" value="" maxlength="100" class="form-control bidonregi2" required/>
               </div>
               </div>
-            <div class="m-top-30"><input type="submit" name="submit_forgot_password" value="Send" title="Send" class="btn btn-success bidonregi2"/></div>
+            <div class="m-top-30"><input type="submit" name="submit_forgot_password" value="{$_phrase.send}" title="Send" class="btn btn-success bidonregi2"/></div>
           
         </div>
       </form>

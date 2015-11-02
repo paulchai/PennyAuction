@@ -24,7 +24,7 @@
                     <div class="col-md-5">
                         <input type="text" id="name" name="name" placeholder="{$_phrase.enter_your_name}" value="{$shipping.name}"
 
-                               class="form-control splchar_restrict" title="Enter your name" maxlength="20" data-parsley-required-message="Enter name" required>
+                               class="form-control splchar_restrict" title="{$_phrase.enter_your_name}" maxlength="20" required>
                         <!--<input type="text" class="form-control wd60 splchar_restrict" id="exampleInputEmail1" name="tags" value="{$projects.tags}"  data-parsley-required-message="Please add keyword" required>-->
                     </div>
                 </div>
@@ -40,7 +40,6 @@
 
                     <div class="col-md-5">
                         <input type="text" id="address_line1" name="address1" placeholder="{$_phrase.enter_your_name} 1"
-                               data-parsley-required-message="Enter Address line 1"
                                class="form-control" value="{$shipping.address1}" title="Address Line 1" maxlength="50"
                                required>
                     </div>
@@ -51,7 +50,7 @@
                     <label for="address_line2" class="col-md-3">{$_phrase.addressline2}:</label>
 
                     <div class="col-md-5">
-                        <input type="text" id="address_line2" name="address2" placeholder="{$_phrase.enter_your_name} 2" data-parsley-required-message="Enter Address line 2"
+                        <input type="text" id="address_line2" name="address2" placeholder="{$_phrase.enter_your_name} 2"
                                class="form-control" value="{$shipping.address2}" title="Address Line 2" maxlength="50" required>
                     </div>
                 </div>
@@ -61,7 +60,7 @@
                     <label for="country" class="col-md-3">{$_phrase.country}:</label>
 
                     <div class="col-md-5">
-                        <select name="country" id="country" class="form-control" required data-parsley-required-message="Choose Country">
+                        <select name="country" id="country" class="form-control">
                             <option value="" selected="selected">{$_phrase.select}{$_phrase.engspace}{$_phrase.country}</option>
                            </select>
 
@@ -73,9 +72,8 @@
                     <label for="state" class="col-md-3">{$_phrase.state}:</label>
 
                     <div class="col-md-5">
-                    <select name="state" id="state" class="form-control" required
-                            data-parsley-required-message="Choose state">
-                        <option value="" selected="selected">Select state</option>
+                    <select name="state" id="state" class="form-control" required>
+                        <option value="" selected="selected">{$_phrase.state}</option>
 
                     </select>
                 </div>
@@ -91,7 +89,6 @@
 
                     <div class="col-md-5">
                         <input type="text" id="town" name="city" placeholder="{$_phrase.enter_city}" class="form-control"
-                               data-parsley-required-message="Enter city"
                                value="{$shipping.city}" title="city" maxlength="20" required>
                     </div>
                 </div>
@@ -102,7 +99,6 @@
 
                     <div class="col-md-5">
                         <input type="text" id="zipcode" name="zipcode" placeholder="{$_phrase.enter_zipcode}" class="form-control"
-                               data-parsley-required-message="Enter zipcode"
                                value="{$shipping.zipcode}" title="Zipcode" maxlength="10" required>
                     </div>
                 </div>
@@ -113,7 +109,6 @@
 
                     <div class="col-md-5">
                         <input type="text" id="phone" name="phone" placeholder="{$_phrase.enter_phone}"
-                               data-parsley-required-message="Enter Phone number"
                                class="form-control" value="{$shipping.phone}" title="Phone Number" maxlength="20" required
                                >
                     </div>

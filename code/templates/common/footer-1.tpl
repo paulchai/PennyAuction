@@ -58,7 +58,8 @@
     </div>
     <div class="container copyright text-center">
         <div class="row">
-            <div class="">© {$_phrase.domain} 2014-2015, All rights reserved</div>
+                <a class="" href="/privacy">Privacy & cookies</a> |
+                <a href="/terms" class="">Terms of use</a> | © {$_phrase.domain} 2014-2015, All rights reserved</div>
         </div>
     </div>
 </footer>
@@ -88,7 +89,7 @@
                     <div class="col-md-6">
                         <label class="field prepend-icon">
                             <input type="text" name="first_name" id="first_name" class="gui-input"
-                                   placeholder="First Name" data-parsley-required-message="Enter First Name"
+                                   placeholder="{$_phrase.firstname}" data-parsley-required-message="Enter First Name"
                                    data-parsley-pattern="^[A-z ,.'-]+$"
                                    data-parsley-pattern-message="Special Characters are not allowed"
                                    data-required="true" data-parsley-group="block1" required>
@@ -219,9 +220,9 @@
                 <div class="col-md-12">
                     <label class="field prepend-icon">
                         <input class="form-control gui-input" name="username"
-                               value="{$remembermeuser}" data-parsley-required-message="Enter user name"
+                               value="{$remembermeuser}"
                                data-parsley-pattern="/^[A-z0-9]+(?:[ _-][A-z0-9]+)*$/"
-                               data-parsley-type-message="Enter valid user name"
+                               data-parsley-type-message="{$_phrase.enter_valid_user_name}"
                                id="u_name" size="30" autocomplete="off" required data-trigger="change"
                                placeholder="{$_phrase.username}">
                         <label for="u_name" class="field-icon"><i class="fa fa-user"></i></label>
@@ -231,7 +232,7 @@
                     <div class="col-md-12">
                         <label class="field prepend-icon">
                             <input type="password" name="password" id="u_pass" size="30" autocomplete="off"
-                                   data-parsley-error-message="Enter password" required data-trigger="change"
+                                   data-parsley-error-message="{$_phrase.enter_password}" required data-trigger="change"
                                    class="gui-input" placeholder="{$_phrase.password}">
                             <label for="u_pass" class="field-icon"><i class="fa fa-lock"></i></label>
                         </label>
@@ -299,7 +300,13 @@
     });
 </script> {/if}
 
+{if $language == 'hongkong'}
 <script type="text/javascript">
+    window.Parsley.setLocale('zh-tw');
+</script> {/if}
+
+<script type="text/javascript">
+
     function popup(url) {
         params = 'width=500';//+screen.width;
         params += ', height=500';//+screen.height;

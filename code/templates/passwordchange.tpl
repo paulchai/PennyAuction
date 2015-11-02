@@ -21,7 +21,7 @@
 
                     <div class="col-md-5">
                         <input type="password" id="old_password" name="old_password" title="Old Password"
-                               data-parsley-required-message="Enter old password"
+                               data-parsley-required-message="{$_phrase.enter_old_password}"
                                data-parsley-group="block1" class="form-control" required>
                     </div>
                 </div>
@@ -32,7 +32,7 @@
 
                     <div class="col-md-5">
                         <input type="password" id="new_password" name="new_password" title="New Password"
-                               data-parsley-required-message="Enter new password"
+                               data-parsley-required-message="{$_phrase.enter_new_password}"
                                data-parsley-group="block1" maxlength="20" required class="form-control">
                     </div>
                 </div>
@@ -43,7 +43,7 @@
 
                     <div class="col-md-5">
                         <input type="password" id="confirm_password" name="confirm_password" title="Confirm Password"
-                               data-parsley-required-message="Re-enter new password"
+                               data-parsley-required-message="{$_phrase.reenter_password}"
                                data-parsley-group="block1" maxlength="20" required data-parsley-equalto="#new_password"
                                class="form-control">
                     </div>
