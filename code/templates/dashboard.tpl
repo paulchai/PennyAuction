@@ -29,9 +29,9 @@
 	// create instance
 	window.onload = function() {
 		// setup CountUp object
-		jetportamount1 = new CountUp('jetportamount', {$jetport}, {$jetport}, 0, 2.5);
-		userjetport = new CountUp('userjetport', {$jetport}, {$userbalance.jetport}, 0, 2.5);
-		userjetport.start();
+		jackpotamount1 = new CountUp('jackpotamount', {$jackpot}, {$jackpot}, 0, 2.5);
+		userjackpot = new CountUp('userjackpot', {$jackpot}, {$userbalance.jackpot}, 0, 2.5);
+		userjackpot.start();
 	}
 
 </script>-->

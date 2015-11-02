@@ -256,10 +256,10 @@
     // create instance
     window.onload = function() {
         // setup CountUp object
-        jetportamount = new CountUp('jetportamount', 0, {$jetport}, 0, 2.5);
-        jetportamount.start();
-        if ($('userjetport').length > 0) {
-            userjetport = new CountUp('userjetport', {$userbalance.jetport}, {$userbalance.jetport}, 0, 2.5);
+        jackpotamount = new CountUp('jackpotamount', 0, {$jackpot}, 0, 2.5);
+        jackpotamount.start();
+        if ($('userjackpot').length > 0) {
+            userjackpot = new CountUp('userjackpot', {$userbalance.jackpot}, {$userbalance.jackpot}, 0, 2.5);
         }
 
     }

@@ -1,5 +1,5 @@
 var util = require('util');
-
+var dateFormat = require('dateformat');
 var q = require('q');
 var mysqli = require('./mysqli');
 var common = require('./common');
@@ -28,14 +28,24 @@ exports.userInfo = function (req, mysql, q, id, field) {
     return defered.promise;
 };
 
-exports.userBidCount = function (req, mysql, q, id) {
+exports.userBidCount = function (mysql, q, id) {
     $mysqli = {};
-    page = req.body.page;
     strQuery = mysqli.mysqli($mysqli, 'buyerbidcount');
 
     var defered = q.defer();
 
     var escape_data = [id];
+    console.log(escape_data);
+    query = mysql.query(strQuery, escape_data, defered.makeNodeResolver());
+    return defered.promise;
+};
+
+exports.totalBidCount = function (mysql, q) {
+    $mysqli = {};
+    strQuery = mysqli.mysqli($mysqli, 'totalbidcount');
+
+    var defered = q.defer();
+    var escape_data = [];
     console.log(escape_data);
     query = mysql.query(strQuery, escape_data, defered.makeNodeResolver());
     return defered.promise;
@@ -65,10 +75,19 @@ exports.getMlMUsers = function (mysql, q) {
     return deferred.promise;
 };
 
-exports.getMlMUsers = function (mysql, q) {
+exports.findMlMUser = function (req, mysql, q) {
     $mysqli = {};
-    strQuery = mysqli.mysqli($mysqli, 'getmlmusers');
-    var escape_data = [];
+    strQuery = mysqli.mysqli($mysqli, 'findmlmuser');
+    var escape_data = [req.param('username')];
+    var deferred = q.defer();
+    query = mysql.query(strQuery, escape_data, deferred.makeNodeResolver());
+    return deferred.promise;
+};
+
+exports.getMlMUser = function (id, mysql, q) {
+    $mysqli = {};
+    strQuery = mysqli.mysqli($mysqli, 'getmlmuser');
+    var escape_data = [id];
     var deferred = q.defer();
     query = mysql.query(strQuery, escape_data, deferred.makeNodeResolver());
     return deferred.promise;
@@ -113,3 +132,35 @@ exports.createMlMUsers = function (req, mysql, q) {
 
     return defered.promise;
 };
+
+exports.deleteMlMUsers = function (id, mysql, q) {
+    $mysqli = {};
+
+    strQuery = mysqli.mysqli($mysqli, 'deletemlmusers');
+    var defered = q.defer();
+
+    var escape_data = [id];
+
+    query = mysql.query(strQuery, escape_data, defered.makeNodeResolver());
+    return defered.promise;
+};
+
+exports.updateMlMUsers = function (req, mysql, q) {
+    datge = dateFormat(new Date(), "yyyy-mm-dd HH:MM:ss");
+    var md5 = require('MD5');
+    var password_salt = '16**fun';
+    var password = md5(md5(req.body.password) + password_salt);
+
+    $mysqli = {};
+
+    strQuery = mysqli.mysqli($mysqli, 'updatemlmusers');
+    var defered = q.defer();
+
+    var escape_data = [req.body.username, req.body.display_name, req.body.email, req.body.first_name, req.body.last_name,
+        password, password_salt, req.body.curr_rank, req.body.sp_no, datge, req.body.balance, req.body.gender, req.body.address1,
+        req.body.address2, req.body.zip, req.body.status, req.params.id];
+    console.log(escape_data);
+    query = mysql.query(strQuery, escape_data, defered.makeNodeResolver());
+    return defered.promise;
+};
+

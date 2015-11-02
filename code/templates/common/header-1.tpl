@@ -63,9 +63,9 @@
         /*
         window.onload = function() {
             // setup CountUp object
-            jetportamount1 = new CountUp('jetportamount', {$jetport}, {$jetport}, 0, 2.5);
-            if ($('#userjetport').length > 0) {
-                userjetport = new CountUp('userjetport', {$userbalance.jetport}, {$userbalance.jetport}, 0, 2.5);
+            jackpotamount1 = new CountUp('jackpotamount', {$jackpot}, {$jackpot}, 0, 2.5);
+            if ($('#userjackpot').length > 0) {
+                userjackpot = new CountUp('userjackpot', {$userbalance.jackpot}, {$userbalance.jackpot}, 0, 2.5);
             }
 
         }*/
@@ -178,8 +178,8 @@
                 {else}
                 {$_phrase.totalshare} <span id="totalshare">{$share}</span> /
                 {/if}
-                {$_phrase.jetport}: $
-                <span id="jetportamount">{$jetport}</span>
+                {$_phrase.jackpot}: $
+                <span id="jackpotamount">{$jackpot}</span>
             </div>
         </div>
         <div class="row">

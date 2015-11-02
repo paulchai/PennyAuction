@@ -175,9 +175,9 @@ exports.productCategories = function (mysql, q) {
 
     return defered.promise;
 };
-exports.jetportamount = function (mysql, q) {
+exports.monthlyJackpot = function (mysql, q) {
     $mysqli = {};
-    strQuery = mysqli.mysqli($mysqli, 'jetport');
+    strQuery = mysqli.mysqli($mysqli, 'getmonthlyjackpot');
     //console.log(strQuery);
     var defered = q.defer();
 
@@ -238,8 +238,8 @@ exports.loadTemplateHeader = function (req, res, arr) {
     q.all([
         this.productCategories(arr.config.mysql, q),
         user.userInfo(req, arr.config.mysql, q, uid, ['balance', 'reserve_amount']),
-        this.jetportamount(arr.config.mysql,q),
-        user.userBidCount(req, arr.config.mysql, q, uid)]).then(function (results) {
+        this.monthlyJackpot(arr.config.mysql,q),
+        user.userBidCount(arr.config.mysql, q, uid)]).then(function (results) {
 
         //var query = require('url').parse(req.url,true).query;
         //console.log(req.url);
@@ -270,10 +270,19 @@ exports.loadTemplateHeader = function (req, res, arr) {
             //arr.userbalance.ledger = arr.userbalance.balance = 0;
         }
 
-        arr.jetport = results[2][0][0]['amount'];
+        arr.jackpot = 0;
+        arr.share = 0;
 
-        if (uid > 0 && results[3][0][0]['noofbid'] > 0 && arr.jetport > 0) {
-            arr.userbalance.jetport = Math.round(results[3][0][0]['noofbid'] / 1000 * 5 * arr.jetport);
+        if (results[2][0] > 0) {
+            arr.jackpot = results[2][0][0]['amount_total'];
+            arr.share = results[2][0][0]['bid_share'];
+        }
+
+        if (uid > 0 && results[3][0][0]['total_share'] > 0 && arr.jackpot > 0) {
+            arr.userbalance.share = results[3][0][0]['total_share'];
+        }
+        else {
+            arr.userbalance.share = 0;
         }
 
         nsmarty.tpl_path = arr.config.path + '/templates/';
@@ -319,6 +328,7 @@ exports.loadTemplateHeader = function (req, res, arr) {
                 arr['external2js'] = defaultjs;
             }
 
+
             //console.log('pandi');
             //console.log(req.query);
             if (req.query)
@@ -344,6 +354,8 @@ exports.loadTemplateHeader = function (req, res, arr) {
 
 
         }
+    }).fail(function (err) {
+        console.log(err);
     });
 };
 exports.currencyConverter = function (data) {
